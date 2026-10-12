@@ -1,0 +1,493 @@
+{
+  "checkedOn": "2026-10-12",
+  "store": "Compumarts",
+  "storeUrl": "https://www.compumarts.com",
+  "items": {
+    "r5-5500": {
+      "priceEgp": 4429,
+      "handle": "ryzen-5-5500",
+      "variant": "MPK",
+      "title": "AMD Ryzen 5 5500 Desktop Processor 6 Cores 12 Threads Up to 4.2GHz Boost AM4 Socket 65W TD"
+    },
+    "r5-5600": {
+      "priceEgp": 5459,
+      "handle": "amd-ryzen-5-5600-desktop-processor-6-core-12-thread-3-5ghz-4-4ghz-32mb-l3-65w-am4-zen-3-pcie-4-ddr4-wraith-stealth-egypt",
+      "variant": "Tray",
+      "title": "AMD Ryzen 5 5600 Processor TRAY"
+    },
+    "r7-5700x": {
+      "priceEgp": 9505,
+      "handle": "products-amd-ryzen-7-5700x-tray-cpu-egypt",
+      "variant": "TRAY",
+      "title": "CPU AMD Ryzen 7 5700X TRAY"
+    },
+    "r7-5800x3d": {
+      "priceEgp": 18499,
+      "handle": "processor-amd-ryzen-7-5800x3d-8-core-16-thread-with-amd-3d-v-cache-technology",
+      "variant": "Default Title",
+      "title": "Processor AMD Ryzen 7 5800X3D 8-core 16-Thread with AMD 3D V-Cache Technology BOX"
+    },
+    "r5-8400f": {
+      "priceEgp": 5457,
+      "handle": "amd-ryzen-5-8400f-4-2-ghz-ryzen-5-8000-series-6-core-12-threads-socket-am5-65w-processor-100-100001591box",
+      "variant": "TRAY",
+      "title": "AMD Ryzen 5 8400F Tray-MPK processor"
+    },
+    "r5-7500f": {
+      "priceEgp": 7500,
+      "handle": "amd-ryzen-5-7500f-6c-12t-3-70-5-00ghz-tray",
+      "variant": "Default Title",
+      "title": "AMD Ryzen 5 7500F Desktop Processor – 6 Cores, 12 Threads, Up to 5.0GHz Boost, AM5 CPU (Tr"
+    },
+    "r5-7600": {
+      "priceEgp": 8343,
+      "handle": "amd-ryzen-5-7600-6-core-12-thread-unlocked-desktop-processor",
+      "variant": "MPK",
+      "title": "AMD Ryzen 5 7600 Processor 6-Core 12-Thread 5.1GHz Boost AM5"
+    },
+    "r5-9600x": {
+      "priceEgp": 10094,
+      "handle": "amd-ryzen™-5-9600x-6-core-12-thread-unlocked-desktop-processor",
+      "variant": "Tray",
+      "title": "AMD Ryzen 5 9600X Desktop Processor 6-Core 12-Thread 3.9GHz Up to 5.4GHz AM5"
+    },
+    "r7-7700x": {
+      "priceEgp": 15255,
+      "handle": "amd-ryzen-7-7700x-8-core-16-thread-unlocked-desktop-processor",
+      "variant": "Box",
+      "title": "CPU AMD RYZEN 7 7700X BOX"
+    },
+    "r7-9700x": {
+      "priceEgp": 14008,
+      "handle": "amd-ryzen-7-9700x-8-core-16-thread-unlocked-desktop-processor",
+      "variant": "Tray",
+      "title": "AMD Ryzen 7 9700X Desktop Processor 8-Core 16-Thread 3.8GHz Up to 5.5GHz AM5 65W"
+    },
+    "r7-7800x3d": {
+      "priceEgp": 15965,
+      "handle": "amd-ryzen-7-7800x3d-tray-processor",
+      "variant": "Default Title",
+      "title": "CPU AMD RYZEN7 7800X3D TRAY"
+    },
+    "r7-9800x3d": {
+      "priceEgp": 23690,
+      "handle": "amd-ryzen-7-9800x3d-8-cores-16-threads-desktop-processor",
+      "variant": "Tray",
+      "title": "AMD Ryzen 7 9800X3D Desktop Processor, 8 Cores / 16 Threads, 4.7 GHz Base Clock, Up to 5.2"
+    },
+    "r7-9850x3d": {
+      "priceEgp": 25235,
+      "handle": "amd-ryzen-7-9850x3d-desktop-processor-egypt",
+      "variant": "tray",
+      "title": "AMD Ryzen 7 9850X3D Desktop Processor, 8 Cores / 16 Threads, Up to 5.6 GHz, 96MB L3 Cache,"
+    },
+    "r9-9950x3d": {
+      "priceEgp": 33888,
+      "handle": "amd-ryzen-9-9950x3d-gaming-and-content-creation-processor",
+      "variant": "Tray",
+      "title": "AMD Ryzen 9 9950X3D Desktop Processor"
+    },
+    "i5-12400f": {
+      "priceEgp": 6450,
+      "handle": "processor-intel-core-i5-12400f-alder-lake-6-core-12-thread-up-to-4-4ghz-lga1700",
+      "variant": "Tray",
+      "title": "CPU INTEL CORE i5-12400F BOX"
+    },
+    "i5-14400f": {
+      "priceEgp": 11150,
+      "handle": "intel-core-i5-14400f-20m-cache-up-to-4-70-ghz-processor",
+      "variant": "Box",
+      "title": "CPU INTEL CORE i5-14400F"
+    },
+    "i7-14700f": {
+      "priceEgp": 18570,
+      "handle": "intel-core-i7-14700f-33m-cache-up-to-5-40-ghz-processor",
+      "variant": "tray",
+      "title": "CPU INTEL Core i7 14700F"
+    },
+    "i7-14700k": {
+      "priceEgp": 21670,
+      "handle": "products-intel-core-i7-processor-14700k-14th-generation-lga1700-cpu",
+      "variant": "Box",
+      "title": "CORE I7-14700K TRAY"
+    },
+    "i9-14900k": {
+      "priceEgp": 25499,
+      "handle": "intel-core-i9-14900k-14th-gen-24-core-32-thread-4-4ghz-6-0ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi",
+      "variant": "Default Title",
+      "title": "Intel Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Un"
+    },
+    "u5-225f": {
+      "priceEgp": 8060,
+      "handle": "intel-core-ultra-5-225f-desktop-processor-core-ultra-series-2-10-cores-10-threads-4-9ghz-turbo-20mb-cache-65w",
+      "variant": "TRAY",
+      "title": "CPU INTEL ULTRA 5 225 F BOX"
+    },
+    "u5-245k": {
+      "priceEgp": 12130,
+      "handle": "intel-core-ultra-5-desktop-processor-245k-14-cores-6-p-cores-8-e-cores-up-to-5-2-ghz",
+      "variant": "Default Title",
+      "title": "CPU INTEL ULTRA 5 245K BOX"
+    },
+    "u5-250kp": {
+      "priceEgp": 14890,
+      "handle": "intel-core-ultra-5-250k-plus-18-core-5-3ghz-ddr5-7200-lga1851-desktop-processor",
+      "variant": "Default Title",
+      "title": "Intel Core Ultra 5 250K Plus 18-Core Unlocked Desktop Processor – Up to 5.3GHz, Intel Grap"
+    },
+    "u7-265k": {
+      "priceEgp": 19810,
+      "handle": "intel-core-ultra-7-desktop-processor-265kf-20-cores-8-p-cores-12-e-cores-up-to-5-5-ghz",
+      "variant": "Default Title",
+      "title": "Intel Core Ultra 7 Desktop Processor 265KF - 20 cores (8 P-cores + 12 E-cores) up to 5.5 G"
+    },
+    "u7-270kp": {
+      "priceEgp": 20950,
+      "handle": "intel-core-ultra-7-270k-plus-lga1851-processor",
+      "variant": "Default Title",
+      "title": "CPU INTEL Core Ultra 7 270K Plus 24-Core Desktop Processor BOX"
+    },
+    "rtx3050-6": {
+      "priceEgp": 12625,
+      "handle": "msi-geforce-rtx-3050-ventus-2x-6g-oc",
+      "variant": "Default Title",
+      "title": "MSI GeForce RTX 3050 VENTUS 2X 6G OC"
+    },
+    "rtx3050-8": {
+      "priceEgp": 10505,
+      "handle": "zotac-gaming-geforce-rtx-3050-eco-solo-8gb-gddr6",
+      "variant": "Default Title",
+      "title": "GRAPHIC CARD ZOTAC RTX 3050 ECO 8GB GDDR6"
+    },
+    "rtx3060": {
+      "priceEgp": 20600,
+      "handle": "graphics-card-galax-geforce-rtx-3060-1-click-oc-12gb-gddr6-192-bit-dp-3-hdmi",
+      "variant": "Default Title",
+      "title": "GALAX GeForce RTX 3060 1-Click OC Graphics Card 12GB GDDR6 192-bit PCI Express 4.0 x16 NVI"
+    },
+    "rtx5050": {
+      "priceEgp": 17170,
+      "handle": "galax-rtx-5050-8gb-1click-oc-gddr6-graphics-card-egypt",
+      "variant": "Default Title",
+      "title": "GALAX GeForce RTX 5050 8GB 1-Click OC GDDR6 128-bit Gaming Graphics Card -55NSL8MHDCHD"
+    },
+    "rtx5060": {
+      "priceEgp": 19900,
+      "handle": "zotac-gaming-rtx-5060-twin-edge-8gb-egypt",
+      "variant": "Default Title",
+      "title": "ZOTAC GAMING GeForce RTX 5060 Twin Edge 8GB GDDR7 Graphics Card"
+    },
+    "rtx5060ti-8": {
+      "priceEgp": 25960,
+      "handle": "msi-rtx-5060-ti-ventus-2x-oc-plus-8gb-egypt",
+      "variant": "Default Title",
+      "title": "MSI GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS GRAPHIC CARD"
+    },
+    "rtx5060ti-16": {
+      "priceEgp": 32980,
+      "handle": "galax-rtx-5060ti-1click-oc-gddr7",
+      "variant": "Default Title",
+      "title": "GALAX GeForce RTX 5060 Ti 1-Click OC GDDR7 Dual Fan Graphics Card 16GB 4608 CUDA Cores"
+    },
+    "rx9060xt-8": {
+      "priceEgp": 23400,
+      "handle": "gigabyte-radeon-rx-9060-xt-gaming-oc-8g-8gb-gddr6-pcie-50-egypt",
+      "variant": "Default Title",
+      "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 8G Graphics Card GV-R9060XTGAMING OC-8GD, 8GB GDDR6, "
+    },
+    "rx9060xt-16": {
+      "priceEgp": 27499,
+      "handle": "asus-dual-rx-9060-xt-16gb-egypt",
+      "variant": "Default Title",
+      "title": "ASUS Dual Radeon RX 9060 XT 16GB GDDR6 Graphics Card"
+    },
+    "rtx5070": {
+      "priceEgp": 37875,
+      "handle": "gigabyte-geforce-rtx-5070-eagle-oc-sff-12g-graphics-card",
+      "variant": "Default Title",
+      "title": "GIGABYTE GeForce RTX 5070 12G EAGLE OC GRAPHIC CARDS"
+    },
+    "rx9070gre": {
+      "priceEgp": 36666,
+      "handle": "asus-prime-rx9070gre-o12g-evo-radeon-rx-9070-gre-12gb-egypt",
+      "variant": "Default Title",
+      "title": "ASUS PRIME-RX9070GRE-O12G-EVO Radeon RX 9070 GRE 12GB GDDR6 Graphics Card"
+    },
+    "rx9070": {
+      "priceEgp": 40850,
+      "handle": "gigabyte-radeon-rx-9070-gaming-oc-16g-graphics-card-pcie-5-0-16gb-gddr6-gv-r9070gaming-oc-16gd-video-card",
+      "variant": "Default Title",
+      "title": "GPU GIGABYTE RX 9070 16G GAMING OC"
+    },
+    "rx9070xt": {
+      "priceEgp": 43000,
+      "handle": "gigabyte-rx-9070-xt-gaming-oc-16g",
+      "variant": "Default Title",
+      "title": "GIGABYTE Radeon RX 9070 XT GAMING OC 16G Graphics Card 16GB GDDR6 256-bit PCIe 5.0 3060MHz"
+    },
+    "rtx5070ti": {
+      "priceEgp": 58580,
+      "handle": "gigabyte-rtx-5070ti-eagle-oc-ice-16gb-egypt",
+      "variant": "Default Title",
+      "title": "GIGABYTE RTX 5070 Ti EAGLE OC  SFF 16GB Graphics Card – GV-N507TEAGLEOC-16GD"
+    },
+    "rtx5080": {
+      "priceEgp": 75750,
+      "handle": "gigabyte-rtx-5080-windforce-oc-16gb-egypt",
+      "variant": "Default Title",
+      "title": "GIGABYTE GeForce RTX 5080 WINDFORCE OC 16GB"
+    },
+    "rtx5090": {
+      "priceEgp": 240100,
+      "handle": "msi-nvidia-geforce-rtx-5090-ventus-3x-overclocked-triple-fan-32gb-gddr7-pcie-5-0-graphics-card",
+      "variant": "Default Title",
+      "title": "MSI NVIDIA GeForce RTX 5090 VENTUS 3X Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics "
+    },
+    "mb-a520m-k": {
+      "priceEgp": 2999,
+      "handle": "gigabyte-a520m-k-v2-motherboard",
+      "variant": "Default Title",
+      "title": "Gigabyte A520M K V2 Rev. 1.1 AMD A520 AM4 Micro ATX Motherboard with DDR4 5100MHz OC Suppo"
+    },
+    "mb-b550m-vdh": {
+      "priceEgp": 5150,
+      "handle": "msi-b550m-pro-vdh-am4-ddr4-motherboard",
+      "variant": "Default Title",
+      "title": "MSI B550M PRO-VDH DDR4 Motherboard"
+    },
+    "mb-a620m-h": {
+      "priceEgp": 3999,
+      "handle": "gigabyte-a620m-h-motherboard",
+      "variant": "Default Title",
+      "title": "MOTHERBOARD GIGABYTE A620M H"
+    },
+    "mb-b650m-p": {
+      "priceEgp": 5960,
+      "handle": "msi-pro-b650m-p-proseries-motherboard-amd-ryzen-9000-8000-7000-series-processors-am5-ddr5-pcie-4-0-m-2-sata-6gb-s-usb-3-2-gen-2-hdmi-dp-2-5gbps-lan-matx",
+      "variant": "Default Title",
+      "title": "MSI PRO B650M-P DDR5 Motherboard"
+    },
+    "mb-b850m-ds3h": {
+      "priceEgp": 7800,
+      "handle": "igabyte-b850m-ds3h-amd-am5-lga-1718-motherboard-matx-ddr5",
+      "variant": "Default Title",
+      "title": "GIGABYTE B850M DS3H AMD AM5 LGA 1718 Motherboard mATX"
+    },
+    "mb-b850-tomahawk": {
+      "priceEgp": 13500,
+      "handle": "msi-mag-b850-tomahawk-max-wifi-am5-ddr5-motherboard-egypt",
+      "variant": "Default Title",
+      "title": "MSI MAG B850 TOMAHAWK MAX WIFI AM5 DDR5 ATX Gaming Motherboard"
+    },
+    "mb-x870-eagle": {
+      "priceEgp": 12000,
+      "handle": "gigabyte-x870-eagle-wifi7-amd-am5-lga-1718-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE X870 EAGLE WiFi7 Motherboard – AMD AM5 (LGA1718) – ATX – DDR5 – PCIe 5.0 – M.2 – "
+    },
+    "mb-h610m-k-d4": {
+      "priceEgp": 3235,
+      "handle": "gigabyte-h610m-k-ddr4-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE H610M K DDR4 Motherboar"
+    },
+    "mb-b760m-e-d4": {
+      "priceEgp": 4850,
+      "handle": "msi-pro-b760m-e-ddr4-motherboard",
+      "variant": "Default Title",
+      "title": "MSI PRO B760M-E DDR4 Motherboard"
+    },
+    "mb-b760m-ds3h-d5": {
+      "priceEgp": 6300,
+      "handle": "motherboard-b760-ds3h-gen5-egypt",
+      "variant": "Default Title",
+      "title": "Gigabyte B760m DS3H Gen5 Motherboard – Intel LGA1700, DDR5, PCIe 5.0, 2.5GbE LAN"
+    },
+    "mb-z790-p": {
+      "priceEgp": 11000,
+      "handle": "msi-pro-z790-p-ddr5-wifi-proseries-motherboard",
+      "variant": "Default Title",
+      "title": "MSI PRO Z790-P DDR5 WiFi Motherboard Intel Z790 Chipset LGA 1700 Support Intel Core 14th 1"
+    },
+    "mb-h810m-k": {
+      "priceEgp": 4500,
+      "handle": "gigabyte-h810m-k-motherboard-lga1851-ddr5-pcie-4-0-egypt",
+      "variant": "Default Title",
+      "title": "GIGABYTE H810M-K Micro ATX Motherboard – LGA1851, Intel H810 Chipset, DDR5 128GB, PCIe 4.0"
+    },
+    "mb-b860m-e": {
+      "priceEgp": 6450,
+      "handle": "msi-pro-b860m-e-lga1851-ddr5-motherboard-egypt",
+      "variant": "Default Title",
+      "title": "MSI PRO B860M-E LGA1851 DDR5 mATX Motherboard"
+    },
+    "mb-b860m-ds3h": {
+      "priceEgp": 7500,
+      "handle": "gigabyte-b860m-ds3h-ddr5-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE B860M DS3H DDR5 MOTHERBOARD"
+    },
+    "mb-z890-eagle": {
+      "priceEgp": 11820,
+      "handle": "gigabyte-z890-eagle-4xddr5-lga1851-atx-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE Z890 EAGLE LGA1851 Intel Core Ultra Processor Support ATX Motherboard with 4 DDR5"
+    },
+    "ram-d4-8": {
+      "priceEgp": 2599,
+      "handle": "corsair-vengeance-lpx-ddr4-8gb-3200-c16-black-egypt",
+      "variant": "Default Title",
+      "title": "RAM CORSAIR/CMK8GX4M1E3200C16/VENGEANCE® LPX 8GB(1x8GB)DDR4 3200MHz  Black"
+    },
+    "ram-d4-16": {
+      "priceEgp": 4370,
+      "handle": "ram-g-skill-aegis-ddr4-pc-3200-cl16-kit",
+      "variant": "2 x 8GB",
+      "title": "RAM PC G.SKILL/G.SKILL/Aegis DDR4-3200 CL16-16GB (2x8GB)F4-3200C16D-16GIS"
+    },
+    "ram-d4-32": {
+      "priceEgp": 15280,
+      "handle": "lexar-thor-ddr4-32gb-3200mhz-cl16-egypt",
+      "variant": "Default Title",
+      "title": "Lexar THOR DDR4 RAM 32GB Kit (2x16GB) 3200 MHz, DRAM 288-Pin UDIMM Desktop Memory, XMP 2.0"
+    },
+    "ram-d5-16": {
+      "priceEgp": 11750,
+      "handle": "kingspec-ks6000d5p12516g-16gb-ddr5-6000mt-s-desktop-memory-288-pin-dimm-egypt",
+      "variant": "Default Title",
+      "title": "KingSpec KS6000D5P12516G 16GB (16x1) DDR5 6000MT/s Desktop Memory 288-pin DIMM 1.1~1.35V"
+    },
+    "ram-d5-32": {
+      "priceEgp": 28500,
+      "handle": "lexar-ares-rgb-32gb-ddr5-6000-cl30-black",
+      "variant": "Default Title",
+      "title": "Lexar ARES RGB 2nd Gen 32GB Kit (2x16GB) DDR5 6000MT/s CL30 - Black | Intel XMP 3.0 & AMD "
+    },
+    "ram-d5-64": {
+      "priceEgp": 39390,
+      "handle": "kingston-fury-beast-rgb-64gb-2x32gb-ddr5-6000mhz-cl36-egypt",
+      "variant": "Default Title",
+      "title": "Kingston FURY Beast RGB 64GB (2x32GB) DDR5 6000MHz CL36 Gaming Memory Kit KF560C36BBE2AK2-"
+    },
+    "ssd-512": {
+      "priceEgp": 4800,
+      "handle": "oscoo-on1000-512gb-m2-nvme-pcie-gen4-ssd-egypt",
+      "variant": "512GB",
+      "title": "OSCOO ON1000 M.2 NVMe PCIe Gen4 x4 SSD – Up to 5200MB/s Read – 3D NAND – 512GB / 1TB"
+    },
+    "ssd-1t": {
+      "priceEgp": 7070,
+      "handle": "kingston-nv3-pcie-4-0-nvme-ssd-500gb-4tb",
+      "variant": "1TB",
+      "title": "Kingston NV3 M.2 2280 NVMe PCIe 4.0 SSD"
+    },
+    "ssd-2t": {
+      "priceEgp": 11700,
+      "handle": "western-digital-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd-pcie-gen-4-0-m-2-2280-up-to-5-150-mb-s",
+      "variant": "2TB",
+      "title": "HARD Western Digital WD Blue SN5000 NVMe"
+    },
+    "ssd-1t-gen5": {
+      "priceEgp": 10499,
+      "handle": "msi-spatium-m560-pcie-5-0-nvme-m-2-ssd",
+      "variant": "1TB",
+      "title": "MSI SPATIUM M560 PCIe 5.0 NVMe M.2 SSD"
+    },
+    "psu-650": {
+      "priceEgp": 1900,
+      "handle": "deepcool-pf650-650-watts-psu-80-plus",
+      "variant": "Default Title",
+      "title": "DEEPCOOL PF650 650 Watt, 80 Plus Standard Power Supply/PSU for Gaming PC - Black - R-PF650"
+    },
+    "psu-750b": {
+      "priceEgp": 2850,
+      "handle": "xigmatek-thor-t750m-v3-750w-80-bronze-atx-3-1-pci-e-5-0-full-modular-power-supply",
+      "variant": "Default Title",
+      "title": "PSU XIGMATEK THOR T750W V3 80 PLUS BRONZE ATX 3.1 PCIE 5.0 FULL MODULAR"
+    },
+    "psu-750g": {
+      "priceEgp": 4040,
+      "handle": "msi-mag-a750gn-pcie5-750w-80-plus-gold-power-supply-egypt",
+      "variant": "Default Title",
+      "title": "MSI MAG A750GN PCIE5 750W 80 PLUS Gold Power Supply Active PFC Non Modular"
+    },
+    "psu-850g": {
+      "priceEgp": 5200,
+      "handle": "cooler-master-mwe-gold-850w-v3-atx3-psu",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 850 V3 ATX 3.1 Fully Modular 850W 80 PLUS Gold Power Supply"
+    },
+    "psu-1000g": {
+      "priceEgp": 6250,
+      "handle": "products-cooler-master-elite-gold-1000-1000w-fully-modular-80-plus-gold-power-supply",
+      "variant": "Default Title",
+      "title": "Cooler Master Elite Gold 1000 Power Supply 1000W Fully Modular ATX 12V 3.1 80 PLUS Gold FD"
+    },
+    "psu-1200g": {
+      "priceEgp": 7777,
+      "handle": "thermalright-tg-1200-1200w-80-plus-gold-full-modular-power-supply-120mm-fan-egypt",
+      "variant": "Default Title",
+      "title": "Thermalright TG-1200 1200W 80 PLUS Gold Full-Modular Power Supply 120mm Fan"
+    },
+    "case-elite301": {
+      "priceEgp": 2200,
+      "handle": "cooler-master-elite-301-lite-micro-atx-high-airflow-pc-case-365mm-gpu-max-280mm-aio-max-type-c-tempered-glass-120mm-pwm-fan-intakes-grill-breathable-psu-shroud",
+      "variant": "Black",
+      "title": "Cooler Master Elite 301 Lite Micro-ATX High Airflow PC Case, 365mm GPU Max, 280mm AIO Max,"
+    },
+    "case-danb4": {
+      "priceEgp": 3900,
+      "handle": "lian-li-dan-b4-mesh-micro-tower-21-3l-egypt",
+      "variant": "Black",
+      "title": "Lian Li DAN B4 Mesh Micro Tower Gaming Case 21.3L Micro-ATX 358mm GPU 360mm Radiator"
+    },
+    "case-v950w": {
+      "priceEgp": 2999,
+      "handle": "acer-v950w-mid-tower-atx-argb-gaming-pc-case-white-egypt",
+      "variant": "Default Title",
+      "title": "Acer V950W Mid Tower ATX ARGB Gaming PC Case White 0.8mm Chassis 410mm GPU Clearance"
+    },
+    "case-td500": {
+      "priceEgp": 3999,
+      "handle": "cooler-master-masterbox-td500-mesh-v2-argb-mid-towe",
+      "variant": "Black",
+      "title": "CASE COOLER MASTER TD500 MESH V2"
+    },
+    "case-gt502": {
+      "priceEgp": 7500,
+      "handle": "asus-tuf-gt502-plus-tg-4x-pre-installed-rgb-fans-atx-mid-tower",
+      "variant": "White",
+      "title": "ASUS TUF GT502 PLUS TG 4x Pre Installed RGB Fans ATX Mid-Tower"
+    },
+    "cool-se903": {
+      "priceEgp": 525,
+      "handle": "products-id-cooling-se-903-sd-v3-130w-92mm-cpu-air-cooler",
+      "variant": "Default Title",
+      "title": "ID-COOLING SE-903-SD V3 CPU Air Cooler with 3 Direct Touch Heatpipes 92mm Fan 130W TDP Sup"
+    },
+    "cool-a450": {
+      "priceEgp": 750,
+      "handle": "antec-a450-frgb-cpu-air-cooler",
+      "variant": "Default Title",
+      "title": "Antec A450 FRGB CPU Air Cooler – 4 Heat Pipes, 120mm PWM Fan, 180W TDP Cooling"
+    },
+    "cool-a620": {
+      "priceEgp": 1900,
+      "handle": "products-frozn-a620-pro-se-cpu-cooler-260w-tdp-dual-120mm-intel-amd",
+      "variant": "Default Title",
+      "title": "ID-COOLING FROZN A620 PRO SE CPU Cooler 260W TDP Dual 120mm Hydraulic Bearing Fans 6×6mm H"
+    },
+    "cool-fx240": {
+      "priceEgp": 2300,
+      "handle": "id-cooling-fx240-pro-gen-7-pump-300w-240mm-aio-liquid-cpu-cooler-egypt",
+      "variant": "Default Title",
+      "title": "ID-COOLING FX240 PRO Gen 7 Pump 300W 240mm AIO Liquid CPU Cooler with 2×120mm PWM Fans"
+    },
+    "cool-fx360": {
+      "priceEgp": 3400,
+      "handle": "id-cooling-fx360-inf-pink-360mm-350w-tdp-liquid-cpu-cooler",
+      "variant": "Black",
+      "title": "ID-COOLING FX360 INF 360mm Liquid CPU Cooler 350W TDP Aluminum Radiator 3x120mm ARGB Fans "
+    }
+  }
+}
