@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: 'Cairo', sans-serif; color: #e8ecf3;
+    background: radial-gradient(700px 420px at 88% 8%, rgba(255,122,46,.35), transparent 70%), radial-gradient(600px 400px at 0% 100%, rgba(232,89,12,.18), transparent 70%), #0f1218; }
+  .wrap { position: absolute; inset: 0; padding: 64px 72px; display: flex; flex-direction: column; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 22px; direction: ltr; }
+  .mark { width: 104px; height: 104px; filter: drop-shadow(0 10px 30px rgba(255,122,46,.45)); }
+  .word { display: inline-flex; align-items: flex-end; font-size: 84px; font-weight: 800; letter-spacing: -.035em; line-height: 1; }
+  .x { width: .6em; height: .6em; margin: 0 .02em 0 .04em; transform: translateY(-.17em); overflow: visible; }
+  .up { color: #ff7a2e; }
+  .head { direction: rtl; text-align: right; }
+  h1 { margin: 0; font-size: 58px; font-weight: 800; line-height: 1.15; }
+  .en { direction: ltr; text-align: right; margin-top: 10px; font-size: 30px; font-weight: 600; color: #aab3c2; }
+  .chips { display: flex; gap: 14px; direction: rtl; flex-wrap: wrap; }
+  .chip { font-size: 26px; font-weight: 700; padding: 10px 24px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.14); }
+  .chip b { color: #ff7a2e; }
+  .url { position: absolute; left: 72px; bottom: 70px; direction: ltr; font-size: 24px; color: #7d8798; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 64 64">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#d9480f"/></linearGradient></defs>
+      <rect width="64" height="64" rx="15" fill="url(#g)"/>
+      <path d="M17 33 32 18 47 33" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17 47 32 32 47 47" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>
+    </svg>
+    <span class="word">
+      <span>level</span>
+      <svg class="x" viewBox="0 0 24 24">
+        <path d="M3.5 3.5 20.5 20.5" stroke="#e8ecf3" stroke-width="5" stroke-linecap="round"/>
+        <path d="M3.5 20.5 19 5" stroke="#ff7a2e" stroke-width="5" stroke-linecap="round"/>
+        <path d="M10 3h11v11" fill="none" stroke="#ff7a2e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="up">up</span>
+    </span>
+  </div>
+  <div class="head">
+    <h1>جمّع جهازك صح وبأرخص سعر في مصر</h1>
+    <div class="en">Build your gaming PC — compatibility, bottleneck and the best price in EGP</div>
+  </div>
+  <div class="chips">
+    <span class="chip">✓ التوافق</span>
+    <span class="chip">📊 الـ Bottleneck</span>
+    <span class="chip">💰 أسعار <b>8</b> محلات</span>
+    <span class="chip">🎯 على قد ميزانيتك</span>
+  </div>
+</div>
+</body>
+</html>
