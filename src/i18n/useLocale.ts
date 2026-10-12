@@ -1,5 +1,5 @@
 import { computed, ref, watchEffect, type ComputedRef, type Ref } from 'vue'
-import { MESSAGES, type Locale, type Messages } from './messages'
+import { BRAND, MESSAGES, type Locale, type Messages } from './messages'
 
 const STORAGE_KEY = 'pcb-locale'
 
@@ -33,7 +33,7 @@ export function useLocale(): LocaleState {
   watchEffect(() => {
     document.documentElement.lang = locale.value
     document.documentElement.dir = MESSAGES[locale.value].dir
-    document.title = `levelxup · ${MESSAGES[locale.value].title}`
+    document.title = `${BRAND} · ${MESSAGES[locale.value].title}`
   })
   const toggle = () => {
     locale.value = locale.value === 'ar' ? 'en' : 'ar'

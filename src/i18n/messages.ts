@@ -1,9 +1,12 @@
 import type { Category, Issue } from '../domain/types'
 import type { Limiter } from '../domain/bottleneck'
+import type { FpsTier } from '../domain/fps'
 import type { Preset } from '../domain/presets'
 import type { BoardReason, CpuReason } from '../domain/suggest'
 
 export type Locale = 'ar' | 'en'
+
+export const BRAND = 'levelxup'
 
 type Params = Record<string, string | number>
 type IssueText = (p: Params, category: (c: Category) => string) => string
@@ -37,6 +40,27 @@ export interface Messages {
     explainGpu: string
     explainBalanced: string
     disclaimer: string
+  }
+  fps: {
+    title: string
+    needBoth: string
+    resolution: string
+    tiers: Record<FpsTier, string>
+    capped: string
+    cpuLimited: string
+    gameLoopNote: string
+    disclaimer: string
+  }
+  exportBuild: {
+    copyText: string
+    whatsapp: string
+    print: string
+    pricesOn: (date: string) => string
+    part: string
+    store: string
+    price: string
+    game: string
+    link: string
   }
   pricesNote: (stores: number, date: string) => string
   viewAtStore: string
@@ -109,6 +133,27 @@ const ar: Messages = {
     explainGpu: 'ده الطبيعي في الألعاب: الكارت شغال على آخره والبروسيسور مكفّيه.',
     explainBalanced: 'الاتنين قريبين من بعض.',
     disclaimer: 'تقدير تقريبي من متوسطات اختبارات الألعاب المنشورة، مش قياس. كل لعبة وكل إعدادات ليها نتيجة مختلفة.'
+  },
+  fps: {
+    title: 'الـ FPS المتوقع في الألعاب',
+    needBoth: 'اختار بروسيسور وكارت شاشة عشان تشوف الـ FPS.',
+    resolution: 'الدقة',
+    tiers: { low: 'مش هتتلعب', playable: 'تتلعب', smooth: 'سلسة', high: 'تنافسية' },
+    capped: 'أقصى حاجة في اللعبة',
+    cpuLimited: 'البروسيسور هو الحد',
+    gameLoopNote: 'ببجي موبايل على GameLoop آخرها 120 FPS، وبتعتمد على البروسيسور أكتر من الكارت. فعّل الـ Virtualization (SVM أو VT-x) من الـ BIOS.',
+    disclaimer: 'متوسط تقريبي من اختبارات منشورة بالإعدادات المكتوبة جنب كل لعبة، من غير DLSS أو FSR. الماب والتحديثات والدرايفرات بتفرق.'
+  },
+  exportBuild: {
+    copyText: 'انسخ التجميعة كنص',
+    whatsapp: 'ابعتها واتساب',
+    print: 'اطبع / PDF',
+    pricesOn: date => `الأسعار يوم ${date}`,
+    part: 'القطعة',
+    store: 'المحل',
+    price: 'السعر',
+    game: 'اللعبة',
+    link: 'لينك التجميعة'
   },
   pricesNote: (stores, date) => `الأسعار من ${stores} محلات في مصر يوم ${date}، وبتتغير كتير. السعر المعروض هو أرخص سعر متوفر، واضغط عليه عشان تفتح الصفحة.`,
   viewAtStore: 'شوف في المحل',
@@ -204,6 +249,27 @@ const en: Messages = {
     explainGpu: 'This is normal for games: the GPU runs flat out and the CPU keeps up.',
     explainBalanced: 'Both parts are close to each other.',
     disclaimer: 'A rough estimate from published gaming benchmark averages, not a measurement. Every game and setting differs.'
+  },
+  fps: {
+    title: 'Estimated FPS in games',
+    needBoth: 'Pick a CPU and a graphics card to see the FPS.',
+    resolution: 'Resolution',
+    tiers: { low: 'Unplayable', playable: 'Playable', smooth: 'Smooth', high: 'Competitive' },
+    capped: 'Game maximum',
+    cpuLimited: 'CPU-limited',
+    gameLoopNote: 'PUBG Mobile on GameLoop tops out at 120 FPS and depends more on the CPU than the graphics card. Turn on virtualization (SVM or VT-x) in the BIOS.',
+    disclaimer: 'A rough average from published benchmarks at the settings shown next to each game, without DLSS or FSR. Maps, patches and drivers change it.'
+  },
+  exportBuild: {
+    copyText: 'Copy as text',
+    whatsapp: 'Send on WhatsApp',
+    print: 'Print / PDF',
+    pricesOn: date => `Prices on ${date}`,
+    part: 'Part',
+    store: 'Store',
+    price: 'Price',
+    game: 'Game',
+    link: 'Build link'
   },
   pricesNote: (stores, date) => `Prices from ${stores} Egyptian stores on ${date}; they change often. Each part shows the cheapest in-stock price; click it to open the listing.`,
   viewAtStore: 'View at store',

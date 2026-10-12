@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { CATEGORIES } from './domain/build'
 import { PRESETS } from './domain/presets'
 import { PRICES_CHECKED_ON, STORE_COUNT, catalog } from './data/parts'
@@ -13,6 +13,10 @@ import PowerPanel from './components/PowerPanel.vue'
 import BottleneckPanel from './components/BottleneckPanel.vue'
 import BudgetPanel from './components/BudgetPanel.vue'
 import BrandLogo from './components/BrandLogo.vue'
+import FpsPanel from './components/FpsPanel.vue'
+import ShareActions from './components/ShareActions.vue'
+import BuildSheet from './components/BuildSheet.vue'
+import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
 import type { RowSuggestion } from './components/PartRow.vue'
@@ -20,7 +24,9 @@ import type { RowSuggestion } from './components/PartRow.vue'
 const { locale, t, toggle } = useLocale()
 const { theme, toggle: toggleTheme } = useTheme()
 const state = useBuild()
-const copied = ref(false)
+const link = computed(() => state.shareUrl())
+const text = computed(() => buildText(state.build.value, state.total.value, link.value, t.value, locale.value))
+const hasParts = computed(() => Object.keys(state.ids.value).length > 0)
 
 const fitsIn = (category: Category) => (part: PartBase) =>
   fitsWith(state.build.value, category, part as PartsByCategory[typeof category])
@@ -36,17 +42,6 @@ const suggestionsFor = computed<Partial<Record<Category, RowSuggestion[]>>>(() =
 })
 
 const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'forBoard', motherboard: 'forCpu' }
-const COPIED_MS = 1800
-
-async function copyLink() {
-  try {
-    await navigator.clipboard.writeText(state.shareUrl())
-    copied.value = true
-    setTimeout(() => { copied.value = false }, COPIED_MS)
-  } catch {
-    window.prompt(t.value.copyLink, state.shareUrl())
-  }
-}
 </script>
 
 <template>
@@ -94,16 +89,14 @@ async function copyLink() {
           :suggest-title="suggestTitle[category] ? t.suggest[suggestTitle[category]!] : undefined"
           @change="id => state.setPart(category, id)"
         />
+        <FpsPanel :build="state.build.value" :t="t" />
       </section>
 
       <aside class="summary">
         <div class="card total">
           <span>{{ t.total }}</span>
           <strong>{{ formatEgp(state.total.value, locale) }}</strong>
-          <div class="actions">
-            <button type="button" class="btn primary" @click="copyLink">{{ copied ? t.copied : t.copyLink }}</button>
-            <button type="button" class="btn" @click="state.replace({})">{{ t.resetBuild }}</button>
-          </div>
+          <ShareActions :link="link" :text="text" :t="t" @reset="state.replace({})" />
         </div>
         <IssuesPanel :issues="state.issues.value" :t="t" />
         <BottleneckPanel :results="state.bottlenecks.value" :t="t" />
@@ -115,6 +108,8 @@ async function copyLink() {
       <p>{{ t.pricesNote(STORE_COUNT, formatDate(PRICES_CHECKED_ON, locale)) }}</p>
       <p>{{ t.footer }}</p>
     </footer>
+
+    <BuildSheet v-if="hasParts" :build="state.build.value" :total="state.total.value" :link="link" :t="t" :locale="locale" />
   </div>
 </template>
 
@@ -137,9 +132,6 @@ h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); }
 .total span { color: var(--muted); font-weight: 600; }
 .total strong { display: block; font-size: 30px; font-weight: 800; margin: 2px 0 12px; font-variant-numeric: tabular-nums; }
-.actions { display: flex; gap: 8px; flex-wrap: wrap; }
-.btn { border: 1px solid var(--line); background: var(--panel2); border-radius: 10px; padding: 7px 14px; cursor: pointer; font-weight: 600; }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .foot { margin-top: 28px; color: var(--muted); font-size: 13px; }
 .foot p { margin: 4px 0; }
 @media (max-width: 900px) {

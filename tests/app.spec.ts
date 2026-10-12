@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import App from '../src/App.vue'
 
@@ -93,5 +93,30 @@ describe('app', () => {
     await wrapper.find('.budget input').setValue('كتير')
     await wrapper.find('.budget').trigger('submit')
     expect(wrapper.find('.msg.bad').text()).toContain('رقم بالجنيه')
+  })
+  it('estimates FPS per game, including PUBG Mobile on GameLoop, and follows the chosen resolution', async () => {
+    const wrapper = mount(App)
+    await wrapper.findAll('.preset')[1].trigger('click')
+    const fps = wrapper.find('.fps')
+    expect(fps.text()).toContain('PUBG Mobile (GameLoop)')
+    const cyberpunk = () => fps.find('[data-game="cyberpunk"] .value').text()
+    const at1080 = cyberpunk()
+    await fps.findAll('.seg button')[2].trigger('click')
+    expect(cyberpunk()).not.toBe(at1080)
+  })
+
+  it('exports the build as text, a WhatsApp message and a printable sheet', async () => {
+    const writeText = vi.fn().mockResolvedValue(undefined)
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true })
+    const print = vi.spyOn(window, 'print').mockImplementation(() => undefined)
+    const wrapper = mount(App)
+    await wrapper.findAll('.preset')[1].trigger('click')
+    await wrapper.find('.copy-text').trigger('click')
+    expect(writeText.mock.calls[0][0]).toContain('Ryzen 5 7500F')
+    expect(wrapper.find('.whatsapp').attributes('href')).toMatch(/^https:\/\/wa\.me\/\?text=.*7500F/)
+    expect(wrapper.find('.sheet').text()).toContain('Ryzen 5 7500F')
+    await wrapper.find('.print').trigger('click')
+    expect(print).toHaveBeenCalledOnce()
+    print.mockRestore()
   })
 })

@@ -18,7 +18,9 @@ npm run prices:scrape -- --write  # save them to src/data/offers.json
 ```
 
 Builds are saved in the browser and shareable: "Copy build link" gives a URL
-like `?cpu=r5-7500f&gpu=rx9060xt-16&…`.
+like `?cpu=r5-7500f&gpu=rx9060xt-16&…`. A build can also be copied as text,
+sent on WhatsApp, or printed / saved as a PDF sheet with parts, prices, total
+and FPS at each resolution.
 
 ## Data
 
@@ -60,6 +62,12 @@ tests fail if a part has no listing or a listing has no part.
   penalty when VRAM is below 8 / 10 / 12 GB and a 10 % CPU penalty for
   single-channel memory. The percentage is how far the slower side is behind
   the faster one; under 10 % is "balanced". It is a guide, not a benchmark.
+- **FPS per game:** each game in `src/data/games.ts` has the frame rate the
+  reference CPU (Ryzen 7 9800X3D) and the reference GPU (RTX 5080 at 1080p)
+  reach at the listed preset. A build's FPS is the lower of the two, scaled by
+  the same CPU and GPU capacities as the bottleneck estimate, and capped where
+  the game has a cap. PUBG Mobile on GameLoop is capped at 120 FPS and does not
+  scale with resolution.
 - **Compatibility:** socket, memory type (board and CPU), board/case form
   factor, GPU length vs case clearance (lengths are approximate per listed
   model), PSU wattage and rating, cooler rating vs CPU power, entry-board power

@@ -72,3 +72,9 @@ html, body {
 button, select { font: inherit; color: inherit; }
 
 a { color: inherit; }
+
+@media print {
+  html, body { background: #fff; color: #000; }
+  .page { max-width: none; padding: 0; }
+  .page > :not(.sheet) { display: none; }
+}

@@ -103,3 +103,13 @@ export interface Issue {
   code: string
   params?: Record<string, string | number>
 }
+
+export interface Game {
+  id: string
+  name: string
+  preset: string
+  cpuFps: number
+  gpuFps: number
+  maxFps?: number
+  fixedResolution?: boolean
+}
