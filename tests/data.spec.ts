@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { PRICE_SOURCE, catalog, listingFor } from '../src/data/parts'
+import { OFFER_SOURCE, PRICE_SOURCE, catalog, listingFor } from '../src/data/parts'
+import searchTerms from '../src/data/search-terms.json'
 import { sanitizeIds, withPart } from '../src/domain/build'
 
 const all = Object.values(catalog).flat()
@@ -13,7 +14,28 @@ describe('catalog data', () => {
   it('has a real store price and link for every part', () => {
     all.forEach(part => {
       expect(part.listing.priceEgp, part.id).toBeGreaterThan(100)
-      expect(part.listing.url, part.id).toMatch(/^https:\/\/www\.compumarts\.com\/products\/[^\s/?#]+$/)
+      expect(part.listing.url, part.id).toMatch(/^https:\/\/[^\s]+$/)
+      expect(part.listing.offers.length, part.id).toBeGreaterThan(0)
+    })
+  })
+
+  it('shows the cheapest in-stock offer as the part price', () => {
+    all.forEach(part => {
+      const inStock = part.listing.offers.filter(o => o.inStock).map(o => o.priceEgp)
+      expect(part.listing.priceEgp, part.id).toBe(Math.min(...inStock))
+    })
+  })
+
+  it('has search terms for every part and nothing else', () => {
+    expect(Object.keys(searchTerms).sort()).toEqual(all.map(p => p.id).sort())
+  })
+
+  it('only stores offers for known parts and stores', () => {
+    const ids = new Set(all.map(p => p.id))
+    const stores = new Set(OFFER_SOURCE.stores.map(s => s.id))
+    Object.entries(OFFER_SOURCE.items).forEach(([id, offers]) => {
+      expect(ids.has(id), id).toBe(true)
+      offers.forEach(o => expect(stores.has(o.store), `${id} ${o.store}`).toBe(true))
     })
   })
 

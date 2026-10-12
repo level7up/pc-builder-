@@ -1,4 +1,4 @@
-# PC Builder Egypt
+# levelxup
 
 Vue 3 + TypeScript site for planning a gaming PC from parts that are popular in
 Egypt: compatibility checks, power estimate, a bottleneck estimate and the
@@ -13,6 +13,8 @@ npm test               # domain, data, translation and app tests
 npm run build          # type-check + production build into dist/
 npm run prices:check   # compare stored prices with the live store (read-only)
 npm run prices:check -- --write   # save the new prices and today's date
+npm run prices:scrape  # fetch prices from all stores (read-only, ~3 min)
+npm run prices:scrape -- --write  # save them to src/data/offers.json
 ```
 
 Builds are saved in the browser and shareable: "Copy build link" gives a URL
@@ -22,18 +24,29 @@ like `?cpu=r5-7500f&gpu=rx9060xt-16&…`.
 
 | File | Holds |
 |---|---|
-| `src/data/listings.json` | Price, store handle and variant per part, plus `checkedOn` |
+| `src/data/listings.json` | Reference price, store handle and variant per part on Compumarts, plus `checkedOn` |
+| `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain |
+| `src/data/offers.json` | Scraped price, stock and link per part and store |
 | `src/data/parts.ts` | Specs per part (socket, memory type, power, length, score…) |
 | `src/domain/presets.ts` | The four ready-made builds |
 
-Prices come from [Compumarts](https://www.compumarts.com) (cheapest in-stock
-listing of each model on the check date). The catalogue covers the models that
+Prices are scraped from eight Egyptian stores: Compumarts, Kimo Store and AHW
+Store (Shopify catalogue feeds), Sigma Computer (search page data), El Badr
+Group and Maximum Hardware (OpenCart search pages), Alfrensia and Uptodate
+Store (WooCommerce store API). Each part shows the cheapest in-stock offer and
+a list to compare all stores. Listings are matched by title terms, with
+bundles, PC builds and laptops rejected, and a match is ignored when its price
+is outside 0.6–1.8× the Compumarts reference price. CPUs, boards, memory,
+storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
+VRAM, so other stores may list a different card of the same GPU. A store that
+fails completely keeps its previous prices on `--write`. The catalogue covers the models that
 Egyptian stores stock widely: Intel 12th–14th gen and Core Ultra, Ryzen 5000,
 7000, 8000 and 9000, RTX 3050 to 5090, RX 9060 XT to 9070 XT, plus common
 boards, memory, SSDs, PSUs, cases and coolers.
 
 To add a part: add its listing to `listings.json` (the store handle is the last
-part of the product URL), add its specs to `parts.ts`, run `npm test`. The data
+part of the product URL), its search terms to `search-terms.json`, its specs to
+`parts.ts`, then run `npm test` and `npm run prices:scrape -- --write`. The data
 tests fail if a part has no listing or a listing has no part.
 
 ## How the estimates work

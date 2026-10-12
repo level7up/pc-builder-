@@ -1,5 +1,6 @@
-import type { Case, Cooler, Cpu, Gpu, Listing, Memory, Motherboard, Psu, Storage } from '../domain/types'
+import type { Case, Cooler, Cpu, Gpu, Listing, Memory, Motherboard, Offer, Psu, Storage } from '../domain/types'
 import listings from './listings.json'
+import scraped from './offers.json'
 
 export interface ListingSource {
   checkedOn: string
@@ -8,12 +9,34 @@ export interface ListingSource {
   items: Record<string, { priceEgp: number; handle: string; variant: string; title: string }>
 }
 
-export const PRICE_SOURCE: ListingSource = listings
+export interface OfferSource {
+  checkedOn: string
+  stores: { id: string; name: string; url: string }[]
+  items: Record<string, Offer[]>
+}
 
-export function listingFor(id: string, source: ListingSource = PRICE_SOURCE): Listing {
+export const PRICE_SOURCE: ListingSource = listings
+export const OFFER_SOURCE: OfferSource = scraped
+
+export const PRICES_CHECKED_ON = OFFER_SOURCE.checkedOn || PRICE_SOURCE.checkedOn
+export const STORE_COUNT = Math.max(OFFER_SOURCE.stores.length, 1)
+
+const byPrice = (a: Offer, b: Offer): number => a.priceEgp - b.priceEgp
+
+function referenceOffer(id: string, source: ListingSource): Offer {
   const item = source.items[id]
   if (!item) throw new Error(`No store listing for part "${id}"`)
-  return { priceEgp: item.priceEgp, store: source.store, url: `${source.storeUrl}/products/${encodeURIComponent(item.handle)}` }
+  return { store: source.store, priceEgp: item.priceEgp, url: `${source.storeUrl}/products/${encodeURIComponent(item.handle)}`, inStock: true, title: item.title }
+}
+
+export function listingFor(id: string, source: ListingSource = PRICE_SOURCE, offerSource: OfferSource = OFFER_SOURCE): Listing {
+  const reference = referenceOffer(id, source)
+  const storeName = (storeId: string) => offerSource.stores.find(s => s.id === storeId)?.name ?? storeId
+  const found = (offerSource.items[id] ?? []).map(offer => ({ ...offer, store: storeName(offer.store) }))
+  const hasReferenceStore = found.some(offer => offer.store === reference.store)
+  const offers = [...found, ...(hasReferenceStore ? [] : [reference])].sort(byPrice)
+  const best = offers.find(offer => offer.inStock) ?? reference
+  return { priceEgp: best.priceEgp, store: best.store, url: best.url, offers }
 }
 
 type Spec<T> = Omit<T, 'listing'>

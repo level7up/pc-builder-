@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import { CATEGORIES } from './domain/build'
 import { PRESETS } from './domain/presets'
-import { PRICE_SOURCE, catalog } from './data/parts'
+import { PRICES_CHECKED_ON, STORE_COUNT, catalog } from './data/parts'
 import { useBuild } from './useBuild'
 import { useLocale } from './i18n/useLocale'
 import { useTheme } from './useTheme'
@@ -12,6 +12,7 @@ import IssuesPanel from './components/IssuesPanel.vue'
 import PowerPanel from './components/PowerPanel.vue'
 import BottleneckPanel from './components/BottleneckPanel.vue'
 import BudgetPanel from './components/BudgetPanel.vue'
+import BrandLogo from './components/BrandLogo.vue'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
 import type { RowSuggestion } from './components/PartRow.vue'
@@ -52,6 +53,7 @@ async function copyLink() {
   <div class="page">
     <header class="top">
       <div>
+        <BrandLogo />
         <h1>{{ t.title }}</h1>
         <p class="tagline">{{ t.tagline }}</p>
       </div>
@@ -103,14 +105,14 @@ async function copyLink() {
             <button type="button" class="btn" @click="state.replace({})">{{ t.resetBuild }}</button>
           </div>
         </div>
+        <IssuesPanel :issues="state.issues.value" :t="t" />
         <BottleneckPanel :results="state.bottlenecks.value" :t="t" />
         <PowerPanel v-if="state.build.value.cpu || state.build.value.gpu" :load="state.loadW.value" :recommended="state.recommendedW.value" :psu="state.build.value.psu?.watts" :t="t" />
-        <IssuesPanel :issues="state.issues.value" :t="t" />
       </aside>
     </main>
 
     <footer class="foot">
-      <p>{{ t.pricesNote(PRICE_SOURCE.store, formatDate(PRICE_SOURCE.checkedOn, locale)) }}</p>
+      <p>{{ t.pricesNote(STORE_COUNT, formatDate(PRICES_CHECKED_ON, locale)) }}</p>
       <p>{{ t.footer }}</p>
     </footer>
   </div>
@@ -119,7 +121,7 @@ async function copyLink() {
 <style scoped>
 .page { max-width: 1180px; margin: 0 auto; padding: 24px 16px 40px; }
 .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-h1 { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -.01em; }
+h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em; }
 .tagline { margin: 4px 0 0; color: var(--muted); max-width: 640px; }
 .toggles { display: flex; gap: 8px; }
 .theme { padding-inline: 12px; }
@@ -143,6 +145,6 @@ h1 { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -.01em; }
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
   .summary { position: static; }
-  h1 { font-size: 24px; }
+  h1 { font-size: 19px; }
 }
 </style>

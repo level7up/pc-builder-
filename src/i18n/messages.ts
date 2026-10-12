@@ -38,8 +38,9 @@ export interface Messages {
     explainBalanced: string
     disclaimer: string
   }
-  pricesNote: (store: string, date: string) => string
+  pricesNote: (stores: number, date: string) => string
   viewAtStore: string
+  offers: { cheapestAt: (store: string) => string; compare: (count: number) => string; outOfStock: string }
   issues: Record<string, IssueText>
   specs: {
     cores: (c: number, t: number) => string
@@ -109,8 +110,13 @@ const ar: Messages = {
     explainBalanced: 'الاتنين قريبين من بعض.',
     disclaimer: 'تقدير تقريبي من متوسطات اختبارات الألعاب المنشورة، مش قياس. كل لعبة وكل إعدادات ليها نتيجة مختلفة.'
   },
-  pricesNote: (store, date) => `الأسعار من ${store} يوم ${date}، وبتتغير كتير. اضغط على السعر عشان تشوف الصفحة.`,
+  pricesNote: (stores, date) => `الأسعار من ${stores} محلات في مصر يوم ${date}، وبتتغير كتير. السعر المعروض هو أرخص سعر متوفر، واضغط عليه عشان تفتح الصفحة.`,
   viewAtStore: 'شوف في المحل',
+  offers: {
+    cheapestAt: store => `أرخص سعر عند ${store}`,
+    compare: count => `قارن الأسعار في ${count} محلات`,
+    outOfStock: 'مش متوفر'
+  },
   issues: {
     missing: (p, cat) => `لسه مااخترتش ${cat(p.category as Category)}.`,
     socketMismatch: p => `البروسيسور سوكيت ${p.cpu} والمازربورد ${p.board}: مش هيركبوا.`,
@@ -199,8 +205,13 @@ const en: Messages = {
     explainBalanced: 'Both parts are close to each other.',
     disclaimer: 'A rough estimate from published gaming benchmark averages, not a measurement. Every game and setting differs.'
   },
-  pricesNote: (store, date) => `Prices from ${store} on ${date}; they change often. Click a price to open the listing.`,
+  pricesNote: (stores, date) => `Prices from ${stores} Egyptian stores on ${date}; they change often. Each part shows the cheapest in-stock price; click it to open the listing.`,
   viewAtStore: 'View at store',
+  offers: {
+    cheapestAt: store => `Cheapest at ${store}`,
+    compare: count => `Compare prices at ${count} stores`,
+    outOfStock: 'Out of stock'
+  },
   issues: {
     missing: (p, cat) => `No ${cat(p.category as Category).toLowerCase()} picked yet.`,
     socketMismatch: p => `The CPU is ${p.cpu} and the motherboard is ${p.board}: they will not fit.`,

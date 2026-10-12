@@ -67,9 +67,22 @@ function onSelect(event: Event) {
       <div v-if="part" class="details">
         <span v-for="s in specs" :key="s" class="chip">{{ s }}</span>
       </div>
+      <details v-if="part && part.listing.offers.length > 1" class="offers">
+        <summary>{{ t.offers.compare(part.listing.offers.length) }}</summary>
+        <ul>
+          <li v-for="o in part.listing.offers" :key="o.store + o.url" :class="{ gone: !o.inStock }">
+            <a :href="o.url" target="_blank" rel="noopener" :title="o.title">
+              <b>{{ o.store }}</b>
+              <span class="offer-title">{{ o.title }}</span>
+            </a>
+            <span class="offer-price">{{ o.inStock ? formatEgp(o.priceEgp, locale) : t.offers.outOfStock }}</span>
+          </li>
+        </ul>
+      </details>
     </div>
     <div v-if="part" class="price">
       <a :href="part.listing.url" target="_blank" rel="noopener" :title="t.viewAtStore">{{ formatEgp(part.listing.priceEgp, locale) }} ↗</a>
+      <small class="store">{{ t.offers.cheapestAt(part.listing.store) }}</small>
       <button type="button" class="clear" @click="emit('change', undefined)">{{ t.clear }}</button>
     </div>
   </div>
@@ -78,6 +91,7 @@ function onSelect(event: Event) {
 <style scoped>
 .row { display: grid; grid-template-columns: 150px minmax(0, 1fr) auto; gap: 12px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); }
 .row.filled { border-inline-start: 4px solid var(--accent); }
+.body { min-width: 0; }
 .label { font-weight: 700; padding-top: 7px; }
 select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel2); direction: ltr; text-align: start; }
 .details { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
@@ -92,6 +106,18 @@ select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid 
 .pick small { font-size: 11px; font-weight: 700; color: var(--accent); }
 .pick b { font-size: 13px; }
 .pick span { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.store { font-size: 11px; color: var(--muted); }
+.offers { margin-top: 8px; font-size: 13px; min-width: 0; }
+.offers summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+.offers ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; }
+.offers li { min-width: 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 5px 10px; border-radius: 8px; background: var(--panel2); border: 1px solid var(--line); }
+.offers li a { flex: 1 1 auto; display: flex; gap: 8px; min-width: 0; overflow: hidden; color: inherit; text-decoration: none; }
+.offers li a:hover b { color: var(--accent); }
+.offers li b { white-space: nowrap; }
+.offer-title { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; direction: ltr; unicode-bidi: plaintext; }
+.offer-price { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.offers li.gone { opacity: 0.55; }
+.offers li.gone .offer-price { font-weight: 400; color: var(--muted); }
 .clear { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 12px; padding: 0; }
 .clear:hover { color: var(--bad); }
 @media (max-width: 640px) {

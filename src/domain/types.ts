@@ -4,10 +4,19 @@ export type FormFactor = 'ATX' | 'mATX'
 export type Resolution = '1080p' | '1440p' | '4K'
 export type Category = 'cpu' | 'gpu' | 'motherboard' | 'memory' | 'storage' | 'psu' | 'case' | 'cooler'
 
+export interface Offer {
+  store: string
+  priceEgp: number
+  url: string
+  inStock: boolean
+  title: string
+}
+
 export interface Listing {
   priceEgp: number
   store: string
   url: string
+  offers: Offer[]
 }
 
 export interface PartBase {

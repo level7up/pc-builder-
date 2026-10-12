@@ -33,7 +33,7 @@ export function useLocale(): LocaleState {
   watchEffect(() => {
     document.documentElement.lang = locale.value
     document.documentElement.dir = MESSAGES[locale.value].dir
-    document.title = MESSAGES[locale.value].title
+    document.title = `levelxup · ${MESSAGES[locale.value].title}`
   })
   const toggle = () => {
     locale.value = locale.value === 'ar' ? 'en' : 'ar'

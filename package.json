@@ -10,7 +10,8 @@
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prices:check": "node scripts/check-prices.mjs"
+    "prices:check": "node scripts/check-prices.mjs",
+    "prices:scrape": "node scripts/scrape-prices.mjs"
   },
   "dependencies": {
     "vue": "^3.5.43"

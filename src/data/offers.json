@@ -1,0 +1,3140 @@
+{
+  "checkedOn": "2026-10-12",
+  "stores": [
+    {
+      "id": "compumarts",
+      "name": "Compumarts",
+      "url": "https://www.compumarts.com"
+    },
+    {
+      "id": "kimo",
+      "name": "Kimo Store",
+      "url": "https://kimostore.net"
+    },
+    {
+      "id": "ahw",
+      "name": "AHW Store",
+      "url": "https://ahw.store"
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma Computer",
+      "url": "https://www.sigma-computer.com"
+    },
+    {
+      "id": "elbadr",
+      "name": "El Badr Group",
+      "url": "https://elbadrgroupeg.store"
+    },
+    {
+      "id": "maximum",
+      "name": "Maximum Hardware",
+      "url": "https://maximumhardware.store"
+    },
+    {
+      "id": "alfrensia",
+      "name": "Alfrensia",
+      "url": "https://alfrensia.com"
+    },
+    {
+      "id": "uptodate",
+      "name": "Uptodate Store",
+      "url": "https://uptodate.store"
+    }
+  ],
+  "items": {
+    "r5-5500": [
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 5 5500 - Ryzen 5 5000 Series 6-Core Socket AM4 65W Desktop Processor — MPK",
+        "priceEgp": 4099,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-5-5500-ryzen-5-5000-mpk"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 5 5500 6-Core 3.6 GHz (4.2 GHz Turbo) Tray With Fan",
+        "priceEgp": 4199,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-5-5500-6-core-3-6-ghz-4-2-ghz-turbo-tray-with-fan"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 5 5500 6-Core 3.6 GHz (4.2 GHz Turbo) TRAY",
+        "priceEgp": 4350,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-5500-6-core-36-ghz-42-ghz-turbo-tray-ylfguujouhw1"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 5500 Desktop Processor 6 Cores 12 Threads Up to 4.2GHz Boost AM4 Socket 65W TDP Tray MPK",
+        "priceEgp": 4429,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/ryzen-5-5500?variant=67677897719957"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 5 5500 Processor (4.2GHz/19MB) 6 core AM4 (Tray)",
+        "priceEgp": 4499,
+        "inStock": true,
+        "url": "https://kimostore.net/products/amd-ryzen-5-5500-processor-4-2ghz-19mb-6-core-am4-tray"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 5 5500 Processor",
+        "priceEgp": 4499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-5500-processor/"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 5500 Processor 6 Cores 12 Threads 4.2 Ghz Max Boost AM4 Socket MPK",
+        "priceEgp": 4599,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-5-5500-processor"
+      }
+    ],
+    "r5-5600": [
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 5600 Processor TRAY Tray",
+        "priceEgp": 5459,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-5-5600-desktop-processor-6-core-12-thread-3-5ghz-4-4ghz-32mb-l3-65w-am4-zen-3-pcie-4-ddr4-wraith-stealth-egypt?variant=47733270773909"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 5 5600 - Ryzen 5 5000 Series Vermeer (Zen 3) 6-Core 3.5 GHz Socket AM4 65W Tray (Without Fan)",
+        "priceEgp": 5499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-5-5600-ryzen-5-5000-series-vermeer-zen-3-6-core-3-5-ghz-socket-am4-65w-tray-without-fan"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 5 5600 MPK 6 Cores, 4.4GHz AM4 Socket- Tray",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=cpu-amd-ryzen-5-5600-tray-with-fan-6c-12t-mpk-2jglhngelr9k"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 5 5600 MPK 4.4GHz 32MB Cache 6 Core AM4 7nm Processor",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-5-5600-mpk-4.4ghz-32mb-cache-6-core-am4-7nm-processor"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 5 5600 Tray Processor",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-5600-tray-processor/"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 5 5600 Processor (4.4GHz/35MB) 6 Core AM4 Tray (Without Fan)",
+        "priceEgp": 6150,
+        "inStock": true,
+        "url": "https://kimostore.net/products/amd-ryzen-5-5600-processor-4-4ghz-35mb-6-core-am4-tray-without-fan"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 5600 Processor 6 Cores 12 Threads (4.4 Ghz Mhz Max Boost) AM4 Socket Tray",
+        "priceEgp": 6444,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-5-5600-processor-6-cores-12-threads-4-4-ghz-mhz-max-boost-am4-socket-radeon-graphics-tray"
+      }
+    ],
+    "r7-5700x": [
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 5700X Tray Processor",
+        "priceEgp": 8399,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-5700x-tray-processor/"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 5700X 8-Core 3.4 GHz (4.6 GHz Turbo) 36M Cache Tray",
+        "priceEgp": 8500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-5700x-8-core-3-4-ghz-4-6-ghz-turbo-36m-cache-tray"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 5700X MPK 8-Core 16-Thread Desktop Processor — Zen 3 Architecture, 3.4GHz Base, Up to 4.6GHz Boost, 32MB L3 Cache, 65W TDP, AM4 Socket, DDR4-3200 Support, PCIe 4.0, Unlocked Multiplier",
+        "priceEgp": 8799,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-5700x-mpk"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD RYZEN 7 5700X TREY (8 Core -16 Thread) (16M Cache/3.4 GHz UP TO 4.6GHz)(PCIe 4.0)",
+        "priceEgp": 8800,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-5700x-trey-8-core-16-thread-16m-cache34-ghz-up-to-46ghzpcie-40-hujef2lhjiin"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 7 5700X Processor (4.6GHz/36MB) 8 Core AM4 Tray",
+        "priceEgp": 9350,
+        "inStock": false,
+        "url": "https://kimostore.net/products/amd-ryzen-7-5700x-processor-4-6ghz-36mb-8-core-am4-tray"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU AMD Ryzen 7 5700X TRAY TRAY",
+        "priceEgp": 9505,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/products-amd-ryzen-7-5700x-tray-cpu-egypt?variant=47737639075989"
+      }
+    ],
+    "r7-5800x3d": [
+      {
+        "store": "sigma",
+        "title": "CPU-AMD-RYZEN 7 5800X3D 8-core, 16-Thread Desktop Processor with AMD 3D V-Cache™ Technology",
+        "priceEgp": 15999,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=cpu-amd-ryzen-7-5800x3d-8-core-16-thread-desktop-processor-with-amd-3d-v-cache-technology-czf2kk5izmzz"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 7 5800X3D Gaming Processor (4.5GHz/100MB) 8 core AM4",
+        "priceEgp": 18400,
+        "inStock": false,
+        "url": "https://kimostore.net/products/amd-ryzen-7-5800x3d-gaming-processor-4-5ghz-100mb-8-core-am4"
+      },
+      {
+        "store": "compumarts",
+        "title": "Processor AMD Ryzen 7 5800X3D 8-core 16-Thread with AMD 3D V-Cache Technology BOX",
+        "priceEgp": 18499,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/processor-amd-ryzen-7-5800x3d-8-core-16-thread-with-amd-3d-v-cache-technology"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 5800X3D 8-Cores / 16 Threads 4.5 GHz AM4",
+        "priceEgp": 18499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-5800x3d-8-cores-16-threads-4-5-ghz-am4"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 5800X3D 10th Year AM4 Anniversary Edition With Carbice Ice Pad Desktop Processor",
+        "priceEgp": 18499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-5800x3d-10th-year-am4-anniversary-edition-with-carbice-ice-pad-desktop-processor/"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 5800X3D 8-core, 16-Thread Desktop Processor with AMD 3D V-Cache Technology",
+        "priceEgp": 18599,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-5800x3d-8-core-16-thread-desktop-processor-with-amd-3d-v-cache-technology"
+      }
+    ],
+    "r5-8400f": [
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 8400F Tray-MPK processor TRAY",
+        "priceEgp": 5457,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-5-8400f-4-2-ghz-ryzen-5-8000-series-6-core-12-threads-socket-am5-65w-processor-100-100001591box?variant=46459571994773"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 5 8400F 6 Core 12 Thread 4.7GHz AM5 65W Tray Processor",
+        "priceEgp": 5500,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-8400f-6-core-12-thread-4-7ghz-am5-65w-tray-processor/"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 8400F Processor 6 Cores 12 Threads 4.7 Ghz Max Boost AM5 Socket Tray",
+        "priceEgp": 5699,
+        "inStock": false,
+        "url": "https://ahw.store/products/amd-ryzen-5-8400f-processor-6-cores-12-threads-4-7-ghz-max-boost-am5-socket-tray"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 5 8400F Tray Processor with Fan",
+        "priceEgp": 5799,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-8400f-trey-with-fan-wnlzj4fdarxn"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 5 8400F - Ryzen 5 8000- Series Phoenix (Zen 4) 6-Core 4.2 GHz Socket AM5 65W",
+        "priceEgp": 6399,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-5-8400f-ryzen-5-8000-series-phoenix-zen-4-6-core-4-2-ghz-socket-am5-65w"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 5 8400F (4.2 GHz) — Ryzen 5 8000 Series 6-Core, 12-Threads, Socket AM5, 65W Processor - 100-100001591BOX",
+        "priceEgp": 6400,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-5-8400f"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 5 8400F Processor (4.7GHz/22MB) 6 Core AM5 (Tray)",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://kimostore.net/products/amd-ryzen-5-8400f-processor-4-7ghz-22mb-6-core-am5"
+      }
+    ],
+    "r5-7500f": [
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 5 7500F Tray Processor",
+        "priceEgp": 6899,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-7500f-tray-processor-2/"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 5 7500F Processor Tray",
+        "priceEgp": 6900,
+        "inStock": true,
+        "url": "https://uptodate.store/product/amd-ryzen-5-7500f-processor-tray/"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD RYZEN 5 7500F — 3.70-5.0GHZ, 6-CORE, 12THREADS, PROCESSOR TRAY",
+        "priceEgp": 6950,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-5-7500f-3.70-5.0ghz,-6-core,-12threads,-processor-tray"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD RYZEN 5-7500F 6 Core/12 Threads 3.7 GHz (5.0 GHz Turbo) Socket AM5 LGA 1718 TRAY.",
+        "priceEgp": 7299,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-7500f-6-core12-threads-37-ghz-50-ghz-turbo-socket-am5-lga-1718-tray-jasx6s6qbjye"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 5 7500F Processor (5.0GHz/38MB) 6 Core AM5 Tray",
+        "priceEgp": 7499,
+        "inStock": true,
+        "url": "https://kimostore.net/products/amd-ryzen-5-7500f-processor-5-0ghz-38mb-6-core-am5-tray"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 7500F Desktop Processor – 6 Cores, 12 Threads, Up to 5.0GHz Boost, AM5 CPU (Tray, No Cooler, No iGPU)",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-5-7500f-6c-12t-3-70-5-00ghz-tray"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 7500F Processor 6 Cores 12 Threads 5 GHz Max Boost AM5 Socket MPK With Fan",
+        "priceEgp": 8379,
+        "inStock": false,
+        "url": "https://ahw.store/products/amd-ryzen-5-7500f-processor-6-cores-12-threads-5-ghz-max-boost-am5-socket-radeon-graphics-mpk-with-fan"
+      }
+    ],
+    "r5-7600": [
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 5 7600 - 6-Core 12-Threads 5.1 GHz - Socket AM5 Tray (Without Fan)",
+        "priceEgp": 7999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-5-7600-6-core-12-threads-5-1-ghz-socket-am5-tray-without-fan"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 5 7600 Tray Processor",
+        "priceEgp": 7999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-7600-tray-processor/"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 5 7600 MPK 6-Core 12-Thread Desktop Processor — Zen 4 (Raphael), 3.8GHz Base, Up to 5.1GHz Boost, 32MB L3 Cache, 65W TDP, AM5 Socket, DDR5-5200 Support, PCIe 5.0, Radeon Graphics, Unlocked",
+        "priceEgp": 8100,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-5-7600-mpk"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 7600 Processor 6-Core 12-Thread 5.1GHz Boost AM5 MPK",
+        "priceEgp": 8343,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-5-7600-6-core-12-thread-unlocked-desktop-processor?variant=67677923737749"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 5-7600 6-core 12-thread TRAY",
+        "priceEgp": 8499,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-7600-6-core-12-thread-tray-txlmnm1mxuhr"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 7600 Processor 6 Cores 12 Threads 5.1 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 8599,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-5-7600-processor-6-cores-12-threads-5-1-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 5 7600 Processor (5.1GHz/38MB) 6 Core AM5 (Tray)",
+        "priceEgp": 8800,
+        "inStock": false,
+        "url": "https://kimostore.net/products/amd-ryzen-5-7600-processor-5-1ghz-38mb-6-core-am5-tray"
+      }
+    ],
+    "r5-9600x": [
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 9600X Desktop Processor 6-Core 12-Thread 3.9GHz Up to 5.4GHz AM5 Tray",
+        "priceEgp": 10094,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen%E2%84%A2-5-9600x-6-core-12-thread-unlocked-desktop-processor?variant=46459435122837"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Amd Ryzen 5 9600x Tray Processor",
+        "priceEgp": 10399,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-5-9600x-tray-processor/"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 5 9600X Mpk Pure Gaming Performance",
+        "priceEgp": 10500,
+        "inStock": true,
+        "url": "https://uptodate.store/product/amd-ryzen-5-9600x-mpk-pure-gaming-performance/"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 5 9600X — Ryzen 5 9000 Series Granite Ridge (Zen 5) 6-Core 3.9 GHz - Socket AM5 65W - Radeon Graphics Processor",
+        "priceEgp": 10650,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/100-100001405wof-1"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD RYZEN 5-9600X (8core / 12Threads) Socket AM5 LGA 1718 - Tray",
+        "priceEgp": 10749,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-9600x-8core-12threads-socket-am5-lga-1718-tray-y70bzsjde6ej"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 5 9600X Processor 6 Cores 12 Threads 5.4 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 11111,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-5-9600x-processor-6-cores-12-threads-5-4-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 5 9600X - Granite Ridge (Zen 5) 6-Core 3.9 GHz - Socket AM5 65W",
+        "priceEgp": 11999,
+        "inStock": false,
+        "url": "https://maximumhardware.store/amd-ryzen-5-9600x-granite-ridge-zen-5-6-core-3-9-ghz-socket-am5-65w"
+      }
+    ],
+    "r7-7700x": [
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 7700X Tray Desktop Processor (8-Core, 16-Thread)",
+        "priceEgp": 12700,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-7700x-tray-8-core-am5-processor"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 7 7700X 8-Core, 16-Thread Unlocked Desktop Processor",
+        "priceEgp": 12999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-7700x-8-core-16-thread-unlocked-desktop-processor-szdbgsoyhuxk"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU AMD RYZEN 7 7700X BOX Box",
+        "priceEgp": 15255,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-7700x-8-core-16-thread-unlocked-desktop-processor?variant=46459770634389"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 7700X AM5 Processor",
+        "priceEgp": 15400,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-7700x-am5-processor/"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 7700X - 8-Core 4.5 GHz - Socket AM5 - 105W Desktop Processor",
+        "priceEgp": 15999,
+        "inStock": false,
+        "url": "https://maximumhardware.store/amd-ryzen-7-7700x-8-core-4-5-ghz-socket-am5-105w-desktop-processor"
+      }
+    ],
+    "r7-9700x": [
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 9700X — Ryzen 7 9000 Series Granite Ridge (Zen 5) 8-Core 3.8 GHz - Socket AM5 65W - Radeon Graphics Processor",
+        "priceEgp": 13799,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-9700x-1"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 7 9700X Tray – 8 Cores, 16 Threads, Up to 5.5 GHz, 65W TDP, DDR5, PCIe 5.0, Radeon Graphics, AM5 Socket.",
+        "priceEgp": 13899,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-9700x-tray-8-cores-16-threads-up-to-55-ghz-65w-tdp-ddr5-pcie-50-radeon-graphics-am5-socket-pnypymmsghd9"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 7 9700X Mpk The New Standard for a Gaming Processor Try",
+        "priceEgp": 14000,
+        "inStock": true,
+        "url": "https://uptodate.store/product/amd-ryzen-7-9700x-mpk-the-new-standard-for-a-gaming-processor-try/"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 7 9700X Desktop Processor 8-Core 16-Thread 3.8GHz Up to 5.5GHz AM5 65W Tray",
+        "priceEgp": 14008,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-9700x-8-core-16-thread-unlocked-desktop-processor?variant=46377364619413"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 9700X Tray Processor",
+        "priceEgp": 14200,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-9700x-tray-processor/"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 9700X - Granite Ridge (Zen 5) 8-Core 3.8 GHz - Socket AM5 65W Tray",
+        "priceEgp": 14499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-9700x-granite-ridge-zen-5-8-core-3-8-ghz-socket-am5-65w-tray"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 7 9700X Processor 8 Cores 16 Threads 5.5 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 14900,
+        "inStock": false,
+        "url": "https://ahw.store/products/amd-ryzen-7-9700x-processor-8-cores-16-threads-5-5-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      }
+    ],
+    "r7-7800x3d": [
+      {
+        "store": "compumarts",
+        "title": "CPU AMD RYZEN7 7800X3D TRAY",
+        "priceEgp": 15965,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-7800x3d-tray-processor"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 7800X3D Tray Processor",
+        "priceEgp": 15999,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-7800x3d-tray-processor/"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 7 7800X3D Desktop Processor Try",
+        "priceEgp": 16000,
+        "inStock": true,
+        "url": "https://uptodate.store/product/amd-ryzen-7-7800x3d-desktop-processor-try/"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 7 7800X3D Tray Processor",
+        "priceEgp": 16499,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-7800x3d-tray-processor-rgbvdzjdgwo9"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 7800X3D MPK — 8-Core, 16-Thread 4.2 GHz Socket AM5 120W AMD Radeon Graphics Desktop Processor",
+        "priceEgp": 16499,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-7800x3d-mpk"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 7800X3D -8-Core 4.2 GHz Socket AM5 Tray",
+        "priceEgp": 16499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-7800x3d-8-core-4-2-ghz-socket-am5-tray"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 7 7800X3D Processor 8 Cores 16 Threads 5.0 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 17999,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-7-7800x3d-processor-8-cores-16-threads-5-0-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      }
+    ],
+    "r7-9800x3d": [
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 9800X3D Tray Processor",
+        "priceEgp": 22399,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-9800x3d-tray-processor/"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 7 9800X3D Tray — 8C/16T, 4.7–5.2GHz, AM5, 96MB L3 Cache, DDR5, Zen 5",
+        "priceEgp": 22899,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-9800x3d-tray-8c16t-47-52ghz-am5-96mb-l3-cache-ddr5-zen-5-mmnnvum0uo67"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 9800X3D - Granite Ridge (Zen 5) 8-Core 4.7 GHz - Socket AM5 120W Tray",
+        "priceEgp": 22999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-9800x3d-granite-ridge-zen-5-8-core-4-7-ghz-socket-am5-120w-tray"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 7 9800X3D Processor 8 Cores 16 Threads 5.2 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 23500,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-7-9800x3d-processor-8-cores-16-threads-5-2-mhz-max-boost-am5-socket-radeon-graphics-tray"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 9800X3D Tray — 8 Cores & 16 Threads, 4.7 GHz Base Clock, 5.2 GHz Max Boost, Socket AM5, 8MB L2 & 96MB L3 Cache, Integrated AMD Radeon Graphics, DDR5-5600 Memory, AMD 3D V-Cache Technology, Zen 5 Architecture",
+        "priceEgp": 23500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-9800x3d-tray"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 7 9800X3D Desktop Processor Try",
+        "priceEgp": 23500,
+        "inStock": true,
+        "url": "https://uptodate.store/product/amd-ryzen-7-9800x3d-desktop-processor-try/"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 7 9800X3D Desktop Processor, 8 Cores / 16 Threads, 4.7 GHz Base Clock, Up to 5.2 GHz, 96MB L3 Cache, AM5 Tray",
+        "priceEgp": 23690,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-9800x3d-8-cores-16-threads-desktop-processor?variant=46459346419861"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 7 9800X3D Processor (5.2GHz/104MB) 8 Core AM5",
+        "priceEgp": 26199,
+        "inStock": false,
+        "url": "https://kimostore.net/products/amd-ryzen-7-9800x3d-processor-5-2ghz-104mb-8-core-am5"
+      }
+    ],
+    "r7-9850x3d": [
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 7 9850X3D - Granite Ridge (Zen 5) 8-Core 4.7 GHz - Socket AM5 120W Tray ( Without fan )",
+        "priceEgp": 24999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-7-9850x3d-granite-ridge-zen-5-8-core-4-7-ghz-socket-am5-120w-tray-without-fan"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 7 9850X3D Tray Processor",
+        "priceEgp": 24999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-7-9850x3d-tray-processor/"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 7 9850X3D Desktop Processor, 8 Cores / 16 Threads, Up to 5.6 GHz, 96MB L3 Cache, AM5 tray",
+        "priceEgp": 25235,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-9850x3d-desktop-processor-egypt?variant=47124591083669"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen 7 9850X3D 16-Core AM5 Desktop Processor MPK – Zen 5, 96MB 3D V-Cache, 5.7GHz Boost, DDR5-5600, 120W TDP - 100-100001973WOF",
+        "priceEgp": 25399,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-7-9850x3d-16-core-am5-3d-v-cache"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD RYZEN 7-9850X3D TRAY Processor",
+        "priceEgp": 25499,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-7-9850x3d-tray-processor-1dx8fkyxwu1u"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 7 9850X3D Processor 8 Cores 16 Threads 5.6 Ghz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 26200,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-7-9850x3d-processor-8-cores-16-threads-5-6-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 7 9850X3D Desktop Processor Box",
+        "priceEgp": 27500,
+        "inStock": false,
+        "url": "https://uptodate.store/product/amd-ryzen-7-9850x3d-desktop-processor-box/"
+      }
+    ],
+    "r9-9950x3d": [
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 9 9950X3D Desktop Processor Tray",
+        "priceEgp": 33888,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-9-9950x3d-gaming-and-content-creation-processor?variant=46459186053269"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD Ryzen 9 9950X3D 16-core 32-thread TRAY",
+        "priceEgp": 33999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-9-9950x3d-16-core-32-thread-traey-liaebootbiig"
+      },
+      {
+        "store": "elbadr",
+        "title": "AMD Ryzen™ 9 9950X3D Gaming and Content Creation Processor – 16-Core, 2nd Gen 3D V-Cache™ Technology, Unrivaled Performance for Gamers and Creators - Tray - 100-000000719",
+        "priceEgp": 33999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/amd-ryzen-9-9950x3d-t"
+      },
+      {
+        "store": "maximum",
+        "title": "AMD Ryzen 9 9950X3D - Granite Ridge (Zen 5) 16-Core 4.3 GHz - Socket AM5 170W - Tray (Without Fan)",
+        "priceEgp": 33999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/amd-ryzen-9-9950x3d-granite-ridge-zen-5-16-core-4-3-ghz-socket-am5-170w-tray-without-fan"
+      },
+      {
+        "store": "alfrensia",
+        "title": "AMD Ryzen 9 9950X3D Processor",
+        "priceEgp": 34999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/amd-ryzen-9-9950x3d-processor/"
+      },
+      {
+        "store": "kimo",
+        "title": "AMD Ryzen 9 9950X3D Processor (5.7GHz/144MB) 16 Core AM5",
+        "priceEgp": 37399,
+        "inStock": false,
+        "url": "https://kimostore.net/products/amd-ryzen-9-9950x3d-processor-5-7ghz-144mb-16-core-am5"
+      },
+      {
+        "store": "uptodate",
+        "title": "AMD Ryzen™ 9 9950X3D Gaming and Content Creation Processor",
+        "priceEgp": 37500,
+        "inStock": false,
+        "url": "https://uptodate.store/product/amd-ryzen-9-9950x3d-gaming-and-content-creation-processor/"
+      },
+      {
+        "store": "ahw",
+        "title": "AMD Ryzen 9 9950X3D Processor 16 Cores 32 Threads 5.7 GHz Max Boost AM5 Socket Radeon Graphics Tray",
+        "priceEgp": 37999,
+        "inStock": true,
+        "url": "https://ahw.store/products/amd-ryzen-9-9950x3d-processor-16-cores-32-threads-5-7-ghz-max-boost-am5-socket-radeon-graphics-tray"
+      }
+    ],
+    "i5-12400f": [
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL CORE i5-12400F BOX Tray",
+        "priceEgp": 6450,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/processor-intel-core-i5-12400f-alder-lake-6-core-12-thread-up-to-4-4ghz-lga1700?variant=46407719223445"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ i5-12400F Processor 18M Cache, up to 4.40 GHz Tray",
+        "priceEgp": 6450,
+        "inStock": true,
+        "url": "https://uptodate.store/product/intel-core-i5-12400f-processor-18m-cache-up-to-4-40-ghz-tray/"
+      },
+      {
+        "store": "maximum",
+        "title": "Intel Core i5-12400F (6P) Cores 12-Threads up to 4.4 GHz LGA1700 Tray Without Fan",
+        "priceEgp": 6499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/intel-core-i5-12400f-6p-cores-12-threads-up-to-4-4-ghz-lga1700-tray-with-out-fan"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Intel Core i5 12400F Tray Processor",
+        "priceEgp": 6749,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-i5-12400f-tray-processor/"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core i5-12400F Desktop Processor – 6 Cores / 12 Threads, Up to 4.40 GHz, 18MB Cache, LGA1700, MPK Version",
+        "priceEgp": 6750,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-i5-12400f-6-core-4-4ghz-desktop-processor-mpk"
+      },
+      {
+        "store": "sigma",
+        "title": "Intel Core i5-12400F (Tray version) | 6C/12T | 2.5 GHz (Base) / 4.4 GHz (Turbo) | 18MB Cache | 65W | LGA 1700 | No Cooler",
+        "priceEgp": 6849,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-core-i5-12400f-tray-version-6c12t-25-ghz-base-44-ghz-turbo-18mb-cache-65w-lga-1700-no-cooler-ngsjfcqltdf7"
+      },
+      {
+        "store": "kimo",
+        "title": "Intel Core i5-12400F Processor (4.40GHz/18MB) 6 Core LGA 1700 Tray",
+        "priceEgp": 6850,
+        "inStock": true,
+        "url": "https://kimostore.net/products/intel-core-i5-12400f-processor-4-40ghz-18mb-6-core-lga-1700-tray-1"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core i5 12400F Processor 6 Core 12 Threads 4.4 GHz Max Turbo LGA 1700 Tray",
+        "priceEgp": 7499,
+        "inStock": true,
+        "url": "https://ahw.store/products/intel-core-i5-12400f-processor-6-core-12-threads-4-4-ghz-max-turbo-lga-1700-tray"
+      }
+    ],
+    "i5-14400f": [
+      {
+        "store": "alfrensia",
+        "title": "Intel Core I5 14400F Tray Processor",
+        "priceEgp": 7450,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-i5-14400f-tray-processor/"
+      },
+      {
+        "store": "maximum",
+        "title": "Intel Core i5-14400F (6P) Cores 16-Threads up to 4.7 GHz LGA1700 Tray Without Fan",
+        "priceEgp": 7499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/intel-core-i5-14400f-6p-cores-16-threads-up-to-4-7-ghz-lga1700-tray-without-fan"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ i5 processor 14400F 20M Cache, up to 4.70 GHz Tray",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://uptodate.store/product/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz-try/"
+      },
+      {
+        "store": "sigma",
+        "title": "INTEL Core i5-14400F 10(6P-4E)/16, 1.8GHz/4.7GHz 20MB,65W TDP, Socket LGA 1700,Tray",
+        "priceEgp": 7699,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-core-i5-14400f-tray-version-without-fan-10-core-16-thread-processor-with-a-47-ghz-max-turbo-frequency-20-mb-cache-65w-base-power-supports-ddr5ddr4-memoryintel-turbo-boost-and-hyper-threading-technologies-mofzoagl31i8"
+      },
+      {
+        "store": "kimo",
+        "title": "Intel Core i5-14400F Processor (4.70GHz/20MB) 10 Core LGA 1700 (Tray)",
+        "priceEgp": 7799,
+        "inStock": true,
+        "url": "https://kimostore.net/products/intel-core-i5-14400f-processor-4-70ghz-20mb-10-core-lga-1700-tray"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core i5-14400F — 2.5 GHz 10-Core LGA 1700 Processor, 10 Cores & 16 Threads, 20MB Cache, 5 GHz Maximum Turbo Boost, Dual-Channel DDR5-4800 Memory / 192GB Max, Hybrid Core Arc",
+        "priceEgp": 7850,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-i5-14400f-mpk"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core i5 14400F Processor 10 Core 16 Threads 4.7 GHz Max Turbo LGA 1700 Tray",
+        "priceEgp": 8199,
+        "inStock": true,
+        "url": "https://ahw.store/products/intel-core-i5-14400f-processor-10-core-16-threads-4-7-ghz-max-turbo-lga-1700-tray"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL CORE i5-14400F Box",
+        "priceEgp": 11150,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-i5-14400f-20m-cache-up-to-4-70-ghz-processor?variant=46419713753237"
+      }
+    ],
+    "i7-14700f": [
+      {
+        "store": "alfrensia",
+        "title": "Intel Core I7 14700F Tray Processor",
+        "priceEgp": 14500,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/intel-core-i7-14700f-tray-processor/"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ i7 processor 14700F 33M Cache, up to 5.40 GHz",
+        "priceEgp": 15200,
+        "inStock": false,
+        "url": "https://uptodate.store/product/intel-core-i7-processor-14700f-33m-cache-up-to-5-40-ghz/"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core i7-14700F 2.1GHz LGA 1700 Desktop Processor, 20 Cores & 28 Threads, 5.4 GHz Max Turbo Boost, 33MB Cache, Dual-CH DDR5-5600 ECC Memory / 192GB Max, Hybrid Core Arch | BX8071514700FSRN3Z",
+        "priceEgp": 16700,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/intel-core-i7-14700f-2.1ghz-lga-1700-desktop-processor"
+      },
+      {
+        "store": "kimo",
+        "title": "Intel Core i7-14700F Processor (5.40 GHz/33MB) 20 Core LGA 1700",
+        "priceEgp": 17999,
+        "inStock": false,
+        "url": "https://kimostore.net/products/intel-core-i7-14700f-processor-5-40-ghz-33mb-12-core-lga-1700"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL Core i7 14700F tray",
+        "priceEgp": 18570,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-i7-14700f-33m-cache-up-to-5-40-ghz-processor?variant=46890930536597"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core i7 14700F Processor 20 Core 28 Threads 5.4 GHz Max Turbo LGA 1700",
+        "priceEgp": 21850,
+        "inStock": false,
+        "url": "https://ahw.store/products/intel-core-i7-14700f-processor-20-core-28-threads-5-4-ghz-max-turbo-lga-1700"
+      }
+    ],
+    "i7-14700k": [
+      {
+        "store": "sigma",
+        "title": "Intel Core i7-14700K 3.4Ghz LGA1700 33MB Cache Tray",
+        "priceEgp": 17499,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-core-i7-14700k-34ghz-lga1700-33mb-cache-tray-1j14br3gnw7m"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ i7 processor 14700K 33M Cache, up to 5.60 GHz Box",
+        "priceEgp": 18000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/intel-core-i7-processor-14700k-33m-cache-up-to-5-60-ghz-box/"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Intel Core I7 14700K Processor",
+        "priceEgp": 18999,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/intel-core-i7-14700k-processor/"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core i7 14700K Processor 20 Core 28 Threads 5.6 GHz Max Turbo LGA 1700 Intel UHD Graphics",
+        "priceEgp": 19499,
+        "inStock": true,
+        "url": "https://ahw.store/products/intel-core-i7-14700k-processor-20-core-28-threads-5-6-ghz-max-turbo-lga-1700-intel-uhd-graphics"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core i7-14700K Desktop Processor Tray – 20 Cores/28 Threads, Up to 5.6 GHz",
+        "priceEgp": 19500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-i7-14700k-desktop-processor-tray-20-cores-28-threads-up-to-5-6-ghz"
+      },
+      {
+        "store": "compumarts",
+        "title": "CORE I7-14700K TRAY Box",
+        "priceEgp": 21670,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/products-intel-core-i7-processor-14700k-14th-generation-lga1700-cpu?variant=46407529529493"
+      }
+    ],
+    "i9-14900k": [
+      {
+        "store": "alfrensia",
+        "title": "Intel Core I9 14900K Tray Processor",
+        "priceEgp": 24999,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/intel-core-i9-14900k-tray-processor/"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ i9 processor 14900K 36M Cache, up to 6.00 GHz Box",
+        "priceEgp": 25000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz-box/"
+      },
+      {
+        "store": "compumarts",
+        "title": "Intel Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - Multi",
+        "priceEgp": 25499,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-i9-14900k-14th-gen-24-core-32-thread-4-4ghz-6-0ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi"
+      },
+      {
+        "store": "sigma",
+        "title": "Intel Core i9-14900K 24 cores 32 threads 6.0 GHz max turbo 36 MB cache supports up to 192 GB DDR5 integrated Intel UHD Graphics 770 PCIe 5.0 125W base power Socket LGA 1700 Processor TREY",
+        "priceEgp": 26000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-core-i9-14900k-24-cores-32-threads-60-ghz-max-turbo-36-mb-cache-supports-up-to-192-gb-ddr5-integrated-intel-uhd-graphics-770-pcie-50-125w-base-power-socket-lga-1700-processor-trey-rthfrw5tkrdb"
+      }
+    ],
+    "u5-225f": [
+      {
+        "store": "elbadr",
+        "title": "Intel Core Ultra 5 225F Desktop Processor Tray – Core Ultra Series 2, 10 Cores/10 Threads, 4.9GHz Turbo, 20MB Cache, 65W",
+        "priceEgp": 7299,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-ultra-5-225f-t"
+      },
+      {
+        "store": "sigma",
+        "title": "INTEL Ultra 5-225F 10(6P-4E)/10, 2.7GHz/4.9GHz 20MB,65W TDP, Socket LGA 1851 TREY",
+        "priceEgp": 7699,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-ultra-5-225f-106p-4e10-27ghz49ghz-20mb65w-tdp-socket-lga-1851-trey-zth1ikrocfbd"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Intel Core Ultra 5 225F Processor",
+        "priceEgp": 7875,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/intel-core-ultra-5-225f-processor/"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ Ultra 5 Processor 225F 20M Cache, up to 4.90 GHz",
+        "priceEgp": 8000,
+        "inStock": true,
+        "url": "https://uptodate.store/product/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL ULTRA 5 225 F BOX TRAY",
+        "priceEgp": 8060,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-ultra-5-225f-desktop-processor-core-ultra-series-2-10-cores-10-threads-4-9ghz-turbo-20mb-cache-65w?variant=46698810605717"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core Ultra 5 Processor 225F 10 Cores 10 Threads 4.90 GHz Max Turbo LGA 1851 Tray",
+        "priceEgp": 8999,
+        "inStock": true,
+        "url": "https://ahw.store/products/intel-core-ultra-5-processor-225f-10-cores-10-threads-4-90-ghz-max-turbo-lga-1851-tray"
+      }
+    ],
+    "u5-245k": [
+      {
+        "store": "alfrensia",
+        "title": "Intel Core Ultra 5 245K Tray Processor",
+        "priceEgp": 10499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-ultra-5-245k-tray-processor/"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core Ultra 5 245K Desktop Processor Tray – 14 Cores, Up to 5.2 GHz, DDR5-6400",
+        "priceEgp": 10500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-ultra-5-245k-arrow-lake-cpu"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ Ultra 5 Processor 245K 24M Cache, up to 5.20 GHz",
+        "priceEgp": 11350,
+        "inStock": false,
+        "url": "https://uptodate.store/product/intel-core-ultra-5-processor-245k-24m-cache-up-to-5-20-ghz/"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL ULTRA 5 245K BOX",
+        "priceEgp": 12130,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-ultra-5-desktop-processor-245k-14-cores-6-p-cores-8-e-cores-up-to-5-2-ghz"
+      }
+    ],
+    "u5-250kp": [
+      {
+        "store": "alfrensia",
+        "title": "Intel Core Ultra 5 250K Plus 18 Core 5.3GHz LGA1851 125W Tray Processor",
+        "priceEgp": 11999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-ultra-5-250k-plus-18-core-5-3ghz-lga1851-125w-tray-processor/"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core Ultra 5 250K Plus Desktop Processor Tray – 18 Cores, Up to 5.3 GHz, 30 TOPS AI",
+        "priceEgp": 12200,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-ultra-5-250k-plus-arrow-lake-cpu"
+      },
+      {
+        "store": "compumarts",
+        "title": "Intel Core Ultra 5 250K Plus 18-Core Unlocked Desktop Processor – Up to 5.3GHz, Intel Graphics, AI Boost NPU, DDR5-7200, PCIe 5.0, LGA1851 BOX",
+        "priceEgp": 14890,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-ultra-5-250k-plus-18-core-5-3ghz-ddr5-7200-lga1851-desktop-processor"
+      }
+    ],
+    "u7-265k": [
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ Ultra 7 Processor 265KF 30M Cache, up to 5.50 GHz",
+        "priceEgp": 15500,
+        "inStock": false,
+        "url": "https://uptodate.store/product/intel-core-ultra-7-processor-265kf-30m-cache-up-to-5-50-ghz/"
+      },
+      {
+        "store": "sigma",
+        "title": "INTEL Ultra 7-265KF  (20 Core \\ 20Thread) (30M Cache/3.3GHz up to 5.5 GHz) - LGA 1851 - TRAY",
+        "priceEgp": 15999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-ultra-7-265kf-20-core-20thread-30m-cache33ghz-up-to-55-ghz-lga-1851-trey-uhmrpeunjmy4"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Intel Core Ultra 7 265KF Processor",
+        "priceEgp": 16499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-ultra-7-265kf-processor/"
+      },
+      {
+        "store": "ahw",
+        "title": "Intel Core Ultra 7 265KF 20 Cores 20 Threads Max Turbo 5.5 GHz LGA1851",
+        "priceEgp": 19300,
+        "inStock": true,
+        "url": "https://ahw.store/products/intel-core-ultra-7-265kf-20-cores-20-threads-max-turbo-5-5-ghz-lga1851"
+      }
+    ],
+    "u7-270kp": [
+      {
+        "store": "sigma",
+        "title": "INTEL Ultra 7-270K Plus (24 cores \\ 24 Threads) up to 5.5 GHz LGA 1851 TREY",
+        "priceEgp": 17500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=intel-ultra-7-270k-plus-24-cores-24-threads-up-to-55-ghz-lga-1851-trey-1jvjtsjqwjfn"
+      },
+      {
+        "store": "elbadr",
+        "title": "Intel Core Ultra 7 270K Plus Desktop Processor Tray – 24 Cores, Up to 5.5 GHz, 36 TOPS AI",
+        "priceEgp": 17500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/intel-core-ultra-7-270k-plus-desktop-processor-tray-24-cores-up-to-5-5-ghz-36-tops-ai"
+      },
+      {
+        "store": "uptodate",
+        "title": "Intel® Core™ Ultra 7 processor 270K Plus 36M Cache, up to 5.50 GHz",
+        "priceEgp": 17500,
+        "inStock": true,
+        "url": "https://uptodate.store/product/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/"
+      },
+      {
+        "store": "kimo",
+        "title": "Intel Core Ultra 7 270K Plus Processor (5.5GHz/36MB) 24 Core LGA 1851",
+        "priceEgp": 18250,
+        "inStock": true,
+        "url": "https://kimostore.net/products/intel-core-ultra-7-270k-processor-5-5ghz-36mb-24-core-lga-1851"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Intel Core Ultra 7 270K Plus Processor",
+        "priceEgp": 18499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/intel-core-ultra-7-270k-plus-processor/"
+      },
+      {
+        "store": "compumarts",
+        "title": "CPU INTEL Core Ultra 7 270K Plus 24-Core Desktop Processor BOX",
+        "priceEgp": 20950,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/intel-core-ultra-7-270k-plus-lga1851-processor"
+      }
+    ],
+    "rtx3050-6": [
+      {
+        "store": "kimo",
+        "title": "Zotac Gaming GeForce RTX 3050 SOLO 6GB GDDR6 Graphics Card",
+        "priceEgp": 12600,
+        "inStock": true,
+        "url": "https://kimostore.net/products/zotac-gaming-geforce-rtx-3050-solo-6gb-gddr6-graphics-card"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI GeForce RTX 3050 VENTUS 2X 6G OC",
+        "priceEgp": 12625,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-geforce-rtx-3050-ventus-2x-6g-oc"
+      },
+      {
+        "store": "uptodate",
+        "title": "ZOTAC GAMING GeForce RTX 3050 6GB GDDR6 Solo",
+        "priceEgp": 12800,
+        "inStock": true,
+        "url": "https://uptodate.store/product/zotac-gaming-geforce-rtx-3050-6gb-gddr6-solo/"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC RTX 3050 Twin Edge OC 6GB GDDR6",
+        "priceEgp": 12999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-rtx-3050-twin-edge-oc-6gb-gddr6"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI GeForce RTX 3050 VENTUS 2X 6G OC Graphics Card – 6 GB GDDR6, 2304 CUDA Cores, Boost 1492 MHz, PCIe 4.0, Dual-Fan Cooling, HDMI 2.1 & DisplayPort 1.4a",
+        "priceEgp": 13999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/msi-geforce-rtx-3050-ventus-2x-6g-oc-graphics-card-gddr6-pcie4"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte RTX 3050 WINDFORCE OC V2 6GB GDDR6 96Bit Graphic Card",
+        "priceEgp": 13999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-rtx-3050-windforce-oc-v2-6gb-gddr6-96bit-graphic-card/"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS Dual GeForce RTX 3050 OC Edition 6GB GDDR6",
+        "priceEgp": 14200,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-dual-geforce-rtx-3050-oc-edition-6gb-gddr6-memory-2304-cuda-cores-up-to-1537-mhz-boost-clock-gqgcghagh2ik"
+      },
+      {
+        "store": "ahw",
+        "title": "ASUS DUAL GeForce RTX 3050 OC 6GB GDDR6 Graphics Card",
+        "priceEgp": 14999,
+        "inStock": true,
+        "url": "https://ahw.store/products/asus-dual-geforce-rtx-3050-oc-6gb-gddr6-graphics-card"
+      }
+    ],
+    "rtx3050-8": [
+      {
+        "store": "uptodate",
+        "title": "ZOTAC GAMING GEFORCE RTX 3050 ECO 8GB",
+        "priceEgp": 9600,
+        "inStock": false,
+        "url": "https://uptodate.store/product/zotac-gaming-geforce-rtx-3050-eco-8gb/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GRAPHIC CARD ZOTAC RTX 3050 ECO 8GB GDDR6",
+        "priceEgp": 10505,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/zotac-gaming-geforce-rtx-3050-eco-solo-8gb-gddr6"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte GeForce Rtx 3050 Windforce Oc V2 8GB Gddr6 Graphic Card",
+        "priceEgp": 15225,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/gigabyte-geforce-rtx-3050-windforce-oc-v2-gv-n3050wf2ocv2-8gd-8gb-gddr6-graphic-card/"
+      },
+      {
+        "store": "kimo",
+        "title": "ASUS Dual GeForce RTX 3050 V2 OC 8GB GDDR6 Graphics Card",
+        "priceEgp": 15500,
+        "inStock": true,
+        "url": "https://kimostore.net/products/asus-dual-geforce-rtx-3050-v2-oc-8gb-gddr6-graphics-card"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS Dual GeForce RTX 3050 OC Edition 8GB GDDR6",
+        "priceEgp": 15500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-dual-geforce-rtx-3050-oc-edition-8gb-g5hpv1vzhvpn"
+      },
+      {
+        "store": "elbadr",
+        "title": "ZOTAC GAMING GeForce RTX 3050 ECO Edition 8GB GDDR6 — 128-bit 14 Gbps PCIE 4.0 Gaming Graphics Card, Active Fan Control, FREEZE Fan Stop, ZT-A30500K-10M",
+        "priceEgp": 16500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/zotac-gaming-geforce-rtx-3050-eco-edition-8gb-gddr6"
+      }
+    ],
+    "rtx3060": [
+      {
+        "store": "sigma",
+        "title": "EVGA GeForce RTX 3060 XC GAMING, 12G, 12GB GDDR6, Dual-Fan",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=evga-geforce-rtx-3060-xc-gaming-12g-12gb-gddr6-dual-fan-pjamorwkq6gi"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS Phoenix RTX 3060 V2 12GB GDDR6 Gaming Graphics Card PCIe 4.0",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/asus-phoenix-nvidia-geforce-rtx-3060-v2-gaming-graphics-card-pcie-4-0-12gb-gddr6-memory-hdmi-2-1-displayport-1-4a-axial-tech-fan-design-protective-backplate-dual-ball-fan-bearings-auto-extreme"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Asus Phoenix RTX 3060 V2 12Gb Ddr 6 Graphic Card",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/asus-phoenix-rtx-3060-v2-12gb-ddr-6-graphic-card/"
+      },
+      {
+        "store": "uptodate",
+        "title": "ZOTAC GAMING GeForce RTX 3060 12GB GDDR6",
+        "priceEgp": 16200,
+        "inStock": false,
+        "url": "https://uptodate.store/product/zotac-gaming-geforce-rtx-3060-12gb-gddr6/"
+      },
+      {
+        "store": "kimo",
+        "title": "GALAX GeForce RTX 3060 1-Click OC 12GB GDDR6 Graphics Card",
+        "priceEgp": 19250,
+        "inStock": false,
+        "url": "https://kimostore.net/products/galax-geforce-rtx-3060-1-click-oc-12gb-gddr6-graphics-card"
+      },
+      {
+        "store": "compumarts",
+        "title": "GALAX GeForce RTX 3060 1-Click OC Graphics Card 12GB GDDR6 192-bit PCI Express 4.0 x16 NVIDIA Ampere Architecture Dual 90mm Fans",
+        "priceEgp": 20600,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/graphics-card-galax-geforce-rtx-3060-1-click-oc-12gb-gddr6-192-bit-dp-3-hdmi"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI RTX 3060 VENTUS 2X OC 12GB GDDR6",
+        "priceEgp": 22000,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-rtx-3060-ventus-2x-oc-12gb-gddr6-1"
+      }
+    ],
+    "rtx5050": [
+      {
+        "store": "compumarts",
+        "title": "GALAX GeForce RTX 5050 8GB 1-Click OC GDDR6 128-bit Gaming Graphics Card -55NSL8MHDCHD",
+        "priceEgp": 17170,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/galax-rtx-5050-8gb-1click-oc-gddr6-graphics-card-egypt"
+      },
+      {
+        "store": "elbadr",
+        "title": "PNY GeForce RTX 5050 8GB GDDR6 Single Fan Graphics Card",
+        "priceEgp": 17499,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/pny-geforce-rtx-5050-8gb-gddr6-single-fan"
+      },
+      {
+        "store": "maximum",
+        "title": "ASUS GeForce RTX 5050 Dual OC 8GB GDDR6",
+        "priceEgp": 18250,
+        "inStock": true,
+        "url": "https://maximumhardware.store/asus-geforce-rtx-5050-dual-oc-8gb-gddr6"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte GeForce RTX 5050 Windforce 8GB GDDR6 OC Graphic Card",
+        "priceEgp": 18499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-geforce-rtx-5050-windforce-8gb-gddr6-oc-graphic-card/"
+      },
+      {
+        "store": "sigma",
+        "title": "ZOTAC NVIDIA RTX 5050 TWIN EDGE 8G DDR6",
+        "priceEgp": 18500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=zotac-rtx-5050-twin-edge-8g-ddr6-hfhpw2iwp8c4"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5050 VENTUS 2X OC 8GB GDDR6 Graphics Card",
+        "priceEgp": 18800,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5050-ventus-2x-oc-8gb-gddr6-graphics-card"
+      },
+      {
+        "store": "ahw",
+        "title": "ASUS Prime GeForce RTX 5050 8GB GDDR6 OC Graphics Card Black",
+        "priceEgp": 20350,
+        "inStock": true,
+        "url": "https://ahw.store/products/asus-prime-geforce-rtx-5050-8gb-gddr6-oc-graphics-card-black"
+      }
+    ],
+    "rtx5060": [
+      {
+        "store": "uptodate",
+        "title": "PNY GeForce RTX 5060 Dual Fan OC-8GB",
+        "priceEgp": 19000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/pny-geforce-rtx-5060-dual-fan-oc-8gb/"
+      },
+      {
+        "store": "compumarts",
+        "title": "ZOTAC GAMING GeForce RTX 5060 Twin Edge 8GB GDDR7 Graphics Card",
+        "priceEgp": 19900,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/zotac-gaming-rtx-5060-twin-edge-8gb-egypt"
+      },
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE GeForce RTX 5060 WINDFORCE MAX OC 8GB GDDR7 Graphics Card",
+        "priceEgp": 22499,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-geforce-rtx-5060-windforce-max-oc-8gb-gddr7"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte GeForce RTX 5060 Windforce Max 8GB GDDR7 OC Graphic Card",
+        "priceEgp": 22499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-geforce-rtx-5060-windforce-max-8gb-gddr7-oc-graphic-card/"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC GeForce RTX 5060 TWIN EDGE OC 8GB GDDR7",
+        "priceEgp": 23500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-geforce-rtx-5060-twin-edge-oc-8gb-gddr7"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5060 VENTUS 2X OC 8GB GDDR7 Graphics Card",
+        "priceEgp": 23899,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5060-ventus-2x-oc-8gb-gddr7-graphics-card"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS Dual GeForce RTX 5060 8GB GDDR7, 3840 CUDA cores, 2497MHz boost clock, 8GB 28Gbps GDDR7, PCIe 5.0, 1x HDMI 2.1b, 3x DP 2.1b",
+        "priceEgp": 24000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-dual-geforce-rtx-5060-8gb-gddr7-3840-cuda-cores-2497mhz-boost-clock-8gb-28gbps-gddr7-pcie-50-1x-hdmi-21b-3x-dp-21b-bkdctlobeula"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte GeForce RTX 5060 WINDFORCE MAX OC 8GB Graphics Card Black",
+        "priceEgp": 25499,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-geforce-rtx-5060-windforce-max-oc-8gb-graphics-card-black"
+      }
+    ],
+    "rtx5060ti-8": [
+      {
+        "store": "elbadr",
+        "title": "PNY GeForce RTX 5060 Ti 8GB Overclocked Dual-Fan Graphics Card – 4608 CUDA Cores, GDDR7 Memory, PCIe 5.0 Interface, HDMI 2.1b & 3× DisplayPort 2.1b Outputs, High-Performance OC GPU, SKU: VCG5060T8DFXPB1-O",
+        "priceEgp": 24499,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/pny-geforce-rtx-5060-ti-8gb-oc-dual-fan-graphics-card-gddr7-pcie-5-hdmi-displayport"
+      },
+      {
+        "store": "maximum",
+        "title": "PNY DUAL FAN OC GeForce RTX 5060 Ti 8GB GDDR7",
+        "priceEgp": 24500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/pny-dual-fan-oc-geforce-rtx-5060-ti-8gb-gddr7"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI GeForce RTX 5060 Ti 8G VENTUS 2X OC WHITE PLUS GRAPHIC CARD",
+        "priceEgp": 25960,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-rtx-5060-ti-ventus-2x-oc-white-8gb-egypt"
+      },
+      {
+        "store": "sigma",
+        "title": "GALAX RTX 5060 TI 8G EX DDR7",
+        "priceEgp": 26500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=galax-rtx-5060-ti-8g-ex-ddr7-en8ktrv7rs78"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5060 Ti VENTUS 2X OC PLUS 8GB GDDR7 Graphics Card",
+        "priceEgp": 26999,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8gb-gddr7-graphics-card"
+      },
+      {
+        "store": "alfrensia",
+        "title": "MSI GeForce RTX 5060 Ti Ventus 2X OC Plus 8GB GDDR7 Graphic Card",
+        "priceEgp": 26999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8gb-gddr7-graphic-card/"
+      }
+    ],
+    "rtx5060ti-16": [
+      {
+        "store": "compumarts",
+        "title": "GALAX GeForce RTX 5060 Ti 1-Click OC GDDR7 Dual Fan Graphics Card 16GB 4608 CUDA Cores",
+        "priceEgp": 32980,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/galax-rtx-5060ti-1click-oc-gddr7"
+      },
+      {
+        "store": "uptodate",
+        "title": "ZOTAC GAMING GeForce RTX 5060 Ti 16GB Twin Edge",
+        "priceEgp": 35000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/zotac-gaming-geforce-rtx-5060-ti-16gb-twin-edge/"
+      },
+      {
+        "store": "elbadr",
+        "title": "ZOTAC GAMING GeForce RTX 5060 Ti 16GB GDDR7 Twin Edge OC White Edition",
+        "priceEgp": 35499,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/zotac-rtx-5060-ti-16gb-gddr7-twin-edge-oc-white"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte GeForce RTX 5060 Ti Windforce Max 16GB GDDR7 OC Graphic Card",
+        "priceEgp": 36499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-geforce-rtx-5060-ti-windforce-max-16gb-gddr7-oc-graphic-card/"
+      },
+      {
+        "store": "sigma",
+        "title": "PALIT Infinity 3 GeForce RTX 5060 Ti 16GB GDDR7 DLSS4",
+        "priceEgp": 36500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=palit-infinity-3-geforce-rtx-5060-ti-16gb-gddr7-dlss4-15u289j3pteo"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC GeForce RTX 5060 TI TWIN EDGE OC 16GB GDDR7",
+        "priceEgp": 37500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-geforce-rtx-5060-ti-twin-edge-oc-16gb-gddr7"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5060 Ti SHADOW 2X OC PLUS 16GB GDDR7 Graphics Card",
+        "priceEgp": 39999,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-16gb-gddr7-graphics-card"
+      },
+      {
+        "store": "ahw",
+        "title": "ZOTAC GAMING GeForce RTX 5060 Ti 16GB GDDR7 Twin Edge Graphics Card Black",
+        "priceEgp": 43999,
+        "inStock": true,
+        "url": "https://ahw.store/products/zotac-gaming-geforce-rtx-5060-ti-16gb-gddr7-twin-edge-graphics-card-black"
+      }
+    ],
+    "rx9060xt-8": [
+      {
+        "store": "sigma",
+        "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 8G",
+        "priceEgp": 19200,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-radeon-rx-9060-xt-gaming-oc-8g-bexqhejsxbd1"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE Radeon™ RX 9060 XT GAMING OC 8G",
+        "priceEgp": 19500,
+        "inStock": false,
+        "url": "https://uptodate.store/product/gigabyte-radeon-rx-9060-xt-gaming-oc-8g/"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Sapphire Pulse Radeon RX 9060 XT 8Gb GDDR6 Gaming OC Graphic Card",
+        "priceEgp": 21999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/sapphire-pulse-radeon-rx-9060-xt-8gb-gddr6-gaming-oc-graphic-card/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 8G Graphics Card GV-R9060XTGAMING OC-8GD, 8GB GDDR6, PCI-E 5.0",
+        "priceEgp": 23400,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-radeon-rx-9060-xt-gaming-oc-8g-8gb-gddr6-pcie-50-egypt"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS Dual Radeon RX 9060 XT 8GB GDDR6 PCIe 5.0 Graphics Card — 3150 MHz Boost Clock, 2048 Stream Processors, 20 Gbps Memory, HDMI 2.1b & 2x DisplayPort 2.1a, Dual Axial-Tech Fans, 2.5-Slot Design, 550W PSU Recommended",
+        "priceEgp": 23999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-dual-radeon-rx-9060-xt-8gb-gddr6"
+      }
+    ],
+    "rx9060xt-16": [
+      {
+        "store": "elbadr",
+        "title": "ASUS Dual Radeon RX 9060 XT 16GB GDDR6 Graphics Card – PCIe 5.0, Dual-Fan Compact Design",
+        "priceEgp": 26500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-dual-radeon-rx-9060xt-16gb"
+      },
+      {
+        "store": "kimo",
+        "title": "ASUS Dual Radeon RX 9060 XT 16GB GDDR6 Graphics Card",
+        "priceEgp": 27000,
+        "inStock": false,
+        "url": "https://kimostore.net/products/asus-dual-radeon-rx-9060-xt-16gb-gddr6-graphics-card"
+      },
+      {
+        "store": "compumarts",
+        "title": "ASUS Dual Radeon RX 9060 XT 16GB GDDR6 Graphics Card",
+        "priceEgp": 27499,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/asus-dual-rx-9060-xt-16gb-egypt"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Sapphire Pulse Radeon RX 9060 XT 16Gb GDDR6 gaming OC Graphic Card",
+        "priceEgp": 27499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/sapphire-pulse-radeon-rx-9060-xt-16gb-gddr6-gaming-oc-graphic-card/"
+      },
+      {
+        "store": "maximum",
+        "title": "SAPPHIRE PULSE RX 9060 XT GAMING OC 16GB GDDR6 (Three Years Warranty)",
+        "priceEgp": 27500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/sapphire-pulse-rx-9060-xt-gaming-oc-16gb-gddr6-three-years-warranty"
+      },
+      {
+        "store": "uptodate",
+        "title": "ASUS Dual Radeon™ RX 9060 XT 16GB GDDR6",
+        "priceEgp": 27500,
+        "inStock": true,
+        "url": "https://uptodate.store/product/asus-dual-radeon-rx-9060-xt-16gb-gddr6/"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS Dual Radeon RX 9060 XT 16GB GDDR6",
+        "priceEgp": 28000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-dual-radeon-rx-9060-xt-16gb-gddr6-1lxkdoukia8r"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte Radeon RX 9060 XT GAMING OC 16GB GDDR6 Graphics Card Black",
+        "priceEgp": 31499,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-radeon-rx-9060-xt-gaming-oc-16gb-gddr7-graphics-card-black"
+      }
+    ],
+    "rx9070gre": [
+      {
+        "store": "compumarts",
+        "title": "ASUS PRIME-RX9070GRE-O12G AMD Radeon RX 9070 GRE 12GB GDDR6 Graphics Card",
+        "priceEgp": 36666,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/asus-prime-rx9070gre-o12g-12gb-gddr6-egypt"
+      }
+    ],
+    "rtx5070": [
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE GeForce RTX 5070 12G EAGLE OC GRAPHIC CARDS",
+        "priceEgp": 37875,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-geforce-rtx-5070-eagle-oc-sff-12g-graphics-card"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC GeForce RTX 5070 TWIN EDGE 12GB GDDR7",
+        "priceEgp": 38499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-geforce-rtx-5070-twin-edge-12gb-gddr7"
+      },
+      {
+        "store": "sigma",
+        "title": "PNY GeForce RTX 5070 OC Triple Fan 12GB GDDR7 Graphics Card",
+        "priceEgp": 40500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=pny-geforce-rtx-5070-oc-triple-fan-blackwell-12gb-gddr7-6144-cuda-cores-216ghz-base-clock-250w-tdp-3x-dp-1x-hdmi-dual-8-pin-plmxqmpbapux"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS Dual GeForce RTX 5070 12GB GDDR7 OC Edition PCIe 5.0 Graphics Card — 2572 MHz OC Clock, 6144 CUDA Cores, 28 Gbps Memory, 192-bit Memory Interface, HDMI 2.1b & 3x DisplayPort 2.1b, Dual Axial-Tech Fans, 2.5-Slot Cooling, 600W PSU Recommended",
+        "priceEgp": 40500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-dual-geforce-rtx-5070-12gb-gddr7-oc"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5070 SHADOW 2X OC 12GB GDDR7 Graphics Card",
+        "priceEgp": 41499,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5070-shadow-2x-oc-12gb-gddr7-graphics-card"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Palit GeForce RTX 5070 Infinity 3 OC 12GB GDDR7 192 Bit Graphics Card",
+        "priceEgp": 41499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/palit-geforce-rtx-5070-infinity-3-oc-12gb-gddr7-192-bit-graphics-card/"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte GeForce RTX 5070 GAMING OC 12G GDDR7 Graphics Card Black",
+        "priceEgp": 47000,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-geforce-rtx-5070-gaming-oc-12g-gddr7-graphics-card-black"
+      }
+    ],
+    "rx9070": [
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE Radeon™ RX 9070 GAMING OC 16G",
+        "priceEgp": 35000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/gigabyte-radeon-rx-9070-gaming-oc-16g/"
+      },
+      {
+        "store": "alfrensia",
+        "title": "ASRock Challenger Radeon RX 9070 OC 16GB GDDR6 256-Bit Graphic Card",
+        "priceEgp": 36499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/asrock-challenger-radeon-rx-9070-oc-16gb-gddr6-256-bit-graphic-card/"
+      },
+      {
+        "store": "sigma",
+        "title": "ASROCK AMD Radeon RX 9070 Challenger 16GB.",
+        "priceEgp": 36500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asrock-amd-radeon-rx-9070-challenger-16gb-tnhjmyz6krrn"
+      },
+      {
+        "store": "maximum",
+        "title": "ASUS PRIME RX 9070 OC 16GB GDDR7",
+        "priceEgp": 37000,
+        "inStock": false,
+        "url": "https://maximumhardware.store/asus-prime-rx-9070-oc-16gb-gddr7"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS Prime Radeon RX 9070 EVO OC Edition 16GB GDDR6 Graphics Card – PCIe 5.0, Boost Clock up to 2610 MHz, 192-bit Memory Interface",
+        "priceEgp": 37999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-prime-radeon-rx-9070-evo-oc-16gb"
+      },
+      {
+        "store": "compumarts",
+        "title": "GPU GIGABYTE RX 9070 16G GAMING OC",
+        "priceEgp": 40850,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-radeon-rx-9070-gaming-oc-16g-graphics-card-pcie-5-0-16gb-gddr6-gv-r9070gaming-oc-16gd-video-card"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte Radeon RX 9070 GAMING OC 16G GDDR6 Graphics Card Black",
+        "priceEgp": 40999,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-radeon-rx-9070-gaming-oc-16g-gddr6-graphics-card-black"
+      }
+    ],
+    "rx9070xt": [
+      {
+        "store": "alfrensia",
+        "title": "Asus Prime Radeon RX 9070 XT 16GB OC Graphic Card",
+        "priceEgp": 38000,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/asus-prime-radeon-rx-9070-xt-16gb-oc-graphic-card/"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE Radeon™ RX 9070 XT GAMING OC 16G",
+        "priceEgp": 40000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/gigabyte-radeon-rx-9070-xt-gaming-oc-16g/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE Radeon RX 9070 XT GAMING OC 16G Graphics Card 16GB GDDR6 256-bit PCIe 5.0 3060MHz Boost HDMI 2.1 DP 2.1 Gaming GPU",
+        "priceEgp": 43000,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-rx-9070-xt-gaming-oc-16g"
+      },
+      {
+        "store": "maximum",
+        "title": "SAPPHIRE PULSE RX 9070 XT GAMING 16GB GDDR6 (Three Years Warranty)",
+        "priceEgp": 43499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/sapphire-pulse-rx-9070-xt-gaming-16gb-gddr6-three-years-warranty"
+      },
+      {
+        "store": "sigma",
+        "title": "ASROCK AMD Radeon RX 9070 XT Steel Legend 16GB",
+        "priceEgp": 43500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asrock-amd-radeon-rx-9070-xt-steel-legend-16gb-trxiyux3pafr"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS Prime Radeon RX 9070 XT OC Edition 16GB GDDR6 – PCIe 5.0, 3030MHz Boost, 20Gbps, 1x HDMI 2.1b & 3x DP 2.1a, 2.5-Slot, 4096 SP, 256-bit",
+        "priceEgp": 44500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-prime-radeon-rx-9070-xt-oc"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte Radeon RX 9070 XT GAMING OC 16GB Graphics Card Black",
+        "priceEgp": 46999,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-radeon-rx-9070-xt-gaming-oc-16gb-graphics-card-black"
+      }
+    ],
+    "rtx5070ti": [
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE RTX 5070 Ti EAGLE OC  SFF 16GB Graphics Card – GV-N507TEAGLEOC-16GD",
+        "priceEgp": 58580,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-rtx-5070ti-eagle-oc-ice-16gb-egypt"
+      },
+      {
+        "store": "elbadr",
+        "title": "Palit GeForce RTX 5070 Ti GamingPro-S 16GB – NVIDIA Blackwell, PCIe 5.0, Dual BIOS",
+        "priceEgp": 61500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/palit-geforce-rtx-5070-ti-gamingpro-s-16gb-gddr7"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Palit GeForce RTX 5070 Ti GamingPro S OC 16GB GDDR7 Black Graphic Card",
+        "priceEgp": 62499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/palit-geforce-rtx-5070-ti-gamingpro-s-oc-16gb-gddr7-black-graphic-card/"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI GeForce RTX 5070 Ti SHADOW 3X OC 16GB GDDR7 Graphics Card",
+        "priceEgp": 63000,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-geforce-rtx-5070-ti-shadow-3x-oc-16gb-gddr7-graphics-card"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC GeForce RTX 5070 TI SOLID SFF 16GB GDDR7",
+        "priceEgp": 63000,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-geforce-rtx-5070-ti-solid-sff-16gb-gddr7"
+      },
+      {
+        "store": "sigma",
+        "title": "Gigabyte RTX 5070 Ti WINDFORCE OC SFF 16G",
+        "priceEgp": 64000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-rtx-5070-ti-windforce-oc-sff-16g-smjb9dvrerwe"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte GeForce RTX 5070TI GAMING OC 16G GDDR7 Graphics Card Black",
+        "priceEgp": 74999,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-geforce-rtx-5070ti-gaming-oc-16g-gddr7-graphics-card-black"
+      }
+    ],
+    "rtx5080": [
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE GeForce RTX 5080 WINDFORCE OC 16GB",
+        "priceEgp": 75750,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-rtx-5080-windforce-oc-16gb-egypt"
+      },
+      {
+        "store": "elbadr",
+        "title": "PNY GeForce RTX 5080 16GB GDDR7 Overclocked Triple Fan Graphics Card",
+        "priceEgp": 76999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/pny-geforce-rtx-5080-16gb-gddr7-oc-triple-fan"
+      },
+      {
+        "store": "sigma",
+        "title": "PALIT RTX 5080 INFINITY 3 OC 16GB GDDR7 256bit 3-DP HDMI",
+        "priceEgp": 78000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=palit-rtx-5080-infinity-3-oc-16gb-gddr7-256bit-3-dp-hdmi-7gwkav1uiwaa"
+      },
+      {
+        "store": "uptodate",
+        "title": "ZOTAC GAMING GeForce RTX 5080 SOLID CORE OC",
+        "priceEgp": 78000,
+        "inStock": false,
+        "url": "https://uptodate.store/product/zotac-gaming-geforce-rtx-5080-solid-core-oc/"
+      },
+      {
+        "store": "maximum",
+        "title": "ZOTAC GeForce RTX 5080 SOLID CORE OC 16GB GDDR7",
+        "priceEgp": 80000,
+        "inStock": true,
+        "url": "https://maximumhardware.store/zotac-geforce-rtx-5080-solid-core-oc-16gb-gddr7"
+      },
+      {
+        "store": "kimo",
+        "title": "Zotac Gaming GeForce RTX 5080 SOLID CORE OC 16GB GDDR7 Graphics Card",
+        "priceEgp": 81500,
+        "inStock": true,
+        "url": "https://kimostore.net/products/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7-graphics-card"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Palit GeForce RTX 5080 GamingPro 16GB GDDR7 256 Bit Graphics Card",
+        "priceEgp": 81999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/palit-geforce-rtx-5080-gamingpro-16gb-gddr7-256-bit-graphics-card/"
+      },
+      {
+        "store": "ahw",
+        "title": "MSI GeForce RTX 5080 16GB SHADOW 3X OC Graphics Card Black",
+        "priceEgp": 86999,
+        "inStock": true,
+        "url": "https://ahw.store/products/msi-geforce-rtx-5080-16gb-shadow-3x-oc-graphics-card-black"
+      }
+    ],
+    "rtx5090": [
+      {
+        "store": "maximum",
+        "title": "GIGABYTE GeForce RTX 5090 GAMING OC 32GB GDDR7",
+        "priceEgp": 180000,
+        "inStock": false,
+        "url": "https://maximumhardware.store/gigabyte-geforce-rtx-5090-gaming-oc-32gb-gddr7"
+      },
+      {
+        "store": "ahw",
+        "title": "MSI GeForce RTX 5090 32G GAMING TRIO OC GDDR7 Black Graphics Card",
+        "priceEgp": 199999,
+        "inStock": false,
+        "url": "https://ahw.store/products/msi-geforce-rtx-5090-32g-gaming-trio-oc-gddr7-black-graphics-card"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI NVIDIA GeForce RTX 5090 VENTUS 3X Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+        "priceEgp": 240100,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-nvidia-geforce-rtx-5090-ventus-3x-overclocked-triple-fan-32gb-gddr7-pcie-5-0-graphics-card"
+      },
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE GeForce RTX 5090 WINDFORCE OC 32GB GDDR7 Graphics Card",
+        "priceEgp": 250000,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-geforce-rtx-5090-32gb-gddr7-windforce-oc"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition",
+        "priceEgp": 315000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-astral-geforce-rtx-5090-32gb-gddr7-oc-edition-features-32gb-gddr7-memory-2610-mhz-engine-clock-21760-cuda-cores-pcie-50-36smcmstrnvl"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Asus GeForce RTX 5090 ROG Astral OC 32GB GDDR7 Graphic Card",
+        "priceEgp": 315000,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/asus-geforce-rtx-5090-rog-astral-oc-32gb-gddr7-graphic-card/"
+      }
+    ],
+    "mb-a520m-k": [
+      {
+        "store": "compumarts",
+        "title": "Gigabyte A520M K V2 Rev. 1.1 AMD A520 AM4 Micro ATX Motherboard with DDR4 5100MHz OC Support PCIe 3.0 x4 M.2 HDMI 2.1 GbE LAN",
+        "priceEgp": 2999,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-a520m-k-v2-motherboard"
+      },
+      {
+        "store": "maximum",
+        "title": "Gigabyte A520M K V2",
+        "priceEgp": 2999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/gigabyte-a520m-k-v2"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE A520M K V2",
+        "priceEgp": 2999,
+        "inStock": true,
+        "url": "https://uptodate.store/product/gigabyte-a520m-k-v2/"
+      },
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE A520M K V2 - AMD AM4 Motherboard, Dual Channel DDR4, PCIe Gen3 x4 M.2, GbE LAN, 8-Channel HD Audio, HDMI/D-Sub, Smart Fan 5",
+        "priceEgp": 3000,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-a520m-k-v2"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte A520M K V2 Motherboard",
+        "priceEgp": 3099,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-a520m-k-v2-motherboar/"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE A520M K V2 Socket AM4 Motherboard",
+        "priceEgp": 3100,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-a520m-k-v2-supports-amd-ryzen-processors-up-to-64-gb-ddr4-pcie-30-x4-m2-realtek-gbe-lan-and-71-audio-8iunf7hozsyb"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte A520M K V2 DDR4 AM4 M-ATX Motherboard Black",
+        "priceEgp": 3199,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-a520m-k-v2-ddr4-am4-m-atx-motherboard-black"
+      }
+    ],
+    "mb-b550m-vdh": [
+      {
+        "store": "uptodate",
+        "title": "MSI B550M PRO-VDH",
+        "priceEgp": 4750,
+        "inStock": true,
+        "url": "https://uptodate.store/product/msi-b550m-pro-vdh/"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI B550M PRO-VDH",
+        "priceEgp": 4999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-b550m-pro-vdh"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI B550M PRO-VDH DDR4 Motherboard",
+        "priceEgp": 5150,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-b550m-pro-vdh-am4-ddr4-motherboard"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI B550M PRO-VDH Dual AMD Socket AM4 MOTHERBOARD",
+        "priceEgp": 5249,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-b550m-pro-vdh-dual-amd-socket-am4-motherboard-wemldxinty5n"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI B550M PRO-VDH DDR4 Motherboard AM4",
+        "priceEgp": 5250,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-b550m-pro-vdh-motherboard-am4"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Msi B550M Pro-Vdh DDR4 Motherboard",
+        "priceEgp": 5250,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/msi-b550m-pro-vdh-ddr4-motherboard/"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI B550M PRO-VDH Micro-ATX Motherboard – AMD AM4, DDR4, PCIe 4.0",
+        "priceEgp": 5299,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/msi-b550m-pro-vdh-micro-atx-am4-motherboard"
+      },
+      {
+        "store": "ahw",
+        "title": "MSI B550M PRO-VDH AM4 Micro ATX Motherboard",
+        "priceEgp": 5800,
+        "inStock": false,
+        "url": "https://ahw.store/products/msi-b550-pro-vdh-am4-micro-atx-motherboard"
+      }
+    ],
+    "mb-a620m-h": [
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE A620M H3",
+        "priceEgp": 3900,
+        "inStock": true,
+        "url": "https://uptodate.store/product/gigabyte-a620m-h/"
+      },
+      {
+        "store": "compumarts",
+        "title": "MOTHERBOARD GIGABYTE A620M H",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-a620m-h-motherboard"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE A620M H Socket AM5 LGA 1718 Motherboard",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-a620m-h-am5-motherboard-with-ryzen-700080009000-support-ddr5-pcie-40-m2-hdmidp-gbe-lan-and-q-flash-plus-4u9ti3idrafk"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte A620M H DDR5 Motherboard",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-a620m-h-ddr5-motherboard/"
+      },
+      {
+        "store": "elbadr",
+        "title": "Gigabyte A620M H — AMD A620 Socket AM5 micro ATX Motherboard",
+        "priceEgp": 4250,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-a620m-h"
+      }
+    ],
+    "mb-b650m-p": [
+      {
+        "store": "kimo",
+        "title": "MSI PRO B650M-P DDR5 Motherboard AM5",
+        "priceEgp": 5899,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-pro-b650m-p-ddr5-motherboard-am5"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI PRO B650M-P",
+        "priceEgp": 5899,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-pro-b650m-p-1"
+      },
+      {
+        "store": "uptodate",
+        "title": "MSI PRO B650M-P",
+        "priceEgp": 5900,
+        "inStock": false,
+        "url": "https://uptodate.store/product/msi-pro-b650m-p/"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI PRO B650M-P DDR5 Motherboard",
+        "priceEgp": 5960,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-pro-b650m-p-proseries-motherboard-amd-ryzen-9000-8000-7000-series-processors-am5-ddr5-pcie-4-0-m-2-sata-6gb-s-usb-3-2-gen-2-hdmi-dp-2-5gbps-lan-matx"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI PRO B650M-P mATX Motherboard for AMD Ryzen",
+        "priceEgp": 6000,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b650m-p-matx-supports-amd-ryzen-am5-processors-ddr5-memory-up-to-7200-mhz-pcie-40-25g-lan-realtek-alc897-audio-and-multiple-m2sata-storage-options-mc7peyuzrgku"
+      }
+    ],
+    "mb-b850m-ds3h": [
+      {
+        "store": "maximum",
+        "title": "GIGABYTE B850M DS3H",
+        "priceEgp": 7799,
+        "inStock": true,
+        "url": "https://maximumhardware.store/gigabyte-b850m-ds3h"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte B850M DS3H AM5 Motherboard",
+        "priceEgp": 7799,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/gigabyte-b850m-ds3h-am5-motherboard/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE B850M DS3H AMD AM5 LGA 1718 Motherboard mATX",
+        "priceEgp": 7800,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/igabyte-b850m-ds3h-amd-am5-lga-1718-motherboard-matx-ddr5"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE B850M DS3H AM5 DDR5 PCIe 5.0 Micro ATX Motherboard",
+        "priceEgp": 7800,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b850m-ds3h-ddr5-am5-822-phases-pcie-50-m2-gen5-25g-lan-hdmi-dp-usb-c-q-flash-plus-hkl60k6qwdhx"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE B850M DS3H",
+        "priceEgp": 7800,
+        "inStock": false,
+        "url": "https://uptodate.store/product/gigabyte-b850m-ds3h/"
+      },
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE B850M DS3H ICE Micro ATX Motherboard – AM5 & DDR5",
+        "priceEgp": 7950,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-b850m-ds3h-ice-micro-atx-am5-ddr5-motherboard"
+      }
+    ],
+    "mb-x870-eagle": [
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE X870 EAGLE WiFi7 Motherboard – AMD AM5 (LGA1718) – ATX – DDR5 – PCIe 5.0 – M.2 – WiFi 7 – USB 3.2 – Ryzen 7000 / 8000 / 9000 Ready",
+        "priceEgp": 12000,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-x870-eagle-wifi7-amd-am5-lga-1718-motherboard"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE X870 EAGLE WIFI7",
+        "priceEgp": 12000,
+        "inStock": true,
+        "url": "https://uptodate.store/product/gigabyte-x870-eagle-wifi7/"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE X870 EAGLE WIFI7",
+        "priceEgp": 12500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-x870-eagle-wifi7-mt5hlzxh1oxe"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte X870 Eagle WIFI 7 Am5 Motherboard",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/gigabyte-x870-eagle-wifi-7-am5-motherboard/"
+      },
+      {
+        "store": "maximum",
+        "title": "GIGABYTE X870 EAGLE WIFI7",
+        "priceEgp": 13499,
+        "inStock": false,
+        "url": "https://maximumhardware.store/gigabyte-x870-eagle-wifi7"
+      }
+    ],
+    "mb-b850-tomahawk": [
+      {
+        "store": "compumarts",
+        "title": "MSI MAG B850 TOMAHAWK MAX WIFI AM5 DDR5 ATX Gaming Motherboard",
+        "priceEgp": 13500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-mag-b850-tomahawk-max-wifi-am5-ddr5-motherboard-egypt"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Msi Mag B850 Tomahawk Max WIFI AM5 ATX Motherboard",
+        "priceEgp": 13799,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/msi-mag-b850-tomahawk-max-wifi-am5-atx-motherboard/"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI MAG B850 TOMAHAWK MAX WIFI",
+        "priceEgp": 13899,
+        "inStock": false,
+        "url": "https://maximumhardware.store/msi-mag-b850-tomahawk-max-wifi"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI MAG B850 TOMAHAWK MAX WIFI AMD AM5 ATX Motherboard - DDR5, Wi-Fi 7, 5G LAN, PCIe 5.0, Dual Gen5 M.2",
+        "priceEgp": 13900,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/msi-mag-b850-tomahawk-max-wifi-am5-ddr5-atx-motherboard"
+      }
+    ],
+    "mb-h610m-k-d4": [
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE H610M K DDR4 LGA1700 MOTHERBOARD",
+        "priceEgp": 3199,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-h610m-k-ddr4-lga1700-motherboard-pcie-4-0*-design-gen3-x4-m-2-gbe-lan-anti-sulfur-resistor-smart-fan-6"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte H610M K DDR4 Ultra Durable Motherboard",
+        "priceEgp": 3199,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-h610m-k-ddr4-ultra-durable-motherboard/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE H610M K DDR4 Motherboar",
+        "priceEgp": 3235,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-h610m-k-ddr4-motherboard"
+      },
+      {
+        "store": "maximum",
+        "title": "GIGABYTE H610M K DDR4 LGA 1700",
+        "priceEgp": 3499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/gigabyte-h610m-k-ddr4-lga-1700"
+      },
+      {
+        "store": "sigma",
+        "title": "Gigabyte H610M-K DDR4 Socket LGA 1700 Motherboard",
+        "priceEgp": 3500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-h610m-k-ddr4-motherboard-supports-intel-core-14th-gen-cpus-up-to-3200mhz-ddr4-1xpcie-30-m2-gbe-lan-usb-32-gen-1-9ftbg38slmln"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE H610M K DDR4",
+        "priceEgp": 3550,
+        "inStock": true,
+        "url": "https://uptodate.store/product/gigabyte-h610m-k-ddr4/"
+      }
+    ],
+    "mb-b760m-e-d4": [
+      {
+        "store": "maximum",
+        "title": "MSI PRO B760M-E DDR4",
+        "priceEgp": 4499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-pro-b760m-e-ddr4"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI PRO B760M-E DDR4 Motherboard",
+        "priceEgp": 4850,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-pro-b760m-e-ddr4-motherboard"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI PRO B760M-E DDR4 Socket LGA 1700 Motherboard",
+        "priceEgp": 4850,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b760m-e-ddr4-intel-lga-1700-2x-ddr4-slots-max-64gb-up-to-4800mhz-hdmi-and-vga-outputs-and-offers-multiple-expansion-slots-raid-support-and-realtek-gigabit-lan-bbwtr3b8me2i"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI PRO B760M-E DDR4, micro ATX Motherboard- LGA 1700, DDR4 Memory",
+        "priceEgp": 4899,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/msi-pro-b760m-e-ddr4-micro-atx-motherboard-supports-intel-12th-and-13th-gen-core-processors-lga-1700-ddr4-memory-boost-4800mhz-oc-pcie-4-0-x16-slots-m-2-gen4-slots"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI Pro B760M-E DDR4 Motherboard LGA 1700",
+        "priceEgp": 4900,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-pro-b760m-e-ddr4-motherboard-lga-1700"
+      }
+    ],
+    "mb-b760m-ds3h-d5": [
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE B760M DS3H GEN5",
+        "priceEgp": 5750,
+        "inStock": true,
+        "url": "https://uptodate.store/product/gigabyte-b760m-ds3h-gen5/"
+      },
+      {
+        "store": "maximum",
+        "title": "GIGABYTE B760M DS3H GEN5",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/gigabyte-b760m-ds3h-gen5"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte B760M DS3H Gen5 UD LGA1700 Motherboard",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/gigabyte-b760m-ds3h-gen5-ud-lga1700-motherboard/"
+      },
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE B760M DS3H GEN5 M-ATX Motherboard Intel LGA1700 Socket Intel B760 Chipset — Supports 14th/13th Gen Intel Core CPUs",
+        "priceEgp": 6200,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-b760m-ds3h-gen5"
+      },
+      {
+        "store": "compumarts",
+        "title": "Gigabyte B760m DS3H Gen5 Motherboard – Intel LGA1700, DDR5, PCIe 5.0, 2.5GbE LAN",
+        "priceEgp": 6300,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/motherboard-b760-ds3h-gen5-egypt"
+      },
+      {
+        "store": "sigma",
+        "title": "Gigabyte INTEL B760M DS3H GEN5 1.0",
+        "priceEgp": 6300,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b760m-ds3h-ddr5-rev-10-2kmyuisewp0y"
+      },
+      {
+        "store": "kimo",
+        "title": "Gigabyte B760M DS3H GEN5 DDR5 Motherboard LGA 1700",
+        "priceEgp": 6500,
+        "inStock": true,
+        "url": "https://kimostore.net/products/gigabyte-b760m-ds3h-gen5-ddr5-motherboard-lga-1700"
+      },
+      {
+        "store": "ahw",
+        "title": "Gigabyte B760M DS3H GEN5 DDR5 LGA1700 M-ATX Motherboard Black",
+        "priceEgp": 6699,
+        "inStock": true,
+        "url": "https://ahw.store/products/gigabyte-b760m-ds3h-gen5-ddr5-lga1700-m-atx-motherboard-black"
+      }
+    ],
+    "mb-z790-p": [
+      {
+        "store": "alfrensia",
+        "title": "Msi Pro Z790-P Wifi DDR5 Motherboard",
+        "priceEgp": 9999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/msi-pro-z790-p-wifi-ddr5-motherboard-2/"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI PRO Z790-P WIFI LGA 1700",
+        "priceEgp": 10499,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-pro-z790-p-wifi-lga-1700"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI PRO Z790-P DDR5 WiFi Motherboard Intel Z790 Chipset LGA 1700 Support Intel Core 14th 13th 12th Gen CPUs DDR5 7000MHz OC ATX ProSeries Motherboard",
+        "priceEgp": 11000,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-pro-z790-p-ddr5-wifi-proseries-motherboard"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI PRO Z790-P WIFI ATX LGA1700 Intel Z790 Chipset — Supports 14th/13th/12th Gen Intel Core CPUs, DDR5 up to 7200 MHz (OC), PCIe 5.0 x16, 4x M.2 Gen4 NVMe, 6x SATA, Wi-Fi 6E",
+        "priceEgp": 11000,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/msi-pro-z790-p-wifi-atx-lga1700"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI Pro Z790-P WiFi DDR5 Motherboard LGA 1700",
+        "priceEgp": 11200,
+        "inStock": false,
+        "url": "https://kimostore.net/products/msi-pro-z790-p-wifi-ddr5-motherboard-lga-170"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI PRO Z790-P WIFI Socket LGA 1700 Motherboard",
+        "priceEgp": 11500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-z790-p-wifi-proseries-motherboard-supports-12th13th14th-gen-intel-processors-lga-1700-ddr5-pcie-50-m2-25gbps-lan-usb-32-gen2-hdmidp-wi-fi-6e-bluetooth-53-atx-jn8uuultqn6b"
+      }
+    ],
+    "mb-h810m-k": [
+      {
+        "store": "elbadr",
+        "title": "GIGABYTE H810M-K Micro ATX Motherboard – LGA1851 & DDR5",
+        "priceEgp": 4350,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/gigabyte-h810m-k-micro-atx-lga1851-ddr5-motherboard"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE H810M-K Micro ATX Motherboard – LGA1851, Intel H810 Chipset, DDR5 128GB, PCIe 4.0 x16, M.2 PCIe 4.0, DisplayPort 2.1 & HDMI 2.1",
+        "priceEgp": 4500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-h810m-k-motherboard-lga1851-ddr5-pcie-4-0-egypt"
+      }
+    ],
+    "mb-b860m-e": [
+      {
+        "store": "ahw",
+        "title": "MSI PRO B860M-E DDR5 LGA 1851 M-ATX Motherboard",
+        "priceEgp": 6339,
+        "inStock": true,
+        "url": "https://ahw.store/products/msi-pro-b860m-e-ddr5-lga-1851-atx-motherboard"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI PRO B860M-E LGA1851 DDR5 mATX Motherboard",
+        "priceEgp": 6450,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-pro-b860m-e-lga1851-ddr5-motherboard-egypt"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Msi Pro B860M-E LGA1851 Micro ATX Motherboard",
+        "priceEgp": 6499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/msi-pro-b860m-e-lga1851-micro-atx-motherboard/"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI PRO B860M-E DDR5 Motherboard LGA 1851",
+        "priceEgp": 6550,
+        "inStock": true,
+        "url": "https://kimostore.net/products/msi-pro-b860m-e-ddr5-motherboard-lga-1851"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI PRO B860M-E LGA1851 DDR5 mATX Motherboard",
+        "priceEgp": 6750,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b860m-e-lga1851-ddr5-matx-motherboard-rpkjhj1r8qfi"
+      },
+      {
+        "store": "elbadr",
+        "title": "MSI PRO B860M-E Intel LGA 1851 Micro-ATX Motherboard - DDR5, PCIe 5.0 M.2, 5G LAN, Front USB-C",
+        "priceEgp": 6750,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/msi-pro-b860m-e-lga-1851-ddr5-motherboard"
+      }
+    ],
+    "mb-b860m-ds3h": [
+      {
+        "store": "maximum",
+        "title": "GIGABYTE B860M DS3H (LGA 1851)",
+        "priceEgp": 7199,
+        "inStock": false,
+        "url": "https://maximumhardware.store/gigabyte-b860m-ds3h-lga-1851"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte B860M DS3H Motherboard",
+        "priceEgp": 7200,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/gigabyte-b860m-ds3h-motherboard/"
+      },
+      {
+        "store": "uptodate",
+        "title": "GIGABYTE B860M DS3H",
+        "priceEgp": 7200,
+        "inStock": false,
+        "url": "https://uptodate.store/product/gigabyte-b860m-ds3h/"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE B860M DS3H DDR5 MOTHERBOARD",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-b860m-ds3h-ddr5-motherboard"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE B860M DS3H Socket LGA 1851 Motherboard",
+        "priceEgp": 7500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b860m-ds3h-lga1851-ddr5-9066-pcie-50-2x-m2-25gbe-lan-hdmi-21-dp-21-usb-32-micro-atx-i9rtpsxjtwlo"
+      }
+    ],
+    "mb-z890-eagle": [
+      {
+        "store": "maximum",
+        "title": "GIGABYTE Z890 EAGLE (LGA 1851)",
+        "priceEgp": 11750,
+        "inStock": true,
+        "url": "https://maximumhardware.store/gigabyte-z890-eagle-lga-1851"
+      },
+      {
+        "store": "compumarts",
+        "title": "GIGABYTE Z890 EAGLE LGA1851 Intel Core Ultra Processor Support ATX Motherboard with 4 DDR5 DIMM Slots Up to 256GB DDR5 8800 O.C PCIe 5.0 x16 USB4 Type-C and Intel Z890 Express Chipset",
+        "priceEgp": 11820,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/gigabyte-z890-eagle-4xddr5-lga1851-atx-motherboard"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Gigabyte Z890 Eagle LGA1851 Gaming Motherboard",
+        "priceEgp": 11900,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/gigabyte-z890-eagle-lga1851-gaming-motherboard/"
+      }
+    ],
+    "ram-d4-8": [
+      {
+        "store": "compumarts",
+        "title": "RAM CORSAIR/CMK8GX4M1E3200C16/VENGEANCE® LPX 8GB(1x8GB)DDR4 3200MHz  Black",
+        "priceEgp": 2599,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/corsair-vengeance-lpx-ddr4-8gb-3200-c16-black-egypt"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Corsair Vengeance LPX 8GB DDR4 3200MHz CL16 Black Desktop Memory",
+        "priceEgp": 3450,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/corsair-vengeance-lpx-8gb-ddr4-3200mhz-cl16-black-desktop-memory/"
+      }
+    ],
+    "ram-d4-16": [
+      {
+        "store": "compumarts",
+        "title": "RAM PC G.SKILL/G.SKILL/Aegis DDR4-3200 CL16-16GB (2x8GB)F4-3200C16D-16GIS 2 x 8GB",
+        "priceEgp": 4370,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/ram-g-skill-aegis-ddr4-pc-3200-cl16-kit?variant=46209395916949"
+      },
+      {
+        "store": "kimo",
+        "title": "G.Skill Aegis RAM 16GB (2x8GB) DDR4 3200MHz",
+        "priceEgp": 5800,
+        "inStock": false,
+        "url": "https://kimostore.net/products/g-skill-aegis-ram-2x8gb-ddr4-3200mhz"
+      },
+      {
+        "store": "uptodate",
+        "title": "G.SKILL AEGIS 16GB DDR4 3200",
+        "priceEgp": 6000,
+        "inStock": true,
+        "url": "https://uptodate.store/product/g-skill-aegis-16gb-ddr4-3200/"
+      }
+    ],
+    "ram-d4-32": [
+      {
+        "store": "kimo",
+        "title": "Lexar Thor RAM 32GB (2x16GB) DDR4 3200MHz",
+        "priceEgp": 11750,
+        "inStock": false,
+        "url": "https://kimostore.net/products/lexar-thor-ram-32gb-2x16gb-ddr4-3200mhz"
+      },
+      {
+        "store": "ahw",
+        "title": "Lexar THOR DDR4 RAM 32GB Kit (2x16GB) 3200 MHz CL16 Black",
+        "priceEgp": 13500,
+        "inStock": true,
+        "url": "https://ahw.store/products/lexar-thor-ddr4-ram-32gb-kit-2x16gb-3200-mhz-cl16-black"
+      },
+      {
+        "store": "compumarts",
+        "title": "Lexar THOR DDR4 RAM 32GB Kit (2x16GB) 3200 MHz, DRAM 288-Pin UDIMM Desktop Memory, XMP 2.0 High Performance Computer Memory, CL16-18-18-38, 1.35V (LD4BU016G-R3200GDXG) SUPPORT AMD",
+        "priceEgp": 15280,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/lexar-thor-ddr4-32gb-3200mhz-cl16-egypt"
+      }
+    ],
+    "ram-d5-16": [
+      {
+        "store": "compumarts",
+        "title": "KingSpec KS6000D5P12516G 16GB (16x1) DDR5 6000MT/s Desktop Memory 288-pin DIMM 1.1~1.35V",
+        "priceEgp": 11750,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/kingspec-ks6000d5p12516g-16gb-ddr5-6000mt-s-desktop-memory-288-pin-dimm-egypt"
+      }
+    ],
+    "ram-d5-32": [
+      {
+        "store": "sigma",
+        "title": "LEXAR Ares 32GB (16GBx2) DDR5 6000MHz CL30 RGB Black",
+        "priceEgp": 22500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=lexar-ares-32gb-16gbx2-ddr5-6000mhz-cl30-rgb-black-ubkm99vxikaa"
+      },
+      {
+        "store": "elbadr",
+        "title": "Lexar ARES RGB 32GB (2x16GB) DDR5 RAM 6000MT/s CL34 Desktop Memory - AMD Expo and Intel XMP 3.0 (White) LD5EU016G-R6400GDWA",
+        "priceEgp": 26000,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/lexar-ares-rgb-32gb-2x16gb-ddr5-ram-6000mt-s-cl34-w"
+      },
+      {
+        "store": "compumarts",
+        "title": "Lexar ARES RGB 2nd Gen 32GB Kit (2x16GB) DDR5 6000MT/s CL30 - Black | Intel XMP 3.0 & AMD EXPO",
+        "priceEgp": 28500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/lexar-ares-rgb-32gb-ddr5-6000-cl30-black"
+      }
+    ],
+    "ram-d5-64": [
+      {
+        "store": "compumarts",
+        "title": "Kingston FURY Beast RGB 64GB (2x32GB) DDR5 6000MHz CL36 Gaming Memory Kit KF560C36BBE2AK2-64 with On-Die ECC RGB Heatsink",
+        "priceEgp": 39390,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/kingston-fury-beast-rgb-64gb-2x32gb-ddr5-6000mhz-cl36-egypt"
+      },
+      {
+        "store": "sigma",
+        "title": "Kingston Fury Beast RGB 64GB DDR5 Dual Desktop Memory Kit, 6000 MHz Memory Speed, CL36 CAS Latency, 288-Pin Kit, Intel XMP & AMD EXPO Ready, Black | KF560C36BBE2AK2-64",
+        "priceEgp": 46999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=kingston-fury-beast-rgb-64gb-ddr5-dual-desktop-memory-kit-6000-mhz-memory-speed-cl36-cas-latency-288-pin-kit-intel-xmp-amd-expo-ready-black-kf560c36bbe2ak2-64-j8cqvhxtmw8j"
+      },
+      {
+        "store": "elbadr",
+        "title": "Kingston FURY Beast RGB 64GB (2x32GB) DDR5 6000MT/s CL36 Desktop Memory - Infrared Sync Technology - AMD EXPO Certified - Plug N Play - KF560C36BBEAK2-64",
+        "priceEgp": 49000,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/kingston-fury-beast-rgb-64gb-(2x32gb)-ddr5-6000"
+      }
+    ],
+    "ssd-512": [
+      {
+        "store": "compumarts",
+        "title": "OSCOO ON1000 M.2 NVMe PCIe Gen4 x4 SSD – Up to 5200MB/s Read – 3D NAND – 512GB / 1TB 512GB",
+        "priceEgp": 4800,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/oscoo-on1000-512gb-m2-nvme-pcie-gen4-ssd-egypt?variant=49973087436949"
+      }
+    ],
+    "ssd-1t": [
+      {
+        "store": "sigma",
+        "title": "KINGSTON NV3 PCIe 4.0 NVMe SSD 1TB 6,000MB/s Read 4,000MB/s Write M.2 2280 3D NAND 320TB Endurance Includes Acronis Cloning Software",
+        "priceEgp": 6500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=kingston-nv3-pcie-40-nvme-ssd-1tb-6000mbs-read-4000mbs-write-m2-2280-3d-nand-320tb-endurance-includes-acronis-cloning-software-rxrrvgww0rrl"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Kingston Nv3 1Tb M.2 Nvme Internal Solid State Drive SSD",
+        "priceEgp": 6599,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/kingston-nv3-1tb-m-2-nvme-internal-solid-state-drive-ssd/"
+      },
+      {
+        "store": "uptodate",
+        "title": "Kingston NV3 PCIe 4.0 NVMe SSD 1TB",
+        "priceEgp": 6750,
+        "inStock": true,
+        "url": "https://uptodate.store/product/kingston-nv3-pcie-4-0-nvme-ssd-1tb/"
+      },
+      {
+        "store": "maximum",
+        "title": "Kingston NV3 PCie 4.0 M.2 NVMe 1TB",
+        "priceEgp": 7000,
+        "inStock": true,
+        "url": "https://maximumhardware.store/kingston-nv3-pcie-4-0-m-2-nvme-1tb"
+      },
+      {
+        "store": "compumarts",
+        "title": "Kingston NV3 M.2 2280 NVMe PCIe 4.0 SSD 1TB",
+        "priceEgp": 7070,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/kingston-nv3-pcie-4-0-nvme-ssd-500gb-4tb?variant=45929045885077"
+      },
+      {
+        "store": "kimo",
+        "title": "Kingston NV3 1TB NVMe PCIe M.2 SSD",
+        "priceEgp": 7200,
+        "inStock": true,
+        "url": "https://kimostore.net/products/kingston-nv3-1tb-nvme-pcie-m-2-ssd"
+      },
+      {
+        "store": "ahw",
+        "title": "Kingston NV3 NVMe PCIe 4.0 Internal SSD 1TB M.2 2280-SNV3S/1000G",
+        "priceEgp": 8280,
+        "inStock": true,
+        "url": "https://ahw.store/products/kingston-nv3-1tb-pcie-4-0-nvme-m2-internal-ssd"
+      }
+    ],
+    "ssd-1t-gen5": [
+      {
+        "store": "kimo",
+        "title": "MSI SPATIUM M560 1TB NVMe PCIe 5.0 M.2 SSD",
+        "priceEgp": 9450,
+        "inStock": false,
+        "url": "https://kimostore.net/products/msi-spatium-m560-1tb-nvme-pcie-5-0-m-2-ssd"
+      },
+      {
+        "store": "maximum",
+        "title": "MSI SPATIUM M560 PCIe 5.0 NVMe M.2 1TB",
+        "priceEgp": 9500,
+        "inStock": true,
+        "url": "https://maximumhardware.store/msi-spatium-m560-pcie-5-0-nvme-m-2-1tb"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI SPATIUM M560 PCIe 5.0 NVMe M.2 SSD 1TB",
+        "priceEgp": 10499,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-spatium-m560-pcie-5-0-nvme-m-2-ssd?variant=46220217974933"
+      }
+    ],
+    "ssd-2t": [
+      {
+        "store": "alfrensia",
+        "title": "WD Blue SN5000 2Tb M2 Nvme Internal Solid State Drive SSD",
+        "priceEgp": 11699,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/wd-blue-sn5000-2tb-m2-nvme-internal-solid-state-drive-ssd/"
+      },
+      {
+        "store": "compumarts",
+        "title": "HARD Western Digital WD Blue SN5000 NVMe 2TB",
+        "priceEgp": 11700,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/western-digital-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd-pcie-gen-4-0-m-2-2280-up-to-5-150-mb-s?variant=45999370993813"
+      },
+      {
+        "store": "sigma",
+        "title": "WD Blue SN5000 (WDS200T4B0E-00CNZ0) – 2TB NVMe SSD, PCIe Gen4 x4, 5150MB/s Read, 4850MB/s Write, 900TBW",
+        "priceEgp": 11700,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=wd-blue-sn5000-wds200t4b0e-00cnz0-2tb-nvme-ssd-pcie-gen4-x4-5150mbs-read-4850mbs-write-900tbw-g1ewxahhiz1d"
+      },
+      {
+        "store": "elbadr",
+        "title": "WD Blue SN5000 WDS200T4B0E 2TB NVMe SSD, M.2 2280 — PCIe Gen4 x4 Interface, Sequential Read up to 5,150 MB/s, Sequential Write up to 4,850 MB/s, 650K IOPS Random Read, 900 TBW Endurance, Western Digital 3D NAND",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/wd-blue-sn5000-wds200t4b0e-2tb-nvme-ssd"
+      }
+    ],
+    "psu-650": [],
+    "psu-750b": [
+      {
+        "store": "kimo",
+        "title": "Xigmatek Thor T750M V3 Full Modular 750W 80 PLUS Bronze Certified Power Supply",
+        "priceEgp": 2849,
+        "inStock": false,
+        "url": "https://kimostore.net/products/xigmatek-thor-t750m-v3-full-modular-750w-80-plus-bronze-certified-power-supply"
+      },
+      {
+        "store": "compumarts",
+        "title": "PSU XIGMATEK THOR T750W V3 80 PLUS BRONZE ATX 3.1 PCIE 5.0 FULL MODULAR",
+        "priceEgp": 2850,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/xigmatek-thor-t750m-v3-750w-80-bronze-atx-3-1-pci-e-5-0-full-modular-power-supply"
+      }
+    ],
+    "psu-750g": [
+      {
+        "store": "compumarts",
+        "title": "MSI MAG A750GN PCIE5 750W 80 PLUS Gold Power Supply Active PFC Non Modular",
+        "priceEgp": 4040,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-mag-a750gn-pcie5-750w-80-plus-gold-power-supply-egypt"
+      },
+      {
+        "store": "kimo",
+        "title": "MSI MAG A750GN PCIE5 750W 80 PLUS Gold Certified Power Supply",
+        "priceEgp": 4500,
+        "inStock": false,
+        "url": "https://kimostore.net/products/msi-mag-a750gn-pcie5-750w-80-plus-gold-certified-power-supply"
+      }
+    ],
+    "psu-850g": [
+      {
+        "store": "kimo",
+        "title": "Cooler Master MWE Gold 850 V3 850W 80 PLUS Gold Certified Power Supply - Black",
+        "priceEgp": 4600,
+        "inStock": true,
+        "url": "https://kimostore.net/products/cooler-master-mwe-gold-850-v3-850w-80-plus-gold-certified-power-supply-black"
+      },
+      {
+        "store": "compumarts",
+        "title": "Cooler Master MWE Gold 850 V3 ATX 3.1 Fully Modular 850W 80 PLUS Gold Power Supply",
+        "priceEgp": 5200,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/cooler-master-mwe-gold-850w-v3-atx3-psu"
+      },
+      {
+        "store": "sigma",
+        "title": "Cooler Master MWE Gold 850 V3 Fully Modular 80 Plus Gold ATX 3.1 Power Supply",
+        "priceEgp": 5200,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-mwe-gold-850-v3-fully-modular-80-plus-gold-atx-31-power-supply-j9nnpqvbo4jj"
+      }
+    ],
+    "psu-1000g": [
+      {
+        "store": "elbadr",
+        "title": "Cooler Master Elite Gold 1000W 80 PLUS Gold Fully Modular ATX 3.1 PSU",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/cooler-master-elite-gold-1000w-80-plus-gold-atx-3-1-psu"
+      },
+      {
+        "store": "compumarts",
+        "title": "Cooler Master Elite Gold 1000 Power Supply 1000W Fully Modular ATX 12V 3.1 80 PLUS Gold FDB 120mm Fan Elite Series PSU MPW-A001-AFAG",
+        "priceEgp": 6250,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/products-cooler-master-elite-gold-1000-1000w-fully-modular-80-plus-gold-power-supply"
+      },
+      {
+        "store": "kimo",
+        "title": "Cooler Master Elite Gold 1000 Full Modular 1000W 80 PLUS Gold Certified Power Supply",
+        "priceEgp": 6250,
+        "inStock": true,
+        "url": "https://kimostore.net/products/cooler-master-elite-gold-850-fm-full-modular-1000w-80-plus-gold-certified-power-supply"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Cooler Master Elite Gold 1000W 80 Plus Gold Fully Modular Atx 3.1 Power Supply",
+        "priceEgp": 6499,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/cooler-master-elite-gold-1000w-80-plus-gold-fully-modular-atx-3-1-power-supply/"
+      },
+      {
+        "store": "sigma",
+        "title": "COOLER MASTER ELITE Gold 1000W FM A/EU cord",
+        "priceEgp": 6500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-elite-gold-1000w-fm-aeu-cord-thcklr8b8pr9"
+      }
+    ],
+    "psu-1200g": [
+      {
+        "store": "compumarts",
+        "title": "Thermalright TG-1200 1200W 80 PLUS Gold Full-Modular Power Supply 120mm Fan",
+        "priceEgp": 7777,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/thermalright-tg-1200-1200w-80-plus-gold-full-modular-power-supply-120mm-fan-egypt"
+      }
+    ],
+    "case-elite301": [
+      {
+        "store": "compumarts",
+        "title": "Cooler Master Elite 301 Lite Micro-ATX High Airflow PC Case, 365mm GPU Max, 280mm AIO Max, Type C, Tempered Glass, 120mm PWM Fan, Intakes Grill, Breathable PSU Shroud Black",
+        "priceEgp": 2200,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/cooler-master-elite-301-lite-micro-atx-high-airflow-pc-case-365mm-gpu-max-280mm-aio-max-type-c-tempered-glass-120mm-pwm-fan-intakes-grill-breathable-psu-shroud?variant=45607504412821"
+      }
+    ],
+    "case-danb4": [
+      {
+        "store": "kimo",
+        "title": "Lian Li DAN B4-mATX Mesh Micro Tower Case Black",
+        "priceEgp": 3899,
+        "inStock": true,
+        "url": "https://kimostore.net/products/lian-li-dan-b4-matx-micro-tower-case-black?variant=49653645476096"
+      },
+      {
+        "store": "compumarts",
+        "title": "Lian Li DAN B4 Mesh Micro Tower Gaming Case 21.3L Micro-ATX 358mm GPU 360mm Radiator Black",
+        "priceEgp": 3900,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/lian-li-dan-b4-mesh-micro-tower-21-3l-egypt?variant=47765963243669"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Lian Li DAN B4 Mesh White Micro Tower Gaming Case",
+        "priceEgp": 4099,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/lian-li-dan-b4-mesh-white-micro-tower-gaming-case/"
+      }
+    ],
+    "case-v950w": [],
+    "case-td500": [
+      {
+        "store": "kimo",
+        "title": "Cooler Master MasterBox TD500 Mesh V2 ARGB Gaming Mid Tower Case Black",
+        "priceEgp": 3850,
+        "inStock": true,
+        "url": "https://kimostore.net/products/cooler-master-masterbox-td500-mesh-v2-argb-mid-tower-case?variant=45740479348992"
+      },
+      {
+        "store": "compumarts",
+        "title": "CASE COOLER MASTER TD500 MESH V2 Black",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/cooler-master-masterbox-td500-mesh-v2-argb-mid-towe?variant=45251218473109"
+      },
+      {
+        "store": "elbadr",
+        "title": "Cooler Master MasterBox TD500 Mesh V2 - E-ATX Mid-Tower PC Case with Tessellated Mesh, 3 x 120mm Pre-Installed ARGB Fans, Removable Top Panel, Tempered Glass Side Panel, USB Type-C 10Gbps - Black",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/cooler-master-masterbox-td500-mesh-v2-black"
+      },
+      {
+        "store": "maximum",
+        "title": "Cooler Master MasterBox TD500 Mesh V2 ARGB Mid-Towe Black",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/cooler-master-masterbox-td500-mesh-v2-argb-mid-towe-black"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Cooler Master MASTERBOX TD500 MESH V2 Black Mid Tower Case",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/cooler-master-masterbox-td500-mesh-v2-black-mid-tower-case/"
+      }
+    ],
+    "case-gt502": [
+      {
+        "store": "uptodate",
+        "title": "ASUS TUF Gaming GT502 PLUS ARGB BLACK",
+        "priceEgp": 7400,
+        "inStock": false,
+        "url": "https://uptodate.store/product/asus-tuf-gaming-gt502-plus-argb-black/"
+      },
+      {
+        "store": "compumarts",
+        "title": "ASUS TUF GT502 PLUS TG 4x Pre Installed RGB Fans ATX Mid-Tower White",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/asus-tuf-gt502-plus-tg-4x-pre-installed-rgb-fans-atx-mid-tower?variant=45166702231701"
+      },
+      {
+        "store": "elbadr",
+        "title": "ASUS TUF Gaming GT502 PLUS PC Case — Dual Chamber Chassis, Supports 360mm Radiator, Up to 13 Fans, Discrete aRGB HUB, Fully Modular Design - Black",
+        "priceEgp": 8500,
+        "inStock": true,
+        "url": "https://elbadrgroupeg.store/asus-tuf-gaming-gt502-plus"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS TUF GT502 PLUS White Edition Tempered Glass ATX Mid-Tower Case with 4x Pre-Installed RGB Fans",
+        "priceEgp": 8800,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gt502-plus-white-edition-tg-4x-pre-installed-rgb-fans-atx-mid-tower-qxevuscoee6k"
+      },
+      {
+        "store": "alfrensia",
+        "title": "Asus TUF Gaming GT502 PLUS ATX Mid Tower Case",
+        "priceEgp": 9000,
+        "inStock": false,
+        "url": "https://alfrensia.com/en/product/asus-tuf-gaming-gt502-plus-atx-mid-tower-case/"
+      }
+    ],
+    "cool-se903": [
+      {
+        "store": "compumarts",
+        "title": "ID-COOLING SE-903-SD V3 CPU Air Cooler with 3 Direct Touch Heatpipes 92mm Fan 130W TDP Support for Intel LGA1851 1700 1200 115X and AMD AM5 AM4",
+        "priceEgp": 525,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/products-id-cooling-se-903-sd-v3-130w-92mm-cpu-air-cooler"
+      },
+      {
+        "store": "kimo",
+        "title": "ID-COOLING SE-903-SD V3 CPU Air Cooler",
+        "priceEgp": 525,
+        "inStock": false,
+        "url": "https://kimostore.net/products/id-cooling-se-903-sd-v3-cpu-air-cooler"
+      },
+      {
+        "store": "ahw",
+        "title": "ID-COOLING SE-903-SD V3 3 Heatpipe Direct Touch With 92mm Hydraulic Bearing Fan Black Air Cpu Cooler",
+        "priceEgp": 525,
+        "inStock": true,
+        "url": "https://ahw.store/products/id-cooling-se-903-sd-v3-3-heatpipe-direct-touch-with-92mm-hydraulic-bearing-fan-black-air-cpu-cooler"
+      },
+      {
+        "store": "sigma",
+        "title": "ID-COOLING SE 903 SD V3 3 Heatpipe Direct Touch With 92mm Hydraulic Bearing Fan Black",
+        "priceEgp": 525,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=id-cooling-se-903-sd-v3-3-heatpipe-direct-touch-with-92mm-hydraulic-bearing-fan-black-cnzmduk0wra2"
+      },
+      {
+        "store": "alfrensia",
+        "title": "ID-COOLING SE-903-SD V3 3 Heatpipe Direct Touch With 92mm Hydraulic Bearing Fan Black Air Cpu Cooler",
+        "priceEgp": 525,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/id-cooling-se-903-sd-v3-3-heatpipe-direct-touch-with-92mm-hydraulic-bearing-fan-black-air-cpu-cooler/"
+      },
+      {
+        "store": "uptodate",
+        "title": "ID-COOLING SE-903-SD V3",
+        "priceEgp": 525,
+        "inStock": true,
+        "url": "https://uptodate.store/product/id-cooling-se-903-sd-v3/"
+      }
+    ],
+    "cool-a450": [
+      {
+        "store": "compumarts",
+        "title": "Antec A450 FRGB CPU Air Cooler – 4 Heat Pipes, 120mm PWM Fan, 180W TDP Cooling",
+        "priceEgp": 750,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/antec-a450-frgb-cpu-air-cooler"
+      },
+      {
+        "store": "kimo",
+        "title": "Antec A450 RGB CPU Air Cooler",
+        "priceEgp": 750,
+        "inStock": false,
+        "url": "https://kimostore.net/products/antec-a450-rgb-cpu-air-cooler"
+      },
+      {
+        "store": "sigma",
+        "title": "ANTEC A450F RGB CPU AIR COOLER",
+        "priceEgp": 750,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-a450f-rgb-11kz9hydlmvh"
+      },
+      {
+        "store": "elbadr",
+        "title": "Antec A450 FRGB High Performance CPU Air Cooler",
+        "priceEgp": 750,
+        "inStock": false,
+        "url": "https://elbadrgroupeg.store/antec-a450-frgb-cpu-cooler"
+      },
+      {
+        "store": "ahw",
+        "title": "Antec A450 FRGB 120mm CPU Cooler",
+        "priceEgp": 1320,
+        "inStock": false,
+        "url": "https://ahw.store/products/antec-a450-frgb-cpu-cooler"
+      }
+    ],
+    "cool-a620": [
+      {
+        "store": "sigma",
+        "title": "ID-COOLING FROZN A620 PRO SE 6 Heatpipe Dual Tower With 2 120mm Hydraulic Bearing Fan",
+        "priceEgp": 1899,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=id-cooling-frozn-a620-pro-se-6-heatpipe-dual-tower-with-2-120mm-hydraulic-bearing-fan-ee7kvsa778su"
+      },
+      {
+        "store": "compumarts",
+        "title": "ID-COOLING FROZN A620 PRO SE CPU Cooler 260W TDP Dual 120mm Hydraulic Bearing Fans 6×6mm Heatpipe Copper Base Aluminum Fin Tower Air Cooler Intel LGA1851/1700/1200/115x AMD AM5/AM4",
+        "priceEgp": 1900,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/products-frozn-a620-pro-se-cpu-cooler-260w-tdp-dual-120mm-intel-amd"
+      },
+      {
+        "store": "kimo",
+        "title": "ID-COOLING FROZN A620 PRO SE CPU Air Cooler",
+        "priceEgp": 1900,
+        "inStock": false,
+        "url": "https://kimostore.net/products/id-cooling-frozn-a620-pro-se-cpu-air-cooler"
+      },
+      {
+        "store": "uptodate",
+        "title": "ID-COOLING FROZN A620 PRO SE",
+        "priceEgp": 1900,
+        "inStock": true,
+        "url": "https://uptodate.store/product/id-cooling-frozn-a620-pro-se/"
+      },
+      {
+        "store": "maximum",
+        "title": "ID-COOLING FROZN A620 PRO SE ARGB CPU Air Cooler",
+        "priceEgp": 1999,
+        "inStock": true,
+        "url": "https://maximumhardware.store/id-cooling-frozn-a620-pro-se-argb-cpu-air-cooler"
+      },
+      {
+        "store": "ahw",
+        "title": "ID-COOLING FROZN A620 PRO SE ARGB 6 Heatpipe Dual Tower With 2 120mm Hydraulic Bearing Fan Air Cpu Cooler",
+        "priceEgp": 2000,
+        "inStock": true,
+        "url": "https://ahw.store/products/id-cooling-frozn-a620-pro-se-argb-6-heatpipe-dual-tower-with-2-120mm-hydraulic-bearing-fan-air-cpu-cooler"
+      },
+      {
+        "store": "alfrensia",
+        "title": "ID-COOLING FROZN A620 PRO SE ARGB 6 Heatpipe Dual Tower With 2 120mm Hydraulic Bearing Fan Air Cpu Cooler",
+        "priceEgp": 2000,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/id-cooling-frozn-a620-pro-se-argb-6-heatpipe-dual-tower-with-2-120mm-hydraulic-bearing-fan-air-cpu-cooler/"
+      }
+    ],
+    "cool-fx240": [
+      {
+        "store": "compumarts",
+        "title": "ID-COOLING FX240 PRO Gen 7 Pump 300W 240mm AIO Liquid CPU Cooler with 2×120mm PWM Fans",
+        "priceEgp": 2300,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/id-cooling-fx240-pro-gen-7-pump-300w-240mm-aio-liquid-cpu-cooler-egypt"
+      },
+      {
+        "store": "alfrensia",
+        "title": "ID-COOLING FX240 PRO Gen 7 Pump AIO Liquid Cpu Cooler",
+        "priceEgp": 2300,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/id-cooling-fx240-pro-gen-7-pump-aio-liquid-cpu-cooler/"
+      }
+    ],
+    "cool-fx360": [
+      {
+        "store": "sigma",
+        "title": "ID-COOLING FX360 INF Gen 7 Pump ARGB  Liquid CPU Cooler (AIO)",
+        "priceEgp": 3099,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=id-cooling-fx360-inf-gen-7-pump-argb-aio-liquid-cpu-9bzpw0adtnwp"
+      },
+      {
+        "store": "kimo",
+        "title": "ID-COOLING FX360 INF 360mm ARGB AIO CPU Liquid Cooler",
+        "priceEgp": 3100,
+        "inStock": true,
+        "url": "https://kimostore.net/products/id-cooling-fx360-inf-360mm-argb-aio-cpu-liquid-cooler"
+      },
+      {
+        "store": "alfrensia",
+        "title": "ID-COOLING FX360 INF Gen 7 Pump ARGB AIO Liquid Cpu Cooler",
+        "priceEgp": 3100,
+        "inStock": true,
+        "url": "https://alfrensia.com/en/product/id-cooling-fx360-inf-gen-7-pump-argb-aio-liquid-cpu-cooler/"
+      },
+      {
+        "store": "compumarts",
+        "title": "ID-COOLING FX360 INF 360mm Liquid CPU Cooler 350W TDP Aluminum Radiator 3x120mm ARGB Fans 2000RPM PWM Support Intel LGA1851/1700/1200/115X AMD AM5 AM4 Black",
+        "priceEgp": 3400,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/id-cooling-fx360-inf-pink-360mm-350w-tdp-liquid-cpu-cooler?variant=47354230472853"
+      }
+    ]
+  }
+}
