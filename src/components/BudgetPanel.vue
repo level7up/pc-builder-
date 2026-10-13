@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 import { buildForBudget, parseBudget } from '../domain/budget'
 import { RESOLUTIONS } from '../domain/bottleneck'
-import type { BuildIds, Resolution } from '../domain/types'
+import type { BuildIds, Catalog, Resolution } from '../domain/types'
 import type { Locale, Messages } from '../i18n/messages'
 import { formatEgp } from '../format'
 
-const props = defineProps<{ t: Messages; locale: Locale }>()
+const props = defineProps<{ t: Messages; locale: Locale; catalog: Catalog; storeName?: string }>()
 const emit = defineEmits<{ apply: [ids: BuildIds] }>()
 
 const raw = ref('')
@@ -19,7 +19,11 @@ function run() {
     message.value = { tone: 'bad', text: props.t.budget.invalid }
     return
   }
-  const result = buildForBudget(budget, resolution.value)
+  const result = buildForBudget(budget, resolution.value, props.catalog)
+  if (result.kind === 'unavailable') {
+    message.value = { tone: 'bad', text: props.t.budget.unavailable(props.storeName ?? '') }
+    return
+  }
   if (result.kind === 'tooLow') {
     message.value = { tone: 'bad', text: props.t.budget.tooLow(formatEgp(result.minimum, props.locale)) }
     return
@@ -32,6 +36,7 @@ function run() {
 <template>
   <form class="budget" @submit.prevent="run">
     <h2>{{ t.budget.title }}</h2>
+    <p v-if="storeName" class="from">{{ t.store.hintOne(storeName) }}</p>
     <div class="fields">
       <label class="field">
         <span>{{ t.budget.label }}</span>
@@ -52,6 +57,7 @@ function run() {
 <style scoped>
 .budget { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); margin-bottom: 16px; }
 h2 { margin: 0 0 10px; font-size: 17px; }
+.from { margin: -4px 0 10px; font-size: 13px; color: var(--accent); font-weight: 600; }
 .fields { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
 .field { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); font-weight: 600; }
 input { inline-size: 200px; max-inline-size: 100%; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel2); color: var(--text); font: inherit; font-size: 16px; }

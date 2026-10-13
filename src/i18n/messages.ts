@@ -78,6 +78,17 @@ export interface Messages {
   }
   footer: string
   groups: { fits: string; other: string }
+  picker: { search: string; empty: string }
+  store: {
+    title: string
+    all: string
+    hintAll: string
+    hintOne: (store: string) => string
+    compareTitle: string
+    complete: string
+    missing: (parts: string) => string
+    notHere: (store: string) => string
+  }
   suggest: {
     forBoard: string
     forCpu: string
@@ -93,6 +104,7 @@ export interface Messages {
     invalid: string
     tooLow: (minimum: string) => string
     done: (total: string, budget: string) => string
+    unavailable: (store: string) => string
   }
 }
 
@@ -165,6 +177,7 @@ const ar: Messages = {
   },
   issues: {
     missing: (p, cat) => `لسه مااخترتش ${cat(p.category as Category)}.`,
+    notAtStore: (p, cat) => `${cat(p.category as Category)}: القطعة اللي اخترتها مش موجودة في ${p.store}.`,
     socketMismatch: p => `البروسيسور سوكيت ${p.cpu} والمازربورد ${p.board}: مش هيركبوا.`,
     memoryMismatch: p => `المازربورد ${p.board} والرامات ${p.memory}: مش هتركب.`,
     cpuMemoryMismatch: p => `البروسيسور بيدعم ${p.cpu} بس، والرامات ${p.memory}.`,
@@ -196,6 +209,17 @@ const ar: Messages = {
   },
   footer: 'الأسعار والمواصفات للاسترشاد. اتأكد من المحل قبل الشراء.',
   groups: { fits: 'تركب مع اختياراتك', other: 'مش هتركب مع اختياراتك' },
+  picker: { search: 'دوّر بالاسم أو الموديل…', empty: 'مفيش حاجة بالاسم ده' },
+  store: {
+    title: 'اشتري كله من محل واحد',
+    all: 'كل المحلات',
+    hintAll: 'الأسعار دلوقتي أرخص سعر من أي محل. اختار محل عشان تشوف القطع اللي عنده بس وبأسعاره.',
+    hintOne: store => `كل القطع والأسعار والتجميع بالميزانية من ${store} بس.`,
+    compareTitle: 'تجميعتك في كل محل',
+    complete: 'كل القطع موجودة',
+    missing: parts => `ناقص: ${parts}`,
+    notHere: store => `القطعة دي مش متوفرة في ${store}. اختار بديل من القايمة.`
+  },
   suggest: {
     forBoard: 'بروسيسورات تركب على المازربورد دي:',
     forCpu: 'مازربوردات تناسب البروسيسور ده:',
@@ -210,7 +234,8 @@ const ar: Messages = {
     go: 'جمّع',
     invalid: 'اكتب الميزانية رقم بالجنيه (لحد مليون).',
     tooLow: minimum => `الميزانية قليلة: أرخص تجميعة كاملة ومتوافقة بـ ${minimum}.`,
-    done: (total, budget) => `اتجمّعت بـ ${total} من ميزانية ${budget}. تقدر تغيّر أي قطعة.`
+    done: (total, budget) => `اتجمّعت بـ ${total} من ميزانية ${budget}. تقدر تغيّر أي قطعة.`,
+    unavailable: store => `${store} مفيهوش قطع كفاية لتجميعة كاملة متوافقة.`
   }
 }
 
@@ -283,6 +308,7 @@ const en: Messages = {
   },
   issues: {
     missing: (p, cat) => `No ${cat(p.category as Category).toLowerCase()} picked yet.`,
+    notAtStore: (p, cat) => `${cat(p.category as Category)}: your pick isn't in stock at ${p.store}.`,
     socketMismatch: p => `The CPU is ${p.cpu} and the motherboard is ${p.board}: they will not fit.`,
     memoryMismatch: p => `The motherboard takes ${p.board} but the memory is ${p.memory}.`,
     cpuMemoryMismatch: p => `The CPU supports ${p.cpu} only, but the memory is ${p.memory}.`,
@@ -314,6 +340,17 @@ const en: Messages = {
   },
   footer: 'Prices and specs are a guide. Confirm with the store before you buy.',
   groups: { fits: 'Fits your picks', other: 'Does not fit your picks' },
+  picker: { search: 'Search by name or model…', empty: 'Nothing matches that' },
+  store: {
+    title: 'Buy everything from one store',
+    all: 'All stores',
+    hintAll: 'Prices are the cheapest at any store. Pick a store to see only what it stocks, at its prices.',
+    hintOne: store => `Every part, price and budget build comes from ${store} only.`,
+    compareTitle: 'Your build at each store',
+    complete: 'Has every part',
+    missing: parts => `Missing: ${parts}`,
+    notHere: store => `This part isn't in stock at ${store}. Pick another from the list.`
+  },
   suggest: {
     forBoard: 'CPUs that fit this motherboard:',
     forCpu: 'Motherboards that suit this CPU:',
@@ -328,7 +365,8 @@ const en: Messages = {
     go: 'Build',
     invalid: 'Enter the budget as a number in EGP (up to 1,000,000).',
     tooLow: minimum => `Too low: the cheapest complete, compatible build is ${minimum}.`,
-    done: (total, budget) => `Built for ${total} of your ${budget}. Change any part you like.`
+    done: (total, budget) => `Built for ${total} of your ${budget}. Change any part you like.`,
+    unavailable: store => `${store} doesn't stock enough parts for a complete, compatible build.`
   }
 }
 

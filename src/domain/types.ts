@@ -102,6 +102,8 @@ export interface PartsByCategory {
 
 export type Build = { [K in Category]?: PartsByCategory[K] }
 
+export type Catalog = { readonly [K in Category]: readonly PartsByCategory[K][] }
+
 export type BuildIds = Partial<Record<Category, string>>
 
 export type Severity = 'error' | 'warning' | 'info'

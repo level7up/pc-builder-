@@ -1,5 +1,5 @@
-import { catalog } from '../data/parts'
-import type { Build, BuildIds, Category, PartBase } from './types'
+import { catalog as fullCatalog } from '../data/parts'
+import type { Build, BuildIds, Catalog, Category, PartBase } from './types'
 
 export const CATEGORIES: Category[] = ['cpu', 'motherboard', 'memory', 'gpu', 'storage', 'psu', 'case', 'cooler']
 
@@ -8,7 +8,7 @@ export const REQUIRED: Category[] = ['cpu', 'motherboard', 'memory', 'storage', 
 const findIn = <T extends PartBase>(list: readonly T[], id: string | undefined): T | undefined =>
   id === undefined ? undefined : list.find(part => part.id === id)
 
-export function resolveBuild(ids: BuildIds): Build {
+export function resolveBuild(ids: BuildIds, catalog: Catalog = fullCatalog): Build {
   return {
     cpu: findIn(catalog.cpu, ids.cpu),
     gpu: findIn(catalog.gpu, ids.gpu),
@@ -34,6 +34,6 @@ export function sanitizeIds(raw: unknown): BuildIds {
   if (typeof raw !== 'object' || raw === null) return {}
   const entries = Object.entries(raw as Record<string, unknown>)
     .filter((entry): entry is [Category, string] => CATEGORIES.includes(entry[0] as Category) && typeof entry[1] === 'string')
-    .filter(([category, id]) => catalog[category].some(part => part.id === id))
+    .filter(([category, id]) => fullCatalog[category].some(part => part.id === id))
   return Object.fromEntries(entries) as BuildIds
 }

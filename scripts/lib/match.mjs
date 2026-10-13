@@ -20,7 +20,8 @@ const hasPhrase = (text, phrase) => text.includes(normalize(phrase))
 export function matchesRule(title, rule) {
   if (BUNDLE_MARK.test(title)) return false
   const text = normalize(title)
-  if (EXCLUDED_PHRASES.some(phrase => hasPhrase(text, phrase))) return false
+  const allowed = rule.allow ?? []
+  if (EXCLUDED_PHRASES.some(phrase => !allowed.includes(phrase) && hasPhrase(text, phrase))) return false
   if ((rule.none ?? []).some(phrase => hasPhrase(text, phrase))) return false
   return rule.all.every(term => [term].flat().some(phrase => hasPhrase(text, phrase)))
 }

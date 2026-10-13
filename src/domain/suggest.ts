@@ -1,6 +1,6 @@
-import { catalog } from '../data/parts'
+import { catalog as fullCatalog } from '../data/parts'
 import { checkBuild, isUnlocked } from './compatibility'
-import type { Build, Category, Cpu, Motherboard, PartBase, PartsByCategory } from './types'
+import type { Build, Catalog, Category, Cpu, Motherboard, PartBase, PartsByCategory } from './types'
 
 export type CpuReason = 'cheapest' | 'bestValue' | 'strongest'
 export type BoardReason = 'cheapest' | 'overclock' | 'wifi'
@@ -34,7 +34,7 @@ function pickDistinct<P extends PartBase, R>(rankings: [R, P[]][]): Suggestion<P
   }, []).slice(0, MAX_SUGGESTIONS)
 }
 
-export function suggestCpus(board: Motherboard): Suggestion<Cpu, CpuReason>[] {
+export function suggestCpus(board: Motherboard, catalog: Catalog = fullCatalog): Suggestion<Cpu, CpuReason>[] {
   const fitting = catalog.cpu.filter(cpu => isCleanPair({ cpu, motherboard: board })).sort(byPrice)
   const value = (cpu: Cpu) => cpu.gamingScore / cpu.listing.priceEgp
   const byValue = [...fitting].sort((a, b) => value(b) - value(a))
@@ -42,7 +42,7 @@ export function suggestCpus(board: Motherboard): Suggestion<Cpu, CpuReason>[] {
   return pickDistinct<Cpu, CpuReason>([['cheapest', fitting], ['bestValue', byValue], ['strongest', byStrength]])
 }
 
-export function suggestBoards(cpu: Cpu, build: Build = {}): Suggestion<Motherboard, BoardReason>[] {
+export function suggestBoards(cpu: Cpu, build: Build = {}, catalog: Catalog = fullCatalog): Suggestion<Motherboard, BoardReason>[] {
   const pairs = catalog.motherboard.filter(board => isCleanPair({ cpu, motherboard: board }))
   const matchingMemory = build.memory ? pairs.filter(board => board.memory === build.memory!.type) : []
   const fitting = (matchingMemory.length > 0 ? matchingMemory : pairs).sort(byPrice)

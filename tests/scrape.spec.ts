@@ -34,6 +34,13 @@ describe('title matching', () => {
     expect(matchesRule('Lenovo Legion Pro 7 Ultra 9 275HX RTX 5090 16 inch', { all: ['rtx 5090'] })).toBe(false)
     expect(matchesRule('AMD Ryzen 5 7500F Tray', rule)).toBe(true)
   })
+
+  it('lets a rule allow a globally excluded phrase', () => {
+    const title = 'Lian Li HydroShift II OLED Curved 360MM AIO Liquid Cooler'
+    expect(matchesRule(title, { all: ['hydroshift ii', '360'] })).toBe(false)
+    expect(matchesRule(title, { all: ['hydroshift ii', '360'], allow: ['oled'] })).toBe(true)
+    expect(matchesRule(`${title} Bundle`, { all: ['hydroshift ii'], allow: ['oled'] })).toBe(false)
+  })
 })
 
 describe('offer choice', () => {

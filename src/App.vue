@@ -2,7 +2,8 @@
 import { computed } from 'vue'
 import { CATEGORIES } from './domain/build'
 import { PRESETS } from './domain/presets'
-import { PRICES_CHECKED_ON, STORE_COUNT, catalog } from './data/parts'
+import { PRICES_CHECKED_ON, STORE_COUNT } from './data/parts'
+import { STORES } from './domain/store'
 import { useBuild } from './useBuild'
 import { useLocale } from './i18n/useLocale'
 import { useTheme } from './useTheme'
@@ -15,6 +16,7 @@ import BudgetPanel from './components/BudgetPanel.vue'
 import BrandLogo from './components/BrandLogo.vue'
 import FpsPanel from './components/FpsPanel.vue'
 import ShareActions from './components/ShareActions.vue'
+import StorePanel from './components/StorePanel.vue'
 import BuildSheet from './components/BuildSheet.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
@@ -36,10 +38,13 @@ const suggestionsFor = computed<Partial<Record<Category, RowSuggestion[]>>>(() =
   const toRow = <R extends string>(reasons: Record<R, string>) => (s: { part: PartBase; reason: R }): RowSuggestion =>
     ({ id: s.part.id, name: s.part.name, priceEgp: s.part.listing.priceEgp, reason: reasons[s.reason] })
   return {
-    cpu: build.motherboard && needsSuggestion(build, 'cpu') ? suggestCpus(build.motherboard).map(toRow(t.value.suggest.cpuReasons)) : [],
-    motherboard: build.cpu && needsSuggestion(build, 'motherboard') ? suggestBoards(build.cpu, build).map(toRow(t.value.suggest.boardReasons)) : []
+    cpu: build.motherboard && needsSuggestion(build, 'cpu') ? suggestCpus(build.motherboard, state.catalog.value).map(toRow(t.value.suggest.cpuReasons)) : [],
+    motherboard: build.cpu && needsSuggestion(build, 'motherboard') ? suggestBoards(build.cpu, build, state.catalog.value).map(toRow(t.value.suggest.boardReasons)) : []
   }
 })
+
+const notHereFor = (category: Category): string | undefined =>
+  state.store.value && state.unavailable.value.includes(category) ? t.value.store.notHere(state.store.value.name) : undefined
 
 const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'forBoard', motherboard: 'forCpu' }
 </script>
@@ -72,7 +77,9 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
       </button>
     </section>
 
-    <BudgetPanel :t="t" :locale="locale" @apply="ids => state.replace(ids)" />
+    <StorePanel :stores="STORES" :store-id="state.storeId.value" :quotes="state.quotes.value" :t="t" :locale="locale" @select="id => state.setStore(id)" />
+
+    <BudgetPanel :t="t" :locale="locale" :catalog="state.catalog.value" :store-name="state.store.value?.name" @apply="ids => state.replace(ids)" />
 
     <main class="layout">
       <section class="parts">
@@ -80,11 +87,12 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
           v-for="category in CATEGORIES"
           :key="category"
           :category="category"
-          :options="catalog[category]"
+          :options="state.catalog.value[category]"
           :selected="state.ids.value[category]"
           :t="t"
           :locale="locale"
           :fits="fitsIn(category)"
+          :not-here="notHereFor(category)"
           :suggestions="suggestionsFor[category]"
           :suggest-title="suggestTitle[category] ? t.suggest[suggestTitle[category]!] : undefined"
           @change="id => state.setPart(category, id)"

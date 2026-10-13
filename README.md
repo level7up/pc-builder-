@@ -27,7 +27,7 @@ and FPS at each resolution.
 | File | Holds |
 |---|---|
 | `src/data/listings.json` | Reference price per part, plus `checkedOn`: a Compumarts handle and variant, or a store id and URL for parts Compumarts does not sell |
-| `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain |
+| `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain, and any globally excluded words it may still contain (`allow`, e.g. "inch" for an AIO with a screen) |
 | `src/data/offers.json` | Scraped price, stock, link and product image (https only) per part and store |
 | `src/data/catalog/*.ts` | Specs per part, one file per category (socket, memory type, power, length, score…) |
 | `src/data/parts.ts` | Joins the specs with their reference price and scraped offers |
@@ -43,7 +43,7 @@ is outside 0.6–1.8× the reference price. CPUs, boards, memory,
 storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
 VRAM, so other stores may list a different card of the same GPU. A store that
 fails completely keeps its previous prices on `--write`. The catalogue covers every
-CPU, GPU, ATX/micro-ATX motherboard, desktop memory kit, case and PSU that was in stock at one of the eight
+CPU, GPU, ATX/micro-ATX motherboard, desktop memory kit, case, PSU and CPU cooler (air and AIO, except Intel-only and server coolers) that was in stock at one of the eight
 stores on the last full survey (October 2026): Ryzen 2000 to 9000, Intel
 12th–14th gen and Core Ultra, RTX 3050 to 5090 including the 4070 Ti and 4090,
 RX 6500 XT to 9070 XT including the 7900 XT and XTX. Intel 10th/11th gen (LGA1200) is
@@ -52,12 +52,23 @@ because cases are only checked for ATX and micro-ATX. Board power limits come
 from the chipset and board tier (entry -E/-K/-H boards are lower). Case GPU clearances come from the
 maker's spec or the store description; where neither states it, the value is
 an estimate, marked "(est.)", and an over-long card is a warning, not an error.
+Cooler ratings use the maker's TDP where it is published; otherwise they are
+estimated from the design (single or dual tower, radiator size).
 
 To add a part: add its listing to `listings.json` (for Compumarts the store
 handle is the last part of the product URL; for another store give its store id
 and the product URL), its search terms to `search-terms.json`, its specs to the
 category file in `src/data/catalog/`, then run `npm test` and `npm run prices:scrape -- --write`. The data
 tests fail if a part has no listing or a listing has no part.
+
+## Buying from one store
+
+"Buy everything from one store" limits the part lists, prices, total, suggestions
+and the budget builder to one store's in-stock offers (`src/domain/store.ts`).
+A part that store does not stock stays in the build with a warning. With any
+parts picked, the panel also compares the build's cost at each store, stores
+that have every part first, then cheapest. The chosen store is remembered and
+travels in the share link (`store=`).
 
 ## How the estimates work
 

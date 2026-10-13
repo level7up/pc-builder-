@@ -1,4 +1,4 @@
-import type { Case, Cooler, Cpu, Gpu, Listing, Memory, Motherboard, Offer, PartBase, Psu, Spec, Storage } from '../domain/types'
+import type { Case, Catalog, Cooler, Cpu, Gpu, Listing, Memory, Motherboard, Offer, PartBase, Psu, Spec, Storage } from '../domain/types'
 import { CPU_SPECS } from './catalog/cpus'
 import { GPU_SPECS } from './catalog/gpus'
 import { MOTHERBOARD_SPECS } from './catalog/motherboards'
@@ -88,7 +88,7 @@ export const cases: Case[] = withListing(CASE_SPECS)
 
 export const coolers: Cooler[] = withListing(COOLER_SPECS)
 
-export const catalog = {
+export const catalog: Catalog = {
   cpu: cpus,
   gpu: gpus,
   motherboard: motherboards,
@@ -97,4 +97,4 @@ export const catalog = {
   psu: psus,
   case: cases,
   cooler: coolers
-} as const
+}

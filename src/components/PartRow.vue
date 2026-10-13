@@ -4,6 +4,7 @@ import type { Category, PartBase } from '../domain/types'
 import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
 import { formatEgp } from '../format'
+import PartPicker, { type PickerGroup } from './PartPicker.vue'
 
 export interface RowSuggestion {
   id: string
@@ -21,6 +22,7 @@ const props = defineProps<{
   fits: (part: PartBase) => boolean
   suggestTitle?: string
   suggestions?: RowSuggestion[]
+  notHere?: string
 }>()
 
 const emit = defineEmits<{ change: [id: string | undefined] }>()
@@ -28,36 +30,31 @@ const emit = defineEmits<{ change: [id: string | undefined] }>()
 const sorted = computed(() => [...props.options].sort((a, b) => a.listing.priceEgp - b.listing.priceEgp))
 const fitting = computed(() => sorted.value.filter(p => props.fits(p)))
 const notFitting = computed(() => sorted.value.filter(p => !props.fits(p)))
+const groups = computed<PickerGroup[]>(() =>
+  notFitting.value.length === 0 ? [{ parts: sorted.value }] : [{ label: props.t.groups.fits, parts: fitting.value }, { label: props.t.groups.other, parts: notFitting.value }]
+)
 const part = computed(() => props.options.find(p => p.id === props.selected))
 const specs = computed(() => (part.value ? describePart(props.category, part.value, props.t) : []))
 const selectId = computed(() => 'pick-' + props.category)
 const brokenImage = ref<string | null>(null)
 const image = computed(() => (part.value?.listing.image && part.value.listing.image !== brokenImage.value ? part.value.listing.image : undefined))
-
-function onSelect(event: Event) {
-  const value = (event.target as HTMLSelectElement).value
-  emit('change', value === '' ? undefined : value)
-}
 </script>
 
 <template>
   <div class="row" :class="{ filled: part }">
     <label class="label" :for="selectId">{{ t.categories[category] }}</label>
     <div class="body">
-      <select :id="selectId" :value="selected ?? ''" @change="onSelect">
-        <option value="">{{ t.choose }}</option>
-        <template v-if="notFitting.length === 0">
-          <option v-for="o in sorted" :key="o.id" :value="o.id">{{ o.name }} — {{ formatEgp(o.listing.priceEgp, locale) }}</option>
-        </template>
-        <template v-else>
-          <optgroup :label="t.groups.fits">
-            <option v-for="o in fitting" :key="o.id" :value="o.id">{{ o.name }} — {{ formatEgp(o.listing.priceEgp, locale) }}</option>
-          </optgroup>
-          <optgroup :label="t.groups.other">
-            <option v-for="o in notFitting" :key="o.id" :value="o.id">{{ o.name }} — {{ formatEgp(o.listing.priceEgp, locale) }}</option>
-          </optgroup>
-        </template>
-      </select>
+      <PartPicker
+        :id="selectId"
+        :groups="groups"
+        :selected="selected"
+        :locale="locale"
+        :placeholder="t.choose"
+        :search-label="t.picker.search"
+        :empty-label="t.picker.empty"
+        @change="id => emit('change', id)"
+      />
+      <p v-if="notHere" class="not-here" role="status">⚠️ {{ notHere }}</p>
       <div v-if="suggestions && suggestions.length" class="suggest">
         <span class="suggest-title">{{ suggestTitle }}</span>
         <button v-for="s in suggestions" :key="s.id" type="button" class="pick" @click="emit('change', s.id)">
@@ -105,7 +102,6 @@ function onSelect(event: Event) {
 .row.filled { border-inline-start: 4px solid var(--accent); }
 .body { min-width: 0; }
 .label { font-weight: 700; padding-top: 7px; }
-select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel2); direction: ltr; text-align: start; }
 .picked { display: flex; align-items: flex-start; gap: 12px; margin-top: 8px; }
 .picked-info { min-width: 0; }
 .part-image { flex: 0 0 auto; display: block; inline-size: 72px; block-size: 72px; border-radius: 10px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
@@ -137,6 +133,7 @@ select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid 
 .store-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none; }
 .store-link:hover { background: var(--accent); color: var(--accent-ink); }
 .store-link b { font-weight: 800; }
+.not-here { margin: 8px 0 0; font-size: 13px; font-weight: 600; color: var(--warn); }
 .clear { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 12px; padding: 0; }
 .clear:hover { color: var(--bad); }
 @media (max-width: 640px) {
