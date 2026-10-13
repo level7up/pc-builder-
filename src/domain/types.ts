@@ -10,12 +10,14 @@ export interface Offer {
   url: string
   inStock: boolean
   title: string
+  image?: string
 }
 
 export interface Listing {
   priceEgp: number
   store: string
   url: string
+  image?: string
   offers: Offer[]
 }
 
@@ -66,20 +68,26 @@ export interface Storage extends PartBase {
   pcieGen: 3 | 4 | 5
 }
 
+export const PSU_RATINGS = ['Standard', 'Bronze', 'Silver', 'Gold', 'Platinum', 'Titanium'] as const
+export type PsuRating = (typeof PSU_RATINGS)[number]
+
 export interface Psu extends PartBase {
   watts: number
-  rating: 'Standard' | 'Bronze' | 'Gold'
+  rating: PsuRating
 }
 
 export interface Case extends PartBase {
   formFactors: FormFactor[]
   maxGpuMm: number
+  gpuClearanceEstimated?: boolean
 }
 
 export interface Cooler extends PartBase {
   kind: 'air' | 'liquid'
   ratedW: number
 }
+
+export type Spec<T> = Omit<T, 'listing'>
 
 export interface PartsByCategory {
   cpu: Cpu

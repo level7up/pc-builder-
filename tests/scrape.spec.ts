@@ -59,37 +59,43 @@ describe('offer choice', () => {
 describe('store parsers', () => {
   it('reads Shopify variants with prices in pounds', () => {
     const items = fromShopifyProducts([
-      { title: 'Kingston NV3', handle: 'kingston-nv3', variants: [{ id: 1, title: '1TB', price: '7070.00', available: true }, { id: 2, title: '2TB', price: '11000.00', available: false }] },
+      { title: 'Kingston NV3', handle: 'kingston-nv3', images: [{ src: 'https://cdn.shopify.com/nv3.png?v=1' }], variants: [{ id: 1, title: '1TB', price: '7070.00', available: true, featured_image: { src: 'https://cdn.shopify.com/nv3-1tb.png' } }, { id: 2, title: '2TB', price: '11000.00', available: false }] },
       { title: 'Ryzen 5 5500', handle: 'r5', variants: [{ id: 3, title: 'Default Title', price: '4429.00', available: true }] }
     ], 'https://shop.test')
     expect(items).toEqual([
-      { title: 'Kingston NV3 1TB', priceEgp: 7070, inStock: true, url: 'https://shop.test/products/kingston-nv3?variant=1' },
-      { title: 'Kingston NV3 2TB', priceEgp: 11000, inStock: false, url: 'https://shop.test/products/kingston-nv3?variant=2' },
+      { title: 'Kingston NV3 1TB', priceEgp: 7070, inStock: true, url: 'https://shop.test/products/kingston-nv3?variant=1', image: 'https://cdn.shopify.com/nv3-1tb.png?width=300' },
+      { title: 'Kingston NV3 2TB', priceEgp: 11000, inStock: false, url: 'https://shop.test/products/kingston-nv3?variant=2', image: 'https://cdn.shopify.com/nv3.png?v=1&width=300' },
       { title: 'Ryzen 5 5500', priceEgp: 4429, inStock: true, url: 'https://shop.test/products/r5' }
     ])
   })
 
   it('reads WooCommerce prices in minor units', () => {
-    const items = fromWooProducts([{ name: 'AMD Ryzen&#8482; 5 7500F &amp; Fan', permalink: 'https://w.test/p', is_in_stock: true, prices: { price: '690000', currency_minor_unit: 2 } }])
-    expect(items).toEqual([{ title: 'AMD Ryzen™ 5 7500F & Fan', priceEgp: 6900, inStock: true, url: 'https://w.test/p' }])
+    const items = fromWooProducts([
+      { name: 'AMD Ryzen&#8482; 5 7500F &amp; Fan', permalink: 'https://w.test/p', is_in_stock: true, prices: { price: '690000', currency_minor_unit: 2 }, images: [{ src: 'https://w.test/big.png', thumbnail: 'https://w.test/small.png' }] },
+      { name: 'No image', permalink: 'https://w.test/q', is_in_stock: true, prices: { price: '100000', currency_minor_unit: 2 }, images: [{ src: 'http://w.test/plain.png' }] }
+    ])
+    expect(items).toEqual([
+      { title: 'AMD Ryzen™ 5 7500F & Fan', priceEgp: 6900, inStock: true, url: 'https://w.test/p', image: 'https://w.test/small.png' },
+      { title: 'No image', priceEgp: 1000, inStock: true, url: 'https://w.test/q' }
+    ])
   })
 
   it('reads OpenCart cards with stock labels', () => {
     const card = (id: number, name: string, price: string, label = '') => `<div
-class="product-layout" data-product-id="${id}"><div class="product-labels">${label}</div><div class="caption"><div class="name"><a href="https://oc.test/item-${id}?search=x&amp;limit=100">${name}</a></div><div class="price"><span class="price-new">${price}</span> <span class="price-old">99,999 EGP</span></div></div><div class="buttons-wrapper">`
+class="product-layout" data-product-id="${id}"><div class="image"><img src="https://oc.test/img-${id}.png" srcset="x 2x" alt="${name}"/></div><div class="product-labels">${label}</div><div class="caption"><div class="name"><a href="https://oc.test/item-${id}?search=x&amp;limit=100">${name}</a></div><div class="price"><span class="price-new">${price}</span> <span class="price-old">99,999 EGP</span></div></div><div class="buttons-wrapper">`
     const html = card(1, 'AMD Ryzen 5 7500F', '6,950 EGP') + card(2, 'RTX 5060', '22,499.00 EGP', '<span class="product-label product-label-30"><strong>Out Of Stock</strong></span>')
     expect(fromOpenCartHtml(html)).toEqual([
-      { title: 'AMD Ryzen 5 7500F', priceEgp: 6950, inStock: true, url: 'https://oc.test/item-1' },
-      { title: 'RTX 5060', priceEgp: 22499, inStock: false, url: 'https://oc.test/item-2' }
+      { title: 'AMD Ryzen 5 7500F', priceEgp: 6950, inStock: true, url: 'https://oc.test/item-1', image: 'https://oc.test/img-1.png' },
+      { title: 'RTX 5060', priceEgp: 22499, inStock: false, url: 'https://oc.test/item-2', image: 'https://oc.test/img-2.png' }
     ])
   })
 
   it('reads products from the Sigma page payload', () => {
-    const data = JSON.stringify({ products: [{ slug: 'r5-7500f', name: 'AMD Ryzen 5 7500F', price: { base: 7500, current: 7299 }, is_stock: true }], after: '[ignored]' })
+    const data = JSON.stringify({ products: [{ slug: 'r5-7500f', name: 'AMD Ryzen 5 7500F', price: { base: 7500, current: 7299 }, is_stock: true, thumbnail: { url: 'https://api.sigma.test/media/1' } }], after: '[ignored]' })
     const pushed = JSON.stringify(`44:${data}`)
     const html = `<script>self.__next_f.push([1,${pushed}])</script>`
     expect(fromSigmaHtml(html, 'https://sigma.test')).toEqual([
-      { title: 'AMD Ryzen 5 7500F', priceEgp: 7299, inStock: true, url: 'https://sigma.test/en/item?id=r5-7500f' }
+      { title: 'AMD Ryzen 5 7500F', priceEgp: 7299, inStock: true, url: 'https://sigma.test/en/item?id=r5-7500f', image: 'https://api.sigma.test/media/1' }
     ])
     expect(fromSigmaHtml('<html></html>', 'https://sigma.test')).toEqual([])
   })
@@ -113,6 +119,20 @@ describe('listing with several stores', () => {
     const listing = listingFor('x', source, offers({ x: [{ store: 'kimo', priceEgp: 800, inStock: false, url: 'k1', title: '' }, { store: 'kimo', priceEgp: 900, inStock: true, url: 'k2', title: '' }] }))
     expect(listing).toMatchObject({ priceEgp: 900, store: 'Kimo Store', url: 'k2' })
     expect(listing.offers.map(o => o.store)).toEqual(['Kimo Store', 'Kimo Store', 'Compumarts'])
+  })
+
+  it('shows the image of the chosen offer, or any offer that has one', () => {
+    const withImages = listingFor('x', source, offers({ x: [
+      { store: 'kimo', priceEgp: 900, inStock: true, url: 'k', title: '', image: 'https://img.test/k.png' },
+      { store: 'compumarts', priceEgp: 950, inStock: true, url: 'c', title: '', image: 'https://img.test/c.png' }
+    ] }))
+    expect(withImages.image).toBe('https://img.test/k.png')
+    const fallback = listingFor('x', source, offers({ x: [
+      { store: 'kimo', priceEgp: 900, inStock: true, url: 'k', title: '' },
+      { store: 'compumarts', priceEgp: 950, inStock: true, url: 'c', title: '', image: 'https://img.test/c.png' }
+    ] }))
+    expect(fallback.image).toBe('https://img.test/c.png')
+    expect(listingFor('x', source, offers({ x: [{ store: 'kimo', priceEgp: 900, inStock: true, url: 'k', title: '', image: 'javascript:alert(1)' }] })).image).toBeUndefined()
   })
 
   it('prefers the scraped reference store price over the stored one', () => {

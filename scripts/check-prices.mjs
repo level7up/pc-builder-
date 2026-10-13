@@ -19,7 +19,9 @@ async function fetchVariant(storeUrl, item) {
 async function main() {
   const listings = JSON.parse(await readFile(LISTINGS_PATH, 'utf8'))
   const rows = []
-  for (const [id, item] of Object.entries(listings.items)) {
+  const compumartsItems = Object.entries(listings.items).filter(([, item]) => item.handle)
+  console.log(`Checking ${compumartsItems.length} Compumarts references; ${Object.keys(listings.items).length - compumartsItems.length} from other stores are refreshed by prices:scrape.\n`)
+  for (const [id, item] of compumartsItems) {
     try {
       rows.push({ id, old: item.priceEgp, ...(await fetchVariant(listings.storeUrl, item)) })
     } catch (error) {

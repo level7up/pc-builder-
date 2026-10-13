@@ -14,6 +14,20 @@ export function decodeEntities(text) {
     .replace(/&([a-z]+);/gi, (whole, name) => ENTITIES[name.toLowerCase()] ?? whole)
 }
 
+const THUMBNAIL_WIDTH = '300'
+
+export const httpsOnly = url => (typeof url === 'string' && /^https:\/\/[^\s"'<>]+$/.test(url) ? url : undefined)
+
+const withImage = (offer, image) => (image ? { ...offer, image } : offer)
+
+function shopifyThumbnail(src) {
+  const url = httpsOnly(src)
+  if (!url) return undefined
+  const parsed = new URL(url)
+  parsed.searchParams.set('width', THUMBNAIL_WIDTH)
+  return parsed.toString()
+}
+
 export const parseEgp = text => Math.round(Number(String(text).replace(/[^0-9.]/g, '')))
 
 async function get(url, kind) {
@@ -26,21 +40,21 @@ async function get(url, kind) {
 }
 
 export function fromShopifyProducts(products, storeUrl) {
-  return products.flatMap(product => product.variants.map(variant => ({
+  return products.flatMap(product => product.variants.map(variant => withImage({
     title: variant.title && variant.title !== 'Default Title' ? `${product.title} ${variant.title}` : product.title,
     priceEgp: Math.round(Number(variant.price)),
     inStock: variant.available === true,
     url: `${storeUrl}/products/${encodeURIComponent(product.handle)}${product.variants.length > 1 ? `?variant=${variant.id}` : ''}`
-  })))
+  }, shopifyThumbnail(variant.featured_image?.src ?? product.images?.[0]?.src))))
 }
 
 export function fromWooProducts(items) {
-  return items.map(item => ({
+  return items.map(item => withImage({
     title: decodeEntities(item.name),
     priceEgp: Math.round(Number(item.prices.price) / 10 ** item.prices.currency_minor_unit),
     inStock: item.is_in_stock === true,
     url: item.permalink
-  }))
+  }, httpsOnly(item.images?.[0]?.thumbnail ?? item.images?.[0]?.src)))
 }
 
 const withoutSearchParams = url => {
@@ -59,12 +73,13 @@ export function fromOpenCartHtml(html) {
     if (!name || !price) return []
     const labels = [...card.matchAll(/product-label[^"]*"><strong>([^<]*)</g)].map(m => m[1])
     const stock = card.match(/Stock:<\/span> <span>([^<]*)/)?.[1] ?? ''
-    return [{
+    const image = httpsOnly(decodeEntities(card.match(/<img[^>]*?\ssrc="([^"]+)"/)?.[1] ?? ''))
+    return [withImage({
       title: decodeEntities(name[2]).trim(),
       priceEgp: parseEgp(price[1]),
       inStock: !UNAVAILABLE.test([...labels, stock].join(' ')),
       url: withoutSearchParams(decodeEntities(name[1]))
-    }]
+    }, image)]
   })
 }
 
@@ -92,12 +107,12 @@ export function fromSigmaHtml(html, siteUrl) {
   const marker = '"products":['
   const at = payload.indexOf(marker)
   if (at < 0) return []
-  return readJsonValue(payload, at + marker.length - 1).map(product => ({
+  return readJsonValue(payload, at + marker.length - 1).map(product => withImage({
     title: product.name,
     priceEgp: Math.round(Number(product.price?.current)),
     inStock: product.is_stock === true,
     url: `${siteUrl}/en/item?id=${encodeURIComponent(product.slug)}`
-  }))
+  }, httpsOnly(product.thumbnail?.url)))
 }
 
 function shopifyStore(id, name, url) {

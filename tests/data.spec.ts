@@ -47,6 +47,12 @@ describe('catalog data', () => {
     expect(PRICE_SOURCE.checkedOn).toMatch(/^\d{4}-\d{2}-\d{2}$/)
   })
 
+  it('takes the reference price from any store', () => {
+    const source = { checkedOn: '2026-10-12', store: 'Compumarts', storeUrl: 'https://www.compumarts.com', items: { x: { priceEgp: 9000, store: 'kimo', url: 'https://kimostore.net/products/x', title: 'X' } } }
+    const listing = listingFor('x', source, { checkedOn: '2026-10-12', stores: [{ id: 'kimo', name: 'Kimo Store', url: 'https://kimostore.net' }], items: {} })
+    expect(listing).toMatchObject({ priceEgp: 9000, store: 'Kimo Store', url: 'https://kimostore.net/products/x' })
+  })
+
   it('throws for a part with no listing', () => {
     expect(() => listingFor('nope')).toThrow(/nope/)
   })

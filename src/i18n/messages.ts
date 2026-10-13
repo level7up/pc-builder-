@@ -72,6 +72,7 @@ export interface Messages {
     vram: (gb: number) => string
     length: (mm: number) => string
     maxGpu: (mm: number) => string
+    maxGpuEstimated: (mm: number) => string
     rated: (w: number) => string
     igpu: string
   }
@@ -169,6 +170,7 @@ const ar: Messages = {
     cpuMemoryMismatch: p => `البروسيسور بيدعم ${p.cpu} بس، والرامات ${p.memory}.`,
     formFactorMismatch: p => `مازربورد ${p.board} مش هتدخل في الكيسة دي.`,
     gpuTooLong: p => `الكارت طوله حوالي ${p.gpu} مم والكيسة آخرها ${p.max} مم.`,
+    gpuMaybeTooLong: p => `الكارت طوله حوالي ${p.gpu} مم، والكيسة تقديراً آخرها ${p.max} مم: اتأكد من مواصفات الكيسة.`,
     gpuTight: p => `الكارت (حوالي ${p.gpu} مم) قريب من آخر الكيسة (${p.max} مم): اتأكد من الطول بالظبط.`,
     noVideoOutput: () => 'البروسيسور ده مفيهوش جرافيك داخلي: محتاج كارت شاشة عشان الشاشة تشتغل.',
     psuTooWeak: p => `الاستهلاك المتوقع ${p.load} وات والباور ${p.watts} وات بس.`,
@@ -188,6 +190,7 @@ const ar: Messages = {
     vram: gb => `${gb} جيجا`,
     length: mm => `~${mm} مم`,
     maxGpu: mm => `كارت لحد ${mm} مم`,
+    maxGpuEstimated: mm => `كارت لحد ~${mm} مم (تقدير)`,
     rated: w => `لحد ${w} وات`,
     igpu: 'فيه جرافيك'
   },
@@ -285,6 +288,7 @@ const en: Messages = {
     cpuMemoryMismatch: p => `The CPU supports ${p.cpu} only, but the memory is ${p.memory}.`,
     formFactorMismatch: p => `An ${p.board} motherboard does not fit this case.`,
     gpuTooLong: p => `The card is about ${p.gpu} mm long and the case fits up to ${p.max} mm.`,
+    gpuMaybeTooLong: p => `The card is about ${p.gpu} mm long and this case fits roughly ${p.max} mm (estimated): check the case specs.`,
     gpuTight: p => `The card (about ${p.gpu} mm) is close to the case limit (${p.max} mm): check the exact length.`,
     noVideoOutput: () => 'This CPU has no integrated graphics: you need a graphics card for any display output.',
     psuTooWeak: p => `Estimated load is ${p.load} W but the PSU is only ${p.watts} W.`,
@@ -304,6 +308,7 @@ const en: Messages = {
     vram: gb => `${gb} GB`,
     length: mm => `~${mm} mm`,
     maxGpu: mm => `GPU up to ${mm} mm`,
+    maxGpuEstimated: mm => `GPU up to ~${mm} mm (est.)`,
     rated: w => `up to ${w} W`,
     igpu: 'iGPU'
   },

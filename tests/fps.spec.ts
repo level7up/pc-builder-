@@ -10,8 +10,12 @@ const gpu = (id: string) => gpus.find(g => g.id === id)!
 const game = (id: string) => GAMES.find(g => g.id === id)!
 
 describe('fps estimate', () => {
-  it('includes PUBG Mobile on GameLoop', () => {
-    expect(GAMES.map(g => g.name)).toContain('PUBG Mobile (GameLoop)')
+  it('includes PUBG Mobile on GameLoop and League of Legends', () => {
+    expect(GAMES.map(g => g.name)).toEqual(expect.arrayContaining(['PUBG Mobile (GameLoop)', 'League of Legends']))
+  })
+
+  it('runs League of Legends above 144 FPS on a budget build at 1080p', () => {
+    expect(estimateFps(game('lol'), cpu('i5-12400f'), gpu('rtx5060'), '1080p').fps).toBeGreaterThanOrEqual(144)
   })
 
   it('gives the reference pair its reference frame rate when the GPU is the limit', () => {

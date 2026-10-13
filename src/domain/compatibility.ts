@@ -12,12 +12,16 @@ const issue = (severity: Issue['severity'], code: string, params?: Issue['params
 
 export const isUnlocked = (cpu: Cpu): boolean => cpu.brand === 'AMD' || /\d+KF?\b/.test(cpu.name)
 
+const OLDER_CHIPSETS: { cpu: RegExp; chipsets: string[] }[] = [
+  { cpu: /Ryzen \d (PRO )?5\d{3}/, chipsets: ['B450'] },
+  { cpu: /Ryzen \d (PRO )?[89]\d{3}/, chipsets: ['A620', 'B650', 'B650E', 'X670', 'X670E'] },
+  { cpu: /i\d-14\d{3}/, chipsets: ['H610', 'B660', 'Z690', 'B760'] }
+]
+
 const isNewGenOnOlderChipset = (build: Build): boolean => {
   const { cpu, motherboard } = build
-  if (!cpu || !motherboard) return false
-  const amdZen5 = cpu.socket === 'AM5' && /Ryzen \d 9\d{3}/.test(cpu.name)
-  const intel14th = /i\d-14\d{3}/.test(cpu.name)
-  return (amdZen5 && ['A620', 'B650'].includes(motherboard.chipset)) || (intel14th && ['H610', 'B760'].includes(motherboard.chipset))
+  if (!cpu || !motherboard || cpu.socket !== motherboard.socket) return false
+  return OLDER_CHIPSETS.some(rule => rule.cpu.test(cpu.name) && rule.chipsets.includes(motherboard.chipset))
 }
 
 const missing: Check = build => REQUIRED.filter(category => !build[category]).flatMap(category => issue('info', 'missing', { category }))
@@ -35,7 +39,11 @@ const formFactor: Check = ({ motherboard, case: pcCase }) =>
 
 const gpuFit: Check = ({ gpu, case: pcCase }) => {
   if (!gpu || !pcCase) return []
-  if (gpu.lengthMm > pcCase.maxGpuMm) return issue('error', 'gpuTooLong', { gpu: gpu.lengthMm, max: pcCase.maxGpuMm })
+  if (gpu.lengthMm > pcCase.maxGpuMm) {
+    return pcCase.gpuClearanceEstimated
+      ? issue('warning', 'gpuMaybeTooLong', { gpu: gpu.lengthMm, max: pcCase.maxGpuMm })
+      : issue('error', 'gpuTooLong', { gpu: gpu.lengthMm, max: pcCase.maxGpuMm })
+  }
   return gpu.lengthMm > pcCase.maxGpuMm - GPU_TIGHT_MARGIN_MM ? issue('warning', 'gpuTight', { gpu: gpu.lengthMm, max: pcCase.maxGpuMm }) : []
 }
 

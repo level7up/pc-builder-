@@ -11,7 +11,7 @@ npm install
 npm run dev            # http://localhost:5173
 npm test               # domain, data, translation and app tests
 npm run build          # type-check + production build into dist/
-npm run prices:check   # compare stored prices with the live store (read-only)
+npm run prices:check   # compare stored Compumarts reference prices with the live store (read-only)
 npm run prices:check -- --write   # save the new prices and today's date
 npm run prices:scrape  # fetch prices from all stores (read-only, ~3 min)
 npm run prices:scrape -- --write  # save them to src/data/offers.json
@@ -26,10 +26,11 @@ and FPS at each resolution.
 
 | File | Holds |
 |---|---|
-| `src/data/listings.json` | Reference price, store handle and variant per part on Compumarts, plus `checkedOn` |
+| `src/data/listings.json` | Reference price per part, plus `checkedOn`: a Compumarts handle and variant, or a store id and URL for parts Compumarts does not sell |
 | `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain |
-| `src/data/offers.json` | Scraped price, stock and link per part and store |
-| `src/data/parts.ts` | Specs per part (socket, memory type, power, length, score…) |
+| `src/data/offers.json` | Scraped price, stock, link and product image (https only) per part and store |
+| `src/data/catalog/*.ts` | Specs per part, one file per category (socket, memory type, power, length, score…) |
+| `src/data/parts.ts` | Joins the specs with their reference price and scraped offers |
 | `src/domain/presets.ts` | The four ready-made builds |
 
 Prices are scraped from eight Egyptian stores: Compumarts, Kimo Store and AHW
@@ -38,17 +39,24 @@ Group and Maximum Hardware (OpenCart search pages), Alfrensia and Uptodate
 Store (WooCommerce store API). Each part shows the cheapest in-stock offer and
 a list to compare all stores. Listings are matched by title terms, with
 bundles, PC builds and laptops rejected, and a match is ignored when its price
-is outside 0.6–1.8× the Compumarts reference price. CPUs, boards, memory,
+is outside 0.6–1.8× the reference price. CPUs, boards, memory,
 storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
 VRAM, so other stores may list a different card of the same GPU. A store that
-fails completely keeps its previous prices on `--write`. The catalogue covers the models that
-Egyptian stores stock widely: Intel 12th–14th gen and Core Ultra, Ryzen 5000,
-7000, 8000 and 9000, RTX 3050 to 5090, RX 9060 XT to 9070 XT, plus common
-boards, memory, SSDs, PSUs, cases and coolers.
+fails completely keeps its previous prices on `--write`. The catalogue covers every
+CPU, GPU, ATX/micro-ATX motherboard, desktop memory kit, case and PSU that was in stock at one of the eight
+stores on the last full survey (October 2026): Ryzen 2000 to 9000, Intel
+12th–14th gen and Core Ultra, RTX 3050 to 5090 including the 4070 Ti and 4090,
+RX 6500 XT to 9070 XT including the 7900 XT and XTX. Intel 10th/11th gen (LGA1200) is
+left out because no LGA1200 boards are listed, and mini-ITX and E-ATX boards
+because cases are only checked for ATX and micro-ATX. Board power limits come
+from the chipset and board tier (entry -E/-K/-H boards are lower). Case GPU clearances come from the
+maker's spec or the store description; where neither states it, the value is
+an estimate, marked "(est.)", and an over-long card is a warning, not an error.
 
-To add a part: add its listing to `listings.json` (the store handle is the last
-part of the product URL), its search terms to `search-terms.json`, its specs to
-`parts.ts`, then run `npm test` and `npm run prices:scrape -- --write`. The data
+To add a part: add its listing to `listings.json` (for Compumarts the store
+handle is the last part of the product URL; for another store give its store id
+and the product URL), its search terms to `search-terms.json`, its specs to the
+category file in `src/data/catalog/`, then run `npm test` and `npm run prices:scrape -- --write`. The data
 tests fail if a part has no listing or a listing has no part.
 
 ## How the estimates work

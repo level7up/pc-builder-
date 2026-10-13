@@ -2,7 +2,7 @@ import { catalog } from '../data/parts'
 import { cpuCapacity, gpuCapacity } from './bottleneck'
 import { totalPriceEgp } from './build'
 import { checkBuild } from './compatibility'
-import type { Build, BuildIds, Case, Cooler, Cpu, Gpu, Memory, Motherboard, PartBase, Psu, Resolution } from './types'
+import { PSU_RATINGS, type Build, type BuildIds, type Case, type Cooler, type Cpu, type Gpu, type Memory, type Motherboard, type PartBase, type Psu, type Resolution } from './types'
 import { recommendedPsuW } from './power'
 
 export const MIN_DUAL_CHANNEL_GB = 16
@@ -30,13 +30,20 @@ const cheapest = <P extends PartBase>(parts: readonly P[], accept: (p: P) => boo
 const boardFor = (cpu: Cpu, memory: Memory['type']): Motherboard | undefined =>
   cheapest(catalog.motherboard, b => b.socket === cpu.socket && b.memory === memory && b.maxCpuPowerW >= cpu.powerW)
 
+const cheapestPerSize = (kits: Memory[]): Memory[] => {
+  const sorted = [...kits].sort(byPrice)
+  return sorted.filter((kit, index) => sorted.findIndex(other => other.totalGb === kit.totalGb) === index)
+}
+
 const memoryOptions = (type: Memory['type']): Memory[] =>
-  catalog.memory.filter(m => m.type === type && m.sticks >= 2 && m.totalGb >= MIN_DUAL_CHANNEL_GB)
+  cheapestPerSize(catalog.memory.filter(m => m.type === type && m.sticks >= 2 && m.totalGb >= MIN_DUAL_CHANNEL_GB))
+
+const isGoldOrBetter = (psu: Psu): boolean => PSU_RATINGS.indexOf(psu.rating) >= PSU_RATINGS.indexOf('Gold')
 
 const psuFor = (cpu: Cpu, gpu: Gpu, preferGold: boolean): Psu | undefined => {
   const needed = recommendedPsuW({ cpu, gpu })
   const ok = (p: Psu) => p.watts >= needed && (gpu.boardPowerW < POWER_HUNGRY_GPU_W || p.rating !== 'Standard')
-  return (preferGold ? cheapest(catalog.psu, p => ok(p) && p.rating === 'Gold') : undefined) ?? cheapest(catalog.psu, ok)
+  return (preferGold ? cheapest(catalog.psu, p => ok(p) && isGoldOrBetter(p)) : undefined) ?? cheapest(catalog.psu, ok)
 }
 
 const caseFor = (board: Motherboard, gpu: Gpu): Case | undefined =>
@@ -48,7 +55,7 @@ export const performanceOf = (cpu: Cpu, gpu: Gpu, memory: Memory, resolution: Re
   Math.min(cpuCapacity(cpu, memory), gpuCapacity(gpu, resolution))
 
 const comfortOf = (build: Build): number =>
-  (build.memory!.totalGb >= 32 ? 2 : 0) + (build.storage!.capacityGb >= 1000 ? 1 : 0) + (build.storage!.capacityGb >= 2000 ? 1 : 0) + (build.psu!.rating === 'Gold' ? 1 : 0)
+  (build.memory!.totalGb >= 32 ? 2 : 0) + (build.storage!.capacityGb >= 1000 ? 1 : 0) + (build.storage!.capacityGb >= 2000 ? 1 : 0) + (isGoldOrBetter(build.psu!) ? 1 : 0)
 
 const isClean = (build: Build): boolean => checkBuild(build).every(i => i.severity === 'info')
 
@@ -69,8 +76,15 @@ function candidatesFor(cpu: Cpu, gpu: Gpu, resolution: Resolution): Candidate[] 
   })
 }
 
-const allCandidates = (resolution: Resolution): Candidate[] =>
-  catalog.cpu.flatMap(cpu => catalog.gpu.flatMap(gpu => candidatesFor(cpu, gpu, resolution)))
+const candidateCache = new Map<Resolution, Candidate[]>()
+
+function allCandidates(resolution: Resolution): Candidate[] {
+  const cached = candidateCache.get(resolution)
+  if (cached) return cached
+  const fresh = catalog.cpu.flatMap(cpu => catalog.gpu.flatMap(gpu => candidatesFor(cpu, gpu, resolution)))
+  candidateCache.set(resolution, fresh)
+  return fresh
+}
 
 const idsOf = (build: Build): BuildIds =>
   Object.fromEntries(Object.entries(build).filter(([, part]) => part).map(([category, part]) => [category, (part as PartBase).id]))

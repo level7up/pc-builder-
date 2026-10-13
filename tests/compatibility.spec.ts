@@ -3,7 +3,7 @@ import { checkBuild, hasErrors, isUnlocked } from '../src/domain/compatibility'
 import { resolveBuild, totalPriceEgp } from '../src/domain/build'
 import { estimatedLoadW, recommendedPsuW } from '../src/domain/power'
 import { PRESETS } from '../src/domain/presets'
-import { cpus } from '../src/data/parts'
+import { cases, cpus, gpus, psus } from '../src/data/parts'
 import type { BuildIds } from '../src/domain/types'
 
 const BASE: BuildIds = { cpu: 'r5-7500f', motherboard: 'mb-b650m-p', memory: 'ram-d5-32', gpu: 'rx9060xt-16', storage: 'ssd-1t', psu: 'psu-750g', case: 'case-danb4', cooler: 'cool-a450' }
@@ -34,6 +34,24 @@ describe('compatibility', () => {
     expect(codes({ ...BASE, gpu: 'rtx5090', case: 'case-danb4', psu: 'psu-1200g', motherboard: 'mb-b650m-p' })).toEqual(expect.not.arrayContaining(['gpuTooLong']))
   })
 
+  it('only warns when a card is longer than an estimated case clearance', () => {
+    const gpu = gpus.find(g => g.id === 'rtx5090')!
+    const measured = { ...cases[0], maxGpuMm: 300 }
+    const estimated = { ...measured, gpuClearanceEstimated: true }
+    expect(checkBuild({ gpu, case: measured }).find(i => i.code === 'gpuTooLong')?.severity).toBe('error')
+    const issue = checkBuild({ gpu, case: estimated }).find(i => i.code === 'gpuMaybeTooLong')
+    expect(issue?.severity).toBe('warning')
+    expect(issue?.params).toEqual({ gpu: gpu.lengthMm, max: 300 })
+  })
+
+  it('accepts any rated supply above Bronze for a power-hungry card', () => {
+    const gpu = gpus.find(g => g.id === 'rtx5080')!
+    const base = psus.find(p => p.watts >= 1000)!
+    const rated = (rating: typeof base.rating) => checkBuild({ gpu, psu: { ...base, rating } }).map(i => i.code)
+    expect(rated('Standard')).toContain('psuRatingLow')
+    ;(['Bronze', 'Silver', 'Gold', 'Platinum', 'Titanium'] as const).forEach(r => expect(rated(r)).not.toContain('psuRatingLow'))
+  })
+
   it('rejects a power supply below the estimated load', () => {
     expect(codes({ ...BASE, gpu: 'rtx5090', psu: 'psu-650' })).toContain('psuTooWeak')
   })
@@ -62,6 +80,20 @@ describe('compatibility', () => {
   it('notes overclocking and BIOS limits', () => {
     expect(codes({ cpu: 'i7-14700k', motherboard: 'mb-b760m-ds3h-d5' })).toEqual(expect.arrayContaining(['noOverclock', 'biosUpdate']))
     expect(codes({ cpu: 'i5-12400f', motherboard: 'mb-b760m-ds3h-d5' })).not.toContain('noOverclock')
+  })
+
+  it.each([
+    ['r5-5600', 'mb-asus-prime-b450m-k-ii'],
+    ['r7-9800x3d', 'mb-asus-b650e-max-wifi'],
+    ['r9-9950x', 'mb-msi-x670e-tomahawk-wifi'],
+    ['r5-8600g', 'mb-asus-prime-x670-p-wifi']
+  ])('notes a possible BIOS update for %s on %s', (cpu, motherboard) => {
+    expect(codes({ cpu, motherboard })).toContain('biosUpdate')
+  })
+
+  it('needs no BIOS note for a CPU on a board of its own generation', () => {
+    expect(codes({ cpu: 'r7-9800x3d', motherboard: 'mb-b850m-ds3h' })).not.toContain('biosUpdate')
+    expect(codes({ cpu: 'r5-5600', motherboard: 'mb-b550m-vdh' })).not.toContain('biosUpdate')
   })
 
   it('lists missing parts and puts errors first', () => {

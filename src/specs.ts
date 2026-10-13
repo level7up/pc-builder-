@@ -30,7 +30,7 @@ const DESCRIBE: Record<Category, Describe> = {
   },
   case: (p, m) => {
     const c = p as Case
-    return [c.formFactors.join(' / '), m.specs.maxGpu(c.maxGpuMm)]
+    return [c.formFactors.join(' / '), c.gpuClearanceEstimated ? m.specs.maxGpuEstimated(c.maxGpuMm) : m.specs.maxGpu(c.maxGpuMm)]
   },
   cooler: (p, m) => {
     const c = p as Cooler

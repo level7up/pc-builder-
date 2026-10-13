@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import type { Category, PartBase } from '../domain/types'
 import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
@@ -31,6 +31,8 @@ const notFitting = computed(() => sorted.value.filter(p => !props.fits(p)))
 const part = computed(() => props.options.find(p => p.id === props.selected))
 const specs = computed(() => (part.value ? describePart(props.category, part.value, props.t) : []))
 const selectId = computed(() => 'pick-' + props.category)
+const brokenImage = ref<string | null>(null)
+const image = computed(() => (part.value?.listing.image && part.value.listing.image !== brokenImage.value ? part.value.listing.image : undefined))
 
 function onSelect(event: Event) {
   const value = (event.target as HTMLSelectElement).value
@@ -64,8 +66,18 @@ function onSelect(event: Event) {
           <span>{{ formatEgp(s.priceEgp, locale) }}</span>
         </button>
       </div>
-      <div v-if="part" class="details">
-        <span v-for="s in specs" :key="s" class="chip">{{ s }}</span>
+      <div v-if="part" class="picked">
+        <a v-if="image" class="part-image" :href="part.listing.url" target="_blank" rel="noopener">
+          <img :src="image" :alt="part.name" loading="lazy" referrerpolicy="no-referrer" width="72" height="72" @error="brokenImage = image ?? null" />
+        </a>
+        <div class="picked-info">
+          <div class="details">
+            <span v-for="s in specs" :key="s" class="chip">{{ s }}</span>
+          </div>
+          <a class="store-link" :href="part.listing.url" target="_blank" rel="noopener" :title="part.listing.url">
+            {{ t.viewAtStore }} · <b>{{ part.listing.store }}</b> ↗
+          </a>
+        </div>
       </div>
       <details v-if="part && part.listing.offers.length > 1" class="offers">
         <summary>{{ t.offers.compare(part.listing.offers.length) }}</summary>
@@ -94,7 +106,11 @@ function onSelect(event: Event) {
 .body { min-width: 0; }
 .label { font-weight: 700; padding-top: 7px; }
 select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel2); direction: ltr; text-align: start; }
-.details { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.picked { display: flex; align-items: flex-start; gap: 12px; margin-top: 8px; }
+.picked-info { min-width: 0; }
+.part-image { flex: 0 0 auto; display: block; inline-size: 72px; block-size: 72px; border-radius: 10px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
+.part-image img { display: block; inline-size: 100%; block-size: 100%; object-fit: contain; }
+.details { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font-size: 12px; background: var(--panel2); border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; color: var(--muted); unicode-bidi: plaintext; }
 .price { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; padding-top: 6px; white-space: nowrap; }
 .price a { font-weight: 800; text-decoration: none; font-variant-numeric: tabular-nums; }
@@ -118,6 +134,9 @@ select { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid 
 .offer-price { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .offers li.gone { opacity: 0.55; }
 .offers li.gone .offer-price { font-weight: 400; color: var(--muted); }
+.store-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none; }
+.store-link:hover { background: var(--accent); color: var(--accent-ink); }
+.store-link b { font-weight: 800; }
 .clear { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 12px; padding: 0; }
 .clear:hover { color: var(--bad); }
 @media (max-width: 640px) {

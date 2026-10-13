@@ -488,6 +488,3408 @@
       "handle": "id-cooling-fx360-inf-pink-360mm-350w-tdp-liquid-cpu-cooler",
       "variant": "Black",
       "title": "ID-COOLING FX360 INF 360mm Liquid CPU Cooler 350W TDP Aluminum Radiator 3x120mm ARGB Fans "
+    },
+    "r5-2600": {
+      "priceEgp": 3260,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-2600x-tray-processor-egypt",
+      "title": "CPU AMD RYZEN5 2600 TRAY"
+    },
+    "r3-4300g": {
+      "priceEgp": 6220,
+      "store": "ahw",
+      "url": "https://ahw.store/products/amd-ryzen-3-4300g-am4-processor",
+      "title": "AMD RYZEN 3 4300G AM4 Processor 4-Core 8-Threads (Max Boost 4.0 GHz)"
+    },
+    "r5-3400g": {
+      "priceEgp": 3370,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-3400g-8-thread-processor?variant=46460064301205",
+      "title": "CPU AMD RYZEN 5 3400G TRAY Tray"
+    },
+    "r5-4500": {
+      "priceEgp": 3260,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/processors-amd-ryzen-5-4500-3-6ghz-4-1ghz-6c-12t-box?variant=46460053749909",
+      "title": "CPU AMD RYZEN5 4500 BOX Box"
+    },
+    "r5-5600x": {
+      "priceEgp": 7853,
+      "store": "ahw",
+      "url": "https://ahw.store/products/amd-ryzen-5-5600x-am4-processor-6-core-12-thread-max-boost-4-6-ghz-tray",
+      "title": "AMD RYZEN 5 5600X AM4 Processor 6-Core 12-Thread (Max Boost 4.6 GHz) Tray"
+    },
+    "r7-5700": {
+      "priceEgp": 7770,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-7-5700-ryzen-7-5000-series-8-core-3-7-ghz-socket-am4-65w-none-integrated-graphics-processor-100-100000743box?variant=46377343090837",
+      "title": "CPU AMD RYZEN 7 5700 TRAY Tray"
+    },
+    "r7-5800xt": {
+      "priceEgp": 14444,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-7-5800xt-8-core?variant=46460029960341",
+      "title": "CPU AMD Ryzen 7 5800XT Box"
+    },
+    "r9-5900xt": {
+      "priceEgp": 16995,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-5900xt-16-core-am4-egypt",
+      "title": "AMD Ryzen 9 5900XT BOX"
+    },
+    "r9-5950x": {
+      "priceEgp": 38745,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-5950x-16-core-3-4-ghz-socket-am4-105w-100-100000059wof-desktop-processor",
+      "title": "CPU AMD Ryzen 9 5950X BOX"
+    },
+    "r5-7400": {
+      "priceEgp": 7500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-7400-mpk-am5-processor",
+      "title": "RYZEN5 7400 MPK"
+    },
+    "r5-7445": {
+      "priceEgp": 7500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-pro-7445-tray-am5",
+      "title": "AMD Ryzen 5 PRO 7445 Tray Processor 6-Core 12-Thread 4.3GHz AM5"
+    },
+    "r5-7500x3d": {
+      "priceEgp": 14500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-7500x3d?variant=46696527265941",
+      "title": "AMD Ryzen 5 7500X3D MPK TRAY"
+    },
+    "r5-7600x": {
+      "priceEgp": 8850,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/amd-ryzen-5-7600x-mpk",
+      "title": "AMD Ryzen 5 7600X MPK 6-Core 12-Thread Desktop Processor — Zen 4 (Raphael), 4.7GHz Base, Up to 5.3GH"
+    },
+    "r5-8500g": {
+      "priceEgp": 6901,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-8500g-6-core-12-thread-desktop-processor?variant=46459468185749",
+      "title": "AMD Ryzen 5 8500G Desktop Processor, 6-Core, Up to 5GHz, 16MB L3 Cache, AM5, 65W Tray"
+    },
+    "r5-8600g": {
+      "priceEgp": 9476,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-8600g-6-core-24-thread-desktop-processor?variant=46459465269397",
+      "title": "AMD Ryzen 5 8600G AM5 Desktop Processor 6-Core 12-Thread 4.3GHz Up to 5.0GHz Radeon 760M TRAY"
+    },
+    "r5-9500f": {
+      "priceEgp": 9500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-9500f",
+      "title": "CPU AMD Ryzen 5 9500F TRAY"
+    },
+    "r5-9600": {
+      "priceEgp": 10500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-5-9600-am5",
+      "title": "CPU AMD RYZEN 5 9600 BOX"
+    },
+    "r7-7700": {
+      "priceEgp": 13000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/amd-ryzen-7-7700-8-core-4-5-ghz-socket-am5-105w-desktop-processor-100-100000591wof-1",
+      "title": "AMD Ryzen 7 7700 - 8-Core 4.5 GHz - Socket AM5 - 105W Desktop Processor"
+    },
+    "r7-8700f": {
+      "priceEgp": 8900,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/amd-ryzen-7-8700f-processor-5ghz-24mb-8-core-am5-tray",
+      "title": "AMD Ryzen 7 8700F Processor (5GHz/24MB) 8 Core AM5 Tray"
+    },
+    "r7-8700g": {
+      "priceEgp": 12500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-7-8700g-8-core-16-thread-desktop-processor?variant=46459459338389",
+      "title": "AMD Ryzen 7 8700G Desktop Processor 8-Core 16-Thread 4.2GHz Up to 5.1GHz AM5 Radeon 780M BOX Tray"
+    },
+    "r9-7900x": {
+      "priceEgp": 20754,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-7900x-12-core-24-thread-unlocked-desktop-processor",
+      "title": "CPU AMD RYZEN9 7900X BOX Box"
+    },
+    "r9-7950x": {
+      "priceEgp": 32500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-7950x-desktop-processors",
+      "title": "CPU AMD RYZEN9 7950X BOX"
+    },
+    "r9-7950x3d": {
+      "priceEgp": 34750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-7950x3d-16-core-32-thread-desktop-processor",
+      "title": "CPU AMD RYZEN9 7950X3D BOX Box"
+    },
+    "r9-9900x": {
+      "priceEgp": 19999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-9900x-4-4-ghz-12-core-am5-processor?variant=46111575179413",
+      "title": "AMD Ryzen 9 9900X Desktop Processor 12-Core 24-Thread 4.4GHz Up to 5.6GHz AM5 120W Box"
+    },
+    "r9-9900x3d": {
+      "priceEgp": 27499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-9900x3d-desktop-processor-12-core-24-thread-up-to-5-5ghz-128mb-l3-cache-zen-5-architecture-radeon-graphics-am5-socket-pcie-5-0?variant=46111573901461",
+      "title": "CPU AMD RYZEN9 9900X3D Tray"
+    },
+    "r9-9950x": {
+      "priceEgp": 26265,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-9950x-16-core-32-thread-unlocked-desktop-processor?variant=46459189067925",
+      "title": "AMD Ryzen 9 9950X Desktop CPU, 16 Cores / 32 Threads, Up to 5.7 GHz, 64MB L3 Cache, 170W, AM5 Tray"
+    },
+    "r9-9950x3d2": {
+      "priceEgp": 51500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/amd-ryzen-9-9950x3d-16core-processor-egypt",
+      "title": "AMD Ryzen 9 9950X3D2 Desktop Processor, 16 Cores 32 Threads, Up to 5.6GHz, 192MB Cache, AM5, Zen 5, "
+    },
+    "i3-14100f": {
+      "priceEgp": 6199,
+      "store": "ahw",
+      "url": "https://ahw.store/products/intel-core-i3-14100f-processor-4-core-8-threads-4-7-ghz-max-turbo-lga-1700",
+      "title": "Intel Core i3 14100F Processor 4 Core 8 Threads 4.7 GHz Max Turbo LGA 1700"
+    },
+    "i5-12600k": {
+      "priceEgp": 10900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/intel-core-i5-12600k-tray-processor-10-core",
+      "title": "Intel Core i5-12600K Tray Processor (10-Core, 16-Thread)"
+    },
+    "i5-14400": {
+      "priceEgp": 9299,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/intel-core-i5-14400-6p-cores-16-threads-up-to-4-7-ghz-lga1700-tray-without-fan",
+      "title": "Intel Core i5-14400 (6P) Cores 16-Threads up to 4.7 GHz LGA1700 Tray Without Fan"
+    },
+    "i5-14600k": {
+      "priceEgp": 14499,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/intel-core-i5-14600k-desktop-processor-tray-lga1700",
+      "title": "Intel Core i5-14600K Desktop Processor (TRAY) – 14 Cores, 20 Threads, Up to 5.3 GHz"
+    },
+    "i7-12700kf": {
+      "priceEgp": 12800,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/intel-core-i7-12700kf-alder-lake-cpu",
+      "title": "Intel Core i7-12700KF Desktop Processor Tray – 12 Cores/20 Threads, Up to 5.0 GHz"
+    },
+    "i7-14700": {
+      "priceEgp": 18499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/intel-core-i7-14700-33m-cache-up-to-5-40-ghz-processor?variant=67595845697685",
+      "title": "Intel Core i7 14700 33M Cache, up to 5.40 GHz processor Tray"
+    },
+    "i7-14700kf": {
+      "priceEgp": 20680,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/intel-core-i7-14700kf-20-core-56ghz-lga1700-egypt",
+      "title": "CPU INTEL CORE I7-14700KF"
+    },
+    "i9-13900kf": {
+      "priceEgp": 25010,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/intel-core-i9-13900kf-desktop-processor-24-cores-8-p-cores-16-e-cores-36m-cache-up-to-5-8-ghz",
+      "title": "CPU INTEL CORE I9-13900KF"
+    },
+    "i9-14900kf": {
+      "priceEgp": 24499,
+      "store": "ahw",
+      "url": "https://ahw.store/products/intel-core-i9-14900kf-processor-24-core-32-threads-6-0-ghz-max-turbo-lga-1700-tray",
+      "title": "Intel Core i9 14900KF Processor 24 Core 32 Threads 6.0 GHz Max Turbo LGA 1700 Tray"
+    },
+    "u5-225": {
+      "priceEgp": 8250,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=intel-ultra-5-225-trey-go0fdvklvg2m",
+      "title": "Intel Core Ultra 5 225 Tray – 10 Cores, Up to 4.2GHz, 20MB Cache, LGA 1851 Socket Processor"
+    },
+    "u5-245kf": {
+      "priceEgp": 11020,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/intel-core-ultra-5-245kf-14-core-5-2ghz-egypt",
+      "title": "CPU INTEL Ultra 5 245KF"
+    },
+    "u7-265": {
+      "priceEgp": 19300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/intel-core-ultra7-265-20core-5-3ghz-processor-egypt",
+      "title": "CPU INTEL Core Ultra 7 265 BOX"
+    },
+    "u9-285k": {
+      "priceEgp": 27999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/intel-core-ultra-9-285k-tray-processor/",
+      "title": "Intel Core Ultra 9 285K Tray Processor"
+    },
+    "rx6500xt-8": {
+      "priceEgp": 12499,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/sapphire-pulse-amd-radeon-rx-6500-xt-8gb-gddr6",
+      "title": "Sapphire PULSE AMD Radeon RX 6500 XT 8GB GDDR6 Graphics Card — 2695 MHz Game Clock, 2855 MHz Boost, "
+    },
+    "rtx4070ti": {
+      "priceEgp": 90030,
+      "store": "ahw",
+      "url": "https://ahw.store/products/msi-geforce-rtx-4070-ti-gaming-x-trio-12g",
+      "title": "MSI GeForce RTX 4070 Ti Gaming X Trio 12GB GDDR6X Graphics Card TRI FROZR 3 Thermal Design TORX Fan "
+    },
+    "rx7900xt": {
+      "priceEgp": 39999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=xfx-speedster-merc310-amd-radeon-rx-7900-xt-features-20gb-gddr6-memory-5376-stream-processors-up-to-2535-mhz-boost-clock-pci-e-40-biomqw09k53x",
+      "title": "XFX SPEEDSTER MERC310 AMD Radeon RX 7900 XT features 20GB GDDR6 memory, 5376 stream processors, up t"
+    },
+    "rx7900xtx": {
+      "priceEgp": 69000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/xfx-rx-7900-xtx-mercury",
+      "title": "XFX RX 7900 XTX Mercury AMD Radeon Magnetic Air Gaming Graphics Card 24G GDDR6"
+    },
+    "rtx4090": {
+      "priceEgp": 195840,
+      "store": "ahw",
+      "url": "https://ahw.store/products/gigabyte-geforce-rtx-4090-gaming-oc-24gb",
+      "title": "Gigabyte GeForce RTX 4090 Gaming OC 24G Graphics Card, 3X WINDFORCE Fans, 24GB 384-bit GDDR6X"
+    },
+    "ram-4-acer-8-1x-3200": {
+      "priceEgp": 3050,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=acer-ud100-8gb-single-ram-3200-mhz-ddr4-cl22-12v-desktop-computer-memory-bl9bwwa222-dho8vdqx0qf9",
+      "title": "Acer UD100 8GB Single RAM 3200 MHz DDR4 CL22 1.2V Desktop Computer Memory BL.9BWWA.222"
+    },
+    "ram-4-crucial-8-1x-3200": {
+      "priceEgp": 2650,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/crucial-ct8g4dfra32a-ram-8gb-ddr4-3200mhz-udimm",
+      "title": "Crucial CT8G4DFRA32A RAM, 8GB DDR4, 3200MHz, UDIMM"
+    },
+    "ram-4-kingston-fury-8-1x-3200": {
+      "priceEgp": 4010,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/kingston-fury-8gb-ddr4",
+      "title": "RAM PC FURY KINGSTON 8G RGB KF432C16BB2A8 DDR4 3200 CL16"
+    },
+    "ram-4-kingston-fury-beast-8-1x-3200": {
+      "priceEgp": 3250,
+      "store": "ahw",
+      "url": "https://ahw.store/products/kingston-fury-beast-8gb-3200mhz-cl22-ddr4-black-ram",
+      "title": "Kingston FURY Beast 8GB 3200MHz CL22 DDR4 Black RAM"
+    },
+    "ram-4-klevv-8-1x-3200": {
+      "priceEgp": 3050,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=klevv-8gb-ddr4-3200mhz-udimm-pc-y3onfcbb132l",
+      "title": "KLEVV DDR4 8GB 3200MHz UDIMM Desktop Memory"
+    },
+    "ram-4-lexar-8-1x-3200": {
+      "priceEgp": 4450,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lexar-ddr4-3200-udimm-desktop-memory?variant=43628781043861",
+      "title": "Lexar LD4U008G DDR4 Desktop Memory 8GB UDIMM 3200MHz 2666MHz 8GB"
+    },
+    "ram-4-ocpc-8-1x-3200": {
+      "priceEgp": 2990,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/ocpc-vs-ddr4-3200mhz-8gb-cl22-desktop-memory",
+      "title": "OCPC VS DDR4 3200MHz 8GB CL22 Desktop Memory"
+    },
+    "ram-4-pny-8-1x-3200": {
+      "priceEgp": 3000,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=pny-8gb-performance-ddr4-3200mhz-desktop-memory-pc4-25600-bixpudpdvrrl",
+      "title": "PNY 8GB Performance DDR4 3200MHz Desktop Memory (PC4-25600)"
+    },
+    "ram-4-teamgroup-delta-rgb-8-1x-3200": {
+      "priceEgp": 3500,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/team-t-force-delta-rgb-8gb-1-x-8gb-ddr4-3200-mhz-cl16-1-35v",
+      "title": "Team T-Force Delta RGB 8GB (1 x 8GB) DDR4 3200 MHz CL16 1.35V"
+    },
+    "ram-4-acer-16-1x-3200": {
+      "priceEgp": 6000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/acer-memory-ddr4-ud100-16gb",
+      "title": "Acer 16GB 3200MHz DDR4 UD100 UDIMM Memory – CL22 Low Latency, Desktop-Optimized Performance"
+    },
+    "ram-4-adata-spectrix-16-1x-3200": {
+      "priceEgp": 6400,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=xpg-d35g-spectrix-rgb-16gb-1x-16gb-ddr4-3200mhz-cl16-ram-black-ax4u320016g16a-sbkd35g-awlirpj9netg",
+      "title": "XPG D35G Spectrix 16GB (1X 16GB) DDR4 3200MHz CL16 RAM (Black) (AX4U320016G16A-SBKD35)"
+    },
+    "ram-4-crucial-16-1x-3200": {
+      "priceEgp": 6000,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/crucial-ram-16gb-ddr4-3200mhz",
+      "title": "Crucial RAM 16GB DDR4 3200MHz"
+    },
+    "ram-4-g-skill-aegis-16-1x-3200": {
+      "priceEgp": 6000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/g-skill-aegis-16gb-ddr4-3200/",
+      "title": "G.SKILL AEGIS 16GB DDR4 3200"
+    },
+    "ram-4-g-skill-ripjaws-v-16-1x-3200": {
+      "priceEgp": 6999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gskill-ripjaws-v-ddr4-3200-16gb-cl16",
+      "title": "G.Skill Ripjaws V DDR4-3200MHz 16GB (1x16GB) CL16-18-18-38 – PC4-25600, Intel XMP 2.0 Ready, 42mm He"
+    },
+    "ram-4-kingston-16-1x-3200": {
+      "priceEgp": 5800,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/kingston-ram-16gb-ddr4-3200mt-s",
+      "title": "Kingston RAM 16GB DDR4 3200MT/s"
+    },
+    "ram-4-kingston-fury-beast-16-1x-3200": {
+      "priceEgp": 7750,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/kingston-fury-beast-ram-16gb-ddr4-3200mt-s",
+      "title": "Kingston FURY Beast RAM 16GB DDR4 3200MT/s"
+    },
+    "ram-4-kingston-fury-beast-rgb-16-1x-3600": {
+      "priceEgp": 8000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/kingston-fury-16gb-beast-3600mt-s",
+      "title": "Kingston Fury 16GB Beast 3600MT/s DDR4 CL18 Desktop Memory Single Module - Intel XMP - AMD Ryzen - P"
+    },
+    "ram-4-lexar-16-1x-3200": {
+      "priceEgp": 5900,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/lexar-16gb-ddr4-3200mhz-cl22",
+      "title": "Lexar 16GB DDR4 3200Mhz CL22"
+    },
+    "ram-4-pny-16-1x-3200": {
+      "priceEgp": 5700,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=pny-performance-16gb-ram-ddr4-3200mhz-cl22-12v-memory-module-b8lodwf5mplz",
+      "title": "PNY Performance 16GB RAM DDR4 3200MHz CL22 1.2V Memory Module"
+    },
+    "ram-4-teamgroup-delta-rgb-16-1x-3200": {
+      "priceEgp": 6500,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/team-t-force-delta-rgb-16gb-1-x-16gb-ddr4-3200-mhz-cl16-1-35v",
+      "title": "Team T-Force Delta RGB 16GB (1 x 16GB) DDR4 3200 MHz CL16 1.35V"
+    },
+    "ram-4-corsair-vengeance-32-2x-3200": {
+      "priceEgp": 16005,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/corsair-vengeance-lpx-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-black?variant=45780727988373",
+      "title": "CORSAIR VENGEANCE LPX DDR4 DRAM 3200MHz C16 Memory Kit - Black 32GB (2X16)"
+    },
+    "ram-4-crucial-32-1x-3200": {
+      "priceEgp": 13850,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/crucial-ram-32gb-ddr4-3200mhz",
+      "title": "Crucial RAM 32GB DDR4 3200MHz"
+    },
+    "ram-4-crucial-pro-64-2x-3200": {
+      "priceEgp": 32725,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/crucial-pro-64gb-2x32gb-ddr4-3200-udimm-ram-kit",
+      "title": "Crucial Pro 64GB (2x32GB) DDR4 3200MHz UDIMM Desktop RAM Kit CL22 – High Performance Memory"
+    },
+    "ram-4-kingston-fury-beast-rgb-64-2x-3200": {
+      "priceEgp": 27000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/kingston-fury-beast-rgb-64gb-(2x32gb)-ddr4-3200",
+      "title": "Kingston FURY Beast RGB 64GB (2x32GB) DDR4 3200MT/s CL16 Desktop Memory - Intel XMP - AMD Ryzen Comp"
+    },
+    "ram-4-kingston-fury-beast-rgb-64-2x-3600": {
+      "priceEgp": 28500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/kingston-fury-beast-64gb-2x32gb-kf436c18bb2ak2-64",
+      "title": "Kingston FURY Beast 64GB (2x32GB) 3600MT/s DDR4 CL18 Desktop Memory Kit — Intel XMP - AMD Ryzen - RG"
+    },
+    "ram-5-lexar-thor-8-1x-6000": {
+      "priceEgp": 7000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/lexar-thor-2nd-gen-ddr5-desktop-memory-8gb-6000mt-s-cl38-48-48-96-1-35v/",
+      "title": "Lexar® THOR 2nd Gen DDR5 Desktop Memory 8GB 6000MT/s: CL38-48-48-96 / 1.35V"
+    },
+    "ram-5-samsung-8-1x-4800": {
+      "priceEgp": 6000,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=samsung-8gb-ddr5-4800mhz-udimm-desktop-ram-s8kvosrocbmg",
+      "title": "Samsung 8GB DDR5-4800MHz UDIMM Desktop RAM"
+    },
+    "ram-5-acer-16-1x-4800": {
+      "priceEgp": 12370,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-acer-ud200-16gb-ddr5-4800mhz-desktop-ram-egypt",
+      "title": "Acer UD200 16GB DDR5 4800MHz CL40 1.1V 1Rx8 UDIMM Desktop Memory"
+    },
+    "ram-5-adata-16-1x-5600": {
+      "priceEgp": 13680,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/adata-ddr5-16gb-5600mhz-udimm-egypt",
+      "title": "ADATA 16GB DDR5 5600MHz UDIMM Desktop RAM – CL46, 1.1V"
+    },
+    "ram-5-addlink-16-1x-5600": {
+      "priceEgp": 10500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/addlink-16gb-ddr5-5600mhz-cl46-desktop-memory",
+      "title": "Addlink 16GB DDR5 5600MHz CL46 UDIMM – 1.1V Desktop Memory"
+    },
+    "ram-5-apacer-16-1x-5600": {
+      "priceEgp": 12100,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/apacer-ram-16gb-ddr5-5600mhz",
+      "title": "Apacer RAM 16GB DDR5 5600MHz"
+    },
+    "ram-5-crucial-16-1x-5600": {
+      "priceEgp": 12950,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/crucial-ram-16gb-ddr5-5600mhz",
+      "title": "Crucial RAM 16GB DDR5 5600MHz"
+    },
+    "ram-5-crucial-pro-16-1x-6400": {
+      "priceEgp": 16850,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/crucial-16gb-ddr5-6400mhz-cl38-white-ram-egypt",
+      "title": "RAM PC Crucial Pro DDR5 16GB 6400MHz CL38 White"
+    },
+    "ram-5-kingston-fury-beast-16-1x-6000": {
+      "priceEgp": 13284,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/kingston-fury-beast-16gb-ddr5-6000mhz-cl36-amd-expo-and-intel-xmp-black-desktop-memory/",
+      "title": "Kingston Fury Beast 16GB DDR5 6000MHz CL36 AMD EXPO and Intel XMP Black Desktop Memory"
+    },
+    "ram-5-kingston-fury-beast-rgb-16-1x-6000": {
+      "priceEgp": 13000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/kingston-fury-beast-16gb-ddr5-6000-kf560c36bbe2a-16-cl36-rgb/",
+      "title": "Kingston Fury BEAST 16GB DDR5 6000 KF560C36BBE2A-16 CL36 RGB"
+    },
+    "ram-5-klevv-fit-16-1x-6400": {
+      "priceEgp": 13225,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/klevv-fit-v-16gb-1x16gb-ddr5-6400mhz-cl32-jet-black-desktop-memory/",
+      "title": "Klevv Fit V 16GB 1x16GB DDR5 6400MHz CL32 Jet Black Desktop Memory"
+    },
+    "ram-5-lexar-thor-16-2x-6000": {
+      "priceEgp": 14000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/lexar-thor-2nd-gen-ddr5-desktop-memory-16gb-kit-2-x-8gb-6000mt-s-cl38-48-48-96-1-35v/",
+      "title": "Lexar® THOR 2nd Gen DDR5 Desktop Memory 16GB Kit (2 x 8GB) 6000MT/s: CL38-48-48-96 / 1.35V"
+    },
+    "ram-5-ocpc-volare-16-1x-6000": {
+      "priceEgp": 15840,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/ocpc-volare-16gb-ddr5-6000mhz-ram",
+      "title": "OCPC VOLARE DDR5 16GB 6000MHz CL36 Desktop RAM Single Module UDIMM Gaming Memory Heatsink MMVL16GD56"
+    },
+    "ram-5-teamgroup-delta-rgb-16-1x-6000": {
+      "priceEgp": 11999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/t-force-delta-rgb-ddr5-16gb-6000mhz-cl38-single-module",
+      "title": "T-FORCE DELTA RGB DDR5 16GB Single Module – 6000MHz CL38 1.25V"
+    },
+    "ram-5-teamgroup-vulcan-16-1x-6000": {
+      "priceEgp": 12500,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/team-vulcan-16gb-1-x-16gb-6000-mhz-cl38-ddr5",
+      "title": "Team Vulcan 16GB (1 x 16GB) 6000 MHz CL38 DDR5"
+    },
+    "ram-5-twinmos-16-1x-6000": {
+      "priceEgp": 15840,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/ram-twinmos-ddr5-16gb-6000mhz-rgb",
+      "title": "RAM Twinmos DDR5 16GB 6000MHz"
+    },
+    "ram-5-twinmos-voltx-16-1x-6000": {
+      "priceEgp": 14545,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/twinmos-voltx-ddr5-6000mhz-16gb-ram-egypt",
+      "title": "TwinMOS VOLTX DDR5 6000MHz 16GB UDIMM RAM Black Heat Sink TMD516GB6000U36B"
+    },
+    "ram-5-patriot-signature-24-1x-5600": {
+      "priceEgp": 16999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=patriot-psp524g560081h1-24gb-ddr5-5600mhz-udimm-cl46-11v-non-ecc-single-sided-on-die-ecc-aluminum-heatshield-r5qpk1y93ry2",
+      "title": "Patriot Signature Premium DDR5 RAM 24GB (1X24GB) 5600MHz CL46 UDIMM W/HS Desktop Memory Module - PSP"
+    },
+    "ram-5-acer-32-1x-5600": {
+      "priceEgp": 24730,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-acer-ud200-32gb-ddr5-5600-udimm-desktop-ram-egypt",
+      "title": "Acer UD200 32GB DDR5 5600MHz CL46 288pin 1.1V UDIMM Desktop Memory"
+    },
+    "ram-5-acer-vesta-32-2x-6000": {
+      "priceEgp": 38160,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/acer-predator-vesta-ii-rgb-ddr5-16gb-6000mhz-cl36-egypt",
+      "title": "KIT RAM Acer Predator Vesta II RGB DDR5 RAM 32GB (16GBx2) 6000MHz"
+    },
+    "ram-5-corsair-vengeance-32-2x-6000": {
+      "priceEgp": 26000,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-vengeance-32gb-2x16gb-6000mhz-cl36-ddr5",
+      "title": "CORSAIR VENGEANCE 32GB (2x16GB) 6000MHz CL36 DDR5"
+    },
+    "ram-5-corsair-vengeance-rgb-32-2x-6400": {
+      "priceEgp": 27999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/corsair-vengeance-rgb-32gb-2x16gb-ddr5-6400mhz-cl36-black-desktop-memory/",
+      "title": "Corsair Vengeance RGB 32GB 2x16GB DDR5 6400MHz CL36 Black Desktop Memory"
+    },
+    "ram-5-corsair-vengeance-rgb-32-2x-6800": {
+      "priceEgp": 27500,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-vengeance-rgb-32gb-2x16gb-6800mhz-cl40-ddr5",
+      "title": "CORSAIR VENGEANCE RGB 32GB (2x16GB) 6800MHz CL40 DDR5"
+    },
+    "ram-5-corsair-vengeance-rgb-32-2x-7200": {
+      "priceEgp": 29000,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-vengeance-rgb-32gb-2x16gb-7200mhz-cl34-ddr5",
+      "title": "CORSAIR VENGEANCE RGB 32GB (2x16GB) 7200MHz CL34 DDR5"
+    },
+    "ram-5-crucial-32-1x-5600": {
+      "priceEgp": 26000,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/crucial-ram-32gb-ddr5-5600mhz",
+      "title": "Crucial RAM 32GB DDR5 5600MHz"
+    },
+    "ram-5-g-skill-ripjaws-s5-32-1x-6000": {
+      "priceEgp": 22500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gskill-ripjaws-s5-32gb-ddr5-6000-cl36-1x32gb-ram",
+      "title": "G.SKILL Ripjaws S5 32GB (1x32GB) DDR5 6000MHz CL36 Desktop RAM – XMP 3.0 Memory"
+    },
+    "ram-5-g-skill-ripjaws-s5-32-2x-6000": {
+      "priceEgp": 25500,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/g-skill-ripjaws-s5-32gb-2-x-16gb-6000-cl36-ddr5",
+      "title": "G.SKILL Ripjaws S5 32GB (2 x 16GB) 6000 CL36 DDR5"
+    },
+    "ram-5-g-skill-trident-z5-neo-32-2x-6000": {
+      "priceEgp": 32605,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/g-skill-trident-z5-neo-rgb-32gb-2x16gb-ddr5-6000mhz-cl36-intel-xmp-and-amd-expo-white-desktop-memory/",
+      "title": "G Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6000MHz CL36 Intel XMP and AMD EXPO White Desktop Memo"
+    },
+    "ram-5-g-skill-trident-z5-rgb-32-2x-5600": {
+      "priceEgp": 27500,
+      "store": "ahw",
+      "url": "https://ahw.store/products/gskill-trident-z5-rgb-32gb-2x16gb-5600mhz-cl40-ddr5-black-ram",
+      "title": "GSKILL Trident Z5 RGB 32GB (2x16GB) 5600MHz CL40 DDR5 Black RAM"
+    },
+    "ram-5-kingston-fury-beast-rgb-32-2x-6000": {
+      "priceEgp": 24000,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=kingston-fury-beast-rgb-32gb-ddr5-desktop-memory-6000-mhz-memory-speed-cl36-cas-latency-288-pin-kit-intel-xmp-30-amd-expo-ready-black-kf560c36bbe2a-32-0atgbc7jlpp8",
+      "title": "Kingston Fury Beast RGB 32GB DDR5 Desktop Memory, 6000 MHz Memory Speed, CL36 CAS Latency, 288-Pin K"
+    },
+    "ram-5-klevv-bolt-32-2x-6000": {
+      "priceEgp": 26910,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/klevv-bolt-v-32gb-2x16gb-ddr5-6000mhz-cl28-intel-xmp-3-0-and-amd-expo-charcoal-grey-desktop-memory/",
+      "title": "Klevv Bolt V 32GB (2x16GB) DDR5 6000MHz CL28 Intel XMP 3.0 and AMD EXPO Charcoal Grey Desktop Memory"
+    },
+    "ram-5-lexar-ares-32-2x-6400": {
+      "priceEgp": 26000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/lexar-ares-rgb-32gb-2x16gb-ddr5-ram-6000mt-s-cl34-w",
+      "title": "Lexar ARES RGB 32GB (2x16GB) DDR5 RAM 6000MT/s CL34 Desktop Memory - AMD Expo and Intel XMP 3.0 (Whi"
+    },
+    "ram-5-lexar-ares-32-2x-6800": {
+      "priceEgp": 37300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lexar-ares-rgb-ddr5-32gb-6800mhz?variant=46534825803925",
+      "title": "KIT RAM LEXAR ARES DDR5 RGB 32G 2*16G 6800MHZ Black"
+    },
+    "ram-5-lexar-ares-32-2x-7200": {
+      "priceEgp": 25999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=lexar-32gb-2x16gb-ares-rgb-ddr5-ram-7200mts-cl34-14v-desktop-memory-intel-xmp-30-amd-expo-compatible-black-ld5u16g72c34la-rgd-rz6vxfcnxl97",
+      "title": "Lexar 32GB (2x16GB) ARES RGB DDR5 RAM 7200MT/s CL34 1.4V Desktop Memory - Intel XMP 3.0 & AMD EXPO C"
+    },
+    "ram-5-lexar-thor-32-2x-6000": {
+      "priceEgp": 32725,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lexar-thor-32gb-2-x-16gb-ddr5-6000mhz-rgb-desktop-memory",
+      "title": "Lexar Thor 32Gb (2 X 16Gb) DDR5 CL 38 6000Mhz RGB Desktop Memory"
+    },
+    "ram-5-lexar-thor-32-2x-6400": {
+      "priceEgp": 27500,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/lexar-thor-rgb-ram-32gb-2x-16gb-ddr5-6400mhz",
+      "title": "Lexar Thor RGB RAM 32GB (2x 16GB) DDR5 6400MHz"
+    },
+    "ram-5-teamgroup-delta-rgb-32-2x-6000": {
+      "priceEgp": 38545,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/teamgroup-t-force-delta-rgb-32gb-ddr5-6000mhz-cl30-ram-egypt",
+      "title": "RAM TEAMGROUP TFORCE DELTA RGB 32G ( 2X16) DDR5 6000MHZ CL30 BLACK"
+    },
+    "ram-5-teamgroup-delta-rgb-32-1x-6000": {
+      "priceEgp": 22999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/t-force-delta-rgb-ddr5-32gb-6000mhz-cl38-single-module",
+      "title": "TEAM T-FORCE DELTA RGB DDR5 32GB Single Module – 6000MHz CL38 XMP 3.0/EXPO"
+    },
+    "ram-5-teamgroup-delta-rgb-32-2x-6400": {
+      "priceEgp": 37440,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/teamgroup-t-force-delta-rgb-ddr5-32gb-kit-2x16gb-6400mhz-cl-32-ram",
+      "title": "RAM TEAMGROUP TFORCE DELTA RGB 32G ( 2X16) DDR5 6400MHZ CL32 BLACK"
+    },
+    "ram-5-teamgroup-vulcan-32-2x-6000": {
+      "priceEgp": 26000,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/teamgroup-t-force-vulcan-ram-32gb-2x-16gb-ddr5-6000mhz-cl38",
+      "title": "Teamgroup T-FORCE VULCAN RAM 32GB (2x16GB) DDR5 6000MHz CL38"
+    },
+    "ram-5-teamgroup-vulcan-32-1x-6000": {
+      "priceEgp": 24999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/teamgroup-t-force-vulcan-ram-32gb-ddr5-6000mhz",
+      "title": "Teamgroup T-FORCE VULCAN RAM 32GB DDR5 6000MHz"
+    },
+    "ram-5-twinmos-32-2x-6000": {
+      "priceEgp": 29090,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/twinmos-tmd532gb60dk36vxb-ddr5-32gb-6000mhz-desktop-memory-egypt",
+      "title": "TwinMOS TMD532GB60DK36VXB 32GB (2×16GB) DDR5 Desktop Memory Kit 6000MHz CL36 Dual Channel Black"
+    },
+    "ram-5-corsair-vengeance-48-2x-6000": {
+      "priceEgp": 40730,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/corsair-vengeance-ddr5-48gb-6000-cl36-black-egypt",
+      "title": "RAM CORSAIR/CMK48GX5M2E6000C36/ VENGEANCE DDR5 48GB (2 x 24GB) DDR5 6000 CL36-44-44-96 1.40V Intel X"
+    },
+    "ram-5-corsair-vengeance-rgb-48-2x-6000": {
+      "priceEgp": 35499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=corsair-vengeance-cmh48gx5m2e6000c36-rgb-ddr5-48gb-2x24gb-6000mts-cl36-140v-wzpitocb9znv",
+      "title": "RAM-CORSAIR-48G-Vengeance RGB DDR5 (2x24) 6000MHz CL36-44-44-96 (CMH48GX5M2E6000C36) Intel XMP"
+    },
+    "ram-5-g-skill-trident-z5-royal-48-2x-7200": {
+      "priceEgp": 52000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/g.skill-trident-z5-royal-rgb-48gb-(2x24gb)-ddr5-7200-cl36",
+      "title": "G.Skill Trident Z5 Royal RGB 48GB (2x24GB) DDR5-7200 CL36-46-46-115 1.35V Dual Channel Desktop Memor"
+    },
+    "ram-5-g-skill-trident-z5-royal-48-2x-8000": {
+      "priceEgp": 54000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/g.skill-trident-z5-royal-48gb-(2x24gb)-ddr5-8000-cl40",
+      "title": "G.Skill Trident Z5 Royal 48GB (2x24GB) DDR5-8000 CL40-48-48-128 1.35V Dual Channel Desktop Memory Ki"
+    },
+    "ram-5-g-skill-trident-z5-royal-48-2x-8400": {
+      "priceEgp": 55000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/g.skill-trident-z5-royal-48gb-(2x24gb)-ddr5-8400-cl40",
+      "title": "G.Skill Trident Z5 Royal 48GB (2x24GB) DDR5-8400 CL40-52-52-134 1.40V Dual Channel Desktop Memory Ki"
+    },
+    "ram-5-kingston-fury-renegade-48-1x-6000": {
+      "priceEgp": 39750,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/kingston-fury-renegade-rgb-ddr5-48gb-1x48gb-6000mt-s-cl32-kf560c32rsa-48",
+      "title": "Kingston FURY Renegade RGB DDR5 48GB (1×48GB) 6000MT/s CL32 Desktop Memory Module – KF560C32RSA-48"
+    },
+    "ram-5-klevv-cras-48-2x-6000": {
+      "priceEgp": 38525,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/klevv-cras-v-rgb-48gb-24gbx2-ddr5-6000mhz-cl28-obsidian-black-desktop-memory/",
+      "title": "Klevv Cras V RGB 48GB (24GBx2) DDR5 6000Mhz CL28 Obsidian Black Desktop Memory"
+    },
+    "ram-5-klevv-cras-48-2x-6400": {
+      "priceEgp": 35999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=klevv-cras-v-rgb-ddr5-48gb-2x24gb-6400mhz-cl32-a-die-135v-gaming-desktop-ram-memory-sk-hynix-chip-xmp-30-amd-expo-ready-black-kd5kgud80-64a320g-rvq7okhae484",
+      "title": "KLEVV CRAS V RGB DDR5 48GB (2x24GB) 6400MHz CL32 A-DIE 1.35V Gaming Desktop Ram Memory SK Hynix Chip"
+    },
+    "ram-5-patriot-viper-elite-48-2x-6600": {
+      "priceEgp": 35499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=patriot-viper-elite-5-tuf-gaming-rgb-ddr5-ram-48gb-2x24gb-6600mts-cl34-udimm-desktop-gaming-memory-kit-pver548g66c34kt-fshyikbmoobq",
+      "title": "Patriot Viper Elite 5 TUF Gaming RGB DDR5 RAM 48GB (2X24GB) 6600MT/s CL34 UDIMM Desktop Gaming Memor"
+    },
+    "ram-5-corsair-vengeance-64-2x-6000": {
+      "priceEgp": 58180,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/corsair-vengeance-ddr5-64gb-6000mhz-cl40-ram-egypt",
+      "title": "RAM CORSAIR/CMK64GX5M2D6000Z40/VENGEANCE DDR5 64GB (2 x 32GB) DDR5 6000 CL40-50-50-96 1.35V Intel XM"
+    },
+    "ram-5-corsair-vengeance-rgb-64-2x-5600": {
+      "priceEgp": 48301,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/corsair-vengeance-rgb-64gb-2x32gb-ddr5-5600mhz-cl40-intel-xmp-white-desktop-memory/",
+      "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz CL40 Intel XMP White Desktop Memory"
+    },
+    "ram-5-g-skill-ripjaws-s5-64-2x-6000": {
+      "priceEgp": 64515,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gskill-ripjaws-s5-64gb-ddr5-6000mhz-cl36-egypt",
+      "title": "RAM PC G.SKILL/F5-6000J3636F32GX2-RS5K/Ripjaws S5-DDR5-6000 CL36-64GB (2x32GB) Intel XMP / AMD EXPO"
+    },
+    "ram-5-g-skill-trident-z5-neo-64-2x-6000": {
+      "priceEgp": 56085,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/g-skill-f5-6000j3636f32gx2-tz5nr-trident-z5-neo-rgb-64gb-2x32gb-ddr5-6000mhz-cl36-desktop-memory",
+      "title": "G.SKILL Trident Z5 Neo RGB 64GB (2x32GB) DDR5 6000MHz CL36 Desktop Memory Kit AMD EXPO Intel XMP 3.0"
+    },
+    "ram-5-kingston-fury-beast-rgb-64-2x-6400": {
+      "priceEgp": 61999,
+      "store": "ahw",
+      "url": "https://ahw.store/products/kingston-fury-beast-ddr5-rgb-64gb-2x32gb-6400-mhz-cl32-ram-black",
+      "title": "Kingston Fury Beast DDR5 RGB 64GB (2x32GB) 6400 MHz CL32 RAM Black"
+    },
+    "ram-5-teamgroup-delta-rgb-64-2x-6000": {
+      "priceEgp": 46000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/teamgroup-tforce-delta-64gb-ddr5-6000mhz",
+      "title": "TeamGroup T-FORCE Delta RGB 64GB (2x32GB) DDR5 6000MHz CL38 1.35V Desktop Memory - Black FF3D564G600"
+    },
+    "ram-5-teamgroup-delta-rgb-64-2x-6400": {
+      "priceEgp": 44444,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/teamgroup-tforce-delta-rgb-64gb-ddr5-6400-cl30-black-egypt",
+      "title": "TeamGroup T-Force Delta RGB 64GB (2x32GB) DDR5 6400MHz CL30 Desktop RAM Black-FF3D564G6400HC30CDC01"
+    },
+    "ram-5-teamgroup-vulcan-64-2x-6000": {
+      "priceEgp": 45000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/team-group-vulcan-ddr5-desktop-memory-black-64gb-2x32gb-6000mhz/",
+      "title": "TEAM GROUP VULCAN DDR5 DESKTOP MEMORY BLACK 64GB (2X32GB) 6000MHZ"
+    },
+    "ram-5-corsair-dominator-titanium-96-2x-6600": {
+      "priceEgp": 79999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/cmp96gx5m2b6600c32w",
+      "title": "CORSAIR DOMINATOR TITANIUM RGB 96GB (2x48GB) DDR5 DRAM 6600MT/s CL32 Intel XMP Memory Kit — White"
+    },
+    "ram-5-corsair-vengeance-96-2x-5600": {
+      "priceEgp": 72720,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/corsair-vengeance-96gb-2x48gb-ddr5-dram-5600mt-s-cl40-memory-kit",
+      "title": "CORSAIR VENGEANCE 96GB 2x48GB DDR5 5600MT/s CL40 Desktop Memory Kit Black"
+    },
+    "ram-5-corsair-vengeance-rgb-96-2x-5600": {
+      "priceEgp": 98175,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/corsair-vengeance-rgb-ddr5-ram-96gb-2x48gb-cl40",
+      "title": "RAM CORSAIR/CMH96GX5M2B5600C40/VENGEANCE RGB DDR5 96GB (2 x 48GB) DDR5 5600 CL40-40-40-77 1.25V Inte"
+    },
+    "ram-5-corsair-vengeance-rgb-96-2x-6800": {
+      "priceEgp": 70000,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-vengeance-rgb-96gb-2x48gb-6800mhz-cl34-ddr5",
+      "title": "CORSAIR VENGEANCE RGB 96GB (2x48GB) 6800MHz CL34 DDR5"
+    },
+    "ram-5-g-skill-trident-z5-neo-96-2x-6000": {
+      "priceEgp": 79500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/g.skill-trident-z5-neo-rgb-96gb-(2x48gb)-ddr5-6000-cl30",
+      "title": "G.Skill Trident Z5 Neo RGB 96GB (2x48GB) DDR5-6000 CL30-36-36-96 — 1.35V AMD EXPO Dual Channel Deskt"
+    },
+    "ram-5-g-skill-trident-z5-royal-96-2x-6800": {
+      "priceEgp": 101810,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/g-skill-f5-6800j3446f48gx2-tr5s-trident-z5-royal-series-96gb-2x48gb-ddr5-6800mhz-cl34-desktop-memory-silver",
+      "title": "RAM PC G.SKILL/G.SKILL/Trident Z5 Royal-DDR5-6800 CL34-96GB (2x48GB)-Intel XMP-F5-6800J3446F48GX2-TR"
+    },
+    "ram-5-kingston-fury-renegade-96-2x-6000": {
+      "priceEgp": 79500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/kingston-fury-renegade-rgb-ddr5-96gb-2x48gb-6000mt-s-cl32-1.35v-kf560c32rsak2-96",
+      "title": "Kingston FURY Renegade RGB DDR5 96 GB (2×48 GB) 6000 MT/s CL32 1.35 V Desktop Gaming Memory Kit – KF"
+    },
+    "ram-5-corsair-vengeance-rgb-128-2x-6000": {
+      "priceEgp": 108676,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/corsair-vengeance-rgb-128gb-2x64gb-ddr5-6000mhz-cl40-xmp-3-0-black-desktop-memory/",
+      "title": "Corsair Vengeance RGB 128GB (2x64GB) DDR5 6000MHz CL40 XMP 3.0 Black Desktop Memory"
+    },
+    "ram-5-corsair-vengeance-rgb-128-2x-6400": {
+      "priceEgp": 114714,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/corsair-vengeance-rgb-128gb-2x64gb-ddr5-6400mhz-cl42-intel-xmp-black-desktop-memory/",
+      "title": "Corsair Vengeance RGB 128GB (2x64GB) DDR5 6400MHz CL42 Intel XMP Black Desktop Memory"
+    },
+    "case-acer-u510": {
+      "priceEgp": 1999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/acer-u510-pc-case-atx-micro-atx-itx-white-black-hard-case-egypt?variant=47726998028437",
+      "title": "Acer U510 PC Case ATX Micro ATX ITX White Black Hard Case Black"
+    },
+    "case-aerocool-p500a": {
+      "priceEgp": 3999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/aerocool-p500a-argb-gaming-mid-tower-case?variant=47245430063360",
+      "title": "AeroCool P500A ARGB Gaming Mid Tower Case White"
+    },
+    "case-aerocool-p500b": {
+      "priceEgp": 4499,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/aerocool-p500b-digi-argb-gaming-mid-tower-case?variant=49078901899520",
+      "title": "AeroCool P500B Digi ARGB Gaming Mid Tower Case White"
+    },
+    "case-aerocool-p500c": {
+      "priceEgp": 4299,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=aerocool-p500c-evo-mid-tower-case-with-curved-tempered-glass-4x-argb-fans-dual-chamber-design-supports-atx-motherboards-360mm-liquid-cooling-and-gpus-up-to-450mm-yojigeypeh4h",
+      "title": "Aerocool P500C Evo Black Mid Tower Case"
+    },
+    "case-aerocool-p500d": {
+      "priceEgp": 3699,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/aerocool-p500d-tempered-glass-black-mid-tower-case/",
+      "title": "Aerocool P500D Tempered Glass Black Mid Tower Case"
+    },
+    "case-antec-c3": {
+      "priceEgp": 3999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-c3-argb-3-x-120mm-1-x-120mm-argb-pwm-fans-included-360mm-radiator-support-mid-tower-atx-pc-case?variant=45419976163477",
+      "title": "CASE ANTEC C3 ARGB Black"
+    },
+    "case-antec-c5": {
+      "priceEgp": 5050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-c5-curved-gaming-case-black-4-argb-fans",
+      "title": "CASE ANTEC C5 CURVED 4FAN ARGB"
+    },
+    "case-antec-c5-curve": {
+      "priceEgp": 4999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/antec-c5-curve-argb-mid-tower-case-black",
+      "title": "ANTEC C5 Curve ARGB Mid Tower Case Black"
+    },
+    "case-antec-c7": {
+      "priceEgp": 6100,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/antec-c7-argb-white",
+      "title": "Antec C7 ARGB WHITE , RTX 40 GPU Support, 4 x 120mm ARGB PWM Fans Included, Vertical GPU Cooling, Ty"
+    },
+    "case-antec-c8": {
+      "priceEgp": 6999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-c8-argb-2x-tqr-160mm-1x-tq-140mm-argb-pwm-fans-included-dual-chamber-layout-type-c-360mm-radiator-support-seamless-tg-front-side-panels-rtx-40-compatible-full-tower-e-atx-pc-case?variant=45651795771541",
+      "title": "CASE ANTEC C8 ARGB Black"
+    },
+    "case-antec-flux": {
+      "priceEgp": 3250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-flux-m-micro-atx-case",
+      "title": "Antec FLUX M Micro ATX Case Compact Gaming Case Tempered Glass 6 PWM ARGB Fans USB-C 360mm Radiator"
+    },
+    "case-antec-flux-rear": {
+      "priceEgp": 4650,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/antec-flux-rear-argb-gaming-mid-tower-case-black",
+      "title": "Antec FLUX REAR ARGB Gaming Mid Tower Case - Black"
+    },
+    "case-antec-p1ft": {
+      "priceEgp": 7000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/antec-performance-1-ft-white-e-atx-highly-compatible-pc-case/",
+      "title": "ANTEC PERFORMANCE 1 FT WHITE E-ATX HIGHLY COMPATIBLE PC CASE"
+    },
+    "case-apnx-v1": {
+      "priceEgp": 5499,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/apnx-v1-argb-gaming-mid-tower-case-black",
+      "title": "APNX V1-BK-V1 Mid Tower Case - Black"
+    },
+    "case-apnx-v2": {
+      "priceEgp": 6950,
+      "store": "ahw",
+      "url": "https://ahw.store/products/apnx-v2-argb-mid-tower-case-4-fan-argb-black",
+      "title": "APNX V2 ARGB Mid Tower Case 4 Fan ARGB Black"
+    },
+    "case-apnx-c1": {
+      "priceEgp": 5199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-c1-r-mid-tower-case?variant=46316195152021",
+      "title": "APNX C1-R Mid-Tower ATX PC Case with 4 ARGB Fans, Type-C Ready, BTF Support White"
+    },
+    "case-asus-a31": {
+      "priceEgp": 4750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-a31-plus-tg-argb-black-atx-pc-case-pre-installed-argb-fans-glass-front-panel-compatible-with-hidden-port-motherboards-360mm-radiators-380mm-graphics-black?variant=46133032419477",
+      "title": "ASUS A31 PLUS TG ARGB BLACK Black"
+    },
+    "case-asus-ap202": {
+      "priceEgp": 4900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-prime-ap202-argb-matx-case-black",
+      "title": "ASUS Prime AP202 ARGB mATX Case Black – Curved Glass Panel, Supports up to 420 mm GPU, Patented Slot"
+    },
+    "case-asus-helios2": {
+      "priceEgp": 2550,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/fantech-helios-ii-xd3v3-wireless-gaming-mouse?variant=46048963461269",
+      "title": "FANTECH Helios II XD3V3 Wireless Gaming Mouse Black"
+    },
+    "case-asus-gr701": {
+      "priceEgp": 20500,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/rog-hyperion-gr701-e-atx-computer-case-white/",
+      "title": "ROG Hyperion GR701 E-ATX computer case White"
+    },
+    "case-corsair-3200d": {
+      "priceEgp": 6300,
+      "store": "ahw",
+      "url": "https://ahw.store/products/corsair-3200d-rs-argb-mid-tower-case-white",
+      "title": "CORSAIR 3200D RS ARGB Mid-Tower Case White"
+    },
+    "case-corsair-spec-omega": {
+      "priceEgp": 3900,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-carbide-series-spec-omega-rgb-mid-tower-case-%E2%80%94-black",
+      "title": "Corsair Carbide Series SPEC-OMEGA RGB Mid-Tower Case — Black"
+    },
+    "case-corsair-570x": {
+      "priceEgp": 4400,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/corsair-crystal-series-570x-rgb-atx-mid-tower-case-black",
+      "title": "Corsair Crystal Series™ 570X RGB ATX Mid-Tower Case - Black"
+    },
+    "case-corsair-frame-5000d": {
+      "priceEgp": 8270,
+      "store": "ahw",
+      "url": "https://ahw.store/products/corsair-frame-5000d-rs-argb-white",
+      "title": "CORSAIR FRAME 5000D RS ARGB White Mid-Tower Case"
+    },
+    "case-corsair-3500x": {
+      "priceEgp": 4200,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=corsair-3500x-supports-atxe-atx-motherboards-425mm-gpus-360mm-radiators-reverse-connector-boards-and-features-tempered-glass-panels-with-usb-c-front-io-mrwpno0qsvtn",
+      "title": "Corsair 3500X Mid-Tower Case"
+    },
+    "case-cougar-archon2": {
+      "priceEgp": 2350,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/cougar-archon-2-mesh-rgb-black-elegant-argb-mid-tower-case-with-powerful-mesh-intakes",
+      "title": "CASE COUGAR ARCHON 2 MESH RGB"
+    },
+    "case-darkflash-b275": {
+      "priceEgp": 1750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/darkflash-b275-l17-3-black-m-atx-itx-pc-case-usb-3-340mm-gpu-280mm-radiator-egypt",
+      "title": "DarkFlash B275 L17*3 Black M-ATX and ITX PC Case with USB 3.0, 340mm GPU Clearance and 280mm Radiato"
+    },
+    "case-darkflash-dy451": {
+      "priceEgp": 8500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/darkflash-dy451-pro-atx-pc-case?variant=45900166496405",
+      "title": "DARK FLASH DY451 White"
+    },
+    "case-darkflash-dy460": {
+      "priceEgp": 5300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/darkflash-dy460-atx-pc-case-egypt?variant=47617844281493",
+      "title": "darkFlash DY460 ATX PC Case - Panoramic Tempered Glass, Back-Connect Support, USB-C, 360mm Radiator "
+    },
+    "case-darkflash-dy470": {
+      "priceEgp": 6900,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/darkflash-dy470-atx-pc-case-white/",
+      "title": "darkFlash DY470 ATX PC Case White"
+    },
+    "case-darkflash-floatron-f1": {
+      "priceEgp": 6565,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/darkflash-floatron-f1-matx-pc-case-type-c-360mm-egypt",
+      "title": "darkFlash FLOATRON F1 M-ATX PC Case with Floating Base Design, Type-C, 350mm GPU Clearance, 360mm Ra"
+    },
+    "case-darkflash-l285": {
+      "priceEgp": 5500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/darkflash-l285-atx-pc-case-egypt",
+      "title": "DarkFlash L285 ATX PC Case 0.7mm SPCC ATX M-ATX ITX USB 3.0 445mm GPU Clearance-1year"
+    },
+    "case-fractal-focus2": {
+      "priceEgp": 3499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/fractal-design-focus-2-rgb-white-tg-clear-tint-mid-tower-case",
+      "title": "Fractal Design Focus 2 RGB - White TG Clear Tint Mid Tower Case"
+    },
+    "case-fractal-north": {
+      "priceEgp": 7499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/fractal-design-north-chalk-white-tg-clear-tint-mid-tower-case",
+      "title": "Fractal Design North - Chalk White TG Clear Tint Mid Tower Case"
+    },
+    "case-fractal-torrent": {
+      "priceEgp": 12999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/fractal-design-torrent-rgb-white-tg-clear-tint-mid-tower-case",
+      "title": "Fractal Design Torrent RGB White TG Clear Tint Mid Tower Case"
+    },
+    "case-galax-rev06": {
+      "priceEgp": 2250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/case-gaming-revolution-06-galax?variant=46058517856405",
+      "title": "CASE GALAX PC (REV-06) ATX M-ATX WHITE White"
+    },
+    "case-galax-rev07": {
+      "priceEgp": 2250,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/galax-gaming-case-revolution-07-white",
+      "title": "GALAX Gaming Case Revolution - 07 White"
+    },
+    "case-gamdias-athena-m3": {
+      "priceEgp": 2700,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/gamdias-athena-m3-argb-mid-tower-case?variant=46121735356672",
+      "title": "Gamdias ATHENA M3 ARGB Gaming Mid Tower Case Black"
+    },
+    "case-gamdias-athena-p3": {
+      "priceEgp": 3750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gamdias-athena-p3-btf-e-atx-4x140mm-430mm-gpu-black-egypt",
+      "title": "Gamdias ATHENA P3 BTF E-ATX Black Mid Tower Case with 4x140mm Performance PWM Fans and 430mm GPU Sup"
+    },
+    "case-gamdias-atlas-m1": {
+      "priceEgp": 2999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gamdias-atlas-m1-mid-tower-black",
+      "title": "Gamdias ATLAS M1 Mid Tower Black"
+    },
+    "case-gamdias-atlas-m5": {
+      "priceEgp": 2999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gamdias-atlas-m5-panoramic-argb-black-mid-tower-case/",
+      "title": "Gamdias Atlas M5 Panoramic ARGB Black Mid Tower Case"
+    },
+    "case-gamdias-atlas-p1": {
+      "priceEgp": 3999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gamdias-atlas-p1-argb-atx-mid-tower-gaming-case-with-dual-tempered-glass-panels-magnetic-modular-digital-display-for-real-time-system-monitoring,-4x-120mm-argb-pwm-fans,-support-for-420mm-radiators-455mm-gpus,-usb-3.2-gen-2-type-c,-pwm-fan-hub",
+      "title": "GAMDIAS ATLAS P1 ARGB ATX Mid-Tower Gaming Case with Dual Tempered Glass Panels — Magnetic Modular D"
+    },
+    "case-gamdias-atlas-p2": {
+      "priceEgp": 4399,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gamdias-atlas-p2-cg-mid-tower-case-argb-egypt",
+      "title": "Gamdias ATLAS P2 CG Mid Tower Case with 4 x 120mm ARGB PWM Fans, Tempered Glass and System Monitor"
+    },
+    "case-gamdias-atlas-p6": {
+      "priceEgp": 4700,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/gamdias-atlas-p6-cg-argb-gaming-mid-tower-case-black",
+      "title": "Gamdias ATLAS P6 CG ARGB Gaming Mid Tower Case - Black"
+    },
+    "case-gamdias-aura-gc2": {
+      "priceEgp": 3099,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gamdias-aura-gc2-elite-mid-tower-rgb-aura-gp750-750w-egypt?variant=47841105870997",
+      "title": "GAMDIAS AURA GC2 ELITE Mid Tower RGB Gaming Case with AURA GP750 750W PSU Black"
+    },
+    "case-gigabyte-c201": {
+      "priceEgp": 2500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-c201-panoramic-case-egypt?variant=47543038378133",
+      "title": "GIGABYTE C201 P Mid-Tower Case E-ATX ATX Micro-ATX Steel & Plastic Matte Black Tempered Glass GPU Cl"
+    },
+    "case-gigabyte-c301": {
+      "priceEgp": 3030,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-c301-glass-v2?variant=44824553652373",
+      "title": "GIGABYTE C301 GLASS V2 Black Mid Tower PC Gaming Case Black"
+    },
+    "case-gigabyte-c500pi": {
+      "priceEgp": 4950,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-c500-panoramic-stealth-4-argb-fans-panoramic-tempered-glass-optimized-airflow-rgb-fusion-with-argb-connector-hub-vertical-gpu-installation-usb-3-0-x2-and-usb-3-2-gen2-type-c-x1-on-i-o-panel?variant=45549338984597",
+      "title": "CASE GIGABYTE C500PI ST White"
+    },
+    "case-aorus-c400": {
+      "priceEgp": 6499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-aorus-c400-glass-gaming-case",
+      "title": "GIGABYTE AORUS C400 GLASS GAMING CASE"
+    },
+    "case-aorus-c500": {
+      "priceEgp": 8000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-aorus-c500-mid-tower-case",
+      "title": "Gigabyte Aorus C500 Mid Tower PC Gaming Case Black 4mm Tempered Glass 4x 120mm ARGB PWM Fans Pre-Ins"
+    },
+    "case-aorus-c601": {
+      "priceEgp": 12500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-aorus-c601-glass-mid-tower-case-argb-type-c-egypt",
+      "title": "GIGABYTE AORUS C601 Glass Mid Tower Case – 4×140mm ARGB PWM Fans USB 3.1 Gen2 Type-C – Black"
+    },
+    "case-hyte-x50": {
+      "priceEgp": 5799,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/hyte-x50g-matcha-milk-atx-mid-tower-case",
+      "title": "HYTE X50G Matcha Milk ATX Mid-Tower Case – 63 L, Laminated Acoustic Glass, GPU Support Up to 430 mm"
+    },
+    "case-hyte-y40": {
+      "priceEgp": 6499,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/hyte-y40-mid-tower-case-black-cherry?variant=47245374259456",
+      "title": "Hyte Y40 Mid Tower Case Pitch Black"
+    },
+    "case-hyte-y60": {
+      "priceEgp": 7999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/hyte-y60-snow-white-dual-chamber-atx-mid-tower-case-60l-vertical-gpu-pcie4",
+      "title": "HYTE Y60 Snow White Dual-Chamber ATX Mid-Tower Case — Panoramic Tempered Glass, Vertical GPU with PC"
+    },
+    "case-hyte-y70": {
+      "priceEgp": 11500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/hyte-y70-taro-milk",
+      "title": "HYTE Y70 Taro Milk Cherry Dual-Chamber ATX Mid-Tower Case — Panoramic Tempered Glass, 4-Slot Vertica"
+    },
+    "case-hyte-y70-touch": {
+      "priceEgp": 21999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/hyte-y70-touch-infinite-dual-chamber-atx-mid-tower-modern-aesthetic-case-with-integrated-2-5k-lcd-touchscreen?variant=45611605754005",
+      "title": "HYTE Y70 Touch Infinite Dual Chamber ATX Mid Tower Modern Aesthetic Case with Integrated 2.5K LCD To"
+    },
+    "case-idcooling-view510": {
+      "priceEgp": 2650,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/id-cooling-view-510-argb-mid-tower-case",
+      "title": "ID-Cooling View 510 ARGB Mid Tower Case"
+    },
+    "case-lianli-dan-a3": {
+      "priceEgp": 3650,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-dan-a3-black-micro-tower-gaming-case?variant=45999365456021",
+      "title": "Lian Li DAN A3 Micro Tower Gaming Case Black"
+    },
+    "case-lianli-lancool-207": {
+      "priceEgp": 3999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-lancool-207-rgb-mid-tower-gaming-case?variant=46000966402197",
+      "title": "Lian Li Lancool 207 RGB White Mid Tower Gaming Case Black"
+    },
+    "case-lianli-lancool-217": {
+      "priceEgp": 5999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-lancool-217-inf-white-mid-tower-gaming-case-dual-170mm-front-fans?variant=47539988889749",
+      "title": "Lian Li Lancool 217 INF BLACK Mid Tower Gaming Case White"
+    },
+    "case-lianli-lancool-3": {
+      "priceEgp": 7070,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-lancool-iii-rgb-gaming-case?variant=44080394797205",
+      "title": "Lian Li Lancool III RGB White Mid Tower Gaming Case Black"
+    },
+    "case-lianli-o11-air-mini": {
+      "priceEgp": 5100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-o11-air-mini-itx-tower-gaming-case?variant=45999536111765",
+      "title": "Lian Li O11 Air Mini White Mini ITX Tower Gaming Case White"
+    },
+    "case-lianli-o11d-mini": {
+      "priceEgp": 5200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-o11-dynamic-mini-tower-gaming-case?variant=45999498363029",
+      "title": "Lian Li O11 Dynamic Mini Snow White Mini Tower Gaming Case Black"
+    },
+    "case-lianli-o11-vision": {
+      "priceEgp": 7200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-o11-vision-chrome-black-mid-tower-gaming-case",
+      "title": "Lian Li O11 Vision Chrome Black Mid Tower Gaming Case"
+    },
+    "case-lianli-o11-vision-m": {
+      "priceEgp": 3500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-o11-vision-m-white-micro-tower-gaming-case-egypt?variant=47766029795477",
+      "title": "Lian Li O11 Vision M Micro Tower Gaming Case O11VMX O11VMW M-ATX Mini-ITX 410mm GPU Clearance Black"
+    },
+    "case-lianli-v100": {
+      "priceEgp": 2300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-vector-v100-mini-matx-case-argb-egypt",
+      "title": "LIAN LI Vector V100 MINI mATX PC Case 4mm Tempered Glass ARGB"
+    },
+    "case-lianli-v100r": {
+      "priceEgp": 3499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/lian-li-vector-v100r-mid-tower-gaming-case-black",
+      "title": "Lian Li VECTOR V100R Mid Tower Gaming Case Black"
+    },
+    "case-lianli-v150": {
+      "priceEgp": 3899,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/lian-li-vector-v150-inf-mid-tower-gaming-case-black",
+      "title": "Lian Li Vector V150 INF Mid Tower Gaming Case Black"
+    },
+    "case-msi-forge-321r": {
+      "priceEgp": 2999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-forge-321r-airflow-gaming-mid-tower-case",
+      "title": "MSI MAG FORGE 321R AirFlow Gaming Mid Tower Case"
+    },
+    "case-msi-pano-m100r": {
+      "priceEgp": 4999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-pano-m100r-pz-white-gaming-micro-tower-case",
+      "title": "MSI MAG PANO M100R PZ White Gaming Micro Tower Case"
+    },
+    "case-msi-pano-130r": {
+      "priceEgp": 4799,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-pano-130r-pz-gaming-case?variant=46429110861973",
+      "title": "CASE MSI MAG PANO130R PZ White"
+    },
+    "case-msi-prospect-700r": {
+      "priceEgp": 13999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-meg-prospect-700r-gaming-mid-tower-case",
+      "title": "MSI MEG PROSPECT 700R Gaming Mid Tower Case"
+    },
+    "case-msi-gungnir-300r": {
+      "priceEgp": 5999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mpg-gungnir-300r-airflow-gaming-mid-tower-case",
+      "title": "MSI MPG GUNGNIR 300R AirFlow Gaming Mid Tower Case"
+    },
+    "case-nzxt-h7-elite": {
+      "priceEgp": 9000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/nzxt-h-series-h7-elite-edition-atx-mid-tower-chassis-white-color",
+      "title": "NZXT H Series H7 Elite Edition ATX Mid Tower Chassis White color"
+    },
+    "case-nzxt-h5-flow": {
+      "priceEgp": 5050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/nzxt-h5-flow-rgb-2024-compact-atx-mid-tower-pc-gaming-case-high-airflow-f360-rgb-core-cv-included-360mm-front-240mm-top-radiator-support-cable-management-tempered-glass-black?variant=45753819791509",
+      "title": "CASE NZXT H5 FLOW EDITION RGB ALL WHITE MID TOWER Black"
+    },
+    "case-silverstone-fara-514x": {
+      "priceEgp": 3030,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/silverstone-fara-514x-atx-mid-tower-airflow?variant=45986736603285",
+      "title": "SilverStone FARA 514X ATX Mid-Tower Airflow SUPPORT radiator 360 MM TOP & TYPE C PORT CASE ONLY"
+    },
+    "case-silverstone-lucid-05": {
+      "priceEgp": 2500,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/silverstone-lucid-05-exquisite-atx-chassis-with-a-bold-270-panoramic-view/",
+      "title": "SILVERSTONE Lucid 05 Exquisite ATX Chassis with a Bold 270° Panoramic View"
+    },
+    "case-cm-masterbox-600": {
+      "priceEgp": 4545,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/cooler-master-masterbox-600-atx-argb-mid-tower-tempered-glass-gaming-case2xusb-type-c-amp-back-connector-motherboard-support?variant=45606895190165",
+      "title": "CASE COOLER MASTER MasterBox 600 White Black"
+    },
+    "case-havn-hs420": {
+      "priceEgp": 9499,
+      "store": "ahw",
+      "url": "https://ahw.store/products/havn-hs-420-vgpu-argb-mid-tower-case-black",
+      "title": "HAVN HS 420 Mid Tower Case Black"
+    },
+    "case-havn-bf360": {
+      "priceEgp": 9999,
+      "store": "ahw",
+      "url": "https://ahw.store/products/havn-bf-360-flow-mid-tower-case-white",
+      "title": "HAVN BF 360 Flow 3 Fan Mid Tower Case White"
+    },
+    "case-xigmatek-anubis-pro": {
+      "priceEgp": 3500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-anubis-pro-mesh-argb-super-tower-case",
+      "title": "CASE XIGMATEK ANUBIS PRO MESH ARGB SUPER TOWER"
+    },
+    "case-xigmatek-aqua-7": {
+      "priceEgp": 4699,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-aqua-7-e-atx-gaming-case-egypt?variant=46807786651797",
+      "title": "XIGMATEK AQUA 7 ABTF 8FAN ARGB PWM EATX TYPE C SUPER TOWER CASE Black"
+    },
+    "case-xigmatek-aqua-m-nano": {
+      "priceEgp": 1650,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-aqua-m-nano-ii-micro-tower-case",
+      "title": "Xigmatek Aqua M Nano II Micro Tower Case"
+    },
+    "case-xigmatek-aqua-v": {
+      "priceEgp": 3699,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xigmatek-aqua-v-argb-mid-tower-case-white",
+      "title": "XIGMATEK AQUA V ARGB Mid Tower Case White"
+    },
+    "case-xigmatek-carbonic-3k": {
+      "priceEgp": 11110,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-carbonic-atx-carbon-fiber-case",
+      "title": "Xigmatek Carbonic 3K Twill Weave Carbon Fiber Panel 6063 Aluminium Alloy BTF ATX Mid Tower Case with"
+    },
+    "case-xigmatek-cloud-m": {
+      "priceEgp": 3030,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-cloud-m-dgt-3af-micro-atx-gaming-case-egypt?variant=47313366122645",
+      "title": "Xigmatek Cloud M DGT 3AF Digital LCD 3 Fan ARGB PWM BTF Micro Tower Case White"
+    },
+    "case-xigmatek-cubi-2": {
+      "priceEgp": 4099,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xigmatek-cubi-ii-argb-mid-tower-case-black",
+      "title": "XIGMATEK Cubi II ARGB Mid Tower Case Black"
+    },
+    "case-xigmatek-endorphin-air": {
+      "priceEgp": 3099,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xigmatek-endorphin-air-v2-argb-mid-tower-case",
+      "title": "XIGMATEK Endorphin AIR V2 ARGB Mid Tower Case"
+    },
+    "case-xigmatek-endorphine-wd": {
+      "priceEgp": 3999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-endorphin-wd-argb-fan-mid-tower-atx-case?variant=44070521045141",
+      "title": "CASE XIGMATEK ENDORPHINE WD ARCTIC ARGB SUPER TOWER Black"
+    },
+    "case-xigmatek-meta": {
+      "priceEgp": 4700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-meta-super-tower-case?variant=45648572874901",
+      "title": "Xigmatek Meta Super Tower Case Arctic"
+    },
+    "case-xigmatek-moon-dgt": {
+      "priceEgp": 3399,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/xigmatek-moon-dgt-arctic-lcd-argb-gaming-mid-tower-case",
+      "title": "Xigmatek Moon DGT Arctic LCD ARGB Gaming Mid Tower Case"
+    },
+    "case-xigmatek-pano-2": {
+      "priceEgp": 5599,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-pano-ii-air-mid-tower-gaming-case-egypt?variant=46678680666261",
+      "title": "XIGMATEK PANO II AIR TYPE C 8FAN ARGB PWM CURVED TG EATX SUPER TOWER Black / CASE ONLY"
+    },
+    "case-xigmatek-pano-m-nano": {
+      "priceEgp": 1720,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-pano-m-nano-3gf-micro-tower-case",
+      "title": "CASE XIGMATEK PANO M NANO 3GF MICRO TOWER"
+    },
+    "case-xigmatek-sun": {
+      "priceEgp": 3435,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-sun-eatx-gaming-case-high-airflow-egypt?variant=47317820407957",
+      "title": "Xigmatek Sun 5 Fan Argb PWM Super Tower Case Black"
+    },
+    "case-xigmatek-vision": {
+      "priceEgp": 5399,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xigmatek-vision-full-tower-case",
+      "title": "XIGMATEK Vision Full Tower Case"
+    },
+    "case-xigmatek-y-pro": {
+      "priceEgp": 3499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-gaming-y-pro-argb-led-strip-eatx-gaming-case?variant=46816454181013",
+      "title": "CASE XIGMATEK GAMING Y PRO ARGB SUPER TOWER Black"
+    },
+    "case-xpg-battlecruiser-2": {
+      "priceEgp": 4999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xpg-battlecruiser-ii-super-mid-tower-case",
+      "title": "XPG Battlecruiser II Super Mid Tower Case"
+    },
+    "case-xpg-invader-x-mini": {
+      "priceEgp": 4550,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-invader-x-mini-mid-tower-chassis-compact-gaming-case-4mm-tempered-glass-side-panel-5-x-argb-fans-liquid-cooling-support-240mm-radiator-vertical-gpu-mounting?variant=45695222317205",
+      "title": "CASE XPG INVADER X MINI BLACK Black / XPG INVADER X Mini"
+    },
+    "case-xpg-invader-x": {
+      "priceEgp": 7250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-invader-x-mid-tower-pc-chassis-case?variant=45695185584277",
+      "title": "CASE XPG INVADER X MT WHITE WITH PCIe 4.0 Riser Cable - GPU Holder Black"
+    },
+    "case-xpg-starker-air": {
+      "priceEgp": 4040,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-starker-air-btf-mid-tower-case-argb-usb-c-egypt?variant=46452969111701",
+      "title": "Xpg Starker Air BTF Mid Tower Case Black"
+    },
+    "case-xpg-starker-compact": {
+      "priceEgp": 1999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/xpg-starker-compact-atx-mid-tower-chassis-white",
+      "title": "XPG STARKER Compact ATX Mid-Tower Chassis (WHITE)"
+    },
+    "case-xpg-valor-air": {
+      "priceEgp": 2800,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xpg-valor-air-mid-tower-gaming-case-white",
+      "title": "XPG VALOR AIR Mid Tower Gaming Case White"
+    },
+    "case-havit-cf923": {
+      "priceEgp": 1499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/havit-cf923-cam-gaming-gaming-player-case-black-5-fan-itx-m-atx-345mm-vga-165mm-cpu-egypt",
+      "title": "HAVIT CF923 Cam Gaming Gaming Player Case Black"
+    },
+    "case-havit-cf928": {
+      "priceEgp": 2555,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/havit-cf928-gaming-chassis-case-sleek-design-for-ultimate",
+      "title": "HAVIT CF928 Gaming Chassis CASE - Sleek Design for Ultimate"
+    },
+    "case-tecnozone-c600": {
+      "priceEgp": 5300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/case-tecno-zone-c600-gaming-case-high-airflow-and-rgb",
+      "title": "CASE TECNO ZONE C600 Gaming Case | High Airflow and RGB"
+    },
+    "psu-aerocool-lux-550": {
+      "priceEgp": 1699,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=aerocool-lux-550w-power-supply-unit-80plus-bronze-acpb-ld55aec13-rshnvoffo2dg",
+      "title": "AEROCOOL LUX 550W Power Supply Unit 80 Plus Bronze"
+    },
+    "psu-aerocool-aero-750b": {
+      "priceEgp": 2499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/aerocool-aero-bronze-750w-80plus-bronze-power-supply/",
+      "title": "Aerocool AERO BRONZE 750W 80Plus Bronze Power Supply"
+    },
+    "psu-aerocool-integrator-750g": {
+      "priceEgp": 3999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/aerocool-integrator-gold-750w-80-plus-gold-certified-power-supply-black",
+      "title": "Aerocool Integrator Gold 750W 80 PLUS Gold Certified Power Supply - Black"
+    },
+    "psu-aerocool-lux-pro-850": {
+      "priceEgp": 3999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/aerocool-lux-pro-850w-80-plus-bronze-certified-power-supply",
+      "title": "Aerocool Lux Pro 850W 80 PLUS Bronze Certified Power Supply"
+    },
+    "psu-aerocool-g1-1000": {
+      "priceEgp": 5499,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/aerocool-smart-g1-gold-1000w-80-plus-bronze-certified-power-supply-black",
+      "title": "Aerocool SMART G1 1000W 80 PLUS Gold Certified Power Supply - Black"
+    },
+    "psu-antec-atom-450": {
+      "priceEgp": 1900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-atom-v450-450w-power-supply",
+      "title": "PSU ANTEC ATOM V450 450W"
+    },
+    "psu-antec-gsk-750": {
+      "priceEgp": 5549,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-gsk750-atx3-1-750w-gold-modular",
+      "title": "ANTEC GSK750 ATX 3.1 750W 80 PLUS Gold Full Modular Power Supply with PCIe 5.1"
+    },
+    "psu-antec-csk-850": {
+      "priceEgp": 3599,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/antec-csk850-pro-850w-egypt",
+      "title": "Antec CSK850 PRO 850W ATX 3.1 Semi-Modular Power Supply PCIe 5.1 80 Plus Bronze"
+    },
+    "psu-antec-csk-1000": {
+      "priceEgp": 4589,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/antec-csk-pro-1000w-80-plus-bronze-atx3-1-semi-modular-power-supply/",
+      "title": "Antec CSK Pro 1000W 80 Plus Bronze Atx3.1 Semi Modular Power Supply"
+    },
+    "psu-acer-ac750": {
+      "priceEgp": 3300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/acer-ac-750-750w-full-modular-80-plus-bronze-white-black-pcie-5-0-power-supply-egypt?variant=47730968952981",
+      "title": "Acer AC-750 750W Full Modular 80 Plus Bronze Power Supply White/Black with PCIe 5.0 Connector Black"
+    },
+    "psu-asus-prime-750b": {
+      "priceEgp": 3650,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-750w-bronze",
+      "title": "ASUS Prime 750W Bronze"
+    },
+    "psu-asus-prime-750g": {
+      "priceEgp": 4499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-prime-750w-gold-black-edition-atx-3-1-80-plus-gold-fully-modular-power-supply/",
+      "title": "ASUS Prime 750W Gold Black Edition ATX 3.1 80 Plus Gold Fully Modular Power Supply"
+    },
+    "psu-asus-prime-850g": {
+      "priceEgp": 5835,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-ap-850g-850w-80-gold-power-supply",
+      "title": "ASUS AP-850G Prime 850W Power Supply White 80 PLUS Gold Rated ATX 3.1 90YE00U0-B0NA00"
+    },
+    "psu-asus-tuf-1000g": {
+      "priceEgp": 7499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-1000w-gold-1000w-80-plus-gold-atx-31-fully-modular-dual-ball-bearing-fan-military-grade-components-unh5toqnrze6",
+      "title": "ASUS TUF Gaming 1000W Gold — 1000W, 80 Plus Gold, ATX 3.0, fully modular, dual ball bearing fan, mil"
+    },
+    "psu-corsair-rm650x": {
+      "priceEgp": 5000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/corsair-rmx-rm650-650w-80-plus-gold-full-modular-power-supply",
+      "title": "CORSAIR RMx RM650 650W 80 PLUS GOLD Full Modular Power Supply"
+    },
+    "psu-corsair-rm750x": {
+      "priceEgp": 7500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/corsair-rm750x-750-watt-80-plus-gold-fully-modular-atx-psu-cp-9020199-uk",
+      "title": "Corsair RM750x — 750 Watt 80 PLUS Gold Fully Modular ATX PSU - CP-9020199-UK"
+    },
+    "psu-corsair-rm850e": {
+      "priceEgp": 7199,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/corsair-rme-series-rm850e-850w-80-plus-gold-fully-modular-atx-3-1-white-power-supply/",
+      "title": "Corsair Rme Series Rm850e 850W 80 Plus Gold Fully Modular Atx 3.1 White Power Supply"
+    },
+    "psu-corsair-rm1000x": {
+      "priceEgp": 9500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/corsair-rm1000x-%E2%80%94-1000-watt-80-plus-gold-fully-modular-atx-psu-uk",
+      "title": "Corsair RM1000x — 1000 Watt 80 PLUS Gold Fully Modular ATX PSU (UK)"
+    },
+    "psu-deepcool-pk550": {
+      "priceEgp": 1785,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=deepcool-pk550h-eu-550w-80-plus-bronze-certified-power-supply-i94wqnnev7xl",
+      "title": "DeepCool PK550H EU 550W 80 Plus Bronze Certified Power Supply"
+    },
+    "psu-deepcool-pq1000m": {
+      "priceEgp": 7874,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/deepcool-psu-pq1000m-1000w-80-plus-gold-fully-modular-white-power-supply/",
+      "title": "Deepcool PSU PQ1000M 1000W 80 Plus Gold Fully Modular Power Supply"
+    },
+    "psu-fsp-hydro-g-pro-1000": {
+      "priceEgp": 9000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/fsp-hydro-g-pro-1000w-80-plus-gold-full-modular-atx-gen-5-0",
+      "title": "FSP Hydro G PRO 1000W 80 Plus Gold Full Modular ATX Gen 5.0"
+    },
+    "psu-fsp-hydro-ptm-pro-1200": {
+      "priceEgp": 8888,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=fsp-power-supply-hydro-ptm-pro-atx30pcie50-1200w-pci-e-gen-5-80-plus-platinum-full-modular-hpt2-1200m-gen5-7youbobmskwb",
+      "title": "FSP POWER SUPPLY Hydro PTM PRO ATX3.0(PCIe5.0) 1200W PCI-E GEN-5 80 plus platinum full modular HPT2-"
+    },
+    "psu-gamdias-m2-750": {
+      "priceEgp": 3000,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gamdias-helios-m2-750b-750w-silver-atx3",
+      "title": "Gamdias HELIOS M2-750B 750W 80 PLUS Silver Non Modular ATX 3.1 Power Supply – DC-to-DC Design, C6/C7"
+    },
+    "psu-gamdias-m2-850": {
+      "priceEgp": 3400,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gamdias-helios-m2-850b-850w-silver-atx3-pcie5",
+      "title": "Gamdias HELIOS M2-850B 850W 80 PLUS Silver Non Modular ATX 3.1 Power Supply – PCIe Gen 5.1 Ready, DC"
+    },
+    "psu-gamdias-m1-850": {
+      "priceEgp": 3499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gamdias-helios-m1-850b-80-plus-bronze-psu",
+      "title": "GAMDIAS HELIOS M1-850B Bronze"
+    },
+    "psu-gamdias-p2-850": {
+      "priceEgp": 4400,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gamdias-helios-p2-850g-850w-gold-atx3-12vhpwr",
+      "title": "Gamdias HELIOS P2-850G 850W 80 PLUS Gold Non Modular ATX 3.1 Power Supply – Native 12VHPWR, PCIe Gen"
+    },
+    "psu-gamdias-gp750": {
+      "priceEgp": 2000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gamdias-aura-gp750-750w-efficient-power-supply/",
+      "title": "GAMDIAS AURA GP750 750W EFFICIENT POWER SUPPLY"
+    },
+    "psu-gigabyte-ud750gm": {
+      "priceEgp": 4999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-ud750gm-750w-gold-fully-modular",
+      "title": "Gigabyte UD750GM 750W GOLD Fully Modular"
+    },
+    "psu-gigabyte-p850gm": {
+      "priceEgp": 6300,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-aorus-p850w-gp-ap850gm-850w",
+      "title": "GIGABYTE AORUS P850W GP-AP850GM 850W — ATX 12V v2.31 - 80 PLUS GOLD Certified - Full Modular - Activ"
+    },
+    "psu-gigabyte-p1000gm": {
+      "priceEgp": 5300,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-p1000gm-psu-1000w",
+      "title": "Gigabyte P1000GM PSU - 1000W"
+    },
+    "psu-gigabyte-ud1600pm": {
+      "priceEgp": 18999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-ud1600pm-pg5-1600w-80plus-platinum-atx-3-1-and-pcie-gen-5-0-ready-japanese-capacitors-fully-modular",
+      "title": "Gigabyte UD1600PM PG5 1600W 80PLUS Platinum ATX 3.1 and PCIe Gen 5.0 ready Japanese capacitors, Full"
+    },
+    "psu-lianli-rb550": {
+      "priceEgp": 2250,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/lian-li-rb550-550w-80-plus-bronze-atx-3-1-modular-sata-and-peripheral-cables-unique-cable-management-system-power-supply/",
+      "title": "Lian Li RB550 550W 80 Plus Bronze ATX 3.1 modular SATA and peripheral cables Unique cable management"
+    },
+    "psu-lianli-rb650": {
+      "priceEgp": 2799,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=lian-li-rb650-650w-80-plus-bronze-atx-31-non-modular-rb0650b-black-eu-rarrkf9xkfkl",
+      "title": "LIAN LI RB650 650W 80 Plus Bronze ATX 3.1 Non-Modular - RB0650B BLACK EU"
+    },
+    "psu-lianli-eg0750g": {
+      "priceEgp": 4899,
+      "store": "ahw",
+      "url": "https://ahw.store/products/lian-li-edge-gold-eg0750g-750w-80-plus-gold-pcie-5-1-atx-3-1-full-modular-power-supply",
+      "title": "Lian Li Edge Gold EG0750G 750W 80 Plus Gold PCIe 5.1 ATX 3.1 Full Modular Power Supply"
+    },
+    "psu-lianli-eg0850g": {
+      "priceEgp": 5399,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/lian-li-edge-full-modular-850w-80-plus-gold-certified-power-supply",
+      "title": "Lian Li Edge Gold EG0850G Full Modular 850W 80 PLUS Gold Certified Power Supply"
+    },
+    "psu-lianli-eg1000g": {
+      "priceEgp": 7199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-edge-gold-eg1000g-1000w-80-plus-gold-atx-3-1-full-modular-white-power-supply?variant=46016837648533",
+      "title": "Lian Li Edge Gold EG1000G 1000W 80 Plus Gold ATX 3.1 Full Modular Power Supply Black"
+    },
+    "psu-lianli-eg1200g": {
+      "priceEgp": 8199,
+      "store": "ahw",
+      "url": "https://ahw.store/products/lian-li-edge-gold-eg1200g-1200w-80-plus-gold-pcie-5-1-atx-3-1-full-modular-power-supply",
+      "title": "Lian Li Edge Gold EG1200G 1200W 80 Plus Gold PCIe 5.1 ATX 3.1 Full Modular Power Supply"
+    },
+    "psu-lianli-edge-1000p": {
+      "priceEgp": 7200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-edge-full-modular-power-supply-80-plus-platinum-atx-3-0-3-1-pcie-5-1-l-shape-design-for-dual-chamber-case-120mm-fdb-fan-supports-up-to-4x-usb-devices?variant=46220224004245",
+      "title": "Lian Li Edge EG1000 1000W 80 Plus PLATINUM ATX 3.1 Full Modular Power Supply 1000 Watt"
+    },
+    "psu-lianli-rs1000g": {
+      "priceEgp": 7200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/lian-li-rs-gold-1000-1000w-atx-3-1-power-supply?variant=47453009739925",
+      "title": "Lian Li RS1000G 1000W 80 Plus Gold Cybenetics Platinum ATX 3.1 Full Modular both standard and side i"
+    },
+    "psu-lianli-sx1200p": {
+      "priceEgp": 8099,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/lian-li-sx1200p-1200w-80-plus-platinum-pplp-platinum-atx-3-1-full-modular-white-power-supply/",
+      "title": "Lian Li SX1200P 1200W 80 Plus Platinum PPLP Platinum ATX 3.1 Full Modular White Power Supply"
+    },
+    "psu-msi-a750bn": {
+      "priceEgp": 4040,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-aa750bn-pcie5-iii-750w-psu",
+      "title": "MSI MAG A750BN PCIE5"
+    },
+    "psu-msi-a750gl": {
+      "priceEgp": 4799,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-a750gl-750w-pci-5-80-plus-gold-atx-3-0",
+      "title": "MSI MAG A750GL - 750W - PCI 5 - 80 PLUS GOLD - ATX 3.0"
+    },
+    "psu-msi-a850gl": {
+      "priceEgp": 5750,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-a850gl-850w-pci-5-80-plus-gold-atx-3-1-white",
+      "title": "MSI MAG A850GL - 850W - PCI 5 - 80 PLUS GOLD - ATX 3.1 White"
+    },
+    "psu-msi-a1000gl": {
+      "priceEgp": 7200,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/msi-mag-a1000gl-pcie5-1000w",
+      "title": "MSI MAG A1000GL PCIE5 1000W Power Supply — 80 PLUS Gold Certified, Fully Modular ATX 3.1 PSU"
+    },
+    "psu-msi-a1000gls": {
+      "priceEgp": 7999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-a1000gls-1000w-pci-5-80-plus-gold-atx-3-1-pcie-5-1-ready",
+      "title": "MSI MAG A1000GLS - 1000W - PCI 5 - 80 PLUS GOLD - ATX 3.1 & PCIE 5.1 Ready"
+    },
+    "psu-seasonic-bc-750": {
+      "priceEgp": 3600,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-seasonic-core-bc-750-750w-80plus-bronze-atx-power-supply",
+      "title": "Seasonic Core BC-750 750W 80PLUS Bronze ATX Power Supply with Fixed Black Braided Cables Hydro Dynam"
+    },
+    "psu-seasonic-bc-850": {
+      "priceEgp": 4040,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-seasonic-core-bc-850-850w-80plus-bronze-atx-power-supply",
+      "title": "Seasonic Core BC-850 850W 80PLUS Bronze ATX Power Supply with Fixed Black Braided Cables Hydro Dynam"
+    },
+    "psu-seasonic-gc-750": {
+      "priceEgp": 4399,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-seasonic-core-gc750-atx3-750w-80plus-gold-atx-power-supply",
+      "title": "Seasonic Core GC-750 ATX3 750W 80 Plus Gold ATX Power Supply with Hydro Dynamic Bearing Fan S2FC Int"
+    },
+    "psu-seasonic-gc-850": {
+      "priceEgp": 5050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-seasonic-core-gc-850-atx3-850w-atx-3-1-80-plus-gold-power-supply",
+      "title": "Seasonic Core GC-850 ATX3 850W ATX 3.1 80 Plus Gold Power Supply with Braided Black Cables Hydro Dyn"
+    },
+    "psu-seasonic-gx-850": {
+      "priceEgp": 5250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-850w-modular-atx-power-supply",
+      "title": "PSU SEASONIC CORE GX-850 ATX3 850W 80 PLUS GOLD FULLU MODULAR"
+    },
+    "psu-seasonic-focus-gx-1000": {
+      "priceEgp": 9999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-focus-gx-1000-atx3-1000w-atx-3-1-80-plus-gold-fully-modular-hybrid-fan-power-supply?variant=47361356103829",
+      "title": "PSU SEASONIC FOCUS GX-1000 ATX3 1000W 80 PLUS GOLD FULLU MODULAR BLACK"
+    },
+    "psu-seasonic-vertex-px-1000": {
+      "priceEgp": 13499,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/seasonic-vertex-px-1000-80-plus-platinum-certified-power-supply",
+      "title": "Seasonic VERTEX PX-1000 1000W 80 PLUS Platinum Certified Power Supply"
+    },
+    "psu-seasonic-vertex-gx-1200": {
+      "priceEgp": 12999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/seasonic-vertex-gx-1200-1200w-80-plus-gold-certified-power-supply",
+      "title": "Seasonic VERTEX GX-1200 1200W 80 PLUS Gold Certified Power Supply"
+    },
+    "psu-seasonic-vertex-px-1200": {
+      "priceEgp": 14999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/seasonic-vertex-px-1200-80-plus-platinum-certified-power-supply",
+      "title": "Seasonic VERTEX PX-1200 1200W 80 PLUS Platinum Certified Power Supply"
+    },
+    "psu-seasonic-prime-tx-1300": {
+      "priceEgp": 23230,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-prime-tx-1300-1300w-titanium",
+      "title": "Seasonic Prime TX-1300 1300W ATX 3.1 80 Plus Titanium Fully Modular Hybrid Fan Power Supply\r\nOPP,OVP"
+    },
+    "psu-seasonic-prime-px-1600": {
+      "priceEgp": 22500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-prime-px-atx31-1600w-psu",
+      "title": "Seasonic Prime PX-1600 1600W ATX 3.1 80 Plus Platinum Fully Modular Hybrid Fan Power Supply\r\nOPP,OVP"
+    },
+    "psu-seasonic-prime-tx-1600": {
+      "priceEgp": 26765,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-prime-tx-1600-psu",
+      "title": "Seasonic Prime TX-1600 1600W ATX 3.1 80 Plus Titanium Fully Modular Hybrid Fan Power Supply\r\nOPP,OVP"
+    },
+    "psu-seasonic-prime-px-2200": {
+      "priceEgp": 30200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/seasonic-prime-px-2200-2200w-atx-3-1-80-platinum-fully-modular-power-supply",
+      "title": "Seasonic PRIME PX-2200 ATX 3.1 2200W Platinum Power Supply"
+    },
+    "psu-silverstone-attis-750": {
+      "priceEgp": 3300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/silverstone-sst-at750r-bf-attis-750r-80-plus-bronze-750w-atx-3-1-power-supply",
+      "title": "SilverStone SST-AT750R-BF ATTIS 750R 80 PLUS Bronze 750W ATX 3.1 Power Supply"
+    },
+    "psu-silverstone-da1000": {
+      "priceEgp": 5200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/silver-stone-da1000-gold-cybenetics-gold-1000w-semi-modular-atx-psu",
+      "title": "silver stone DA1000 Gold Cybenetics Gold 1000W semi-modular ATX PSU"
+    },
+    "psu-thermaltake-smart-se-630": {
+      "priceEgp": 3250,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/thermaltake-smart-se-sps-630m-630w-power-supply",
+      "title": "Thermaltake Smart SE SPS-630M 630W Power Supply"
+    },
+    "psu-thermaltake-smart-se-730": {
+      "priceEgp": 3335,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/thermaltake-smart-se-power-supply?variant=43267533766805",
+      "title": "Thermaltake Smart SE Power Supply 730W ThermalTake Smart SE - 730W Power Supply"
+    },
+    "psu-xander-thea-850": {
+      "priceEgp": 4040,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xander-thea-ii-850w-80-plus-bronze-atx-31-pcie-gen-51-egypt",
+      "title": "XANDER THEA II 850W 80 PLUS Bronze Power Supply ATX 3.1 PCIe Gen 5.1"
+    },
+    "psu-xander-kx-700": {
+      "priceEgp": 2199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xander-kx-power-700w-80-plus-power-supply-egypt?variant=48002544337045",
+      "title": "Xander KX-Power 700W 80 PLUS Power Supply Black"
+    },
+    "psu-xigmatek-odin-750": {
+      "priceEgp": 2199,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/xigmatek-odin-ii-arctic-750w-80-plus-white-white-power-supply/",
+      "title": "Xigmatek Odin II Arctic 750W 80 Plus White White Power Supply"
+    },
+    "psu-xigmatek-fury-850": {
+      "priceEgp": 5199,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/xigmatek-fury-gd-850w-80-plus-gold-gen-5-full-modular",
+      "title": "XIGMATEK FURY GD 850W 80 Plus GOLD Gen 5 Full Modular"
+    },
+    "psu-xigmatek-prime-m-850": {
+      "priceEgp": 4299,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xigmatek-prime-m-850w-gold-full-modular",
+      "title": "Xigmatek Prime M 850W Gold Full Modular PSU (EN48067) | ATX 3.1 & PCIe 5.1 Ready | 12V-2x6 Connector"
+    },
+    "psu-xigmatek-prime-m-1000": {
+      "priceEgp": 5555,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-xigmatek-prime-m-1000w-80-plus-gold-atx-3-1-pcie-5-1-full-modular-power-supply",
+      "title": "Xigmatek Prime M 1000W 80 Plus Gold ATX 3.1 Full Modular Power Supply"
+    },
+    "psu-xpg-pylon2-650": {
+      "priceEgp": 3284,
+      "store": "ahw",
+      "url": "https://ahw.store/products/xpg-pylon-ii-650w-80-plus-bronze-atx-3-1-non-modular-power-supply",
+      "title": "XPG Pylon II 650W 80 Plus Bronze ATX 3.1 Non Modular Power Supply"
+    },
+    "psu-xpg-pylon2-750": {
+      "priceEgp": 3600,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/xpg-pylon-ii-750w-80-plus-bronze-certified-power-supply",
+      "title": "XPG PYLON II 750W 80 PLUS Bronze Certified Power Supply"
+    },
+    "psu-xpg-kyber-750": {
+      "priceEgp": 4140,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-kyber-power-supply-unit-gold?variant=45326539391125",
+      "title": "XPG KYBER 850W GOLD POWER SUPPLY 750W"
+    },
+    "psu-xpg-cr2ve-750": {
+      "priceEgp": 4945,
+      "store": "ahw",
+      "url": "https://ahw.store/products/xpg-core-reactor-ii-ve-750w-80-plus-gold-atx-3-1-fully-modular-power-supply",
+      "title": "XPG Core Reactor II VE 750W 80 Plus Gold ATX 3.1 Fully Modular Power Supply"
+    },
+    "psu-xpg-cr2ve-850": {
+      "priceEgp": 5555,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-core-reactor-ii-ve-750w-850w-modular-psu-egypt?variant=46453121941653",
+      "title": "XPG CORE REACTOR II VE GOLD POWER SUPPLY 850 Watt"
+    },
+    "psu-xpg-cr2-850": {
+      "priceEgp": 6499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-core-reactor-ii-power-supply-unit?variant=44784261562517",
+      "title": "XPG CORE REACTOR II 850W GOLD (WHITE) POWER SUPPLY white"
+    },
+    "psu-xpg-cr2-1000": {
+      "priceEgp": 7425,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/xpg-core-reactor-ii-modular-psu-atx3-0-80-plus-gold-atx-fully-modular-power-supply-1000-watt",
+      "title": "XPG CORE REACTOR II 1000W GOLD POWER SUPPLY"
+    },
+    "psu-xpg-cr2-1200": {
+      "priceEgp": 9350,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/core-reactor-ii-1200w-atx-3-0",
+      "title": "XPG CORE REACTOR II 1200W – ATX 3.0 Fully Modular 80 Plus Gold PSU"
+    },
+    "psu-xpg-cybercore2-1300": {
+      "priceEgp": 10999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/xpg-cybercore-ii-1300w-80-plus-platinum-certified-fully-modular-power-supply",
+      "title": "XPG CYBERCORE II 1300W 80 PLUS Platinum Certified Fully Modular Power Supply"
+    },
+    "mb-asrock-b760m-hdv": {
+      "priceEgp": 4899,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asrock-b760m-hdv-m-2-motherboard/",
+      "title": "Asrock B760M HDV M.2 Motherboard"
+    },
+    "mb-asrock-b760m-pg-lightning": {
+      "priceEgp": 5999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asrock-b760m-pg-lightning-motherboard/",
+      "title": "Asrock B760M PG Lightning Motherboard"
+    },
+    "mb-asrock-b760m-pro-rs": {
+      "priceEgp": 5999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asrock-b760m-pro-rs-motherboard/",
+      "title": "Asrock B760M Pro RS Motherboard"
+    },
+    "mb-asrock-b760m-steel-legend-wifi": {
+      "priceEgp": 10100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asrock-b760m-steel-legend-wifi-ddr5-motherboard",
+      "title": "ASRock B760M Steel Legend WiFi DDR5 Motherboard"
+    },
+    "mb-asrock-h610m-hvs": {
+      "priceEgp": 3500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asrock-h610m-hvs-m-2-r2-0-motherboard",
+      "title": "ASRock H610M-HVS/M.2 R2.0 Motherboard"
+    },
+    "mb-asus-b650e-max-wifi": {
+      "priceEgp": 8999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-b650e-max-gaming-wifi-orduh1fho8x4",
+      "title": "Asus B650E MAX GAMING WIFI"
+    },
+    "mb-asus-b650m-plus-tuf-wifi": {
+      "priceEgp": 9900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-b650m-plus-wifi-socket-am5",
+      "title": "ASUS TUF Gaming B650M-PLUS WiFi Socket AM5"
+    },
+    "mb-asus-b850-max-wifi": {
+      "priceEgp": 9499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-b850-max-gaming-wifi-b850-am5-ddr5-motherboard-egypt",
+      "title": "ASUS B850 MAX GAMING WIFI AMD B850 ATX AM5 DDR5 Motherboard"
+    },
+    "mb-asus-b860m-max-wifi": {
+      "priceEgp": 9999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-b860m-max-gaming-ax-motherboard",
+      "title": "ASUS B860M MAX GAMING AX Motherboard – DDR5 PCIe 5.0 WiFi 6 2.5Gb LAN LGA1851"
+    },
+    "mb-asus-h610m-k-prime-d4": {
+      "priceEgp": 3749,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-h610m-k-prime-ddr4-motherboard/",
+      "title": "Asus H610M-K Prime DDR4 Motherboard"
+    },
+    "mb-asus-crosshair-rog-x870e-dark-hero": {
+      "priceEgp": 36499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-rog-crosshair-x870e-dark-hero-socket-am5-ddr5-atx-motherboard/",
+      "title": "ASUS ROG CROSSHAIR X870E DARK HERO Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-asus-crosshair-rog-x870e-dark-hero-wifi": {
+      "priceEgp": 39000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-rog-crosshair-x870e-dark-hero-amd-x870e-atx-am5-ddr5-256gb-pcie-5-wifi-7-motherboard-egypt",
+      "title": "ASUS ROG CROSSHAIR X870E DARK HERO AMD X870E ATX AM5 DDR5 Motherboard 256GB PCIe 5.0 WiFi 7 5x M.2"
+    },
+    "mb-asus-crosshair-rog-x870e-hero": {
+      "priceEgp": 33000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-rog-crosshair-x870e-hero-motherboard",
+      "title": "ASUS ROG CROSSHAIR X870E HERO Motherboard"
+    },
+    "mb-asus-maximus-rog-z890-hero": {
+      "priceEgp": 28499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-maximus-z890-hero-intel-z890-lga1851-ddr5-up-to-256gb-9200-mts-pcie-50-x16-6x-m2-slots-wi-fi-7-dual-ethernet-25gb-5gb-thunderbolt-4-supremefx-audio-atx-bgk0bymzgdxt",
+      "title": "ASUS ROG MAXIMUS Z890 HERO Socket LGA 1851 Motherboard"
+    },
+    "mb-asus-maximus-rog-z890-hero-wifi": {
+      "priceEgp": 45340,
+      "store": "ahw",
+      "url": "https://ahw.store/products/asus-rog-maximus-z890-hero-intel-z890-ddr5-atx-motherboard",
+      "title": "Asus ROG MAXIMUS Z890 HERO Intel Z890 LGA1851 DDR5 8800 6x M.2 WiFi 7 BT Thunderbolt 4 USB4"
+    },
+    "mb-asus-prime-a520m-a": {
+      "priceEgp": 3549,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-a520m-a-ii-csm-micro-atx-motherboard-ozxhkqcq4rlk",
+      "title": "ASUS PRIME A520M-A II-CSM micro ATX motherboard"
+    },
+    "mb-asus-prime-a520m-k": {
+      "priceEgp": 3049,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-a520m-k-amd-a520-ryzen-am4-micro-atx-motherboard-with-m2-support-1-gb-ethernet-hdmid-sub-sata-6-gbps-usb-32-gen-1-type-a-jnwaegh6njmo",
+      "title": "ASUS PRIME A520M-K – AMD A520 AM4 Micro-ATX Motherboard, M.2, HDMI, USB 3.2 Gen 1, 1Gb Ethernet"
+    },
+    "mb-asus-prime-a520m-r": {
+      "priceEgp": 3050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-a520m-r-amd-a520-ryzen-am4",
+      "title": "ASUS PRIME A520M-R Micro-ATX Motherboard AMD Socket AM4 AMD A520 Chipset DDR4 Memory Support"
+    },
+    "mb-asus-prime-a620m-a": {
+      "priceEgp": 5205,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-a620am-a-csm-motherboard-egypt",
+      "title": "ASUS PRIME A620M-A-CSM AM5 DDR5 PCIe 4.0 Dual M.2 USB 10Gbps micro-ATX Motherboard"
+    },
+    "mb-asus-prime-a620m-e": {
+      "priceEgp": 4399,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-a620m-e-csm-micro-atx-motherboard-ddr5-1zac7brg22le",
+      "title": "Asus PRIME A620M-E-CSM Socket AM5 LGA 1718 Motherboard"
+    },
+    "mb-asus-prime-a620m-k": {
+      "priceEgp": 3900,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-a620m-k-micro-atx-motherboard-ddr5-pcie-40-graphics-card-and-pcie-40-m2-support-hdmi-vga-usb-32-gen-1-type-a-sata-6-gbps-two-way-ai-noise-cancelation-aura-sync-kyh7zbefalc7",
+      "title": "ASUS PRIME A620M-K micro-ATX motherboard, DDR5, PCIe 4.0 Graphics card and PCIe 4.0 M.2 support, HDM"
+    },
+    "mb-asus-prime-b450m-k-ii": {
+      "priceEgp": 3699,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/asus-prime-b450m-k-ii-ddr4-motherboard-am4",
+      "title": "ASUS Prime B450M-K II DDR4 Motherboard AM4"
+    },
+    "mb-asus-prime-b550m-a": {
+      "priceEgp": 5900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b550m-a-amd-b550-am4-dual-m2-pcie-4-0-micro-atx-motherboard",
+      "title": "ASUS PRIME B550M-A AMD B550 Ryzen AM4 micro ATX Motherboard with Dual M.2 PCIe 4.0 1Gb Ethernet HDMI"
+    },
+    "mb-asus-prime-b550m-a-ii-wifi": {
+      "priceEgp": 5500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b550m-a-wifi-ii-micro-atx-motherboard",
+      "title": "ASUS Prime B550M-A WIFI II micro ATX motherboard"
+    },
+    "mb-asus-prime-b550m-k": {
+      "priceEgp": 4199,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b550m-k-argb-supports-amd-ryzen-processors-up-to-64gb-ddr4-memory-pcie-40-4k-graphics-raid-storage-realtek-1gb-ethernet-and-aura-sync-rgb-rd1ipjzfoprw",
+      "title": "ASUS AMD PRIME B550M-K ARGB Socket AM4 Motherboard"
+    },
+    "mb-asus-prime-b550m-k-wifi": {
+      "priceEgp": 4699,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b550m-k-wifi-nxr0ragexxvf",
+      "title": "ASUS PRIME B550M-K WIFI"
+    },
+    "mb-asus-prime-b650-plus": {
+      "priceEgp": 9090,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b650-plus-am5-atx-motherboard-ddr5",
+      "title": "ASUS Prime B650-PLUS DDR5 Motherboard"
+    },
+    "mb-asus-prime-b650m-a-ii": {
+      "priceEgp": 6199,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-prime-b650m-a-ii-csm-motherboard/",
+      "title": "Asus Prime B650M A II Csm Motherboard"
+    },
+    "mb-asus-prime-b650m-k": {
+      "priceEgp": 5255,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b650m-k-amd-ryzen-am5-micro-atx-ddr5-hdmi-motherboard",
+      "title": "ASUS PRIME B650M-K AMD Ryzen AM5 Micro ATX DDR5 HDMI Motherboard"
+    },
+    "mb-asus-prime-b650m-r": {
+      "priceEgp": 4850,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b650m-r-motherboard",
+      "title": "ASUS PRIME B650M-R Motherboard"
+    },
+    "mb-asus-prime-b760-plus-d4": {
+      "priceEgp": 6500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760-plus-d4-intel-b760-lga-1700-atx-motherboard",
+      "title": "ASUS Prime B760-PLUS D4 Intel B760 LGA 1700 ATX motherboard"
+    },
+    "mb-asus-prime-b760-plus": {
+      "priceEgp": 6199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760-plus-intel-ddr5-lga-1700-atx-motherboard",
+      "title": "ASUS Prime B760-PLUS Intel DDR5 LGA 1700 ATX motherboard"
+    },
+    "mb-asus-prime-b760m-a": {
+      "priceEgp": 6060,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-intel-prime-b760m-a-csm-lga1700-motherboard",
+      "title": "ASUS Prime B760M-A CSM DDR5 Motherboard"
+    },
+    "mb-asus-prime-b760m-a-wifi-d4": {
+      "priceEgp": 7199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760m-a-wifi-d4-lga-1700-matx-motherboard",
+      "title": "ASUS PRIME B760M-A WIFI D4 (LGA 1700) mATX motherboard"
+    },
+    "mb-asus-prime-b760m-a-wifi": {
+      "priceEgp": 7500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760m-a-wifi-lga-1700-matx-mortheboard",
+      "title": "ASUS PRIME B760M-A WIFI"
+    },
+    "mb-asus-prime-b760m-f": {
+      "priceEgp": 4799,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b760m-f-intel-b760-lga-1700-micro-atx-motherboard-izmpz1jkeesb",
+      "title": "ASUS Intel PRIME  B760M-F LGA 1700 micro-ATX motherboard"
+    },
+    "mb-asus-prime-b760m-k-d4": {
+      "priceEgp": 4850,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760m-k-intel-13th-12th-series-lga-1700-ddr4-pcie-4-0-2xm-2-matx-gaming-motherboard",
+      "title": "ASUS Prime B760M-K D4 Motherboard Intel B760 LGA 1700 Micro-ATX"
+    },
+    "mb-asus-prime-b760m-k": {
+      "priceEgp": 4950,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760m-k-intel-b760-lga-1700-matx-motherboard-with-pcie-4-0-two-pcie-4-0-m-2-slots-ddr5",
+      "title": "ASUS Prime B760M-K DDR5 Motherboard"
+    },
+    "mb-asus-prime-b760m-r-d4": {
+      "priceEgp": 4450,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b760m-r-d4-socket-1700-b760-ddr4-s-ata-6gb-s-micro-atx",
+      "title": "MOTHERBOARD ASUS PRIME B760M-R D4"
+    },
+    "mb-asus-prime-b840m-a": {
+      "priceEgp": 5999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-amd-prime-b840m-a-csm-socket-am5-lga-1718-motherboard-ekidqxchon6a",
+      "title": "ASUS AMD PRIME B840M-A-CSM Socket AM5 LGA 1718 Motherboard"
+    },
+    "mb-asus-prime-b840m-a-wifi": {
+      "priceEgp": 6499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b840m-a-wifi-amd-am5-b840-chipset-ddr5-256gb-7600mts-pcie-40-3x-m2-4x-sata-25gb-lan-wi-fi-6e-usb-c-hdmi-dp-micro-atx-b23hhni3li4t",
+      "title": "ASUS PRIME B840M-A WIFI Socket AM5 LGA 1718 Motherboard"
+    },
+    "mb-asus-prime-b850-plus-wifi": {
+      "priceEgp": 9999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-amd-prime-b850-plus-wifi-wiceeg2t6gji",
+      "title": "ASUS AMD PRIME B850-PLUS WIFI"
+    },
+    "mb-asus-prime-b850m-a": {
+      "priceEgp": 7000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b850m-a-csm-am5-motherboard-egypt",
+      "title": "ASUS PRIME B850M-A-CSM Micro-ATX Motherboard – AM5, DDR5, PCIe 5.0, 2.5G LAN"
+    },
+    "mb-asus-prime-b850m-k": {
+      "priceEgp": 5500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b850m-k-motherboard",
+      "title": "ASUS PRIME B850M-K Motherboard AMD Socket AM5 DDR5 PCIe 5.0 Micro-ATX"
+    },
+    "mb-asus-prime-b860-plus-wifi": {
+      "priceEgp": 8800,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/asus-prime-b860-plus-wifi/",
+      "title": "ASUS PRIME B860-PLUS WIFI"
+    },
+    "mb-asus-prime-b860m-a": {
+      "priceEgp": 7650,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-b860m-a-csm-motherboard-egypt",
+      "title": "ASUS PRIME B860M-A-CSM Intel LGA1851 DDR5 Micro-ATX Motherboard PCIe 5.0"
+    },
+    "mb-asus-prime-b860m-k": {
+      "priceEgp": 7100,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-prime-b860m-k",
+      "title": "ASUS PRIME B860M-K – Intel LGA1851 DDR5 Micro-ATX Motherboard, 2 DIMM Slots, PCIe 4.0 x16, 2× M.2, 4"
+    },
+    "mb-asus-prime-h610m-a-d4": {
+      "priceEgp": 4249,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-prime-h610m-a-d4-csm-motherboard/",
+      "title": "Asus Prime H610M-A D4 Csm Motherboard"
+    },
+    "mb-asus-prime-h610m-a": {
+      "priceEgp": 4399,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-intel-prime-h610m-a-csm-zsbnltgrkari",
+      "title": "ASUS INTEL PRIME H610M-A CSM"
+    },
+    "mb-asus-prime-h610m-a-wifi-d4": {
+      "priceEgp": 4699,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-h610-lga-1700-mic-atx-motherboard-with-ddr4-pcie-40-dual-m2-slots-intel-1-gb-ethernet-wifi-5-displayport-hdmi-d-sub-usb-32-gen-2-ports-sata-6-gbps-addressable-gen-2-headers-and-arua-sync-nhbepmpwqing",
+      "title": "ASUS PRIME H610M-A WIFI D4 Socket LGA 1700 Motherboard"
+    },
+    "mb-asus-prime-h610m-d-d4": {
+      "priceEgp": 3950,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-prime-h610m-d-d4-90mb1a00-m0eay0",
+      "title": "Asus Prime H610M-D D4 Mic ATX Motherboard — LGA 1700 Socket, DDR4 Support, PCIe 4.0, M.2 Slot, 1Gb E"
+    },
+    "mb-asus-prime-h610m-d": {
+      "priceEgp": 4249,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-prime-h610m-d-ddr5-lga-1700-micro-atx-motherboard-pcie-40-m2-slot-realtek-1-gb-ethernet-hdmi-vga-usb-32-gen-1-sata-6-gbps-com-port-rgb-header-jagfhzco4mu1",
+      "title": "ASUS PRIME H610M-D Socket LGA 1700 Motherboard"
+    },
+    "mb-asus-prime-h610m-f-d4": {
+      "priceEgp": 3940,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-h610m-f-d4-r2-0-intel-h610-lga-1700-micro-atx-pcie-4-0-m-2-slot-ddr4-1gb-ethernet-hdmi-sata-6-gbps-5gbps-motherboard",
+      "title": "ASUS Prime H610M-F D4 R2.0 Motherboard"
+    },
+    "mb-asus-prime-h610m-k": {
+      "priceEgp": 5050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-h610m-k-argb-motherboard-egypt",
+      "title": "ASUS PRIME H610M-K ARGB DDR5 PCIe 4.0 LGA1700 Micro-ATX Motherboard"
+    },
+    "mb-asus-prime-h810m-a": {
+      "priceEgp": 5050,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-h810m-a-csm-motherboard-egypt",
+      "title": "ASUS PRIME H810M-A-CSM Micro-ATX Motherboard"
+    },
+    "mb-asus-prime-h810m-a-wifi": {
+      "priceEgp": 6700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-h810m-a-wifi",
+      "title": "ASUS PRIME H810M-A WIFI Motherboard Intel H810 LGA1851 DDR5 Micro-ATX"
+    },
+    "mb-asus-prime-h810m-k": {
+      "priceEgp": 5499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-intel-prime-h810m-k-matx-mainboard-socket-1851-hdmivga-ne7peg3thwvs",
+      "title": "ASUS INTEL PRIME H810M-K mATX Motherboard Socket 1851 HDMI/VGA"
+    },
+    "mb-asus-prime-x670-p-wifi": {
+      "priceEgp": 12500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-prime-x670-p-am5-atx-motherboard-ddr5-pcie5",
+      "title": "ASUS PRIME X670-P ATX AM5 Motherboard – DDR5, PCIe 5.0, 4× M.2, Wi-Fi 6E, 2.5Gb Ethernet, HDMI/DP, E"
+    },
+    "mb-asus-prime-x870-p-wifi": {
+      "priceEgp": 12500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-x870-p-wifi-amd-am5-x870-atx-motherboard-14-2-1-80a-drmos-power-stages-ddr5-pcie-5-0-pcie-5-0-x16-q-release-4x-m-2-wi-fi-7-q-antenna-2-5gb-lan-usb4-usb-type-c-bios-flashback",
+      "title": "ASUS Prime X870-P WIFI Motherboard"
+    },
+    "mb-asus-prime-z790-a-wifi": {
+      "priceEgp": 14645,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-z790-a-wifi-motherboard",
+      "title": "ASUS Prime Z790-A WIFI DDR5 Motherboard"
+    },
+    "mb-asus-prime-z790-p": {
+      "priceEgp": 9540,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-z790-p-motherboard",
+      "title": "ASUS PRIME Z790-P Motherboard"
+    },
+    "mb-asus-prime-z790-p-wifi": {
+      "priceEgp": 11000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-prime-z790-p-wifi-motherboard",
+      "title": "ASUS Prime Z790-P WIFI DDR5 Motherboard"
+    },
+    "mb-asus-prime-z890-p-wifi": {
+      "priceEgp": 12000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/asus-prime-z890-p-wifi/",
+      "title": "ASUS PRIME Z890-P WIFI"
+    },
+    "mb-asus-proart-b850-creator-neo-wifi": {
+      "priceEgp": 14499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-proart-b850-creator-wifi-neo-socket-am5-ddr5-atx-motherboard/",
+      "title": "ASUS ProArt B850-CREATOR WIFI NEO Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-asus-proart-x870e-creator-wifi": {
+      "priceEgp": 26400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-proart-x870e-creator-wifi-am5-atx-gaming-motherboard",
+      "title": "Asus ProArt X870E-Creator WiFi AM5 ATX Gaming Motherboard"
+    },
+    "mb-asus-proart-z890-creator-wifi": {
+      "priceEgp": 25899,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-proart-z890-creator-wifi-motherboard/",
+      "title": "Asus Proart Z890 Creator Wifi Motherboard"
+    },
+    "mb-asus-rog-strix-b550-a": {
+      "priceEgp": 8499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-b550-a-gaming-geqcu4zrxjmk",
+      "title": "ASUS ROG STRIX B550-A GAMING"
+    },
+    "mb-asus-rog-strix-b850-a-wifi": {
+      "priceEgp": 13500,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/asus-rog-strix-b850-a-gaming-wifi/",
+      "title": "ASUS ROG STRIX B850-A GAMING WIFI"
+    },
+    "mb-asus-rog-strix-b850-a-neo-wifi": {
+      "priceEgp": 14950,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-rog-strix-b850-a-gaming-wifi7-neo-am5-atx-pcie-5-0-wi-fi-7",
+      "title": "ASUS ROG STRIX B850-A GAMING WIFI7 NEO – AM5 ATX, PCIe 5.0 & Wi-Fi 7"
+    },
+    "mb-asus-rog-strix-b850-e-wifi": {
+      "priceEgp": 16199,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-rog-strix-b850-e-wifi-gaming-motherboard",
+      "title": "ASUS ROG STRIX B850-E WIFI GAMING MOTHERBOARD"
+    },
+    "mb-asus-rog-strix-b850-f-wifi": {
+      "priceEgp": 14999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-b850-f-gaming-wifi-atx-am5-ddr5-8000mts-pcie-50-4x-m2-25gb-lan-wi-fi-7-usb-c-20gbps-supremefx-71-ptpqnaf8vtge",
+      "title": "ASUS ROG STRIX B850-F GAMING WIFI Socket AM5 LGA 1718 Motherboard"
+    },
+    "mb-asus-rog-strix-b850-f-neo-wifi": {
+      "priceEgp": 15555,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-rog-strix-b850-f-gaming-wifi7-neo-am5-ddr5-atx-motherboard",
+      "title": "ASUS ROG Strix B850-F Gaming WiFi 7 Neo AMD AM5 ATX Motherboard - DDR5, WiFi 7, PCIe 5.0, 5Gb Ethern"
+    },
+    "mb-asus-rog-strix-b860-a-wifi": {
+      "priceEgp": 13499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-rog-strix-b860-a-gaming-wifi-motherboard/",
+      "title": "Asus Rog Strix B860 A Gaming Wifi Motherboard"
+    },
+    "mb-asus-rog-strix-b860-f-wifi": {
+      "priceEgp": 14500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-rog-strix-b860-f-gaming-wifi-intel-lga1851",
+      "title": "ASUS ROG Strix B860-F Gaming WiFi – Intel LGA1851, DDR5, 4 DIMMs, Thunderbolt 4, PCIe 5.0/4.0, 4x M."
+    },
+    "mb-asus-rog-strix-b860-g-wifi": {
+      "priceEgp": 12500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/asus-rog-strix-b860-g-gaming-wifi",
+      "title": "ASUS ROG Strix B860-G Gaming WiFi – Intel LGA1851 DDR5 Motherboard with Thunderbolt 4, PCIe 5.0, 4x "
+    },
+    "mb-asus-rog-strix-x870-a-wifi": {
+      "priceEgp": 19999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-x870-a-gaming-wifi-supports-amd-ryzen-900080007000-processors-up-to-256gb-ddr5-ram-pcie-50-wi-fi-7-and-25gb-ethernet-with-advanced-cooling-aura-sync-brgomqbf5baw",
+      "title": "ASUS ROG STRIX X870-A GAMING WIFI Socket LGA 1718 Motherboard"
+    },
+    "mb-asus-rog-strix-x870-f-wifi": {
+      "priceEgp": 22499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-amd-rog-strix-x870-f-gaming-wifi-sqacawptvcse",
+      "title": "ASUS AMD ROG STRIX X870-F GAMING WIFI"
+    },
+    "mb-asus-rog-strix-x870e-a-neo-wifi": {
+      "priceEgp": 23499,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-rog-strix-x870e-a-gaming-wifi7-neo-x870e-am5-ddr5-egypt",
+      "title": "ASUS ROG STRIX X870E-A GAMING WIFI7 NEO AMD X870E AM5 ATX DDR5 WiFi 7 Motherboard"
+    },
+    "mb-asus-rog-strix-x870e-e-neo-wifi": {
+      "priceEgp": 28499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-rog-strix-x870e-e-gaming-wifi7-neo-socket-am5-ddr5-atx-motherboard/",
+      "title": "ASUS ROG STRIX X870E-E GAMING WIFI7 NEO Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-asus-rog-strix-x870e-h-wifi": {
+      "priceEgp": 21499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-x870e-h-gaming-wifi7-s44b5eg1leuh",
+      "title": "ASUS ROG STRIX X870E-H GAMING WIFI7"
+    },
+    "mb-asus-rog-strix-z890-a-wifi": {
+      "priceEgp": 20499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-intel-z890-a-gaming-wifi-bekugrixb8a5",
+      "title": "ASUS ROG STRIX INTEL Z890-A GAMING WIFI"
+    },
+    "mb-asus-rog-strix-z890-e-wifi": {
+      "priceEgp": 26999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-z890-e-gaming-wifi-lga-1851-atx-motherboard-v7qt6z8vnefq",
+      "title": "ASUS ROG STRIX Z890-E GAMING WIFI Socket LGA 1851 Motherboard"
+    },
+    "mb-asus-rog-strix-z890-h-wifi": {
+      "priceEgp": 17199,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/asus-rog-strix-z890-h-gaming-wifi-motherboard/",
+      "title": "Asus Rog Strix Z890 H GAMING WIFI Motherboard"
+    },
+    "mb-asus-tuf-a520m-plus-wifi": {
+      "priceEgp": 4400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-a520m-plus-wifi-micro-atx-am4-motherboard-egypt",
+      "title": "ASUS TUF Gaming A520M-PLUS WIFI Micro-ATX AM4 Motherboard M.2 Wi-Fi 5 HDMI"
+    },
+    "mb-asus-tuf-a520m-plus-ii": {
+      "priceEgp": 3849,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-a520m-plus-ii-micro-atx-gaming-motherboard-ynk5x7ksby38",
+      "title": "ASUS TUF GAMING A520M-PLUS II micro ATX gaming motherboard"
+    },
+    "mb-asus-tuf-b550-plus-ii-wifi": {
+      "priceEgp": 6200,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/asus-tuf-gaming-b550-plus-wifi-ii/",
+      "title": "ASUS TUF GAMING B550-PLUS WIFI II"
+    },
+    "mb-asus-tuf-b650m-e-wifi": {
+      "priceEgp": 9495,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-b650m-e-wifi-ddr5-motherboard",
+      "title": "ASUS TUF Gaming B650M-E WIFI Motherboard"
+    },
+    "mb-asus-tuf-b760-plus-wifi": {
+      "priceEgp": 9595,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-b760-plus-wifi",
+      "title": "ASUS TUF Gaming B760-PLUS WIFI DDR5 Motherboard"
+    },
+    "mb-asus-tuf-b760m-btf-wifi": {
+      "priceEgp": 9699,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-b760m-btf-wifi-features-intel-b760-chipset-support-for-up-to-192gb-ddr5-memory-pcie-50-25gb-ethernet-wi-fi-6-71-surround-sound-and-aura-sync-rgb-in-a-micro-atx-form-factor-6fazmtljzau6",
+      "title": "ASUS TUF GAMING B760M-BTF WIFI Socket LGA 1700 Motherboard"
+    },
+    "mb-asus-tuf-b760m-plus-ii-wifi": {
+      "priceEgp": 8999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/tuf-gaming-b760m-plus-wifi-ii-motherboard-intel-lga1700-ddr5",
+      "title": "ASUS TUF GAMING B760M-PLUS WIFI II Motherboard - Intel LGA1700 Socket, DDR5 Memory Support, PCIe 5.0"
+    },
+    "mb-asus-tuf-b850m-plus-ii": {
+      "priceEgp": 9999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-amd-tuf-gaming-b850m-plus-ii-7gqg5fwm7ate",
+      "title": "ASUS AMD TUF GAMING B850M-PLUS II"
+    },
+    "mb-asus-tuf-b860-plus-wifi": {
+      "priceEgp": 10700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-b860-plus-wifi-intel-b860-ddr5-atx-motherboard",
+      "title": "ASUS TUF GAMING B860-PLUS WIFI Motherboard in Egypt | LGA1851 DDR5 PCIe 5.0 Wi-Fi 7 ATX Board"
+    },
+    "mb-asus-tuf-b860m-plus": {
+      "priceEgp": 10499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-intel-tuf-gaming-b860m-plus-motherboard-z7rxefclq5i3",
+      "title": "ASUS INTEL TUF Gaming B860M Plus Motherboard"
+    },
+    "mb-asus-tuf-x870-plus-wifi": {
+      "priceEgp": 15999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-x870-plus-wifi-motherboard",
+      "title": "ASUS TUF Gaming X870-PLUS WIFI Motherboard"
+    },
+    "mb-asus-tuf-x870e-plus-wifi": {
+      "priceEgp": 17999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-x870e-plus-wifi7-hh2ka1beilow",
+      "title": "ASUS TUF GAMING X870E-PLUS WIFI7"
+    },
+    "mb-asus-tuf-z790-plus-wifi": {
+      "priceEgp": 14590,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/asus-tuf-gaming-z790-plus-wifi-lga-1700-ddr5",
+      "title": "ASUS TUF Gaming Z790-Plus WiFi LGA 1700 DDR5"
+    },
+    "mb-asus-tuf-z890-plus-wifi": {
+      "priceEgp": 14699,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-z890-plus-wifi-7-ddr5-atx-lga-1851-intel-motherboard-u6bb33ujktmo",
+      "title": "ASUS TUF GAMING Z890-PLUS WIFI 7 Socket LGA 1851 Motherboard"
+    },
+    "mb-asus-tuf-z890-pro-wifi": {
+      "priceEgp": 15499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=asus-tuf-gaming-z890-pro-wifi-features-intel-core-ultra-support-256gb-ddr5-memory-pcie-50-wi-fi-7-thunderbolt-4-25gb-ethernet-71-surround-sound-and-robust-tuf-protection-in-an-atx-form-factor-8vlkqk1asndf",
+      "title": "ASUS TUF GAMING Z890-PRO WIFI Socket LGA 1851 Motherboard"
+    },
+    "mb-gigabyte-b550-eagle": {
+      "priceEgp": 5800,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-b550-eagle",
+      "title": "Gigabyte B550 EAGLE ATX Motherboard AMD Socket AM4 AMD B550 Chipset — Supports Ryzen 5000/4000/3000 "
+    },
+    "mb-gigabyte-b550-x-v2": {
+      "priceEgp": 6000,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gigabyte-b550-gaming-x-v2/",
+      "title": "GIGABYTE B550 GAMING X V2"
+    },
+    "mb-gigabyte-b550m-ds3h-ac-r2": {
+      "priceEgp": 5400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b550m-ds3h-ac-r2-0-am4-motherboard",
+      "title": "GIGABYTE B550M DS3H AC R2.0 Motherboard AMD Socket AM4 DDR4 Micro ATX"
+    },
+    "mb-gigabyte-b550m-k": {
+      "priceEgp": 4395,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b550m-k-am4-amd-b550-micro-atx-motherboard-with-dual-m-2-sata-6gb-s-usb-3-2-gen-1-realtek-gbe-lan-pcie-4-0",
+      "title": "GIGABYTE B550M K"
+    },
+    "mb-gigabyte-b650-aero-g": {
+      "priceEgp": 13999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=gigabyte-amd-b650-aero-g-motherboard-iz4zr1u6zvvr",
+      "title": "GIGABYTE B650 AERO G Socket AM5 Motherboard"
+    },
+    "mb-gigabyte-b650-aero-g-wifi": {
+      "priceEgp": 13999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-b650-aero-g-am5-atx-motherboard",
+      "title": "GIGABYTE B650 AERO G AM5 ATX Motherboard, AMD B650 Chipset, 4x DDR5 DIMM, 192GB Max Capacity, 2.5GbE"
+    },
+    "mb-gigabyte-b650-eagle-wifi": {
+      "priceEgp": 9800,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-b650-eagle-ax-am5-lga-1718-amd",
+      "title": "GIGABYTE B650 EAGLE AX AM5 LGA 1718 AMD B650 ATX — DDR5 Triple M.2, PCIe 5.0, USB 3.2 Gen2x2 Type-C,"
+    },
+    "mb-gigabyte-b650-x-v2-wifi": {
+      "priceEgp": 9200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b650-gaming-x-ax-v2",
+      "title": "GIGABYTE B650 Gaming X AX V2 GAMING MOTHERBOARD"
+    },
+    "mb-gigabyte-b650em-ds3h-wifi": {
+      "priceEgp": 7600,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b650em-ds3h-wifi6e-motherboard-egypt",
+      "title": "GIGABYTE B650EM DS3H WIFI6E Motherboard AMD Socket AM5 Micro ATX DDR5"
+    },
+    "mb-gigabyte-b650m-wifi": {
+      "priceEgp": 6465,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-gigabyte-b650m-gaming-wifi6e-am5-ddr5-wifi-6e-micro-atx-motherboard",
+      "title": "GIGABYTE B650M GAMING WiFi6E Motherboard"
+    },
+    "mb-gigabyte-b650m-d3hp-wifi": {
+      "priceEgp": 6999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-b650m-d3hp-ax-am5",
+      "title": "GIGABYTE B650M D3HP AX AM5"
+    },
+    "mb-gigabyte-b650m-ds3h": {
+      "priceEgp": 7600,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gigabyte-b650m-ds3h/",
+      "title": "GIGABYTE B650M DS3H"
+    },
+    "mb-gigabyte-b650m-elite": {
+      "priceEgp": 8700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b650m-aorus-elite-ddr5-am5-egypt",
+      "title": "GIGABYTE B650M AORUS ELITE Motherboard – AMD AM5 – Micro-ATX – DDR5 – PCIe 5.0 – M.2 – USB 3.2 – Ryz"
+    },
+    "mb-gigabyte-b650m-s2h": {
+      "priceEgp": 5450,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b650m-s2h-motherboard-am5-2xddr5-hdmi-dp-vga-usb-3-2-m-2",
+      "title": "GIGABYTE B650M S2H Motherboard AMD AM5 Micro ATX 2 x DDR5 DIMM PCIe 4.0 1 x M.2 Realtek GbE LAN Micr"
+    },
+    "mb-gigabyte-b760-ds3h": {
+      "priceEgp": 7000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760-ds3h-gen5-motherboard-lga1700-ddr5-pcie5-egypt",
+      "title": "GIGABYTE B760 DS3H GEN5 ATX Motherboard for LGA1700 Intel Processors with DDR5 Support, PCIe 5.0 x16"
+    },
+    "mb-gigabyte-b760-ds3h-wifi-d4": {
+      "priceEgp": 7930,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760-ds3h-wifi-6e-ddr4-gen-5-lga1700-motherboard-egypt",
+      "title": "GIGABYTE B760 DS3H WIFI 6E DDR4 GEN 5"
+    },
+    "mb-gigabyte-b760-ds3h-wifi": {
+      "priceEgp": 7899,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760-ds3h-wifi6e-gen5-motherboard-lga1700-ddr5-pcie5-atx",
+      "title": "Gigabyte B760 DS3H WIFI6E GEN5 DDR5 LGA1700 Intel B760 Express Chipset Micro ATX Motherboard Intel® "
+    },
+    "mb-gigabyte-b760-x-d4": {
+      "priceEgp": 7300,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gigabyte-b760-gaming-x-ddr4-gen5/",
+      "title": "GIGABYTE B760 GAMING X DDR4 GEN5"
+    },
+    "mb-gigabyte-b760-x": {
+      "priceEgp": 7399,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-b760-gaming-x-gen5-motherboard/",
+      "title": "Gigabyte B760 Gaming X Gen5 Motherboard"
+    },
+    "mb-gigabyte-b760-x-wifi": {
+      "priceEgp": 7800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760-gaming-x-gen5-ddr5-egypt",
+      "title": "GIGABYTE B760 GAMING X WIFI 6E GEN 5"
+    },
+    "mb-gigabyte-b760m-d3hp-d4": {
+      "priceEgp": 5399,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-b760m-d3hp-ddr4",
+      "title": "GIGABYTE B760M D3HP DDR4"
+    },
+    "mb-gigabyte-b760m-ds3h-wifi-d4": {
+      "priceEgp": 6500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-ds3h-ax-ddr4-motherboard",
+      "title": "GIGABYTE B760M DS3H AX DDR4 Motherboard LGA1700 Micro ATX Wi-Fi 6E"
+    },
+    "mb-gigabyte-b760m-ds3h-wifi": {
+      "priceEgp": 6699,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-b760m-ds3h-wifi-6e-gen-5-micro-atx-socket-lga1700-motherboard/",
+      "title": "Gigabyte B760M DS3H WIFI 6E Gen 5 Micro ATX Socket LGA1700 Motherboard"
+    },
+    "mb-gigabyte-b760m-e": {
+      "priceEgp": 4395,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-e-ddr5-motherboard",
+      "title": "MOTHERBOARD GIGABYTE B760M E DDR5"
+    },
+    "mb-gigabyte-b760m-elite": {
+      "priceEgp": 8700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-aorus-elite-gen5-ddr5-egypt",
+      "title": "GIGABYTE B760M AORUS ELITE GEN5 DDR5 Motherboard – Intel LGA 1700, PCIe 5.0, mATX"
+    },
+    "mb-gigabyte-b760m-elite-wifi": {
+      "priceEgp": 9295,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-aorus-elite-wifi6e-gen5",
+      "title": "GIGABYTE B760M AORUS ELITE WIFI6E GEN5 DDR5 Motherboard – LGA1700 PCIe 5.0 Wi-Fi 6E Intel 14th/13th "
+    },
+    "mb-gigabyte-b760m-h-d4": {
+      "priceEgp": 4500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-h-motherboard",
+      "title": "GIGABYTE B760M H Motherboard – Intel LGA1700 – Micro-ATX – DDR4 – PCIe 4.0 – M.2 – HDMI / DisplayPor"
+    },
+    "mb-gigabyte-b760m-plus-wifi": {
+      "priceEgp": 6999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-b760m-gaming-wifi6-plus-gen5-lga1700-gaming-motherboard/",
+      "title": "Gigabyte B760M Gaming WIFI6 PLUS Gen5 LGA1700 Gaming Motherboard"
+    },
+    "mb-gigabyte-b760m-x-d4": {
+      "priceEgp": 6800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/motherboard-b760m-gaming-x-ddr4-gen5-egypt",
+      "title": "Gigabyte B760M Gaming X DDR4 Gen5 Motherboard – Intel LGA1700, PCIe 5.0, 2.5GbE LAN"
+    },
+    "mb-gigabyte-b760m-x": {
+      "priceEgp": 7400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b760m-gaming-x-gen5-ddr5-motherboard-egypt",
+      "title": "GIGABYTE B760M GAMING X GEN5 – AM5/Intel LGA 1700 DDR5 Micro‑ATX Motherboard"
+    },
+    "mb-gigabyte-b840-eagle-wifi": {
+      "priceEgp": 8300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840-eagle-wf6e-atx-motherboard-egypt",
+      "title": "GIGABYTE B840 EAGLE WF6E ATX Motherboard AMD Socket AM5 DDR5 Wi-Fi 6E"
+    },
+    "mb-gigabyte-b840m-a-elite-wifi": {
+      "priceEgp": 9400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-a-elite-wifi6e-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B840M A ELITE WIFI6E Micro ATX Motherboard AMD Socket AM5 DDR5 Wi-Fi 6E"
+    },
+    "mb-gigabyte-b840m-d2h": {
+      "priceEgp": 5400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-d2h-am5-ddr5-motherboard-egypt",
+      "title": "GIGABYTE B840M D2H Micro ATX Motherboard AMD Socket AM5 DDR5 128GB"
+    },
+    "mb-gigabyte-b840m-d3hp-wifi": {
+      "priceEgp": 6800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-d3hp-wifi6e-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B840M D3HP WIFI6E Micro ATX Motherboard AMD Socket AM5 DDR5 Wi-Fi 6E"
+    },
+    "mb-gigabyte-b840m-ds3h": {
+      "priceEgp": 6700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-ds3h-am5-ddr5-motherboard",
+      "title": "GIGABYTE B840M DS3H Motherboard – AMD AM5 – Micro-ATX – DDR5 – PCIe 4.0 – M.2 – HDMI / DisplayPort –"
+    },
+    "mb-gigabyte-b840m-ds3h-wifi": {
+      "priceEgp": 7100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-ds3h-wifi6-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B840M DS3H WIFI6 Micro ATX Motherboard AMD Socket AM5 DDR5 Wi-Fi 6"
+    },
+    "mb-gigabyte-b840m-eagle-wifi": {
+      "priceEgp": 6500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-eagle-wifi6-am5-ddr5-motherboard",
+      "title": "GIGABYTE B840M EAGLE WIFI6 – AM5 Micro-ATX DDR5 Motherboard with PCIe 4.0 & Wi-Fi 6"
+    },
+    "mb-gigabyte-b840m-h": {
+      "priceEgp": 4800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-h-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B840M H Micro ATX Motherboard AMD Socket AM5 DDR5 128GB"
+    },
+    "mb-gigabyte-b840m-x-wifi": {
+      "priceEgp": 8400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b840m-gaming-x-wifi6e-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B840M GAMING X WIFI6E Micro ATX Motherboard AMD Socket AM5 DDR5 Wi-Fi 6E"
+    },
+    "mb-gigabyte-b850-wifi": {
+      "priceEgp": 8899,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/b850-gaming-wifi6-gigabyte-amd-motherboard",
+      "title": "GIGABYTE B850 GAMING WIFI6 Motherboard AMD B850 Socket AM5 DDR5 Up to 8200MT/s PCIe 5.0 M.2 WiFi 6 A"
+    },
+    "mb-gigabyte-b850-a-stealth": {
+      "priceEgp": 14399,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-b850-a-stealth-socket-am5-ddr5-atx-motherboard/",
+      "title": "Gigabyte B850 A Stealth Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-gigabyte-b850-eagle-ice": {
+      "priceEgp": 10300,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/igabyte-b850-eagle-ice-atx-motherboard-amd-am5-ddr5-pcie5-triple-m2-usb3",
+      "title": "GIGABYTE B850 EAGLE ICE ATX Motherboard – AMD AM5 Socket, B850 Chipset, Dual Channel DDR5 Support, P"
+    },
+    "mb-gigabyte-b850-eagle-ice-wifi": {
+      "priceEgp": 10900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b850-eagle-wifi7-ice",
+      "title": "GIGABYTE B850 EAGLE WiFi7 ICE – AM5 DDR5 up to 8200 MT/s OC, PCIe 5.0, 3× M.2, Wi‑Fi 7, 2.5 GbE LAN"
+    },
+    "mb-gigabyte-b850-elite-wifi": {
+      "priceEgp": 12325,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b850-aorus-elite-wifi7-motherboard",
+      "title": "Gigabyte B850 AORUS ELITE WIFI7 AMD Socket AM5 DDR5 ATX Motherboard PCIe 5.0 x16 AMD B850 Chipset Wi"
+    },
+    "mb-gigabyte-b850-elite-ice-wifi": {
+      "priceEgp": 12199,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-b850-aorus-elite-wifi7-ice-atx-am5-ddr5-motherboard",
+      "title": "GIGABYTE B850 AORUS ELITE WIFI7 ICE ATX Motherboard – AM5 & DDR5"
+    },
+    "mb-gigabyte-b850-x-wifi": {
+      "priceEgp": 10400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b850-gaming-x-wifi6e-am5-atx-motherboard-amd",
+      "title": "GIGABYTE B850 GAMING X WIFI6E Motherboard – AMD AM5 – ATX – DDR5 – PCIe 5.0 – M.2 – WiFi 6E – USB 3."
+    },
+    "mb-gigabyte-b850m-d3hp": {
+      "priceEgp": 7199,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-b850m-d3hp",
+      "title": "GIGABYTE B850M D3HP"
+    },
+    "mb-gigabyte-b850m-eagle-wifi": {
+      "priceEgp": 9500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b850m-eagle-wifi6e",
+      "title": "GIGABYTE B850M EAGLE WIFI6E Motherboard – AM5, DDR5, PCIe 5.0, USB-C, Wi-Fi 6E"
+    },
+    "mb-gigabyte-b850m-elite-wifi": {
+      "priceEgp": 10900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-b850m-aorus-elite-wifi6e-micro-atx-am5-ddr5-motherboard",
+      "title": "GIGABYTE B850M AORUS ELITE WIFI6E Micro ATX Motherboard – AM5 & DDR5"
+    },
+    "mb-gigabyte-b850m-force": {
+      "priceEgp": 7500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b850m-force-micro-atx-motherboard-egypt",
+      "title": "GIGABYTE B850M FORCE Micro ATX Motherboard AMD Socket AM5 DDR5 PCIe 5.0"
+    },
+    "mb-gigabyte-b850m-force-wifi": {
+      "priceEgp": 7999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-b850m-force-wifi6e-socket-am5-ddr5-micro-atx-motherboard/",
+      "title": "Gigabyte B850M FORCE WIFI6E Socket AM5 DDR5 Micro ATX Motherboard"
+    },
+    "mb-gigabyte-b860-ds3h-wifi": {
+      "priceEgp": 8485,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860-ds3h-wifi6e-motherboard",
+      "title": "GIGABYTE B860 DS3H WIFI6E DDR5 Motherboard"
+    },
+    "mb-gigabyte-b860-eagle-wifi": {
+      "priceEgp": 10000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860-eagle-wifi6e-ddr5-lga1851-atx-motherboard",
+      "title": "Motherboard GIGABYTE B860 EAGLE WIFI6E DDR5 LGA1851 ATX"
+    },
+    "mb-gigabyte-b860m-wifi": {
+      "priceEgp": 8200,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-gaming-wifi6-1-0-motherboard",
+      "title": "GIGABYTE B860M Gaming WiFi6 1.0 Motherboard"
+    },
+    "mb-gigabyte-b860m-d3hp": {
+      "priceEgp": 6699,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-d3hp-motherboard",
+      "title": "GIGABYTE B860M D3HP Motherboard Intel LGA1851 DDR5 PCIe 5.0 M.2 Micro ATX for Intel Core Ultra Proce"
+    },
+    "mb-gigabyte-b860m-ds3h-wifi": {
+      "priceEgp": 8600,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-ds3h-wifi6e-motherboard",
+      "title": "GIGABYTE B860M DS3H WIFI6E Motherboard LGA1851 Intel B860 DDR5 Up to 9066MT/s 256GB Dual-Channel Wi-"
+    },
+    "mb-gigabyte-b860m-eagle-plus-wifi": {
+      "priceEgp": 9499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/gigabyte-b860m-eagle-plus-wifi6e-lga-1851",
+      "title": "GIGABYTE B860M EAGLE PLUS WIFI6E (LGA 1851)"
+    },
+    "mb-gigabyte-b860m-eagle-v2-wifi": {
+      "priceEgp": 7900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/b860m-eagle-wifi6-v2",
+      "title": "GIGABYTE B860M EAGLE WiFi6 V2 Motherboard – Intel LGA1851 – Micro-ATX – DDR5 – PCIe 5.0 – M.2 – WiFi"
+    },
+    "mb-gigabyte-b860m-elite": {
+      "priceEgp": 9800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/motherboard-b860m-aorus-elite-egypt",
+      "title": "Gigabyte B860M AORUS ELITE Motherboard – Intel LGA1851, DDR5, PCIe 5.0, 2.5GbE LAN"
+    },
+    "mb-gigabyte-b860m-elite-wifi": {
+      "priceEgp": 10710,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-aorus-elite-wifi6e-motherboard?variant=47560855224469",
+      "title": "MOTHERBOARD GIGABYTE B860M AORUS ELITE WIFI6E Black"
+    },
+    "mb-gigabyte-b860m-h": {
+      "priceEgp": 5700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-h-atx-gaming-motherboard",
+      "title": "GIGABYTE B860M H Gaming Motherboard – Intel LGA1851 – Micro-ATX – DDR5 – PCIe 5.0 – M.2 – HDMI / Dis"
+    },
+    "mb-gigabyte-b860m-k": {
+      "priceEgp": 5555,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-k-ddr5",
+      "title": "GIGABYTE B860M K – Micro‑ATX Motherboard for Intel Ultra Series 2 | DDR5, PCIe 4.0, GbE LAN, RGB Fus"
+    },
+    "mb-gigabyte-b860m-x": {
+      "priceEgp": 8400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-b860m-gaming-x",
+      "title": "GIGABYTE B860M GAMING X – LGA 1851, DDR5, PCIe 5.0, USB4 Type‑C, 2.5 GbE LAN"
+    },
+    "mb-gigabyte-h610m-h-d4": {
+      "priceEgp": 4250,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=gigabyte-intel-h610-motherboard-with-611-hybrid-phases-digital-vrm-design-pcie-40-design-gen3-x4-m2-gigabyte-intel-gbe-with-cfosspeed-anti-sulfur-resistor-smart-fan-6-7qbqdm7ovbkh",
+      "title": "GIGABYTE H610M H DDR4\tSocket LGA 1700 Motherboard"
+    },
+    "mb-gigabyte-h610m-h-v2": {
+      "priceEgp": 4099,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-h610m-h-v2-ddr5-lga1700",
+      "title": "GIGABYTE H610M H V2 MOTHERBOARD"
+    },
+    "mb-gigabyte-h610m-k": {
+      "priceEgp": 3850,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-h610m-k-v2-motherboard",
+      "title": "Gigabyte H610M K V2 Motherboard"
+    },
+    "mb-gigabyte-h810m-wifi": {
+      "priceEgp": 5699,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-h810m-gaming-wifi6-1-0-intel-h810gigabyte-h810m-gaming-wifi6-lga1851-ddr5-micro-atx-motherboard-express-chipset-lga1851-socket-ddr5-6400-micro-atx-motherboard",
+      "title": "Motherboard GIGABYTE H810M GAMING WIFI6 Micro ATX"
+    },
+    "mb-gigabyte-h810m-h": {
+      "priceEgp": 4800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-gigabyte-h810m-h-lga1851-ddr5-micro-atx-motherboard",
+      "title": "GIGABYTE H810M H Rev. 1.0 Micro ATX Motherboard LGA1851 DDR5 PCIe 4.0"
+    },
+    "mb-gigabyte-h810m-s2h": {
+      "priceEgp": 5100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-gigabyte-h810m-s2h-lga1851-ddr5-micro-atx-motherboard",
+      "title": "GIGABYTE H810M S2H Rev. 1.0 Micro ATX Motherboard LGA1851 DDR5 PCIe 4.0"
+    },
+    "mb-gigabyte-x870e-a-elite-x3d-ice": {
+      "priceEgp": 19899,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/aorus-x870e-a-elite-x3d-ice-gaming-motherboard/",
+      "title": "Aorus X870E A Elite X3D ICE Gaming Motherboard"
+    },
+    "mb-gigabyte-x870e-aero-x3d-dark-wood": {
+      "priceEgp": 21999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-x870e-aero-x3d-dark-wood-socket-am5-ddr5-atx-motherboard/",
+      "title": "Gigabyte X870E Aero X3D Dark Wood Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-gigabyte-x870e-aero-x3d-light-wood": {
+      "priceEgp": 24499,
+      "store": "ahw",
+      "url": "https://ahw.store/products/gigabyte-x870e-aero-x-wood-ddr5-am5-m-atx-motherboard-black",
+      "title": "Gigabyte X870E AERO X3D Light Wood DDR5 AM5 M-ATX Motherboard"
+    },
+    "mb-gigabyte-x870e-eagle-x3d-wifi": {
+      "priceEgp": 14900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-x870e-eagle-x3d-wifi7-am5-ddr5-usb4-egypt",
+      "title": "GIGABYTE X870E EAGLE X3D WIFI7 ATX Motherboard AMD X870E AM5 DDR5 PCIe 5.0 Wi-Fi 7 USB4"
+    },
+    "mb-gigabyte-x870e-elite-wifi": {
+      "priceEgp": 16700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-x870e-aorus-elite-wifi7-amd-am5-lga-1718-motherboard",
+      "title": "GIGABYTE X870E AORUS Elite WIFI7 AMD AM5 LGA 1718 Motherboard"
+    },
+    "mb-gigabyte-x870e-elite-ice-wifi": {
+      "priceEgp": 16200,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-x870e-aorus-elite-wifi-7-v1-2-ice-gaming-motherboard/",
+      "title": "Gigabyte X870E Aorus Elite Wifi 7 v1.2 Ice Gaming Motherboard"
+    },
+    "mb-gigabyte-x870e-elite-x3d": {
+      "priceEgp": 19900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-x870e-aorus-elite-x3d-amd-x870e-am5-ddr5-pcie-5-usb4-wifi-7-atx-motherboard",
+      "title": "Gigabyte X870E Aorus Elite X3D Gaming Motherboard"
+    },
+    "mb-gigabyte-x870e-elite-x3d-ice": {
+      "priceEgp": 19900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-x870e-aorus-elite-x3d-ice-atx-am5-ddr5-motherboard",
+      "title": "GIGABYTE X870E AORUS ELITE X3D-ICE ATX Motherboard – AM5 & DDR5"
+    },
+    "mb-gigabyte-x870e-master": {
+      "priceEgp": 23999,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gigabyte-x870e-aorus-master/",
+      "title": "GIGABYTE X870E AORUS MASTER"
+    },
+    "mb-gigabyte-x870e-master-x3d": {
+      "priceEgp": 29795,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-x870e-aorus-master-x3d-am5-motherboard-egypt?variant=47542672326805",
+      "title": "Gigabyte X870E Aorus Master X3D White"
+    },
+    "mb-gigabyte-x870e-master-x3d-wifi": {
+      "priceEgp": 28499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-x870e-aorus-master-x3d-am5-ddr5-wifi-7-usb4-x3d-turbo-mode-2-0-atx-black-motherboard/",
+      "title": "Gigabyte X870E Aorus Master X3D AM5 DDR5 WiFi 7 USB4 X3D Turbo Mode 2.0 ATX Black Motherboard"
+    },
+    "mb-gigabyte-x870e-master-x3d-ice": {
+      "priceEgp": 29499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=gigabyte-amd-x870e-aorus-master-x3d-ice-10-wl2vd7knl4yk",
+      "title": "GIGABYTE AORUS AMD X870E MASTER X3D ICE"
+    },
+    "mb-gigabyte-x870e-pro-x3d": {
+      "priceEgp": 22500,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=gigabyte-amd-x870e-aorus-pro-x3d-10-pkofwwaye0ro",
+      "title": "GIGABYTE AORUS AMD X870E PRO X3D  1.0"
+    },
+    "mb-gigabyte-x870e-pro-x3d-ice-wifi": {
+      "priceEgp": 20900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/products-gigabyte-x870e-aorus-pro-x3d-am5-ddr5-wifi7-egypt?variant=47560791425173",
+      "title": "Gigabyte X870E Aorus Pro X3D Ice WiFi 7 Motherboard Black"
+    },
+    "mb-gigabyte-z790-d-wifi": {
+      "priceEgp": 9666,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z790-d-ax-ddr5-motherboard-egypt",
+      "title": "GIGABYTE Z790 D AX DDR5 ATX Motherboard – LGA 1700, PCIe 5.0, Wi‑Fi 6E"
+    },
+    "mb-gigabyte-z790-eagle-wifi": {
+      "priceEgp": 9999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z790-eagle-ax-lga-1700-intel-z790-atx-ddr5-motherboard",
+      "title": "GIGABYTE Z790 Eagle AX LGA 1700 Intel Z790 ATX DDR5 Motherboard"
+    },
+    "mb-gigabyte-z890-a-elite-p-wifi": {
+      "priceEgp": 15499,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-z890-a-elite-wifi7-p-socket-lga1851-ddr5-atx-motherboard/",
+      "title": "Gigabyte Z890 A Elite Wifi7 P Socket LGA1851 DDR5 ATX Motherboard"
+    },
+    "mb-gigabyte-z890-eagle-wifi": {
+      "priceEgp": 12325,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z890-eagle-wifi7",
+      "title": "GIGABYTE Z890 EAGLE WIFI7 DDR5 Motherboard"
+    },
+    "mb-gigabyte-z890-elite-wifi": {
+      "priceEgp": 15499,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-z890-aorus-elite-wifi7",
+      "title": "GIGABYTE Z890 AORUS Elite WIFI7 Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5, 4X M.2,"
+    },
+    "mb-gigabyte-z890-elite-x-ice": {
+      "priceEgp": 16999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/gigabyte-z890-aorus-elite-x-ice-lga1851-gaming-motherboard/",
+      "title": "Gigabyte Z890 Aorus Elite X ICE LGA1851 Gaming Motherboard"
+    },
+    "mb-gigabyte-z890-pro-ice": {
+      "priceEgp": 19500,
+      "store": "uptodate",
+      "url": "https://uptodate.store/product/gigabyte-z890-aorus-pro-ice/",
+      "title": "GIGABYTE Z890 AORUS PRO ICE"
+    },
+    "mb-gigabyte-z890-pro-ice-wifi": {
+      "priceEgp": 20500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/gigabyte-z890-aorus-pro-ice",
+      "title": "GIGABYTE Z890 AORUS PRO ICE Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5, 5X M.2, PCI"
+    },
+    "mb-gigabyte-z890-ud": {
+      "priceEgp": 10000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z890-ud-ddr5-lga1851-atx-motherboard-egypt",
+      "title": "GIGABYTE Z890 UD DDR5 LGA1851 ATX Motherboard PCIe 5.0 USB4 Type-C 4x M.2 2.5GbE Ethernet DDR5 Up to"
+    },
+    "mb-gigabyte-z890-ud-wifi": {
+      "priceEgp": 11800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z890-ud-wifi6e-4xddr5-lga1851-atx-motherboard",
+      "title": "GIGABYTE Z890 UD WIFI6E LGA1851 Intel Core Ultra Processor Support DDR5 9200 OC Wi-Fi 6E Bluetooth 5"
+    },
+    "mb-gigabyte-z890-x-wifi": {
+      "priceEgp": 13900,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z890-gaming-x-wifi7-4xddr5-lga1851-atx-motherboard",
+      "title": "GIGABYTE Z890 GAMING X WIFI7 4xDDR5 LGA1851 ATX Motherboard"
+    },
+    "mb-gigabyte-z890m-x": {
+      "priceEgp": 10500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/gigabyte-z890m-gaming-x-1-0-motherboard",
+      "title": "GIGABYTE Z890M Gaming X Micro ATX LGA 1851 Motherbaord Intel Z890 Chipset DDR5"
+    },
+    "mb-msi-a520m-a": {
+      "priceEgp": 3250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-a520m-a-pro-ddr4-am4-micro-atx-motherboard",
+      "title": "MSI A520M-A PRO DDR4 AM4 Micro ATX Motherboard"
+    },
+    "mb-msi-a620m-e": {
+      "priceEgp": 6060,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-a620m-e-proseries-motherboard-amd-am5-ddr5-pcie-4-0-sata-6gb-s-m-2-usb-3-2-gen-1-gbps-lan-dvi-hdmi-matx",
+      "title": "MSI PRO A620M-E DDR5 Motherboard"
+    },
+    "mb-msi-b450m-a-max-ii": {
+      "priceEgp": 3500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-motherboard-b450m-a-pro-max-ii",
+      "title": "MSI B450M-A PRO MAX II DDR4 Motherboar"
+    },
+    "mb-msi-b550m-a": {
+      "priceEgp": 4250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b550m-a-pro-rev1",
+      "title": "MOTHERBOARD MSI B550M-A PRO"
+    },
+    "mb-msi-b550m-vdh-wifi": {
+      "priceEgp": 5700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-b550m-mortar-wifi-amd-am4-ddr4-m-2-usb-3-2-gen-2-wlan-6-hdmi-m-atx-gaming-motherboard-amd-ryzen-5000-processors",
+      "title": "MSI B550M PRO-VDH WIFI Motherboard Micro-ATX AMD AM4 B550 DDR4 128GB M.2 Wi-Fi"
+    },
+    "mb-msi-b650m-b": {
+      "priceEgp": 4999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-pro-b650m-b",
+      "title": "MSI PRO B650M-B"
+    },
+    "mb-msi-b760-tomahawk-wifi": {
+      "priceEgp": 10900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/msi-mag-b760-tomahawk-wifi-lga-1700-4ddr5-2pci-ex16-1pci-ex1-3m-2-4sata3",
+      "title": "MSI MAG B760 TOMAHAWK WIFI, LGA 1700, 4DDR5, 2PCI-EX16, 1PCI-EX1, 3M.2, 4SATA3"
+    },
+    "mb-msi-b760m-a-d4": {
+      "priceEgp": 6350,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b760m-a-ddr4-ii-lga1700-gaming-motherboard-egypt",
+      "title": "MSI PRO B760M-A DDR4 II M-ATX LGA1700 Gaming Motherboard"
+    },
+    "mb-msi-b760m-a-wifi": {
+      "priceEgp": 7600,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b760m-a-wifi",
+      "title": "MOTHERBOARD MSI PRO B760M-A WIFI"
+    },
+    "mb-msi-b760m-e": {
+      "priceEgp": 5100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b760m-e-motherboard",
+      "title": "MSI PRO B760M-E Motherboard"
+    },
+    "mb-msi-b760m-mortar-ii-wifi": {
+      "priceEgp": 10350,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-b760m-mortar-wifi-ii-ddr5",
+      "title": "MSI MAG B760M MORTAR WIFI II DDR5"
+    },
+    "mb-msi-b760m-p-d4": {
+      "priceEgp": 5399,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-pro-b760m-p-ddr4",
+      "title": "MSI PRO B760M-P DDR4"
+    },
+    "mb-msi-b760m-p": {
+      "priceEgp": 5700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b760m-p-motherboard",
+      "title": "MSI PRO B760M-P DDR5 Motherboard"
+    },
+    "mb-msi-b760m-plus-wifi-d4": {
+      "priceEgp": 5300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b760m-p-ddr4-motherboard",
+      "title": "MSI INTEL PRO B760M-P DDR4 ASUS TUF GAMING B860-PLUS WIFI ATX Motherboard"
+    },
+    "mb-msi-b760m-plus-wifi": {
+      "priceEgp": 8530,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b760m-gaming-plus-wifi-gen5-lga1700-ddr5-motherboard-egypt",
+      "title": "MSI B760M GAMING PLUS WIFI GEN5 LGA1700 DDR5 mATX Gaming Motherboard"
+    },
+    "mb-msi-b840-p-wifi": {
+      "priceEgp": 8800,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b840-p-wifi-supports-ryzen-900080007000-cpus-ddr5-8000-mts-pcie-40-wi-fi-7-25g-lan-and-advanced-cooling-features-iog9wdn9qwwl",
+      "title": "MSI PRO B840-P WIFI Socket AM5 LGA 1718 Motherboard"
+    },
+    "mb-msi-b840-plus-wifi": {
+      "priceEgp": 9599,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-b840-gaming-plus-wifi-am5",
+      "title": "MSI B840 GAMING PLUS WIFI AM5"
+    },
+    "mb-msi-b840m-wifi": {
+      "priceEgp": 6500,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=msi-b840m-gaming-plus-wifi6e-nfjpmz10nx4m",
+      "title": "MSI B840M GAMING WIFI6E"
+    },
+    "mb-msi-b840m-p-wifi": {
+      "priceEgp": 6750,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b840m-p-wifi6e-pijbquvova4b",
+      "title": "MSI PRO B840M-P WIFI6E"
+    },
+    "mb-msi-b840m-plus-wifi": {
+      "priceEgp": 7299,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-b840m-gaming-plus-wifi6e-am5",
+      "title": "MSI B840M GAMING PLUS WIFI6E AM5"
+    },
+    "mb-msi-b850-plus-wifi": {
+      "priceEgp": 12100,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b850-gaming-plus-wifi-pz-am5-ddr5-egypt",
+      "title": "MSI B850 GAMING PLUS WIFI PZ AM5 Motherboard – DDR5, PCIe 5.0, Wi-Fi 7, 5G LAN"
+    },
+    "mb-msi-b850-plus-max-wifi": {
+      "priceEgp": 12000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-b850-gaming-plus-max-wifi-am5-motherboard-egypt",
+      "title": "MSI MAG B850 GAMING PLUS MAX WIFI AM5 ATX Motherboard"
+    },
+    "mb-msi-b850m-a-pz-wifi": {
+      "priceEgp": 10500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b850m-a-wifi-pz-ddr5-motherboard-egypt",
+      "title": "MSI PRO B850M-A WIFI PZ DDR5 mATX Gaming Motherboard"
+    },
+    "mb-msi-b850m-g": {
+      "priceEgp": 7400,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b850m-g",
+      "title": "MSI PRO B850M-G Motherboard – AM5 DDR5 PCIe 5.0 5G LAN"
+    },
+    "mb-msi-b850m-mortar-wifi": {
+      "priceEgp": 11900,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/msi-mag-b850m-mortar-wifi-am5-ddr5-motherboard",
+      "title": "MSI MAG B850M MORTAR WIFI AMD AM5 Micro-ATX Motherboard - DDR5, Wi-Fi 7, PCIe 5.0, 5G LAN, Dual Gen5"
+    },
+    "mb-msi-b850m-p": {
+      "priceEgp": 7700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b850m-p-am5-ddr5-gaming-motherboard-egypt",
+      "title": "MSI PRO B850M-P AM5 DDR5 mATX Gaming Motherboard"
+    },
+    "mb-msi-b850m-p-wifi": {
+      "priceEgp": 8150,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-b850m-p-wifi-am5-motherboard-egypt",
+      "title": "Motherboard MSI AMD PRO B850M-P WIFI"
+    },
+    "mb-msi-b850m-plus-wifi": {
+      "priceEgp": 9600,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b850m-gaming-plus-wifi-am5-ddr5-motherboard-egypt",
+      "title": "MSI B850M GAMING PLUS WIFI AM5 DDR5 mATX Gaming Motherboard"
+    },
+    "mb-msi-b860-p-wifi": {
+      "priceEgp": 9999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-pro-b860-p-wifi-lga-1851",
+      "title": "MSI PRO B860-P WIFI (LGA 1851)"
+    },
+    "mb-msi-b860-plus-wifi": {
+      "priceEgp": 10700,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b860-gaming-plus-wifi-motherboard",
+      "title": "MSI B860 Gaming Plus WiFi Motherboard – Intel B860, LGA1851, ATX, DDR5, PCIe 5.0, WiFi 7"
+    },
+    "mb-msi-b860-tomahawk-wifi": {
+      "priceEgp": 12499,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=msi-intel-mag-b860-tomahawk-wifi-8qwkkn8ny3yb",
+      "title": "MSI INTEL MAG B860 TOMAHAWK WIFI"
+    },
+    "mb-msi-b860m-mortar-wifi": {
+      "priceEgp": 10750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-b860m-mortar-wifi-lga1851-ddr5-pcie5-wifi7",
+      "title": "MSI MAG B860M MORTAR WIFI DDR5 Motherboard"
+    },
+    "mb-msi-b860m-plus-wifi": {
+      "priceEgp": 10000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-b860m-gaming-plus-wifi-lga1851-ddr5-pcie5-wifi7",
+      "title": "MSI B860M GAMING PLUS WIFI DDR5 Motherboard"
+    },
+    "mb-msi-h610m-e-d4": {
+      "priceEgp": 3750,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-h610m-e-ddr4-motherboard",
+      "title": "MSI PRO H610M-E DDR4 Motherboard"
+    },
+    "mb-msi-h610m-e": {
+      "priceEgp": 3999,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-h610m-e-ddr5-motherboard",
+      "title": "MB MSI PRO H610M-E"
+    },
+    "mb-msi-h610m-g-d4": {
+      "priceEgp": 3899,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-h610m-g-ddr4-lga1700",
+      "title": "MSI H610M-G DDR4 LGA1700"
+    },
+    "mb-msi-x670e-tomahawk-wifi": {
+      "priceEgp": 14999,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/msi-mag-x670e-tomahawk-wifi",
+      "title": "MSI MAG X670E TOMAHAWK WIFI AM5 AMD X670E SATA 6Gb/s ATX Motherboard"
+    },
+    "mb-msi-x870e-ace-max": {
+      "priceEgp": 34999,
+      "store": "alfrensia",
+      "url": "https://alfrensia.com/en/product/msi-meg-x870e-ace-max-socket-am5-ddr5-atx-motherboard/",
+      "title": "MSI MEG X870E Ace Max Socket AM5 DDR5 ATX Motherboard"
+    },
+    "mb-msi-x870e-carbon-wifi": {
+      "priceEgp": 26500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mpg-x870e-carbon-wifi-gaming-motherboard-amd-ryzen-9000-8000-7000-series-processors-am5-ddr5-pcie-5-0-m-2-gen5-sata-6gb-s-usb-40gbps-hdmi-wi-fi-7-bluetooth-5-4-5gbps-lan-atx",
+      "title": "MSI MPG X870E Carbon WiFi Gaming Motherboard (AMD Ryzen 9000/8000/7000 Series Processors, AM5, DDR5,"
+    },
+    "mb-msi-x870e-edge-ti-wifi": {
+      "priceEgp": 21500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-x870e-edge-ti-wifi-gaming-am5-ddr5-egypt",
+      "title": "MSI MPG X870E EDGE TI WIFI Motherboard"
+    },
+    "mb-msi-x870e-plus-wifi": {
+      "priceEgp": 13999,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/msi-x870-gaming-plus-wifi-ddr5-motherboard-am5",
+      "title": "MSI X870E GAMING PLUS WiFi DDR5 Motherboard AM5"
+    },
+    "mb-msi-x870e-plus-max-wifi": {
+      "priceEgp": 14800,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-x870e-gaming-plus-max-wifi-am5-motherboard-egypt",
+      "title": "MSI MAG X870E GAMING PLUS MAX WIFI AM5 ATX Motherboard"
+    },
+    "mb-msi-x870e-tomahawk-wifi": {
+      "priceEgp": 17999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mag-x870e-tomahawk-wifi",
+      "title": "MSI MAG X870E Tomahawk WIFI"
+    },
+    "mb-msi-x870e-tomahawk-max-wifi": {
+      "priceEgp": 17250,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-x870e-tomahawk-max-wifi-am5-motherboard-egypt",
+      "title": "MSI MAG X870E TOMAHAWK MAX WIFI PZ AM5 Motherboard, DDR5 8400MHz, PCIe 5.0, Wi-Fi 7, USB4, 5G LAN"
+    },
+    "mb-msi-z790-plus-wifi": {
+      "priceEgp": 11500,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-z790-gaming-plus-wifi-motherboard-ddr5-egypt",
+      "title": "MSI Z790 GAMING PLUS WIFI DDR5 Motherboard"
+    },
+    "mb-msi-z790-tomahawk-wifi": {
+      "priceEgp": 16700,
+      "store": "kimo",
+      "url": "https://kimostore.net/products/msi-mag-z790-tomahawk-wifi-ddr5-motherboard-lga-1700",
+      "title": "MSI MAG Z790 TOMAHAWK WiFi DDR5 Motherboard LGA 1700"
+    },
+    "mb-msi-z790-tomahawk-max-wifi": {
+      "priceEgp": 16237,
+      "store": "ahw",
+      "url": "https://ahw.store/products/msi-mag-z790-tomahawk-max-wifi-ddr5-lga1700-atx-motherboard-black",
+      "title": "MSI MAG Z790 TOMAHAWK MAX WIFI DDR5 LGA1700 ATX Motherboard Black"
+    },
+    "mb-msi-z890-a-wifi": {
+      "priceEgp": 15499,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-pro-z890-a-wifi-lga-1851-1",
+      "title": "MSI PRO Z890-A WIFI (LGA 1851)"
+    },
+    "mb-msi-z890-ace": {
+      "priceEgp": 33000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-meg-z890-ace-gaming-motherboard",
+      "title": "MSI MEG Z890 ACE Gaming Motherboard"
+    },
+    "mb-msi-z890-carbon-wifi": {
+      "priceEgp": 25999,
+      "store": "maximum",
+      "url": "https://maximumhardware.store/msi-mpg-z890-carbon-wifi-lga-1851",
+      "title": "MSI MPG Z890 CARBON WIFI (LGA 1851)"
+    },
+    "mb-msi-z890-edge-ti-wifi": {
+      "priceEgp": 22500,
+      "store": "elbadr",
+      "url": "https://elbadrgroupeg.store/msi-mpg-z890-edge-ti-wifi-lga-1851-ddr5-atx-motherboard",
+      "title": "MSI MPG Z890 EDGE TI WIFI Intel LGA 1851 ATX Motherboard - DDR5, Wi-Fi 7, PCIe 5.0, 5G LAN, Thunderb"
+    },
+    "mb-msi-z890-p-wifi": {
+      "priceEgp": 13999,
+      "store": "sigma",
+      "url": "https://www.sigma-computer.com/en/item?id=msi-intel-pro-z890-p-wifi6e-g7wahsipebux",
+      "title": "MSI INTEL PRO Z890-P WIFI6E"
+    },
+    "mb-msi-z890-s-wifi": {
+      "priceEgp": 13300,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-pro-z890-s-wifi-pz-lga1851-motherboard-egypt",
+      "title": "MSI PRO Z890-S WIFI PZ Motherboard – Intel Z890, LGA 1851, DDR5, PCIe 5.0, WiFi 7"
+    },
+    "mb-msi-z890-tomahawk-wifi": {
+      "priceEgp": 17000,
+      "store": "compumarts",
+      "url": "https://www.compumarts.com/products/msi-mag-z890-tomahawk-wifi-gaming-motherboard-supports-core-ultra-series-2-intel-processors-lga-1851-ddr5-pcie-5-0-m-2-sata-5gbps-lan-usb-type-c-wi-fi-7-bluetooth-5-4-thunderbolt-4-atx",
+      "title": "MSI MAG Z890 Tomahawk WiFi Gaming Motherboard (Supports Core Ultra Series 2 Intel Processors, LGA 18"
     }
   }
 }

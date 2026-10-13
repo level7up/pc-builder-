@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import App from '../src/App.vue'
+import { cpus } from '../src/data/parts'
 
 beforeEach(() => {
   localStorage.clear()
@@ -118,5 +119,27 @@ describe('app', () => {
     await wrapper.find('.print').trigger('click')
     expect(print).toHaveBeenCalledOnce()
     print.mockRestore()
+  })
+  it('links to the product at the store once a part is picked', async () => {
+    const wrapper = mount(App)
+    expect(wrapper.find('.store-link').exists()).toBe(false)
+    await wrapper.find('#pick-cpu').setValue('r5-7500f')
+    const cpu = cpus.find(c => c.id === 'r5-7500f')!
+    const link = wrapper.find('.store-link')
+    expect(link.attributes('href')).toBe(cpu.listing.url)
+    expect(link.attributes('target')).toBe('_blank')
+    expect(link.text()).toContain('شوف في المحل')
+    expect(link.text()).toContain(cpu.listing.store)
+  })
+
+  it('shows the part image when the store listing has one', async () => {
+    const withImage = cpus.find(c => c.listing.image)!
+    expect(withImage).toBeDefined()
+    const wrapper = mount(App)
+    await wrapper.find('#pick-cpu').setValue(withImage.id)
+    const img = wrapper.find('.part-image img')
+    expect(img.attributes('src')).toBe(withImage.listing.image)
+    expect(img.attributes('alt')).toBe(withImage.name)
+    expect(img.attributes('loading')).toBe('lazy')
   })
 })
