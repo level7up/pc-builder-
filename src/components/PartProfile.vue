@@ -5,6 +5,8 @@ import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
 import { formatEgp } from '../format'
 import { HOME_HASH } from '../useRoute'
+import FavoriteButton from './FavoriteButton.vue'
+import { wishKey } from '../domain/wishlist'
 
 const props = defineProps<{ found: FoundPart; t: Messages; locale: Locale; inBuild: boolean; storeName?: string }>()
 const emit = defineEmits<{ add: [] }>()
@@ -25,7 +27,10 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
         <img :src="image" :alt="part.name" referrerpolicy="no-referrer" width="160" height="160" @error="brokenImage = image ?? null" />
       </a>
       <div class="info">
-        <span class="category">{{ t.categories[found.category] }}</span>
+        <div class="category-row">
+          <span class="category">{{ t.categories[found.category] }}</span>
+          <FavoriteButton :wish-key="part.id" :t="t" />
+        </div>
         <h2>{{ part.name }}</h2>
         <div class="specs">
           <span v-for="s in specs" :key="s" class="chip">{{ s }}</span>
@@ -68,6 +73,7 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
             <span v-else>{{ t.profile.notListed }}</span>
           </td>
           <td class="link">
+            <FavoriteButton v-if="row.offer" :wish-key="wishKey(part.id, row.store.id)" :t="t" />
             <a v-if="row.offer?.url" :href="row.offer.url" target="_blank" rel="noopener">{{ t.profile.open }} ↗</a>
           </td>
         </tr>
@@ -84,6 +90,7 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
 .image { flex: 0 0 auto; display: block; inline-size: 160px; block-size: 160px; border-radius: 14px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
 .image img { display: block; inline-size: 100%; block-size: 100%; object-fit: contain; }
 .info { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.category-row { display: flex; align-items: center; gap: 10px; }
 .category { font-size: 13px; font-weight: 700; color: var(--accent); }
 h2 { margin: 0; font-size: 22px; direction: ltr; unicode-bidi: plaintext; text-align: start; }
 .specs { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -109,7 +116,9 @@ td { padding: 8px; border-block-end: 1px solid var(--line); vertical-align: top;
 tr.gone .status, tr.missing .status, tr.missing .num { color: var(--muted); font-weight: 400; }
 tr.gone .num { color: var(--muted); text-decoration: line-through; font-weight: 400; }
 tr.mine { background: color-mix(in srgb, var(--accent) 7%, var(--panel)); }
-.link { text-align: end; white-space: nowrap; }
+.link { white-space: nowrap; }
+.link > * { vertical-align: middle; }
+.link a { margin-inline-start: 8px; }
 .link a { color: var(--accent); font-weight: 700; text-decoration: none; }
 .link a:hover { text-decoration: underline; }
 .sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }

@@ -4,6 +4,7 @@ import type { FpsTier } from '../domain/fps'
 import type { Preset } from '../domain/presets'
 import type { BoardReason, CpuReason } from '../domain/suggest'
 import type { ChangeStatus } from '../domain/changes'
+import type { SortOrder } from '../domain/browse'
 
 export type Locale = 'ar' | 'en'
 
@@ -83,6 +84,24 @@ export interface Messages {
   picker: { search: string; empty: string }
   soldOut: { badge: string; note: (price: string) => string }
   search: { label: string; empty: string }
+  nav: { parts: string; wishlist: string }
+  favorite: { add: string; remove: string }
+  browse: {
+    title: string
+    count: (count: string) => string
+    search: string
+    allCategories: string
+    allStores: string
+    inStockOnly: string
+    sorts: Record<SortOrder, string>
+    more: string
+    empty: string
+    stores: (count: number) => string
+    views: { parts: string; listings: string }
+    listingCount: (count: string) => string
+    openAtStore: string
+  }
+  wishlist: { title: string; total: (price: string) => string; empty: string; browse: string; gone: (store: string) => string }
   profile: {
     back: string
     add: string
@@ -246,6 +265,30 @@ const ar: Messages = {
   groups: { fits: 'تركب مع اختياراتك', other: 'مش هتركب مع اختياراتك' },
   picker: { search: 'دوّر بالاسم أو الموديل…', empty: 'مفيش حاجة بالاسم ده' },
   search: { label: 'دوّر على أي قطعة…', empty: 'مفيش قطعة بالاسم ده' },
+  nav: { parts: 'كل القطع', wishlist: 'المفضلة' },
+  favorite: { add: 'ضيفها للمفضلة', remove: 'شيلها من المفضلة' },
+  browse: {
+    title: 'كل القطع',
+    count: count => `${count} قطعة`,
+    search: 'دوّر بالاسم أو الموديل…',
+    allCategories: 'كل الأنواع',
+    allStores: 'كل المحلات',
+    inStockOnly: 'المتوفر بس',
+    sorts: { priceAsc: 'الأرخص الأول', priceDesc: 'الأغلى الأول', name: 'بالاسم' },
+    more: 'اعرض أكتر',
+    empty: 'مفيش قطع بالفلاتر دي',
+    stores: count => (count === 0 ? 'مش متوفرة دلوقتي' : count === 1 ? 'متوفرة في محل واحد' : `متوفرة في ${count} محلات`),
+    views: { parts: 'القطع', listings: 'كل منتجات المحلات' },
+    listingCount: count => `${count} منتج`,
+    openAtStore: 'افتح في المحل'
+  },
+  wishlist: {
+    title: 'المفضلة',
+    total: price => `مجموع أرخص الأسعار المتوفرة: ${price}`,
+    empty: 'لسه مااضفتش حاجة. دوس على ♡ جنب أي قطعة عشان تحفظها هنا.',
+    browse: 'تصفح كل القطع',
+    gone: store => `${store} مبقاش عارض القطعة دي.`
+  },
   profile: {
     back: 'رجوع للتجميعة',
     add: 'ضيفها للتجميعة',
@@ -410,6 +453,30 @@ const en: Messages = {
   groups: { fits: 'Fits your picks', other: 'Does not fit your picks' },
   picker: { search: 'Search by name or model…', empty: 'Nothing matches that' },
   search: { label: 'Search any part…', empty: 'No part matches that' },
+  nav: { parts: 'All parts', wishlist: 'Wishlist' },
+  favorite: { add: 'Add to wishlist', remove: 'Remove from wishlist' },
+  browse: {
+    title: 'All parts',
+    count: count => `${count} parts`,
+    search: 'Search by name or model…',
+    allCategories: 'All categories',
+    allStores: 'All stores',
+    inStockOnly: 'In stock only',
+    sorts: { priceAsc: 'Cheapest first', priceDesc: 'Priciest first', name: 'By name' },
+    more: 'Show more',
+    empty: 'No parts match these filters',
+    stores: count => (count === 0 ? 'Not in stock now' : count === 1 ? 'In stock at 1 store' : `In stock at ${count} stores`),
+    views: { parts: 'Parts', listings: 'All store products' },
+    listingCount: count => `${count} products`,
+    openAtStore: 'Open at store'
+  },
+  wishlist: {
+    title: 'Wishlist',
+    total: price => `Cheapest in-stock prices add up to ${price}`,
+    empty: 'Nothing saved yet. Tap ♡ next to any part to keep it here.',
+    browse: 'Browse all parts',
+    gone: store => `${store} no longer lists this part.`
+  },
   profile: {
     back: 'Back to the build',
     add: 'Add to build',

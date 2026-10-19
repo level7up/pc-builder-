@@ -5,6 +5,7 @@ import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
 import { formatEgp } from '../format'
 import PartPicker, { type PickerGroup } from './PartPicker.vue'
+import FavoriteButton from './FavoriteButton.vue'
 
 export interface RowSuggestion {
   id: string
@@ -67,6 +68,7 @@ const image = computed(() => (part.value?.listing.image && part.value.listing.im
         </button>
       </div>
       <div v-if="part" class="picked">
+        <FavoriteButton :wish-key="part.id" :t="t" />
         <a v-if="image" class="part-image" :href="part.listing.url" target="_blank" rel="noopener">
           <img :src="image" :alt="part.name" loading="lazy" referrerpolicy="no-referrer" width="72" height="72" @error="brokenImage = image ?? null" />
         </a>

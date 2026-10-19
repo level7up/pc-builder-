@@ -16,7 +16,7 @@ export interface StorePrice {
   offer: Offer | undefined
 }
 
-const ALL_PARTS: FoundPart[] = CATEGORIES.flatMap(category => fullCatalog[category].map(part => ({ category, part })))
+export const ALL_PARTS: readonly FoundPart[] = CATEGORIES.flatMap(category => fullCatalog[category].map(part => ({ category, part })))
 
 export const findPart = (id: string): FoundPart | undefined => ALL_PARTS.find(found => found.part.id === id)
 

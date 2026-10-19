@@ -79,6 +79,22 @@ The search box in the header finds any part in every category by name words
 per store with its cheapest listing there, the price, stock and a link, or
 "not listed" (`src/domain/lookup.ts`).
 
+## All parts and the wishlist
+
+"All parts" (`#parts`) opens on "All store products": one card per listing at
+every store (store, its own product title, image, price, stock, a link to buy
+and to the matching part). "Parts" switches to one card per part with its
+cheapest price. Both show 24 cards at a time with "Show more", filter by name
+words (store titles too), category, store and "in stock only", and sort by
+price or name (`src/domain/browse.ts`). The ♡
+button saves to the wishlist (`#wishlist`), kept in the browser
+(`pcb-wishlist`). On a store product card or a store row of a part page it
+saves that store's listing (`<part>@<store>`), shown with that store's title,
+price and link; on part cards, the part page header and picked parts it saves
+the part at its cheapest price. A saved store listing that the store drops
+stays, marked as no longer listed. The page sums the in-stock prices
+(`src/domain/wishlist.ts`).
+
 ## Buying from one store
 
 "Buy everything from one store" limits the part lists, prices, total, suggestions

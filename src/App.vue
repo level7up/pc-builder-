@@ -7,7 +7,8 @@ import { STORES } from './domain/store'
 import { useBuild } from './useBuild'
 import { useLocale } from './i18n/useLocale'
 import { useTheme } from './useTheme'
-import { goTo, HOME_HASH, PRICES_HASH, useRoute } from './useRoute'
+import { goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, useRoute, WISHLIST_HASH } from './useRoute'
+import { useWishlist } from './useWishlist'
 import { findPart } from './domain/lookup'
 import { formatDate, formatEgp } from './format'
 import PartRow from './components/PartRow.vue'
@@ -22,6 +23,8 @@ import StorePanel from './components/StorePanel.vue'
 import BuildSheet from './components/BuildSheet.vue'
 import NavSearch from './components/NavSearch.vue'
 import PartProfile from './components/PartProfile.vue'
+import PartsPage from './components/PartsPage.vue'
+import WishlistPage from './components/WishlistPage.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
@@ -33,6 +36,7 @@ const { locale, t, toggle } = useLocale()
 const { theme, toggle: toggleTheme } = useTheme()
 const state = useBuild()
 const route = useRoute()
+const wishlist = useWishlist()
 const profile = computed(() => (route.value.name === 'part' ? findPart(route.value.id) : undefined))
 const isInBuild = computed(() => !!profile.value && state.ids.value[profile.value.category] === profile.value.part.id)
 
@@ -82,12 +86,20 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
         >{{ theme === 'dark' ? '☀️' : '🌙' }}</button>
         <NavSearch :t="t" :locale="locale" />
         <a class="pill home-link" :href="HOME_HASH" :aria-current="route.name === 'builder' ? 'page' : undefined">{{ t.home }}</a>
+        <a class="pill parts-link" :href="PARTS_HASH" :aria-current="route.name === 'parts' ? 'page' : undefined">{{ t.nav.parts }}</a>
+        <a class="pill wishlist-link" :href="WISHLIST_HASH" :aria-current="route.name === 'wishlist' ? 'page' : undefined">
+          ♥ {{ t.nav.wishlist }}<span v-if="wishlist.keys.value.length" class="count">{{ wishlist.keys.value.length }}</span>
+        </a>
         <a class="pill changes-link" :href="PRICES_HASH" :aria-current="route.name === 'prices' ? 'page' : undefined">{{ t.changes.link }}</a>
         <button class="pill lang" type="button" @click="toggle">{{ t.switchTo }}</button>
       </div>
     </header>
 
     <PriceChanges v-if="route.name === 'prices'" :t="t" :locale="locale" />
+
+    <PartsPage v-else-if="route.name === 'parts'" :t="t" :locale="locale" />
+
+    <WishlistPage v-else-if="route.name === 'wishlist'" :t="t" :locale="locale" />
 
     <PartProfile
       v-else-if="profile"
@@ -162,8 +174,10 @@ h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em
 .tagline { margin: 4px 0 0; color: var(--muted); max-width: 640px; }
 .toggles { flex: 0 0 auto; display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 8px; }
 .theme { padding-inline: 12px; }
-.home-link, .changes-link { color: inherit; text-decoration: none; font-size: 14px; }
-.home-link:hover, .changes-link:hover, .home-link[aria-current], .changes-link[aria-current] { border-color: var(--accent); color: var(--accent); }
+.toggles a.pill { color: inherit; text-decoration: none; font-size: 14px; }
+.toggles a.pill:hover, .toggles a.pill[aria-current] { border-color: var(--accent); color: var(--accent); }
+.wishlist-link { display: inline-flex; align-items: center; gap: 6px; }
+.count { min-inline-size: 18px; padding: 0 5px; border-radius: 999px; background: var(--bad); color: #fff; font-size: 11px; font-weight: 800; text-align: center; line-height: 18px; }
 .pill { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 6px 16px; cursor: pointer; white-space: nowrap; }
 .presets { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 20px 0; }
 .presets-title { color: var(--muted); font-weight: 600; margin-inline-end: 4px; }

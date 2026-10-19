@@ -4,9 +4,13 @@ import App from '../src/App.vue'
 import '../src/components/PriceChanges.vue'
 import { catalog, cpus } from '../src/data/parts'
 import { CATEGORIES } from '../src/domain/build'
-import { catalogAt } from '../src/domain/store'
+import { catalogAt, STORES } from '../src/domain/store'
 import { formatEgp } from '../src/format'
+import { CARDS_PER_PAGE } from '../src/domain/browse'
+import { useWishlist } from '../src/useWishlist'
 
+const pricierOffer = [...cpus.find(c => c.id === 'r5-7500f')!.listing.offers].filter(o => o.inStock).sort((a, b) => b.priceEgp - a.priceEgp)[0]
+const pricierStore = STORES.find(s => s.name === pricierOffer.store)!
 const soldOutPart = CATEGORIES.flatMap(category => catalog[category].filter(p => !p.listing.inStock).map(part => ({ category, part })))[0]
 const nameOf = (id: string) => Object.values(catalog).flat().find(p => p.id === id)!.name
 const shown = (wrapper: VueWrapper, category: string) => wrapper.find(`#pick-${category}`).text()
@@ -26,6 +30,7 @@ enableAutoUnmount(afterEach)
 
 beforeEach(() => {
   localStorage.clear()
+  useWishlist().clear()
   window.history.replaceState(null, '', '/')
 })
 
@@ -285,4 +290,97 @@ describe('app', () => {
     expect(wrapper.find('.part-profile').exists()).toBe(false)
     expect(wrapper.findAll('.picker .trigger')).toHaveLength(8)
   })
+
+  it('browses every part as cards with search, filters and more on demand', async () => {
+    window.history.replaceState(null, '', '/#parts')
+    const wrapper = mount(App)
+    const page = wrapper.find('.parts-page')
+    await page.find('button[data-view="parts"]').trigger('click')
+    expect(page.findAll('.part-card')).toHaveLength(CARDS_PER_PAGE)
+    await page.find('button.more').trigger('click')
+    expect(page.findAll('.part-card')).toHaveLength(CARDS_PER_PAGE * 2)
+    await page.find('select.category').setValue('cooler')
+    expect(page.findAll('.part-card .category').every(c => c.text() === 'مبرّد البروسيسور')).toBe(true)
+    await page.find('select.category').setValue('')
+    await page.find('input[type="search"]').setValue('7500F')
+    const cards = page.findAll('.part-card')
+    expect(cards.map(c => c.find('.name').text())).toEqual([nameOf('r5-7500f')])
+    expect(cards[0].find('a.name').attributes('href')).toBe('#part/r5-7500f')
+    expect(page.find('button.more').exists()).toBe(false)
+  })
+
+  it('saves favorites from a card and lists them on the wishlist page', async () => {
+    window.history.replaceState(null, '', '/#parts')
+    const wrapper = mount(App)
+    await wrapper.find('.parts-page button[data-view="parts"]').trigger('click')
+    await wrapper.find('.parts-page input[type="search"]').setValue('7500F')
+    const fav = wrapper.find('.part-card .fav')
+    expect(fav.attributes('aria-pressed')).toBe('false')
+    await fav.trigger('click')
+    expect(fav.attributes('aria-pressed')).toBe('true')
+    expect(JSON.parse(localStorage.getItem('pcb-wishlist')!)).toEqual(['r5-7500f'])
+    expect(wrapper.find('.wishlist-link .count').exists()).toBe(true)
+    window.location.hash = '#wishlist'
+    await navigated()
+    const page = wrapper.find('.wishlist-page')
+    expect(page.findAll('.part-card').map(c => c.find('.name').text())).toEqual([nameOf('r5-7500f')])
+    await page.find('.part-card .fav').trigger('click')
+    expect(page.findAll('.part-card')).toHaveLength(0)
+    expect(page.find('.empty').exists()).toBe(true)
+  })
+
+  it('adds favorites from the part profile and from a picked part', async () => {
+    window.history.replaceState(null, '', '/#part/r5-7500f')
+    const wrapper = mount(App)
+    await wrapper.find('.part-profile .category-row .fav').trigger('click')
+    window.location.hash = ''
+    await navigated()
+    await pick(wrapper, 'gpu', catalog.gpu[0].id)
+    await wrapper.find('.row .picked .fav').trigger('click')
+    expect(useWishlist().keys.value).toEqual([catalog.gpu[0].id, 'r5-7500f'])
+  })
+
+  it('shows one card per store product by default', async () => {
+    window.history.replaceState(null, '', '/#parts')
+    const wrapper = mount(App)
+    const page = wrapper.find('.parts-page')
+    expect(page.findAll('.listing-card')).toHaveLength(CARDS_PER_PAGE)
+    expect(page.find('button[data-view="listings"]').attributes('aria-pressed')).toBe('true')
+    await page.find('input[type="search"]').setValue('7500F')
+    const cards = page.findAll('.listing-card')
+    const ryzen = cpus.find(c => c.id === 'r5-7500f')!
+    expect(cards.length).toBeGreaterThanOrEqual(ryzen.listing.offers.length)
+    const first = cards[0]
+    expect(first.find('.store').text()).not.toBe('')
+    expect(first.find('a.buy').attributes('href')).toMatch(/^https:\/\//)
+    expect(page.findAll('.part-card')).toHaveLength(0)
+  })
+
+  it('saves a store product to the wishlist as that store listing', async () => {
+    window.history.replaceState(null, '', '/#parts')
+    const wrapper = mount(App)
+    await wrapper.find('.parts-page input[type="search"]').setValue('7500F')
+    const card = wrapper.findAll('.listing-card').find(c => c.find('.store').text() === pricierOffer.store)!
+    await card.find('.fav').trigger('click')
+    const key = `r5-7500f@${pricierStore.id}`
+    expect(useWishlist().keys.value).toEqual([key])
+    expect(wrapper.findAll('.listing-card .fav[aria-pressed="true"]')).toHaveLength(1)
+    window.location.hash = '#wishlist'
+    await navigated()
+    const saved = wrapper.findAll('.wishlist-page .listing-card')
+    expect(saved).toHaveLength(1)
+    expect(saved[0].find('.store').text()).toBe(pricierOffer.store)
+    expect(saved[0].find('.price').text()).toBe(formatEgp(pricierOffer.priceEgp, 'ar'))
+    expect(wrapper.find('.wishlist-page .part-card').exists()).toBe(false)
+  })
+
+  it('saves one store row from the part profile', async () => {
+    window.history.replaceState(null, '', '/#part/r5-7500f')
+    const wrapper = mount(App)
+    const row = wrapper.findAll('.stores tbody tr').find(r => r.find('.store b').text() === pricierOffer.store)!
+    await row.find('.fav').trigger('click')
+    expect(useWishlist().keys.value).toEqual([`r5-7500f@${pricierStore.id}`])
+    expect(wrapper.find('.part-profile .category-row .fav').attributes('aria-pressed')).toBe('false')
+  })
 })
+
