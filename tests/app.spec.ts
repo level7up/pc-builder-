@@ -8,6 +8,7 @@ import { catalogAt, STORES } from '../src/domain/store'
 import { formatEgp } from '../src/format'
 import { CARDS_PER_PAGE } from '../src/domain/browse'
 import { useWishlist } from '../src/useWishlist'
+import { useCompare } from '../src/useCompare'
 
 const pricierOffer = [...cpus.find(c => c.id === 'r5-7500f')!.listing.offers].filter(o => o.inStock).sort((a, b) => b.priceEgp - a.priceEgp)[0]
 const pricierStore = STORES.find(s => s.name === pricierOffer.store)!
@@ -31,6 +32,7 @@ enableAutoUnmount(afterEach)
 beforeEach(() => {
   localStorage.clear()
   useWishlist().clear()
+  useCompare().clear()
   window.history.replaceState(null, '', '/')
 })
 
@@ -381,6 +383,51 @@ describe('app', () => {
     await row.find('.fav').trigger('click')
     expect(useWishlist().keys.value).toEqual([`r5-7500f@${pricierStore.id}`])
     expect(wrapper.find('.part-profile .category-row .fav').attributes('aria-pressed')).toBe('false')
+  })
+
+  it('compares parts picked from the cards side by side', async () => {
+    window.history.replaceState(null, '', '/#parts')
+    const wrapper = mount(App)
+    const page = wrapper.find('.parts-page')
+    await page.find('button[data-view="parts"]').trigger('click')
+    await page.find('select.category').setValue('gpu')
+    const cards = page.findAll('.part-card')
+    await cards[0].find('.compare-toggle').trigger('click')
+    expect(wrapper.find('.compare-bar').text()).toContain('ضيف قطعة كمان')
+    await cards[1].find('.compare-toggle').trigger('click')
+    expect(cards[0].find('.compare-toggle').attributes('aria-pressed')).toBe('true')
+    expect(wrapper.findAll('.compare-bar .chip')).toHaveLength(2)
+    expect(wrapper.find('.compare-bar a.go').attributes('href')).toBe('#compare')
+    window.location.hash = '#compare'
+    await navigated()
+    const table = wrapper.find('.compare-page table.specs')
+    expect(table.findAll('thead th.part')).toHaveLength(2)
+    expect(table.find('tr[data-row="vram"]').exists()).toBe(true)
+    expect(table.findAll('tr[data-row="price"] td.best').length).toBeGreaterThanOrEqual(1)
+    expect(wrapper.findAll('.compare-page table.prices tbody tr')).toHaveLength(8)
+    expect(wrapper.find('.compare-bar').exists()).toBe(false)
+    await wrapper.find('.compare-page thead .remove').trigger('click')
+    expect(useCompare().ids.value).toHaveLength(1)
+    expect(wrapper.find('.compare-page .need-more').exists()).toBe(true)
+  })
+
+  it('adds a compared part to the build from the comparison', async () => {
+    useCompare().toggle('r5-7500f')
+    useCompare().toggle('i5-12400f')
+    window.history.replaceState(null, '', '/#compare')
+    const wrapper = mount(App)
+    await wrapper.findAll('.compare-page thead .add')[1].trigger('click')
+    await flushPromises()
+    expect(JSON.parse(localStorage.getItem('pcb-build')!)).toMatchObject({ cpu: 'i5-12400f' })
+    expect(wrapper.findAll('.compare-page thead .in-build')).toHaveLength(1)
+  })
+
+  it('starts a new comparison from the part profile when the category differs', async () => {
+    useCompare().toggle(catalog.gpu[0].id)
+    window.history.replaceState(null, '', '/#part/r5-7500f')
+    const wrapper = mount(App)
+    await wrapper.find('.part-profile .compare-toggle').trigger('click')
+    expect(useCompare().ids.value).toEqual(['r5-7500f'])
   })
 })
 

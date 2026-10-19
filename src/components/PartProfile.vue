@@ -6,6 +6,7 @@ import { describePart } from '../specs'
 import { formatEgp } from '../format'
 import { HOME_HASH } from '../useRoute'
 import FavoriteButton from './FavoriteButton.vue'
+import CompareButton from './CompareButton.vue'
 import { wishKey } from '../domain/wishlist'
 
 const props = defineProps<{ found: FoundPart; t: Messages; locale: Locale; inBuild: boolean; storeName?: string }>()
@@ -30,6 +31,7 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
         <div class="category-row">
           <span class="category">{{ t.categories[found.category] }}</span>
           <FavoriteButton :wish-key="part.id" :t="t" />
+          <CompareButton :id="part.id" :t="t" />
         </div>
         <h2>{{ part.name }}</h2>
         <div class="specs">

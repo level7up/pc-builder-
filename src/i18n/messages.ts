@@ -5,6 +5,7 @@ import type { Preset } from '../domain/presets'
 import type { BoardReason, CpuReason } from '../domain/suggest'
 import type { ChangeStatus } from '../domain/changes'
 import type { SortOrder } from '../domain/browse'
+import type { RowId } from '../domain/compare'
 
 export type Locale = 'ar' | 'en'
 
@@ -86,6 +87,24 @@ export interface Messages {
   search: { label: string; empty: string }
   nav: { parts: string; wishlist: string }
   favorite: { add: string; remove: string }
+  compare: {
+    add: string
+    full: (max: number) => string
+    startNew: string
+    bar: (count: number, category: string) => string
+    go: string
+    needMore: string
+    clear: string
+    remove: string
+    title: string
+    browse: string
+    inBuild: string
+    storesTitle: string
+    rows: Record<RowId, string>
+    yes: string
+    no: string
+    units: { mm: (n: string) => string; mts: (n: string) => string; stores: (n: string) => string; pcie: (n: string) => string; gb: (n: string) => string; tb: (n: string) => string }
+  }
   browse: {
     title: string
     count: (count: string) => string
@@ -267,6 +286,24 @@ const ar: Messages = {
   search: { label: 'دوّر على أي قطعة…', empty: 'مفيش قطعة بالاسم ده' },
   nav: { parts: 'كل القطع', wishlist: 'المفضلة' },
   favorite: { add: 'ضيفها للمفضلة', remove: 'شيلها من المفضلة' },
+  compare: {
+    add: 'قارن',
+    full: max => `تقدر تقارن ${max} قطع بالكتير`,
+    startNew: 'هتبدأ مقارنة جديدة بالقطعة دي',
+    bar: (count, category) => `${category} للمقارنة: ${count}`,
+    go: 'قارن دلوقتي',
+    needMore: 'ضيف قطعة كمان من نفس النوع',
+    clear: 'امسح',
+    remove: 'شيلها من المقارنة',
+    title: 'مقارنة القطع',
+    browse: 'اختار قطع من كل القطع',
+    inBuild: 'في تجميعتك ✓',
+    storesTitle: 'السعر في كل محل',
+    rows: { price: 'أرخص سعر', stores: 'متوفرة في', performance: 'الأداء في الألعاب', value: 'الأداء مقابل السعر', cores: 'الكور', threads: 'الثريد', power: 'الاستهلاك', socket: 'السوكيت', memoryType: 'نوع الرامات', igpu: 'جرافيك داخلي', vram: 'الـ VRAM', length: 'الطول', chipset: 'الشيبست', formFactor: 'المقاس', maxCpuPower: 'أقصى باور للبروسيسور', overclock: 'أوفركلوك', wifi: 'Wi-Fi', capacity: 'المساحة', sticks: 'عدد الرامات', speed: 'السرعة', pricePerGb: 'سعر الجيجا', pcie: 'الـ PCIe', pricePerTb: 'سعر التيرا', watts: 'القدرة', rating: 'الشهادة', formFactors: 'المازربوردات', maxGpu: 'أطول كارت', kind: 'النوع', rated: 'يبرّد لحد' },
+    yes: 'أيوه',
+    no: 'لأ',
+    units: { mm: n => `${n} مم`, mts: n => `${n} MT/s`, stores: n => `${n} محلات`, pcie: n => `PCIe ${n}`, gb: n => `${n} جيجا`, tb: n => `${n} تيرا` }
+  },
   browse: {
     title: 'كل القطع',
     count: count => `${count} قطعة`,
@@ -455,6 +492,24 @@ const en: Messages = {
   search: { label: 'Search any part…', empty: 'No part matches that' },
   nav: { parts: 'All parts', wishlist: 'Wishlist' },
   favorite: { add: 'Add to wishlist', remove: 'Remove from wishlist' },
+  compare: {
+    add: 'Compare',
+    full: max => `You can compare up to ${max} parts`,
+    startNew: 'Starts a new comparison with this part',
+    bar: (count, category) => `${category} to compare: ${count}`,
+    go: 'Compare now',
+    needMore: 'Add another part of the same type',
+    clear: 'Clear',
+    remove: 'Remove from comparison',
+    title: 'Compare parts',
+    browse: 'Pick parts from All parts',
+    inBuild: 'In your build ✓',
+    storesTitle: 'Price at each store',
+    rows: { price: 'Cheapest price', stores: 'In stock at', performance: 'Gaming performance', value: 'Performance per pound', cores: 'Cores', threads: 'Threads', power: 'Power draw', socket: 'Socket', memoryType: 'Memory type', igpu: 'Integrated graphics', vram: 'VRAM', length: 'Length', chipset: 'Chipset', formFactor: 'Form factor', maxCpuPower: 'Max CPU power', overclock: 'Overclocking', wifi: 'Wi-Fi', capacity: 'Capacity', sticks: 'Sticks', speed: 'Speed', pricePerGb: 'Price per GB', pcie: 'PCIe', pricePerTb: 'Price per TB', watts: 'Wattage', rating: 'Rating', formFactors: 'Boards', maxGpu: 'Longest GPU', kind: 'Type', rated: 'Cooling up to' },
+    yes: 'Yes',
+    no: 'No',
+    units: { mm: n => `${n} mm`, mts: n => `${n} MT/s`, stores: n => `${n} stores`, pcie: n => `PCIe ${n}`, gb: n => `${n} GB`, tb: n => `${n} TB` }
+  },
   browse: {
     title: 'All parts',
     count: count => `${count} parts`,

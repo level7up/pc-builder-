@@ -25,6 +25,8 @@ import NavSearch from './components/NavSearch.vue'
 import PartProfile from './components/PartProfile.vue'
 import PartsPage from './components/PartsPage.vue'
 import WishlistPage from './components/WishlistPage.vue'
+import ComparePage from './components/ComparePage.vue'
+import CompareBar from './components/CompareBar.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
@@ -101,6 +103,8 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
 
     <WishlistPage v-else-if="route.name === 'wishlist'" :t="t" :locale="locale" />
 
+    <ComparePage v-else-if="route.name === 'compare'" :t="t" :locale="locale" :build-ids="state.ids.value" @add="(category, id) => state.setPart(category, id)" />
+
     <PartProfile
       v-else-if="profile"
       :key="profile.part.id"
@@ -163,12 +167,14 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
       <p>{{ t.footer }}</p>
     </footer>
 
+    <CompareBar v-if="route.name !== 'compare'" :t="t" />
+
     <BuildSheet v-if="route.name === 'builder' && hasParts" :build="state.build.value" :total="state.total.value" :link="link" :t="t" :locale="locale" />
   </div>
 </template>
 
 <style scoped>
-.page { max-width: 1180px; margin: 0 auto; padding: 24px 16px 40px; }
+.page { max-width: 1180px; margin: 0 auto; padding: 24px 16px 120px; }
 .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em; }
 .tagline { margin: 4px 0 0; color: var(--muted); max-width: 640px; }

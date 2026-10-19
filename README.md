@@ -95,6 +95,17 @@ the part at its cheapest price. A saved store listing that the store drops
 stays, marked as no longer listed. The page sums the in-stock prices
 (`src/domain/wishlist.ts`).
 
+## Comparing parts
+
+The ⚖ compare button on part cards, store product cards and part pages collects 2–4
+parts of one category (a part of another category starts a new comparison;
+kept in the browser as `pcb-compare`). A bar at the bottom links to `#compare`:
+specs side by side with the best value in each row starred (lowest price,
+most VRAM, most cores…; sold-out parts never win on price), performance and
+performance per pound relative to the strongest compared part, price per GB or
+TB for memory and storage, each part's price at every store, and "Add to
+build" (`src/domain/compare.ts`).
+
 ## Buying from one store
 
 "Buy everything from one store" limits the part lists, prices, total, suggestions

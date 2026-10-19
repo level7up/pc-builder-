@@ -8,6 +8,7 @@ describe('routes', () => {
     expect(routeFor('#prices')).toEqual({ name: 'prices' })
     expect(routeFor('#parts')).toEqual({ name: 'parts' })
     expect(routeFor('#wishlist')).toEqual({ name: 'wishlist' })
+    expect(routeFor('#compare')).toEqual({ name: 'compare' })
     expect(routeFor(partHash('r5-7500f'))).toEqual({ name: 'part', id: 'r5-7500f' })
   })
 

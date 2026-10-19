@@ -6,6 +6,7 @@ import { formatEgp } from '../format'
 import { partHash } from '../useRoute'
 import { wishKey } from '../domain/wishlist'
 import FavoriteButton from './FavoriteButton.vue'
+import CompareButton from './CompareButton.vue'
 
 const props = defineProps<{ listing: StoreListing; t: Messages; locale: Locale }>()
 
@@ -22,7 +23,10 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
     </a>
     <div class="top">
       <span class="store">{{ offer.store }}</span>
-      <FavoriteButton :wish-key="wishKey(listing.part.id, listing.storeId)" :t="t" />
+      <span class="actions">
+        <CompareButton :id="listing.part.id" :t="t" />
+        <FavoriteButton :wish-key="wishKey(listing.part.id, listing.storeId)" :t="t" />
+      </span>
     </div>
     <a class="title" :href="offer.url" target="_blank" rel="noopener" :title="offer.title">{{ offer.title }}</a>
     <a class="part" :href="partHash(listing.part.id)">
@@ -44,6 +48,7 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
 .image img { inline-size: 100%; block-size: 100%; object-fit: contain; padding: 8px; box-sizing: border-box; }
 .placeholder { color: #8a8f98; font-weight: 700; font-size: 14px; }
 .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.actions { display: flex; gap: 6px; flex: 0 0 auto; }
 .store { font-size: 13px; font-weight: 800; padding: 2px 10px; border-radius: 999px; color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--panel)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .title { font-weight: 700; font-size: 16px; color: inherit; text-decoration: none; line-height: 1.4; direction: ltr; unicode-bidi: plaintext; text-align: start; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .title:hover { color: var(--accent); }
