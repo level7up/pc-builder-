@@ -27,7 +27,8 @@ const props = defineProps<{
 
 const emit = defineEmits<{ change: [id: string | undefined] }>()
 
-const sorted = computed(() => [...props.options].sort((a, b) => a.listing.priceEgp - b.listing.priceEgp))
+const soldLast = (a: PartBase, b: PartBase): number => Number(!a.listing.inStock) - Number(!b.listing.inStock)
+const sorted = computed(() => [...props.options].sort((a, b) => soldLast(a, b) || a.listing.priceEgp - b.listing.priceEgp))
 const fitting = computed(() => sorted.value.filter(p => props.fits(p)))
 const notFitting = computed(() => sorted.value.filter(p => !props.fits(p)))
 const groups = computed<PickerGroup[]>(() =>
@@ -52,9 +53,11 @@ const image = computed(() => (part.value?.listing.image && part.value.listing.im
         :placeholder="t.choose"
         :search-label="t.picker.search"
         :empty-label="t.picker.empty"
+        :sold-label="t.soldOut.badge"
         @change="id => emit('change', id)"
       />
       <p v-if="notHere" class="not-here" role="status">⚠️ {{ notHere }}</p>
+      <p v-if="part && !part.listing.inStock" class="sold-note" role="status">⛔ {{ t.soldOut.note(formatEgp(part.listing.priceEgp, locale)) }}</p>
       <div v-if="suggestions && suggestions.length" class="suggest">
         <span class="suggest-title">{{ suggestTitle }}</span>
         <button v-for="s in suggestions" :key="s.id" type="button" class="pick" @click="emit('change', s.id)">
@@ -89,7 +92,7 @@ const image = computed(() => (part.value?.listing.image && part.value.listing.im
         </ul>
       </details>
     </div>
-    <div v-if="part" class="price">
+    <div v-if="part" class="price" :class="{ gone: !part.listing.inStock }">
       <a :href="part.listing.url" target="_blank" rel="noopener" :title="t.viewAtStore">{{ formatEgp(part.listing.priceEgp, locale) }} ↗</a>
       <small class="store">{{ t.offers.cheapestAt(part.listing.store) }}</small>
       <button type="button" class="clear" @click="emit('change', undefined)">{{ t.clear }}</button>
@@ -133,6 +136,8 @@ const image = computed(() => (part.value?.listing.image && part.value.listing.im
 .store-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none; }
 .store-link:hover { background: var(--accent); color: var(--accent-ink); }
 .store-link b { font-weight: 800; }
+.sold-note { margin: 8px 0 0; font-size: 13px; font-weight: 600; color: var(--bad); }
+.price.gone a { color: var(--muted); text-decoration: line-through; }
 .not-here { margin: 8px 0 0; font-size: 13px; font-weight: 600; color: var(--warn); }
 .clear { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 12px; padding: 0; }
 .clear:hover { color: var(--bad); }

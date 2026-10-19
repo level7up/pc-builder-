@@ -3,6 +3,7 @@ import type { Limiter } from '../domain/bottleneck'
 import type { FpsTier } from '../domain/fps'
 import type { Preset } from '../domain/presets'
 import type { BoardReason, CpuReason } from '../domain/suggest'
+import type { ChangeStatus } from '../domain/changes'
 
 export type Locale = 'ar' | 'en'
 
@@ -16,6 +17,7 @@ export interface Messages {
   title: string
   tagline: string
   switchTo: string
+  home: string
   theme: { toLight: string; toDark: string }
   categories: Record<Category, string>
   choose: string
@@ -79,6 +81,37 @@ export interface Messages {
   footer: string
   groups: { fits: string; other: string }
   picker: { search: string; empty: string }
+  soldOut: { badge: string; note: (price: string) => string }
+  search: { label: string; empty: string }
+  profile: {
+    back: string
+    add: string
+    inBuild: string
+    storesTitle: string
+    store: string
+    price: string
+    status: string
+    inStock: string
+    notListed: string
+    best: string
+    yourStore: string
+    open: string
+  }
+  changes: {
+    link: string
+    title: string
+    back: string
+    period: (from: string, to: string) => string
+    search: string
+    all: string
+    statuses: Record<ChangeStatus, string>
+    part: string
+    before: string
+    after: string
+    change: string
+    empty: string
+    loading: string
+  }
   store: {
     title: string
     all: string
@@ -113,6 +146,7 @@ const ar: Messages = {
   title: 'جمّع جهازك',
   tagline: 'اختار القطع المنتشرة في مصر، وشوف التوافق والباور والـ Bottleneck والسعر بالجنيه.',
   switchTo: 'English',
+  home: 'الرئيسية',
   theme: { toLight: 'الوضع الفاتح', toDark: 'الوضع الغامق' },
   categories: { cpu: 'البروسيسور', motherboard: 'المازربورد', memory: 'الرامات', gpu: 'كارت الشاشة', storage: 'الهارد (SSD)', psu: 'الباور سبلاي', case: 'الكيسة', cooler: 'مبرّد البروسيسور' },
   choose: 'اختار…',
@@ -178,6 +212,7 @@ const ar: Messages = {
   issues: {
     missing: (p, cat) => `لسه مااخترتش ${cat(p.category as Category)}.`,
     notAtStore: (p, cat) => `${cat(p.category as Category)}: القطعة اللي اخترتها مش موجودة في ${p.store}.`,
+    soldOut: (p, cat) => `${cat(p.category as Category)}: القطعة اللي اخترتها نفدت من كل المحلات.`,
     socketMismatch: p => `البروسيسور سوكيت ${p.cpu} والمازربورد ${p.board}: مش هيركبوا.`,
     memoryMismatch: p => `المازربورد ${p.board} والرامات ${p.memory}: مش هتركب.`,
     cpuMemoryMismatch: p => `البروسيسور بيدعم ${p.cpu} بس، والرامات ${p.memory}.`,
@@ -210,6 +245,37 @@ const ar: Messages = {
   footer: 'الأسعار والمواصفات للاسترشاد. اتأكد من المحل قبل الشراء.',
   groups: { fits: 'تركب مع اختياراتك', other: 'مش هتركب مع اختياراتك' },
   picker: { search: 'دوّر بالاسم أو الموديل…', empty: 'مفيش حاجة بالاسم ده' },
+  search: { label: 'دوّر على أي قطعة…', empty: 'مفيش قطعة بالاسم ده' },
+  profile: {
+    back: 'رجوع للتجميعة',
+    add: 'ضيفها للتجميعة',
+    inBuild: 'في تجميعتك ✓',
+    storesTitle: 'السعر في كل محل',
+    store: 'المحل',
+    price: 'السعر',
+    status: 'الحالة',
+    inStock: 'متوفر',
+    notListed: 'مش عنده',
+    best: 'الأرخص',
+    yourStore: 'محلك',
+    open: 'افتح'
+  },
+  soldOut: { badge: 'نفدت', note: price => `نفدت من كل المحلات. آخر سعر كان ${price} ومش محسوب في الإجمالي.` },
+  changes: {
+    link: 'تغييرات الأسعار',
+    title: 'تغييرات الأسعار',
+    back: 'رجوع للتجميعة',
+    period: (from, to) => `السعر يوم ${from} والسعر يوم ${to}، أرخص سعر متوفر لكل قطعة.`,
+    search: 'دوّر على قطعة…',
+    all: 'الكل',
+    statuses: { soldOut: 'نفدت', back: 'رجعت', up: 'غليت', down: 'رخصت', same: 'زي ما هي' },
+    part: 'القطعة',
+    before: 'السعر القديم',
+    after: 'السعر الجديد',
+    change: 'الفرق',
+    empty: 'مفيش قطع بالشكل ده',
+    loading: 'بنحمّل الأسعار…'
+  },
   store: {
     title: 'اشتري كله من محل واحد',
     all: 'كل المحلات',
@@ -244,6 +310,7 @@ const en: Messages = {
   title: 'PC Builder Egypt',
   tagline: 'Pick parts that are popular in Egypt and see compatibility, power, bottleneck and the price in EGP.',
   switchTo: 'العربية',
+  home: 'Home',
   theme: { toLight: 'Light mode', toDark: 'Dark mode' },
   categories: { cpu: 'CPU', motherboard: 'Motherboard', memory: 'Memory', gpu: 'Graphics card', storage: 'Storage (SSD)', psu: 'Power supply', case: 'Case', cooler: 'CPU cooler' },
   choose: 'Choose…',
@@ -309,6 +376,7 @@ const en: Messages = {
   issues: {
     missing: (p, cat) => `No ${cat(p.category as Category).toLowerCase()} picked yet.`,
     notAtStore: (p, cat) => `${cat(p.category as Category)}: your pick isn't in stock at ${p.store}.`,
+    soldOut: (p, cat) => `${cat(p.category as Category)}: your pick is sold out at every store.`,
     socketMismatch: p => `The CPU is ${p.cpu} and the motherboard is ${p.board}: they will not fit.`,
     memoryMismatch: p => `The motherboard takes ${p.board} but the memory is ${p.memory}.`,
     cpuMemoryMismatch: p => `The CPU supports ${p.cpu} only, but the memory is ${p.memory}.`,
@@ -341,6 +409,37 @@ const en: Messages = {
   footer: 'Prices and specs are a guide. Confirm with the store before you buy.',
   groups: { fits: 'Fits your picks', other: 'Does not fit your picks' },
   picker: { search: 'Search by name or model…', empty: 'Nothing matches that' },
+  search: { label: 'Search any part…', empty: 'No part matches that' },
+  profile: {
+    back: 'Back to the build',
+    add: 'Add to build',
+    inBuild: 'In your build ✓',
+    storesTitle: 'Price at each store',
+    store: 'Store',
+    price: 'Price',
+    status: 'Status',
+    inStock: 'In stock',
+    notListed: 'Not listed',
+    best: 'Cheapest',
+    yourStore: 'Your store',
+    open: 'Open'
+  },
+  soldOut: { badge: 'Sold out', note: price => `Sold out at every store. The last price was ${price}; it isn't counted in the total.` },
+  changes: {
+    link: 'Price changes',
+    title: 'Price changes',
+    back: 'Back to the build',
+    period: (from, to) => `Prices on ${from} against ${to}: the cheapest in-stock price for each part.`,
+    search: 'Search for a part…',
+    all: 'All',
+    statuses: { soldOut: 'Sold out', back: 'Back in stock', up: 'Up', down: 'Down', same: 'Unchanged' },
+    part: 'Part',
+    before: 'Last price',
+    after: 'New price',
+    change: 'Change',
+    empty: 'No parts match',
+    loading: 'Loading prices…'
+  },
   store: {
     title: 'Buy everything from one store',
     all: 'All stores',

@@ -21,7 +21,7 @@ export function atStore<P extends PartBase>(part: P, storeName: string): P | und
   const offer = part.listing.offers.filter(o => o.store === storeName && o.inStock).sort((a, b) => a.priceEgp - b.priceEgp)[0]
   if (!offer) return undefined
   const image = offer.image ?? part.listing.image
-  return { ...part, listing: { ...part.listing, priceEgp: offer.priceEgp, store: offer.store, url: offer.url, ...(image ? { image } : {}) } }
+  return { ...part, listing: { ...part.listing, priceEgp: offer.priceEgp, store: offer.store, url: offer.url, inStock: true, ...(image ? { image } : {}) } }
 }
 
 const onlyAt = <P extends PartBase>(parts: readonly P[], storeName: string): P[] =>

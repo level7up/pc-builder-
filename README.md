@@ -14,7 +14,7 @@ npm run build          # type-check + production build into dist/
 npm run prices:check   # compare stored Compumarts reference prices with the live store (read-only)
 npm run prices:check -- --write   # save the new prices and today's date
 npm run prices:scrape  # fetch prices from all stores (read-only, ~3 min)
-npm run prices:scrape -- --write  # save them to src/data/offers.json
+npm run prices:scrape -- --write  # save them to src/data/offers.json (the old file becomes offers-previous.json)
 ```
 
 Builds are saved in the browser and shareable: "Copy build link" gives a URL
@@ -29,6 +29,7 @@ and FPS at each resolution.
 | `src/data/listings.json` | Reference price per part, plus `checkedOn`: a Compumarts handle and variant, or a store id and URL for parts Compumarts does not sell |
 | `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain, and any globally excluded words it may still contain (`allow`, e.g. "inch" for an AIO with a screen) |
 | `src/data/offers.json` | Scraped price, stock, link and product image (https only) per part and store |
+| `src/data/offers-previous.json` | The offers from the scrape before, kept by `--write` (once per day) for the price changes page |
 | `src/data/catalog/*.ts` | Specs per part, one file per category (socket, memory type, power, length, score…) |
 | `src/data/parts.ts` | Joins the specs with their reference price and scraped offers |
 | `src/domain/presets.ts` | The four ready-made builds |
@@ -60,6 +61,23 @@ handle is the last part of the product URL; for another store give its store id
 and the product URL), its search terms to `search-terms.json`, its specs to the
 category file in `src/data/catalog/`, then run `npm test` and `npm run prices:scrape -- --write`. The data
 tests fail if a part has no listing or a listing has no part.
+
+## Sold-out parts and price changes
+
+A part with no in-stock offer at any store stays in the lists, marked sold out
+with its last price. It is left out of the total, the budget builder and the
+suggestions, and picking one shows a warning. The "Price changes" page (`#prices`, loaded only when opened)
+lists every part with its price on the last check and now, using the same
+cheapest-in-stock rule, sorted with sold-out and back-in-stock parts first,
+then the biggest moves (`src/domain/changes.ts`).
+
+## Search and part pages
+
+The search box in the header finds any part in every category by name words
+(Arabic digits work too), in-stock parts first. Choosing one opens its page
+(`#part/<id>`): specs, the cheapest price, an "Add to build" button, and a row
+per store with its cheapest listing there, the price, stock and a link, or
+"not listed" (`src/domain/lookup.ts`).
 
 ## Buying from one store
 

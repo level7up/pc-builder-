@@ -1,18 +1,28 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { mount, type VueWrapper } from '@vue/test-utils'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { enableAutoUnmount, flushPromises, mount, type VueWrapper } from '@vue/test-utils'
 import App from '../src/App.vue'
+import '../src/components/PriceChanges.vue'
 import { catalog, cpus } from '../src/data/parts'
 import { CATEGORIES } from '../src/domain/build'
 import { catalogAt } from '../src/domain/store'
+import { formatEgp } from '../src/format'
 
+const soldOutPart = CATEGORIES.flatMap(category => catalog[category].filter(p => !p.listing.inStock).map(part => ({ category, part })))[0]
 const nameOf = (id: string) => Object.values(catalog).flat().find(p => p.id === id)!.name
 const shown = (wrapper: VueWrapper, category: string) => wrapper.find(`#pick-${category}`).text()
+
+async function navigated() {
+  window.dispatchEvent(new HashChangeEvent('hashchange'))
+  await flushPromises()
+}
 
 async function pick(wrapper: VueWrapper, category: string, id: string) {
   await wrapper.find(`#pick-${category}`).trigger('click')
   const option = wrapper.findAll(`#pick-${category}-list [role="option"]`).find(o => o.find('.name').text() === nameOf(id))
   await option!.trigger('click')
 }
+
+enableAutoUnmount(afterEach)
 
 beforeEach(() => {
   localStorage.clear()
@@ -202,5 +212,77 @@ describe('app', () => {
     const wrapper = mount(App)
     expect(wrapper.find('.store-panel .chip.on').text()).toBe('Sigma Computer')
     expect(localStorage.getItem('pcb-store')).toBe('sigma')
+  })
+
+  it.skipIf(!soldOutPart)('marks sold-out parts in the list and keeps them out of the total', async () => {
+    const { category, part } = soldOutPart!
+    const wrapper = mount(App)
+    await wrapper.find(`#pick-${category}`).trigger('click')
+    const options = wrapper.findAll(`#pick-${category}-list [role="option"]`)
+    const option = options.find(o => o.find('.name').text() === part.name)!
+    expect(option.find('.sold').text()).toBe('نفدت')
+    expect(options.at(-1)!.find('.sold').exists()).toBe(true)
+    await option.trigger('click')
+    expect(wrapper.find('.sold-note').text()).toContain('نفدت من كل المحلات')
+    expect(wrapper.text()).toContain('القطعة اللي اخترتها نفدت من كل المحلات')
+    expect(wrapper.find('.total strong').text()).toBe(formatEgp(0, 'ar'))
+  })
+
+  it('opens the price changes page from the header and goes back', async () => {
+    const wrapper = mount(App)
+    expect(wrapper.find('a.changes-link').attributes('href')).toBe('#prices')
+    expect(wrapper.find('a.home-link').attributes('aria-current')).toBe('page')
+    window.location.hash = '#prices'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    await flushPromises()
+    const page = wrapper.find('.price-changes')
+    expect(page.exists()).toBe(true)
+    expect(page.findAll('tbody tr').length).toBe(Object.values(catalog).flat().length)
+    expect(wrapper.find('a.home-link').text()).toBe('الرئيسية')
+    expect(wrapper.find('a.home-link').attributes('aria-current')).toBeUndefined()
+    expect(wrapper.find('a.changes-link').attributes('aria-current')).toBe('page')
+    expect(wrapper.findAll('.picker .trigger')).toHaveLength(0)
+    await page.find('input[type="search"]').setValue('7500F')
+    expect(page.findAll('tbody tr').map(r => r.find('.name').text())).toEqual([nameOf('r5-7500f')])
+    window.location.hash = ''
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    await flushPromises()
+    expect(wrapper.findAll('.picker .trigger')).toHaveLength(8)
+  })
+
+  it('searches every part from the navbar and opens its profile with the price at each store', async () => {
+    const wrapper = mount(App)
+    const input = wrapper.find('.nav-search input')
+    await input.setValue('7500F')
+    const results = wrapper.findAll('.nav-search [role="option"]')
+    expect(results[0].text()).toContain(nameOf('r5-7500f'))
+    expect(results[0].text()).toContain('البروسيسور')
+    await input.trigger('keydown', { key: 'Enter' })
+    await navigated()
+    expect(window.location.hash).toBe('#part/r5-7500f')
+    expect((input.element as HTMLInputElement).value).toBe('')
+    const profile = wrapper.find('.part-profile')
+    expect(profile.find('h2').text()).toBe(nameOf('r5-7500f'))
+    const rows = profile.findAll('.stores tbody tr')
+    expect(rows).toHaveLength(8)
+    expect(rows[0].text()).toContain(formatEgp(cpus.find(c => c.id === 'r5-7500f')!.listing.priceEgp, 'ar'))
+    expect(rows[0].find('.best').exists()).toBe(true)
+    expect(wrapper.findAll('.picker .trigger')).toHaveLength(0)
+  })
+
+  it('adds a part to the build from its profile and goes back to the builder', async () => {
+    window.history.replaceState(null, '', '/#part/r5-7500f')
+    const wrapper = mount(App)
+    await wrapper.find('.part-profile button.add').trigger('click')
+    await navigated()
+    expect(JSON.parse(localStorage.getItem('pcb-build')!)).toMatchObject({ cpu: 'r5-7500f' })
+    expect(shown(wrapper, 'cpu')).toContain(nameOf('r5-7500f'))
+  })
+
+  it('shows the builder for a link to an unknown part', () => {
+    window.history.replaceState(null, '', '/#part/nope')
+    const wrapper = mount(App)
+    expect(wrapper.find('.part-profile').exists()).toBe(false)
+    expect(wrapper.findAll('.picker .trigger')).toHaveLength(8)
   })
 })

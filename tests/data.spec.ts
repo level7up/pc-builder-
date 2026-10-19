@@ -20,10 +20,14 @@ describe('catalog data', () => {
   })
 
   it('shows the cheapest in-stock offer as the part price', () => {
-    all.forEach(part => {
+    all.filter(part => part.listing.inStock).forEach(part => {
       const inStock = part.listing.offers.filter(o => o.inStock).map(o => o.priceEgp)
       expect(part.listing.priceEgp, part.id).toBe(Math.min(...inStock))
     })
+  })
+
+  it('marks a part sold out only when no offer is in stock', () => {
+    all.forEach(part => expect(part.listing.inStock, part.id).toBe(part.listing.offers.some(o => o.inStock)))
   })
 
   it('has search terms for every part and nothing else', () => {

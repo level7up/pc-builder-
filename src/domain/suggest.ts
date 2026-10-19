@@ -1,5 +1,6 @@
 import { catalog as fullCatalog } from '../data/parts'
 import { checkBuild, isUnlocked } from './compatibility'
+import { inStockOnly } from './stock'
 import type { Build, Catalog, Category, Cpu, Motherboard, PartBase, PartsByCategory } from './types'
 
 export type CpuReason = 'cheapest' | 'bestValue' | 'strongest'
@@ -35,7 +36,7 @@ function pickDistinct<P extends PartBase, R>(rankings: [R, P[]][]): Suggestion<P
 }
 
 export function suggestCpus(board: Motherboard, catalog: Catalog = fullCatalog): Suggestion<Cpu, CpuReason>[] {
-  const fitting = catalog.cpu.filter(cpu => isCleanPair({ cpu, motherboard: board })).sort(byPrice)
+  const fitting = inStockOnly(catalog).cpu.filter(cpu => isCleanPair({ cpu, motherboard: board })).sort(byPrice)
   const value = (cpu: Cpu) => cpu.gamingScore / cpu.listing.priceEgp
   const byValue = [...fitting].sort((a, b) => value(b) - value(a))
   const byStrength = [...fitting].sort((a, b) => b.gamingScore - a.gamingScore || byPrice(a, b))
@@ -43,7 +44,7 @@ export function suggestCpus(board: Motherboard, catalog: Catalog = fullCatalog):
 }
 
 export function suggestBoards(cpu: Cpu, build: Build = {}, catalog: Catalog = fullCatalog): Suggestion<Motherboard, BoardReason>[] {
-  const pairs = catalog.motherboard.filter(board => isCleanPair({ cpu, motherboard: board }))
+  const pairs = inStockOnly(catalog).motherboard.filter(board => isCleanPair({ cpu, motherboard: board }))
   const matchingMemory = build.memory ? pairs.filter(board => board.memory === build.memory!.type) : []
   const fitting = (matchingMemory.length > 0 ? matchingMemory : pairs).sort(byPrice)
   const overclock = isUnlocked(cpu) ? fitting.filter(b => b.canOverclock) : []

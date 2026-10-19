@@ -18,6 +18,7 @@ const props = defineProps<{
   placeholder: string
   searchLabel: string
   emptyLabel: string
+  soldLabel: string
 }>()
 
 const emit = defineEmits<{ change: [id: string] }>()
@@ -124,6 +125,7 @@ onUnmounted(() => document.removeEventListener('pointerdown', onOutside))
     >
       <template v-if="chosen">
         <span class="name">{{ chosen.name }}</span>
+        <span v-if="!chosen.listing.inStock" class="sold">{{ soldLabel }}</span>
         <span class="price">{{ formatEgp(chosen.listing.priceEgp, locale) }}</span>
       </template>
       <span v-else class="placeholder">{{ placeholder }}</span>
@@ -162,6 +164,7 @@ onUnmounted(() => document.removeEventListener('pointerdown', onOutside))
             @click="choose(part)"
           >
             <span class="name">{{ part.name }}</span>
+            <span v-if="!part.listing.inStock" class="sold">{{ soldLabel }}</span>
             <span class="price">{{ formatEgp(part.listing.priceEgp, locale) }}</span>
           </li>
         </template>
@@ -190,5 +193,7 @@ ul { list-style: none; margin: 6px 0 0; padding: 0; max-block-size: min(340px, 5
 .name { flex: 1 1 auto; min-width: 0; direction: ltr; unicode-bidi: plaintext; text-align: start; }
 .price { flex: 0 0 auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 :global([dir='rtl'] .picker .name) { text-align: right; }
+.sold { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; color: var(--bad); border: 1px solid color-mix(in srgb, var(--bad) 45%, var(--line)); white-space: nowrap; }
+.option:has(.sold) .name, .option:has(.sold) .price { color: var(--muted); }
 .empty { padding: 10px 8px; color: var(--muted); text-align: center; }
 </style>

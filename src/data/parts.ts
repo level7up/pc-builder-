@@ -64,9 +64,10 @@ export function listingFor(id: string, source: ListingSource = PRICE_SOURCE, off
   const found = (offerSource.items[id] ?? []).map(offer => ({ ...offer, store: storeName(offer.store) }))
   const hasReferenceStore = found.some(offer => offer.store === reference.store)
   const offers = [...found, ...(hasReferenceStore ? [] : [reference])].sort(byPrice)
-  const best = offers.find(offer => offer.inStock) ?? reference
+  const inStock = offers.find(offer => offer.inStock)
+  const best = inStock ?? reference
   const image = [best, ...offers].map(offer => offer.image).find(isHttpsUrl)
-  return { priceEgp: best.priceEgp, store: best.store, url: best.url, ...(image ? { image } : {}), offers }
+  return { priceEgp: best.priceEgp, store: best.store, url: best.url, ...(image ? { image } : {}), inStock: inStock !== undefined, offers }
 }
 
 const withListing = <T extends PartBase>(specs: readonly Spec<T>[]): T[] =>

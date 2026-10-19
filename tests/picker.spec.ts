@@ -18,7 +18,8 @@ function mountPicker(selected?: string) {
       locale: 'en' as const,
       placeholder: 'Choose…',
       searchLabel: 'Search',
-      emptyLabel: 'No matches'
+      emptyLabel: 'No matches',
+      soldLabel: 'Sold out'
     }
   })
   mounted.push(wrapper)

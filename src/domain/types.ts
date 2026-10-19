@@ -18,6 +18,7 @@ export interface Listing {
   store: string
   url: string
   image?: string
+  inStock: boolean
   offers: Offer[]
 }
 

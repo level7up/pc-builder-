@@ -4,6 +4,7 @@ import { STORES } from './lib/stores.mjs'
 
 const DATA_DIR = new URL('../src/data/', import.meta.url)
 const OFFERS_PATH = new URL('offers.json', DATA_DIR)
+const PREVIOUS_PATH = new URL('offers-previous.json', DATA_DIR)
 const SHOULD_WRITE = process.argv.includes('--write')
 const REQUEST_GAP_MS = 300
 
@@ -38,6 +39,12 @@ function mergeOffers(ids, results, previous) {
   }))
 }
 
+const pricesOnly = source => ({
+  checkedOn: source.checkedOn,
+  stores: source.stores,
+  items: Object.fromEntries(Object.entries(source.items ?? {}).map(([id, offers]) => [id, offers.map(({ store, priceEgp, inStock }) => ({ store, priceEgp, inStock }))]))
+})
+
 function printTable(items) {
   Object.entries(items).forEach(([id, offers]) => {
     const cells = offers.map(o => `${o.store} ${o.priceEgp}${o.inStock ? '' : '*'}`).join(' | ')
@@ -66,6 +73,10 @@ async function main() {
   }
   const today = new Date().toISOString().slice(0, 10)
   const stores = STORES.map(({ id, name, url }) => ({ id, name, url }))
+  if (previous.checkedOn && previous.checkedOn !== today) {
+    await writeFile(PREVIOUS_PATH, JSON.stringify(pricesOnly(previous)) + '\n')
+    console.log(`Kept the ${previous.checkedOn} prices in src/data/offers-previous.json.`)
+  }
   await writeFile(OFFERS_PATH, JSON.stringify({ checkedOn: today, stores, items }, null, 2) + '\n')
   console.log(`Saved to src/data/offers.json (checkedOn ${today}).`)
 }

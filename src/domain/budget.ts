@@ -4,6 +4,7 @@ import { totalPriceEgp } from './build'
 import { checkBuild } from './compatibility'
 import { PSU_RATINGS, type Build, type BuildIds, type Case, type Catalog, type Cooler, type Cpu, type Gpu, type Memory, type Motherboard, type PartBase, type Psu, type Resolution } from './types'
 import { recommendedPsuW } from './power'
+import { inStockOnly } from './stock'
 import { toWesternDigits } from '../search'
 
 export const MIN_DUAL_CHANNEL_GB = 16
@@ -94,7 +95,7 @@ const idsOf = (build: Build): BuildIds =>
   Object.fromEntries(Object.entries(build).filter(([, part]) => part).map(([category, part]) => [category, (part as PartBase).id]))
 
 export function buildForBudget(budgetEgp: number, resolution: Resolution, catalog: Catalog = fullCatalog): BudgetResult {
-  const candidates = allCandidates(catalog, resolution)
+  const candidates = allCandidates(inStockOnly(catalog), resolution)
   if (candidates.length === 0) return { kind: 'unavailable' }
   const affordable = candidates.filter(c => c.total <= budgetEgp)
   if (affordable.length === 0) return { kind: 'tooLow', minimum: Math.min(...candidates.map(c => c.total)) }

@@ -1,5 +1,5 @@
 import { estimatedLoadW, recommendedPsuW } from './power'
-import { REQUIRED } from './build'
+import { CATEGORIES, REQUIRED } from './build'
 import type { Build, Cpu, Issue } from './types'
 
 export const GPU_TIGHT_MARGIN_MM = 15
@@ -25,6 +25,8 @@ const isNewGenOnOlderChipset = (build: Build): boolean => {
 }
 
 const missing: Check = build => REQUIRED.filter(category => !build[category]).flatMap(category => issue('info', 'missing', { category }))
+
+const soldOut: Check = build => CATEGORIES.filter(category => build[category] && !build[category]!.listing.inStock).flatMap(category => issue('warning', 'soldOut', { category }))
 
 const socket: Check = ({ cpu, motherboard }) =>
   cpu && motherboard && cpu.socket !== motherboard.socket ? issue('error', 'socketMismatch', { cpu: cpu.socket, board: motherboard.socket }) : []
@@ -81,7 +83,7 @@ const memorySize: Check = ({ memory }) => [
 
 const vram: Check = ({ gpu }) => (gpu && gpu.vramGb <= LOW_VRAM_GB ? issue('info', 'lowVram', { gb: gpu.vramGb }) : [])
 
-const CHECKS: Check[] = [socket, memoryType, formFactor, gpuFit, video, power, psuQuality, cooling, boardPower, memorySize, vram, overclock, bios, missing]
+const CHECKS: Check[] = [soldOut, socket, memoryType, formFactor, gpuFit, video, power, psuQuality, cooling, boardPower, memorySize, vram, overclock, bios, missing]
 
 const RANK: Record<Issue['severity'], number> = { error: 0, warning: 1, info: 2 }
 

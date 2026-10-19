@@ -22,7 +22,7 @@ export function resolveBuild(ids: BuildIds, catalog: Catalog = fullCatalog): Bui
 }
 
 export function totalPriceEgp(build: Build): number {
-  return CATEGORIES.reduce((sum, category) => sum + (build[category]?.listing.priceEgp ?? 0), 0)
+  return CATEGORIES.reduce((sum, category) => sum + (build[category]?.listing.inStock ? build[category]!.listing.priceEgp : 0), 0)
 }
 
 export function withPart(ids: BuildIds, category: Category, id: string | undefined): BuildIds {
