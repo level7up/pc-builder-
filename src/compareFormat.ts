@@ -18,6 +18,7 @@ export function formatCell(cell: CellValue, t: Messages, locale: Locale): string
     case 'mts': return units.mts(plain(cell.value))
     case 'stores': return units.stores(plain(cell.value))
     case 'pcie': return units.pcie(plain(cell.value))
+    case 'fps': return units.fps(plain(cell.value))
     default: return plain(cell.value)
   }
 }

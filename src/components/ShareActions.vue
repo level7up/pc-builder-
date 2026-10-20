@@ -3,7 +3,7 @@ import { computed, onUnmounted, ref } from 'vue'
 import { whatsappUrl } from '../export'
 import type { Messages } from '../i18n/messages'
 
-const props = defineProps<{ link: string; text: string; t: Messages }>()
+const props = defineProps<{ link: string; text: string; t: Messages; sharingOnly?: boolean }>()
 const emit = defineEmits<{ reset: [] }>()
 
 type CopyKind = 'link' | 'text'
@@ -35,8 +35,10 @@ onUnmounted(() => clearTimeout(timer))
     <button type="button" class="btn primary" @click="copy('link', link, t.copyLink)">{{ copied === 'link' ? t.copied : t.copyLink }}</button>
     <button type="button" class="btn copy-text" @click="copy('text', text, t.exportBuild.copyText)">{{ copied === 'text' ? t.copied : t.exportBuild.copyText }}</button>
     <a class="btn whatsapp" :href="whatsapp" target="_blank" rel="noopener noreferrer">{{ t.exportBuild.whatsapp }}</a>
-    <button type="button" class="btn print" @click="printSheet">{{ t.exportBuild.print }}</button>
-    <button type="button" class="btn" @click="emit('reset')">{{ t.resetBuild }}</button>
+    <template v-if="!sharingOnly">
+      <button type="button" class="btn print" @click="printSheet">{{ t.exportBuild.print }}</button>
+      <button type="button" class="btn" @click="emit('reset')">{{ t.resetBuild }}</button>
+    </template>
   </div>
 </template>
 

@@ -95,6 +95,24 @@ the part at its cheapest price. A saved store listing that the store drops
 stays, marked as no longer listed. The page sums the in-stock prices
 (`src/domain/wishlist.ts`).
 
+## Saved builds
+
+The total box in the builder saves the current build under a name, with its
+chosen store (kept in the browser as `pcb-builds`, up to 30). Once a build is
+saved or opened, the box shows its name, flags unsaved changes, and offers
+"Save changes" or "Save as a new build". "My builds" (`#builds`) lists them as
+cards (total, average FPS per resolution, compatibility, parts) with Open,
+Rename and Delete (asks first). Ticking 2–3 builds compares them: total,
+average FPS, power draw, problems and missing parts with the best starred, then
+every part with its price, highlighting the categories where the builds differ
+(`src/domain/savedBuilds.ts`).
+
+Each saved build also has its own page (`#build/<id>`, linked from the card and
+the comparison header): every part with its image, price at the saved store and
+store link, sold-out or "not at the store" marks, the total, the compatibility
+check, bottleneck, power and FPS panels, plus "Open in the builder" and the
+share buttons (link, text, WhatsApp).
+
 ## Comparing parts
 
 The ⚖ compare button on part cards, store product cards and part pages collects 2–4

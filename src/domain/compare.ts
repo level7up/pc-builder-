@@ -24,7 +24,7 @@ export function sanitizeCompare(raw: unknown): string[] {
   return known.filter(id => findPart(id)!.category === category).slice(0, MAX_COMPARE)
 }
 
-export type Unit = 'egp' | 'percent' | 'gb' | 'watts' | 'mm' | 'mts' | 'stores' | 'count' | 'pcie'
+export type Unit = 'egp' | 'percent' | 'gb' | 'watts' | 'mm' | 'mts' | 'stores' | 'count' | 'pcie' | 'fps'
 
 export type CellValue =
   | { kind: 'number'; value: number; unit: Unit }
@@ -134,14 +134,18 @@ function rankOf(value: CellValue): number | undefined {
   return value.rank
 }
 
+export function markBest(ranks: readonly (number | undefined)[], better: 'higher' | 'lower', eligible: readonly boolean[] = ranks.map(() => true)): boolean[] {
+  const defined = ranks.filter((rank): rank is number => rank !== undefined)
+  if (new Set(defined).size < 2) return ranks.map(() => false)
+  const candidates = ranks.filter((rank, i): rank is number => rank !== undefined && eligible[i])
+  if (candidates.length === 0) return ranks.map(() => false)
+  const target = better === 'higher' ? Math.max(...candidates) : Math.min(...candidates)
+  return ranks.map((rank, i) => eligible[i] && rank === target)
+}
+
 function bestFlags(values: CellValue[], parts: readonly PartBase[], spec: RowSpec<PartBase>): boolean[] {
-  const ranks = values.map(rankOf)
-  if (!spec.better || ranks.some(r => r === undefined) || new Set(ranks).size < 2) return values.map(() => false)
-  const eligible = ranks.map((rank, i) => (spec.buyableOnly && !parts[i].listing.inStock ? undefined : rank))
-  const candidates = eligible.filter((rank): rank is number => rank !== undefined)
-  if (candidates.length === 0) return values.map(() => false)
-  const target = spec.better === 'higher' ? Math.max(...candidates) : Math.min(...candidates)
-  return eligible.map(rank => rank === target)
+  if (!spec.better) return values.map(() => false)
+  return markBest(values.map(rankOf), spec.better, parts.map(part => !spec.buyableOnly || part.listing.inStock))
 }
 
 export function compareParts(category: Category, parts: readonly PartBase[]): CompareRow[] {

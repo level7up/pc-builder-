@@ -6,6 +6,7 @@ import type { BoardReason, CpuReason } from '../domain/suggest'
 import type { ChangeStatus } from '../domain/changes'
 import type { SortOrder } from '../domain/browse'
 import type { RowId } from '../domain/compare'
+import type { BuildMetricId } from '../domain/savedBuilds'
 
 export type Locale = 'ar' | 'en'
 
@@ -103,7 +104,7 @@ export interface Messages {
     rows: Record<RowId, string>
     yes: string
     no: string
-    units: { mm: (n: string) => string; mts: (n: string) => string; stores: (n: string) => string; pcie: (n: string) => string; gb: (n: string) => string; tb: (n: string) => string }
+    units: { mm: (n: string) => string; mts: (n: string) => string; stores: (n: string) => string; pcie: (n: string) => string; gb: (n: string) => string; tb: (n: string) => string; fps: (n: string) => string }
   }
   browse: {
     title: string
@@ -119,6 +120,41 @@ export interface Messages {
     views: { parts: string; listings: string }
     listingCount: (count: string) => string
     openAtStore: string
+  }
+  builds: {
+    nav: string
+    title: string
+    namePlaceholder: string
+    save: string
+    defaultName: (n: number) => string
+    savedAs: (name: string) => string
+    changed: string
+    update: string
+    saveNew: string
+    cancel: string
+    viewAll: string
+    empty: string
+    open: string
+    rename: string
+    remove: string
+    confirm: string
+    parts: (count: number, total: number) => string
+    savedOn: (date: string) => string
+    from: (store: string) => string
+    fps: (resolution: string, fps: string) => string
+    noFps: string
+    ok: string
+    problems: (errors: number, warnings: number) => string
+    pick: string
+    pickHint: (max: number) => string
+    compareTitle: string
+    metrics: Record<BuildMetricId, string>
+    notAtStore: string
+    back: string
+    notFound: string
+    openInBuilder: string
+    notChosen: string
+    cheapestAnywhere: string
   }
   wishlist: { title: string; total: (price: string) => string; empty: string; browse: string; gone: (store: string) => string }
   profile: {
@@ -302,7 +338,7 @@ const ar: Messages = {
     rows: { price: 'أرخص سعر', stores: 'متوفرة في', performance: 'الأداء في الألعاب', value: 'الأداء مقابل السعر', cores: 'الكور', threads: 'الثريد', power: 'الاستهلاك', socket: 'السوكيت', memoryType: 'نوع الرامات', igpu: 'جرافيك داخلي', vram: 'الـ VRAM', length: 'الطول', chipset: 'الشيبست', formFactor: 'المقاس', maxCpuPower: 'أقصى باور للبروسيسور', overclock: 'أوفركلوك', wifi: 'Wi-Fi', capacity: 'المساحة', sticks: 'عدد الرامات', speed: 'السرعة', pricePerGb: 'سعر الجيجا', pcie: 'الـ PCIe', pricePerTb: 'سعر التيرا', watts: 'القدرة', rating: 'الشهادة', formFactors: 'المازربوردات', maxGpu: 'أطول كارت', kind: 'النوع', rated: 'يبرّد لحد' },
     yes: 'أيوه',
     no: 'لأ',
-    units: { mm: n => `${n} مم`, mts: n => `${n} MT/s`, stores: n => `${n} محلات`, pcie: n => `PCIe ${n}`, gb: n => `${n} جيجا`, tb: n => `${n} تيرا` }
+    units: { mm: n => `${n} مم`, mts: n => `${n} MT/s`, stores: n => `${n} محلات`, pcie: n => `PCIe ${n}`, gb: n => `${n} جيجا`, tb: n => `${n} تيرا`, fps: n => `${n} فريم` }
   },
   browse: {
     title: 'كل القطع',
@@ -318,6 +354,41 @@ const ar: Messages = {
     views: { parts: 'القطع', listings: 'كل منتجات المحلات' },
     listingCount: count => `${count} منتج`,
     openAtStore: 'افتح في المحل'
+  },
+  builds: {
+    nav: 'تجميعاتي',
+    title: 'تجميعاتي',
+    namePlaceholder: 'اسم التجميعة',
+    save: 'احفظ التجميعة',
+    defaultName: n => `تجميعة ${n}`,
+    savedAs: name => `محفوظة باسم «${name}»`,
+    changed: 'فيه تغييرات مش محفوظة',
+    update: 'احفظ التغييرات',
+    saveNew: 'احفظها كتجميعة جديدة',
+    cancel: 'إلغاء',
+    viewAll: 'كل تجميعاتي',
+    empty: 'لسه مفيش تجميعات محفوظة. جمّع جهازك واحفظه من خانة الإجمالي.',
+    open: 'افتحها',
+    rename: 'غيّر الاسم',
+    remove: 'امسحها',
+    confirm: 'أيوه، امسحها',
+    parts: (count, total) => `${count} من ${total} قطع`,
+    savedOn: date => `اتحفظت ${date}`,
+    from: store => `من ${store}`,
+    fps: (resolution, fps) => `${resolution}: ${fps}`,
+    noFps: 'اختار بروسيسور وكارت عشان الـ FPS',
+    ok: 'متوافقة ✓',
+    problems: (errors, warnings) => [errors ? `${errors} مشكلة` : '', warnings ? `${warnings} تنبيه` : ''].filter(Boolean).join(' و '),
+    pick: 'قارن',
+    pickHint: max => `علّم على ${max === 3 ? 'تجميعتين أو تلاتة' : max} عشان تقارن بينهم`,
+    compareTitle: 'مقارنة التجميعات',
+    metrics: { total: 'الإجمالي', fps1080p: 'متوسط FPS على 1080p', fps1440p: 'متوسط FPS على 1440p', fps4K: 'متوسط FPS على 4K', power: 'الاستهلاك', errors: 'مشاكل توافق', warnings: 'تنبيهات', missing: 'قطع ناقصة' },
+    notAtStore: 'مش في المحل',
+    back: 'رجوع لتجميعاتي',
+    notFound: 'التجميعة دي مش موجودة. يمكن اتمسحت.',
+    openInBuilder: 'افتحها في المجمّع',
+    notChosen: 'مش متختارة',
+    cheapestAnywhere: 'أرخص سعر من أي محل'
   },
   wishlist: {
     title: 'المفضلة',
@@ -508,7 +579,7 @@ const en: Messages = {
     rows: { price: 'Cheapest price', stores: 'In stock at', performance: 'Gaming performance', value: 'Performance per pound', cores: 'Cores', threads: 'Threads', power: 'Power draw', socket: 'Socket', memoryType: 'Memory type', igpu: 'Integrated graphics', vram: 'VRAM', length: 'Length', chipset: 'Chipset', formFactor: 'Form factor', maxCpuPower: 'Max CPU power', overclock: 'Overclocking', wifi: 'Wi-Fi', capacity: 'Capacity', sticks: 'Sticks', speed: 'Speed', pricePerGb: 'Price per GB', pcie: 'PCIe', pricePerTb: 'Price per TB', watts: 'Wattage', rating: 'Rating', formFactors: 'Boards', maxGpu: 'Longest GPU', kind: 'Type', rated: 'Cooling up to' },
     yes: 'Yes',
     no: 'No',
-    units: { mm: n => `${n} mm`, mts: n => `${n} MT/s`, stores: n => `${n} stores`, pcie: n => `PCIe ${n}`, gb: n => `${n} GB`, tb: n => `${n} TB` }
+    units: { mm: n => `${n} mm`, mts: n => `${n} MT/s`, stores: n => `${n} stores`, pcie: n => `PCIe ${n}`, gb: n => `${n} GB`, tb: n => `${n} TB`, fps: n => `${n} FPS` }
   },
   browse: {
     title: 'All parts',
@@ -524,6 +595,41 @@ const en: Messages = {
     views: { parts: 'Parts', listings: 'All store products' },
     listingCount: count => `${count} products`,
     openAtStore: 'Open at store'
+  },
+  builds: {
+    nav: 'My builds',
+    title: 'My builds',
+    namePlaceholder: 'Build name',
+    save: 'Save build',
+    defaultName: n => `Build ${n}`,
+    savedAs: name => `Saved as “${name}”`,
+    changed: 'Unsaved changes',
+    update: 'Save changes',
+    saveNew: 'Save as a new build',
+    cancel: 'Cancel',
+    viewAll: 'All my builds',
+    empty: 'No saved builds yet. Put a build together and save it from the total box.',
+    open: 'Open',
+    rename: 'Rename',
+    remove: 'Delete',
+    confirm: 'Yes, delete',
+    parts: (count, total) => `${count} of ${total} parts`,
+    savedOn: date => `Saved ${date}`,
+    from: store => `From ${store}`,
+    fps: (resolution, fps) => `${resolution}: ${fps}`,
+    noFps: 'Pick a CPU and GPU for FPS',
+    ok: 'Compatible ✓',
+    problems: (errors, warnings) => [errors ? `${errors} problem${errors > 1 ? 's' : ''}` : '', warnings ? `${warnings} warning${warnings > 1 ? 's' : ''}` : ''].filter(Boolean).join(', '),
+    pick: 'Compare',
+    pickHint: max => `Tick 2 to ${max} builds to compare them`,
+    compareTitle: 'Compare builds',
+    metrics: { total: 'Total', fps1080p: 'Average FPS at 1080p', fps1440p: 'Average FPS at 1440p', fps4K: 'Average FPS at 4K', power: 'Power draw', errors: 'Compatibility problems', warnings: 'Warnings', missing: 'Missing parts' },
+    notAtStore: 'Not at the store',
+    back: 'Back to my builds',
+    notFound: 'This build doesn’t exist. It may have been deleted.',
+    openInBuilder: 'Open in the builder',
+    notChosen: 'Not chosen',
+    cheapestAnywhere: 'Cheapest price from any store'
   },
   wishlist: {
     title: 'Wishlist',

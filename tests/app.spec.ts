@@ -3,12 +3,14 @@ import { enableAutoUnmount, flushPromises, mount, type VueWrapper } from '@vue/t
 import App from '../src/App.vue'
 import '../src/components/PriceChanges.vue'
 import { catalog, cpus } from '../src/data/parts'
-import { CATEGORIES } from '../src/domain/build'
+import { CATEGORIES, resolveBuild, totalPriceEgp } from '../src/domain/build'
 import { catalogAt, STORES } from '../src/domain/store'
 import { formatEgp } from '../src/format'
 import { CARDS_PER_PAGE } from '../src/domain/browse'
 import { useWishlist } from '../src/useWishlist'
 import { useCompare } from '../src/useCompare'
+import { useSavedBuilds } from '../src/useSavedBuilds'
+import { PRESETS } from '../src/domain/presets'
 
 const pricierOffer = [...cpus.find(c => c.id === 'r5-7500f')!.listing.offers].filter(o => o.inStock).sort((a, b) => b.priceEgp - a.priceEgp)[0]
 const pricierStore = STORES.find(s => s.name === pricierOffer.store)!
@@ -33,6 +35,7 @@ beforeEach(() => {
   localStorage.clear()
   useWishlist().clear()
   useCompare().clear()
+  useSavedBuilds().clear()
   window.history.replaceState(null, '', '/')
 })
 
@@ -429,5 +432,102 @@ describe('app', () => {
     await wrapper.find('.part-profile .compare-toggle').trigger('click')
     expect(useCompare().ids.value).toEqual(['r5-7500f'])
   })
-})
 
+  it('saves the current build under a name and lists it on My builds', async () => {
+    const wrapper = mount(App)
+    await wrapper.findAll('.preset')[0].trigger('click')
+    const panel = wrapper.find('.save-build')
+    await panel.find('input').setValue('  Budget  gaming ')
+    await panel.find('form').trigger('submit')
+    expect(useSavedBuilds().builds.value.map(b => b.name)).toEqual(['Budget gaming'])
+    expect(wrapper.find('.save-build .status').text()).toContain('Budget gaming')
+    await wrapper.findAll('.preset')[1].trigger('click')
+    expect(wrapper.find('.save-build .changed').exists()).toBe(true)
+    await wrapper.find('.save-build button.update').trigger('click')
+    expect(useSavedBuilds().builds.value[0].ids).toEqual(PRESETS[1].ids)
+    expect(wrapper.find('.save-build .changed').exists()).toBe(false)
+    window.location.hash = '#builds'
+    await navigated()
+    const cards = wrapper.findAll('.builds-page .build-card')
+    expect(cards).toHaveLength(1)
+    expect(cards[0].find('h3').text()).toBe('Budget gaming')
+    expect(cards[0].find('.total').text()).toBe(formatEgp(totalPriceEgp(resolveBuild(PRESETS[1].ids)), 'ar'))
+  })
+
+  it('opens a saved build in the builder', async () => {
+    const saved = useSavedBuilds()
+    const id = saved.save('Old', { ids: PRESETS[0].ids, storeId: 'compumarts' })
+    saved.setActive(undefined)
+    window.history.replaceState(null, '', '/#builds')
+    const wrapper = mount(App)
+    await wrapper.find(`.build-card[data-build="${id}"] button.open`).trigger('click')
+    await navigated()
+    expect(window.location.hash).toBe('')
+    expect(JSON.parse(localStorage.getItem('pcb-build')!)).toEqual(PRESETS[0].ids)
+    expect(localStorage.getItem('pcb-store')).toBe('compumarts')
+    expect(wrapper.find('.save-build .status').text()).toContain('Old')
+  })
+
+  it('compares saved builds side by side', async () => {
+    const saved = useSavedBuilds()
+    const cheap = saved.save('Cheap', { ids: PRESETS[0].ids })
+    const fast = saved.save('Fast', { ids: PRESETS[3].ids })
+    window.history.replaceState(null, '', '/#builds')
+    const wrapper = mount(App)
+    await wrapper.find(`.build-card[data-build="${cheap}"] input.pick`).setValue(true)
+    expect(wrapper.find('.builds-compare').exists()).toBe(false)
+    await wrapper.find(`.build-card[data-build="${fast}"] input.pick`).setValue(true)
+    const table = wrapper.find('.builds-compare table')
+    expect(table.findAll('thead th.build').map(th => th.text())).toEqual(['Fast', 'Cheap'])
+    expect(table.find('tr[data-row="total"] td.best').text()).toBe(formatEgp(totalPriceEgp(resolveBuild(PRESETS[0].ids)), 'ar'))
+    expect(table.find('tr[data-part="gpu"]').classes()).toContain('differs')
+  })
+
+  it('renames and deletes a saved build after confirming', async () => {
+    const saved = useSavedBuilds()
+    const id = saved.save('Temp', { ids: PRESETS[0].ids })
+    window.history.replaceState(null, '', '/#builds')
+    const wrapper = mount(App)
+    const card = () => wrapper.find(`.build-card[data-build="${id}"]`)
+    await card().find('button.rename').trigger('click')
+    await card().find('input.name').setValue('Renamed')
+    await card().find('form.rename-form').trigger('submit')
+    expect(saved.builds.value[0].name).toBe('Renamed')
+    await card().find('button.delete').trigger('click')
+    expect(saved.builds.value).toHaveLength(1)
+    await card().find('button.confirm').trigger('click')
+    expect(saved.builds.value).toHaveLength(0)
+    expect(wrapper.find('.builds-page .empty').exists()).toBe(true)
+  })
+
+  it('shows a saved build on its own page and opens it from there', async () => {
+    const saved = useSavedBuilds()
+    const id = saved.save('Desk PC', { ids: PRESETS[1].ids, storeId: 'compumarts' })
+    saved.setActive(undefined)
+    window.history.replaceState(null, '', '/#builds')
+    const wrapper = mount(App)
+    expect(wrapper.find(`.build-card[data-build="${id}"] h3 a`).attributes('href')).toBe(`#build/${id}`)
+    window.location.hash = `#build/${id}`
+    await navigated()
+    const page = wrapper.find('.saved-build')
+    expect(page.find('h2').text()).toBe('Desk PC')
+    const build = resolveBuild(PRESETS[1].ids, catalogAt('compumarts'))
+    expect(page.find('.total').text()).toBe(formatEgp(totalPriceEgp(build), 'ar'))
+    expect(page.findAll('tr[data-line]')).toHaveLength(CATEGORIES.length)
+    expect(page.find('tr[data-line="cpu"] a.name').attributes('href')).toBe(`#part/${PRESETS[1].ids.cpu}`)
+    expect(page.find('tr[data-line="cpu"] .price').text()).toBe(formatEgp(build.cpu!.listing.priceEgp, 'ar'))
+    expect(page.find('aside.checks').text()).toContain('كل القطع متوافقة مع بعض')
+    await page.find('button.open').trigger('click')
+    await navigated()
+    expect(window.location.hash).toBe('')
+    expect(JSON.parse(localStorage.getItem('pcb-build')!)).toEqual(PRESETS[1].ids)
+    expect(saved.active.value?.id).toBe(id)
+  })
+
+  it('says so when a saved build no longer exists', async () => {
+    window.history.replaceState(null, '', '/#build/gone')
+    const wrapper = mount(App)
+    expect(wrapper.find('.saved-build .not-found').exists()).toBe(true)
+    expect(wrapper.find('.saved-build .not-found a').attributes('href')).toBe('#builds')
+  })
+})

@@ -7,7 +7,9 @@ import { STORES } from './domain/store'
 import { useBuild } from './useBuild'
 import { useLocale } from './i18n/useLocale'
 import { useTheme } from './useTheme'
-import { goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, useRoute, WISHLIST_HASH } from './useRoute'
+import { BUILDS_HASH, goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, useRoute, WISHLIST_HASH } from './useRoute'
+import { useSavedBuilds } from './useSavedBuilds'
+import type { SavedBuild } from './domain/savedBuilds'
 import { useWishlist } from './useWishlist'
 import { findPart } from './domain/lookup'
 import { formatDate, formatEgp } from './format'
@@ -27,6 +29,9 @@ import PartsPage from './components/PartsPage.vue'
 import WishlistPage from './components/WishlistPage.vue'
 import ComparePage from './components/ComparePage.vue'
 import CompareBar from './components/CompareBar.vue'
+import BuildsPage from './components/BuildsPage.vue'
+import SaveBuildPanel from './components/SaveBuildPanel.vue'
+import SavedBuildPage from './components/SavedBuildPage.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
@@ -39,6 +44,14 @@ const { theme, toggle: toggleTheme } = useTheme()
 const state = useBuild()
 const route = useRoute()
 const wishlist = useWishlist()
+const savedBuilds = useSavedBuilds()
+
+function openSaved(saved: SavedBuild) {
+  state.replace(saved.ids)
+  state.setStore(saved.storeId)
+  savedBuilds.setActive(saved.id)
+  goTo(HOME_HASH)
+}
 const profile = computed(() => (route.value.name === 'part' ? findPart(route.value.id) : undefined))
 const isInBuild = computed(() => !!profile.value && state.ids.value[profile.value.category] === profile.value.part.id)
 
@@ -92,6 +105,9 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
         <a class="pill wishlist-link" :href="WISHLIST_HASH" :aria-current="route.name === 'wishlist' ? 'page' : undefined">
           ♥ {{ t.nav.wishlist }}<span v-if="wishlist.keys.value.length" class="count">{{ wishlist.keys.value.length }}</span>
         </a>
+        <a class="pill builds-link" :href="BUILDS_HASH" :aria-current="route.name === 'builds' || route.name === 'build' ? 'page' : undefined">
+          {{ t.builds.nav }}<span v-if="savedBuilds.builds.value.length" class="count muted-count">{{ savedBuilds.builds.value.length }}</span>
+        </a>
         <a class="pill changes-link" :href="PRICES_HASH" :aria-current="route.name === 'prices' ? 'page' : undefined">{{ t.changes.link }}</a>
         <button class="pill lang" type="button" @click="toggle">{{ t.switchTo }}</button>
       </div>
@@ -102,6 +118,10 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
     <PartsPage v-else-if="route.name === 'parts'" :t="t" :locale="locale" />
 
     <WishlistPage v-else-if="route.name === 'wishlist'" :t="t" :locale="locale" />
+
+    <BuildsPage v-else-if="route.name === 'builds'" :t="t" :locale="locale" @open="openSaved" />
+
+    <SavedBuildPage v-else-if="route.name === 'build'" :id="route.id" :t="t" :locale="locale" @open="openSaved" />
 
     <ComparePage v-else-if="route.name === 'compare'" :t="t" :locale="locale" :build-ids="state.ids.value" @add="(category, id) => state.setPart(category, id)" />
 
@@ -153,6 +173,7 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
             <span>{{ t.total }}</span>
             <strong>{{ formatEgp(state.total.value, locale) }}</strong>
             <ShareActions :link="link" :text="text" :t="t" @reset="state.replace({})" />
+            <SaveBuildPanel :t="t" :ids="state.ids.value" :store-id="state.storeId.value" />
           </div>
           <IssuesPanel :issues="state.issues.value" :t="t" />
           <BottleneckPanel :results="state.bottlenecks.value" :t="t" />
@@ -182,7 +203,8 @@ h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em
 .theme { padding-inline: 12px; }
 .toggles a.pill { color: inherit; text-decoration: none; font-size: 14px; }
 .toggles a.pill:hover, .toggles a.pill[aria-current] { border-color: var(--accent); color: var(--accent); }
-.wishlist-link { display: inline-flex; align-items: center; gap: 6px; }
+.wishlist-link, .builds-link { display: inline-flex; align-items: center; gap: 6px; }
+.muted-count { background: var(--muted); }
 .count { min-inline-size: 18px; padding: 0 5px; border-radius: 999px; background: var(--bad); color: #fff; font-size: 11px; font-weight: 800; text-align: center; line-height: 18px; }
 .pill { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 6px 16px; cursor: pointer; white-space: nowrap; }
 .presets { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 20px 0; }
