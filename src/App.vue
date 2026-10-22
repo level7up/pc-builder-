@@ -11,6 +11,7 @@ import { BUILDS_HASH, goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, useRoute, WISHLI
 import { useSavedBuilds } from './useSavedBuilds'
 import type { SavedBuild } from './domain/savedBuilds'
 import { useWishlist } from './useWishlist'
+import { useInstallPrompt } from './useInstallPrompt'
 import { findPart } from './domain/lookup'
 import { formatDate, formatEgp } from './format'
 import PartRow from './components/PartRow.vue'
@@ -32,6 +33,8 @@ import CompareBar from './components/CompareBar.vue'
 import BuildsPage from './components/BuildsPage.vue'
 import SaveBuildPanel from './components/SaveBuildPanel.vue'
 import SavedBuildPage from './components/SavedBuildPage.vue'
+import TabBar from './components/TabBar.vue'
+import InstallmentPanel from './components/InstallmentPanel.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
 import type { Category, PartBase, PartsByCategory } from './domain/types'
@@ -45,6 +48,7 @@ const state = useBuild()
 const route = useRoute()
 const wishlist = useWishlist()
 const savedBuilds = useSavedBuilds()
+const installPrompt = useInstallPrompt()
 
 function openSaved(saved: SavedBuild) {
   state.replace(saved.ids)
@@ -110,6 +114,9 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
         </a>
         <a class="pill changes-link" :href="PRICES_HASH" :aria-current="route.name === 'prices' ? 'page' : undefined">{{ t.changes.link }}</a>
         <button class="pill lang" type="button" @click="toggle">{{ t.switchTo }}</button>
+        <button v-if="installPrompt.canInstall.value" class="pill install" type="button" :aria-label="t.installApp" :title="t.installApp" @click="installPrompt.install">
+          📲
+        </button>
       </div>
     </header>
 
@@ -175,6 +182,7 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
             <ShareActions :link="link" :text="text" :t="t" @reset="state.replace({})" />
             <SaveBuildPanel :t="t" :ids="state.ids.value" :store-id="state.storeId.value" />
           </div>
+          <InstallmentPanel v-if="state.total.value > 0" :price="state.total.value" :t="t" :locale="locale" />
           <IssuesPanel :issues="state.issues.value" :t="t" />
           <BottleneckPanel :results="state.bottlenecks.value" :t="t" />
           <PowerPanel v-if="state.build.value.cpu || state.build.value.gpu" :load="state.loadW.value" :recommended="state.recommendedW.value" :psu="state.build.value.psu?.watts" :t="t" />
@@ -190,17 +198,20 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
 
     <CompareBar v-if="route.name !== 'compare'" :t="t" />
 
+    <TabBar :t="t" :route="route" :wish-count="wishlist.keys.value.length" :build-count="savedBuilds.builds.value.length" />
+
     <BuildSheet v-if="route.name === 'builder' && hasParts" :build="state.build.value" :total="state.total.value" :link="link" :t="t" :locale="locale" />
   </div>
 </template>
 
 <style scoped>
-.page { max-width: 1180px; margin: 0 auto; padding: 24px 16px 120px; }
+.page { max-width: 1180px; margin: 0 auto; padding: 24px 16px calc(120px + var(--tabbar-h)); }
 .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em; }
 .tagline { margin: 4px 0 0; color: var(--muted); max-width: 640px; }
 .toggles { flex: 0 0 auto; display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 8px; }
 .theme { padding-inline: 12px; }
+.install { display: none; padding-inline: 12px; border-color: var(--accent); }
 .toggles a.pill { color: inherit; text-decoration: none; font-size: 14px; }
 .toggles a.pill:hover, .toggles a.pill[aria-current] { border-color: var(--accent); color: var(--accent); }
 .wishlist-link, .builds-link { display: inline-flex; align-items: center; gap: 6px; }
@@ -225,10 +236,13 @@ h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em
   .summary { position: static; }
   h1 { font-size: 19px; }
   .toggles { flex-shrink: 1; flex-wrap: wrap; }
+  .install { display: block; }
 }
 @media (max-width: 640px) {
   .top { flex-direction: column; }
   .toggles { justify-content: flex-start; inline-size: 100%; }
-  .toggles :deep(.nav-search) { flex: 1 1 100%; order: -1; }
+  .toggles { flex-wrap: nowrap; }
+  .toggles :deep(.nav-search) { flex: 1 1 auto; min-width: 0; order: -1; }
+  .home-link, .parts-link, .wishlist-link, .builds-link, .changes-link { display: none; }
 }
 </style>

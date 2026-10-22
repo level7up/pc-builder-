@@ -32,7 +32,7 @@ const label = computed(() => (items.value.length ? props.t.compare.bar(items.val
 </template>
 
 <style scoped>
-.compare-bar { position: fixed; z-index: 50; inset-inline: 0; inset-block-end: 0; padding: 10px 16px; background: color-mix(in srgb, var(--panel) 92%, transparent); backdrop-filter: blur(8px); border-block-start: 1px solid var(--line); box-shadow: 0 -8px 24px rgb(0 0 0 / 0.08); }
+.compare-bar { position: fixed; z-index: 50; inset-inline: 0; inset-block-end: var(--tabbar-h); padding: 10px 16px; background: color-mix(in srgb, var(--panel) 92%, transparent); backdrop-filter: blur(8px); border-block-start: 1px solid var(--line); box-shadow: 0 -8px 24px rgb(0 0 0 / 0.08); }
 .inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .label { white-space: nowrap; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 auto; min-width: 0; }

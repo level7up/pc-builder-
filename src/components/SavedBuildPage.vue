@@ -13,6 +13,7 @@ import BottleneckPanel from './BottleneckPanel.vue'
 import PowerPanel from './PowerPanel.vue'
 import FpsPanel from './FpsPanel.vue'
 import ShareActions from './ShareActions.vue'
+import InstallmentPanel from './InstallmentPanel.vue'
 
 const props = defineProps<{ id: string; t: Messages; locale: Locale }>()
 const emit = defineEmits<{ open: [build: SavedBuild] }>()
@@ -105,6 +106,7 @@ const markBroken = (url: string) => { brokenImages.value = [...brokenImages.valu
           <FpsPanel :build="details.build" :t="t" />
         </div>
         <aside class="checks">
+          <InstallmentPanel v-if="details.total > 0" :price="details.total" :t="t" :locale="locale" />
           <IssuesPanel :issues="details.issues" :t="t" />
           <BottleneckPanel :results="details.bottlenecks" :t="t" />
           <PowerPanel v-if="hasLoad" :load="details.loadW" :recommended="details.recommendedW" :psu="details.build.psu?.watts" :t="t" />

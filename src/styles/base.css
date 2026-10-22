@@ -15,6 +15,7 @@
   --cpu: #2f6fdf;
   --gpu: #13a36b;
   --radius: 14px;
+  --tabbar-h: 0px;
   --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 4px 16px rgba(16, 24, 40, .06);
 }
 
@@ -72,6 +73,10 @@ html, body {
 button, select { font: inherit; color: inherit; }
 
 a { color: inherit; }
+
+@media (max-width: 640px) {
+  :root { --tabbar-h: calc(58px + env(safe-area-inset-bottom)); }
+}
 
 @media print {
   html, body { background: #fff; color: #000; }

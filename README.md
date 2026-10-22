@@ -133,6 +133,30 @@ parts picked, the panel also compares the build's cost at each store, stores
 that have every part first, then cheapest. The chosen store is remembered and
 travels in the share link (`store=`).
 
+## Installments
+
+The builder and each saved build page split the total into monthly payments
+(`src/domain/installments.ts`). Two example plans: a 0% bank card plan (6 or 12
+months) and finance companies such as valU, Souhoola, Contact and Aman (6–24
+months, 2.5% flat a month and a 3% admin fee by default). The down payment,
+monthly rate and admin fee are editable, since real rates vary by provider. Only
+interest and fees count as the extra over the cash price.
+
+## Phone navigation and installing
+
+Under 640px the header keeps only search, theme, language and install, and a
+bottom tab bar (Home, All parts, Wishlist, My builds, Prices) handles
+navigation. The compare bar sits above it (`--tabbar-h`).
+
+The site is a PWA through `vite-plugin-pwa`: a manifest with icons
+(`public/icon-*.png`), and a service worker that precaches the app, including
+the bundled prices, so it opens offline with the last prices. Part images and
+Google Fonts are cached as they load. New versions install in the background and
+apply on the next visit. On screens up to 900px, an install button (📲) appears
+when the browser offers installation (`src/useInstallPrompt.ts`).
+The service worker is only built by `npm run build`; `npm run dev` doesn't
+register it.
+
 ## How the estimates work
 
 - **Power:** CPU peak package power + GPU board power + 50 W for the rest.

@@ -530,4 +530,47 @@ describe('app', () => {
     expect(wrapper.find('.saved-build .not-found').exists()).toBe(true)
     expect(wrapper.find('.saved-build .not-found a').attributes('href')).toBe('#builds')
   })
+
+  it('has a bottom tab bar for phones that marks the current page', async () => {
+    useWishlist().toggle('r5-7500f')
+    window.history.replaceState(null, '', '/#build/x')
+    const wrapper = mount(App)
+    const tabs = wrapper.findAll('nav.tabbar a')
+    expect(tabs.map(a => a.attributes('href'))).toEqual(['#', '#parts', '#wishlist', '#builds', '#prices'])
+    expect(wrapper.find('nav.tabbar [aria-current="page"]').attributes('href')).toBe('#builds')
+    expect(wrapper.find('nav.tabbar a[href="#wishlist"] .count').text()).toBe('1')
+    window.location.hash = '#parts'
+    await navigated()
+    expect(wrapper.find('nav.tabbar [aria-current="page"]').attributes('href')).toBe('#parts')
+  })
+
+  it('splits the build total into monthly installments', async () => {
+    const wrapper = mount(App)
+    await wrapper.findAll('.preset')[1].trigger('click')
+    const total = totalPriceEgp(resolveBuild(PRESETS[1].ids))
+    const panel = wrapper.find('.summary .installments')
+    expect(panel.find('.monthly').text()).toBe(formatEgp(Math.ceil(total / 12), 'ar'))
+    await panel.find('button[data-plan="finance"]').trigger('click')
+    await panel.find('button[data-months="24"]').trigger('click')
+    await panel.find('input.down').setValue('10000')
+    const financed = total - 10000
+    const monthly = Math.ceil((financed + Math.round(financed * 0.025 * 24)) / 24)
+    expect(panel.find('.monthly').text()).toBe(formatEgp(monthly, 'ar'))
+    await panel.find('input.rate').setValue('0')
+    await panel.find('input.fee').setValue('0')
+    expect(panel.find('.monthly').text()).toBe(formatEgp(Math.ceil(financed / 24), 'ar'))
+    expect(panel.find('.extra').exists()).toBe(false)
+  })
+
+  it('offers to install the app when the browser allows it', async () => {
+    const wrapper = mount(App)
+    expect(wrapper.find('button.install').exists()).toBe(false)
+    const prompt = vi.fn(() => Promise.resolve())
+    window.dispatchEvent(Object.assign(new Event('beforeinstallprompt', { cancelable: true }), { prompt, userChoice: Promise.resolve({ outcome: 'accepted' }) }))
+    await flushPromises()
+    await wrapper.find('button.install').trigger('click')
+    await flushPromises()
+    expect(prompt).toHaveBeenCalledOnce()
+    expect(wrapper.find('button.install').exists()).toBe(false)
+  })
 })
