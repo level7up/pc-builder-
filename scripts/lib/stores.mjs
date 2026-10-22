@@ -126,7 +126,7 @@ function shopifyStore(id, name, url) {
     }
     return pages.flat()
   }
-  return { id, name, url, products: () => (catalog ??= loadCatalog()) }
+  return { id, name, url, usesCatalog: true, products: () => (catalog ??= loadCatalog()) }
 }
 
 const wooStore = (id, name, url, apiBase = url) => ({

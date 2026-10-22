@@ -13,8 +13,10 @@ npm test               # domain, data, translation and app tests
 npm run build          # type-check + production build into dist/
 npm run prices:check   # compare stored Compumarts reference prices with the live store (read-only)
 npm run prices:check -- --write   # save the new prices and today's date
-npm run prices:scrape  # fetch prices from all stores (read-only, ~3 min)
-npm run prices:scrape -- --write  # save them to src/data/offers.json (the old file becomes offers-previous.json)
+npm run prices:scrape  # fetch prices from all stores (read-only, ~10–20 min, shows live progress per store)
+npm run prices:scrape -- --write  # save them to src/data/offers.json (the old file becomes offers-previous.json); `npm run prices:scrape --write` works too
+npm run prices:scrape -- --stores=sigma,elbadr --write  # update only these stores
+npm run prices:scrape -- --skip=elbadr --write          # update every store except these
 ```
 
 Builds are saved in the browser and shareable: "Copy build link" gives a URL
@@ -43,7 +45,8 @@ bundles, PC builds and laptops rejected, and a match is ignored when its price
 is outside 0.6–1.8× the reference price. CPUs, boards, memory,
 storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
 VRAM, so other stores may list a different card of the same GPU. A store that
-fails completely keeps its previous prices on `--write`. The catalogue covers every
+fails completely, or is left out with `--stores`/`--skip`, keeps its previous prices on `--write`.
+Store ids: compumarts, kimo, ahw, sigma, elbadr, maximum, alfrensia, uptodate. The catalogue covers every
 CPU, GPU, ATX/micro-ATX motherboard, desktop memory kit, case, PSU and CPU cooler (air and AIO, except Intel-only and server coolers) that was in stock at one of the eight
 stores on the last full survey (October 2026): Ryzen 2000 to 9000, Intel
 12th–14th gen and Core Ultra, RTX 3050 to 5090 including the 4070 Ti and 4090,
@@ -69,7 +72,9 @@ with its last price. It is left out of the total, the budget builder and the
 suggestions, and picking one shows a warning. The "Price changes" page (`#prices`, loaded only when opened)
 lists every part with its price on the last check and now, using the same
 cheapest-in-stock rule, sorted with sold-out and back-in-stock parts first,
-then the biggest moves (`src/domain/changes.ts`).
+then the biggest moves (`src/domain/changes.ts`). Choosing a store compares that
+store's own price for each part it lists instead; a listing it dropped counts as
+sold out and a new one as back in stock.
 
 ## Search and part pages
 
@@ -102,7 +107,20 @@ chosen store (kept in the browser as `pcb-builds`, up to 30). Once a build is
 saved or opened, the box shows its name, flags unsaved changes, and offers
 "Save changes" or "Save as a new build". "My builds" (`#builds`) lists them as
 cards (total, average FPS per resolution, compatibility, parts) with Open,
-Rename and Delete (asks first). Ticking 2–3 builds compares them: total,
+Rename and Delete (asks first). Each card lists every part with its price.
+A build remembers each part's price when it is saved (builds saved earlier start
+from the prices on their first visit). When a price has moved since, the page
+shows a 🔔 banner, the card and the build page say how many parts changed and
+by how much in total, and each moved part shows its old price crossed out, red
+when it went up and green when it went down. "Keep the new prices" (per build)
+or "Mark all as seen" makes the current prices the new starting point.
+
+"Compare stores" on a card opens the same build at every store that stocks any
+of its parts (`src/domain/storeCompare.ts`): each part's price per store with
+the cheapest starred, each store's total, how many parts it is missing, how
+much more or less a complete store costs than the build now, the build's own
+store and the cheapest complete store tagged, and "Use this store" to move the
+build to that store. Ticking 2–3 builds compares them: total,
 average FPS, power draw, problems and missing parts with the best starred, then
 every part with its price, highlighting the categories where the builds differ
 (`src/domain/savedBuilds.ts`).

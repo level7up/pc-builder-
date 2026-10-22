@@ -155,6 +155,22 @@ export interface Messages {
     openInBuilder: string
     notChosen: string
     cheapestAnywhere: string
+    priceAlert: (count: number) => string
+    movedParts: (count: number, change: string) => string
+    was: (price: string) => string
+    acceptPrices: string
+    acceptAll: string
+    compareStores: string
+    storesTitle: (name: string) => string
+    storesHint: string
+    currentStore: string
+    cheapestStore: string
+    useStore: string
+    notStocked: string
+    missingCount: (count: number) => string
+    vsNow: (change: string) => string
+    close: string
+    storesNone: string
   }
   installments: {
     title: string
@@ -195,6 +211,9 @@ export interface Messages {
     title: string
     back: string
     period: (from: string, to: string) => string
+    periodAt: (from: string, to: string, store: string) => string
+    store: string
+    allStores: string
     search: string
     all: string
     statuses: Record<ChangeStatus, string>

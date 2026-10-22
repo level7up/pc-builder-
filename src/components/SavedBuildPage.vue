@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { CATEGORIES } from '../domain/build'
-import { buildLines, inspectBuild, type SavedBuild } from '../domain/savedBuilds'
+import { buildLines, inspectBuild, priceMoves, totalMove, type SavedBuild } from '../domain/savedBuilds'
 import { idsToQuery } from '../domain/share'
 import type { Locale, Messages } from '../i18n/messages'
 import { buildText } from '../export'
-import { formatEgp } from '../format'
+import { formatEgp, formatEgpChange } from '../format'
 import { BUILDS_HASH, partHash } from '../useRoute'
 import { useSavedBuilds } from '../useSavedBuilds'
 import IssuesPanel from './IssuesPanel.vue'
@@ -24,6 +24,8 @@ const brokenImages = ref<string[]>([])
 const build = computed(() => saved.builds.value.find(b => b.id === props.id))
 const details = computed(() => (build.value ? inspectBuild(build.value) : undefined))
 const lines = computed(() => (build.value && details.value ? buildLines(build.value, details.value) : []))
+const moves = computed(() => (build.value && details.value ? priceMoves(build.value, details.value) : []))
+const moved = (category: string) => moves.value.find(move => move.category === category)
 const partCount = computed(() => lines.value.filter(line => line.id).length)
 const savedOn = computed(() =>
   build.value ? new Intl.DateTimeFormat(props.locale === 'ar' ? 'ar-EG' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(build.value.savedAt)) : ''
@@ -58,6 +60,10 @@ const markBroken = (url: string) => { brokenImages.value = [...brokenImages.valu
           <span>{{ t.total }}</span>
           <strong class="total">{{ formatEgp(details.total, locale) }}</strong>
         </div>
+        <div v-if="moves.length" class="price-alert" role="status">
+          <span>{{ t.builds.movedParts(moves.length, formatEgpChange(totalMove(moves), locale)) }}</span>
+          <button type="button" class="accept" @click="saved.acceptPrices([build.id])">{{ t.builds.acceptPrices }}</button>
+        </div>
         <div class="actions">
           <button type="button" class="open" @click="emit('open', build)">{{ t.builds.openInBuilder }}</button>
           <ShareActions :link="link" :text="text" :t="t" sharing-only />
@@ -90,7 +96,8 @@ const markBroken = (url: string) => { brokenImages.value = [...brokenImages.valu
                   </td>
                   <td class="cost">
                     <template v-if="line.part">
-                      <span class="price" :class="{ gone: !line.part.listing.inStock }">{{ formatEgp(line.part.listing.priceEgp, locale) }}</span>
+                      <small v-if="moved(line.category)" class="was">{{ t.builds.was(formatEgp(moved(line.category)!.before, locale)) }}</small>
+                      <span class="price" :class="{ gone: !line.part.listing.inStock, up: (moved(line.category)?.delta ?? 0) > 0, down: (moved(line.category)?.delta ?? 0) < 0 }">{{ formatEgp(line.part.listing.priceEgp, locale) }}</span>
                       <small v-if="!line.part.listing.inStock" class="sold">{{ t.soldOut.badge }}</small>
                     </template>
                     <small v-else-if="line.unavailable" class="warn">{{ t.builds.notAtStore }}</small>
@@ -149,6 +156,12 @@ th { inline-size: 1%; white-space: nowrap; color: var(--muted); font-size: 13px;
 .store { color: var(--muted); font-size: 12px; }
 .cost { white-space: nowrap; text-align: end; font-variant-numeric: tabular-nums; }
 .cost .price { display: block; font-weight: 800; }
+.cost .price.up { color: var(--bad); }
+.cost .price.down { color: var(--ok); }
+.was { display: block; color: var(--muted); font-size: 12px; text-decoration: line-through; }
+.price-alert { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--warn); background: color-mix(in srgb, var(--warn) 10%, var(--panel)); font-size: 14px; font-weight: 700; }
+.accept { border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: inherit; }
+.accept:hover { border-color: var(--accent); color: var(--accent); }
 .cost .price.gone { color: var(--muted); font-weight: 400; text-decoration: line-through; }
 .sold { color: var(--bad); font-weight: 700; }
 .warn { color: var(--warn); font-weight: 700; }

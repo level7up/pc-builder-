@@ -1,42 +1,44 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { pickOffer } from './lib/match.mjs'
 import { STORES } from './lib/stores.mjs'
+import { createProgress } from './lib/progress.mjs'
+import { argList, mergeOffers, pickStores } from './lib/select.mjs'
 
 const DATA_DIR = new URL('../src/data/', import.meta.url)
 const OFFERS_PATH = new URL('offers.json', DATA_DIR)
 const PREVIOUS_PATH = new URL('offers-previous.json', DATA_DIR)
-const SHOULD_WRITE = process.argv.includes('--write')
+const SHOULD_WRITE = process.argv.includes('--write') || process.env.npm_config_write === 'true'
 const REQUEST_GAP_MS = 300
 
 const sleep = ms => new Promise(done => setTimeout(done, ms))
 const readJson = async url => JSON.parse(await readFile(url, 'utf8'))
 const errorText = error => (error instanceof Error ? error.message : String(error))
 
-async function scrapeStore(store, terms, references) {
+async function scrapeStore(store, terms, references, progress) {
   const offers = {}
   const errors = []
-  for (const [id, rule] of Object.entries(terms)) {
+  const ids = Object.keys(terms)
+  for (const [index, id] of ids.entries()) {
+    const rule = terms[id]
     try {
       const offer = pickOffer(await store.products(rule.q), rule, references[id])
       if (offer) offers[id] = { store: store.id, ...offer }
     } catch (error) {
       errors.push(`${id}: ${errorText(error)}`)
     }
-    await sleep(REQUEST_GAP_MS)
+    progress.update(store.id, { done: index + 1, matched: Object.keys(offers).length, errors: errors.length })
+    if (!store.usesCatalog) await sleep(REQUEST_GAP_MS)
   }
-  const failed = errors.length === Object.keys(terms).length
-  console.log(`${store.name.padEnd(18)} ${Object.keys(offers).length} matched, ${errors.length} errors${failed ? '  (store failed, keeping old prices)' : ''}`)
-  errors.slice(0, 3).forEach(e => console.log(`  ${e}`))
-  return { store, offers, failed }
+  const failed = errors.length === ids.length
+  progress.update(store.id, { finishedAt: Date.now(), failed })
+  return { store, offers, errors, failed }
 }
 
-function mergeOffers(ids, results, previous) {
-  return Object.fromEntries(ids.map(id => {
-    const fresh = results.filter(r => !r.failed).flatMap(r => (r.offers[id] ? [r.offers[id]] : []))
-    const failedStores = new Set(results.filter(r => r.failed).map(r => r.store.id))
-    const kept = (previous.items?.[id] ?? []).filter(o => failedStores.has(o.store))
-    return [id, [...fresh, ...kept].sort((a, b) => a.priceEgp - b.priceEgp)]
-  }))
+function printErrors(results) {
+  results.filter(r => r.errors.length > 0).forEach(({ store, errors }) => {
+    console.log(`${store.name}: ${errors.length} errors, first ones:`)
+    errors.slice(0, 3).forEach(e => console.log(`  ${e}`))
+  })
 }
 
 const pricesOnly = source => ({
@@ -62,7 +64,12 @@ async function main() {
   const missing = Object.keys(terms).filter(id => !references[id])
   if (missing.length > 0) throw new Error(`No reference price for: ${missing.join(', ')}`)
 
-  const results = await Promise.all(STORES.map(store => scrapeStore(store, terms, references)))
+  const chosen = pickStores(STORES, argList(process.argv, process.env, 'stores'), argList(process.argv, process.env, 'skip'))
+  if (chosen.length < STORES.length) console.log(`Updating ${chosen.map(s => s.name).join(', ')}; other stores keep their current prices.`)
+  const progress = createProgress(chosen, Object.keys(terms).length)
+  const results = await Promise.all(chosen.map(store => scrapeStore(store, terms, references, progress)))
+  progress.stop()
+  printErrors(results)
   const items = mergeOffers(Object.keys(terms), results, previous)
   console.log('')
   printTable(items)

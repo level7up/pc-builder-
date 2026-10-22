@@ -17,6 +17,11 @@ import {
   sanitizeSavedBuilds,
   summarizeBuild,
   updateBuild,
+  acceptPrices,
+  currentPrices,
+  priceMoves,
+  totalMove,
+  withPriceBaseline,
   type SavedBuild
 } from '../src/domain/savedBuilds'
 
@@ -28,7 +33,7 @@ describe('saved build list', () => {
     const first = addBuild([], { name: 'Gaming', ids: preset('budget') }, 'a', '2026-10-20T10:00:00.000Z')
     const list = addBuild(first, { name: 'Work', ids: preset('high'), storeId: 'sigma' }, 'b', '2026-10-20T11:00:00.000Z')
     expect(list.map(b => b.id)).toEqual(['b', 'a'])
-    expect(list[0]).toEqual({ id: 'b', name: 'Work', ids: preset('high'), storeId: 'sigma', savedAt: '2026-10-20T11:00:00.000Z' })
+    expect(list[0]).toEqual({ id: 'b', name: 'Work', ids: preset('high'), storeId: 'sigma', savedAt: '2026-10-20T11:00:00.000Z', prices: currentPrices(preset('high'), 'sigma') })
     expect(first).toHaveLength(1)
     const updated = updateBuild(list, 'a', { ids: preset('enthusiast') }, '2026-10-20T12:00:00.000Z')
     expect(updated.find(b => b.id === 'a')).toMatchObject({ ids: preset('enthusiast'), savedAt: '2026-10-20T12:00:00.000Z' })
@@ -117,5 +122,59 @@ describe('summarizing and comparing builds', () => {
     expect(lines.find(l => l.category === 'gpu')).toMatchObject({ id: missingHere.id, name: missingHere.name, part: undefined, unavailable: true })
     expect(details.issues.some(i => i.code === 'notAtStore')).toBe(true)
     expect(inspectBuild(saved('b', {})).loadW).toBe(0)
+  })
+})
+
+describe('price changes since saving', () => {
+  const ids = preset('mainstream')
+  const build = resolveBuild(ids)
+  const withPrices = (prices: SavedBuild['prices']): SavedBuild => ({ ...saved('p', ids), prices })
+
+  it('records the price of every part at the saved store', () => {
+    const prices = currentPrices(ids, undefined)
+    expect(prices.cpu).toBe(build.cpu!.listing.priceEgp)
+    expect(Object.keys(prices).sort()).toEqual(Object.keys(ids).sort())
+    expect(updateBuild([saved('a')], 'a', { ids }, '2026-10-21T10:00:00.000Z')[0].prices).toEqual(prices)
+  })
+
+  it('reports no moves while prices are the same', () => {
+    expect(priceMoves(withPrices(currentPrices(ids, undefined)))).toEqual([])
+    expect(priceMoves(saved('old', ids))).toEqual([])
+  })
+
+  it('reports each part whose price moved, and the total move', () => {
+    const now = currentPrices(ids, undefined)
+    const moves = priceMoves(withPrices({ ...now, cpu: now.cpu! - 500, gpu: now.gpu! + 1000 }))
+    expect(moves).toEqual([
+      { category: 'cpu', before: now.cpu! - 500, after: now.cpu, delta: 500 },
+      { category: 'gpu', before: now.gpu! + 1000, after: now.gpu, delta: -1000 }
+    ])
+    expect(totalMove(moves)).toBe(-500)
+  })
+
+  it('reads saved prices back, dropping anything invalid', () => {
+    const [read] = sanitizeSavedBuilds([{ id: 'x', name: 'X', ids, prices: { cpu: 7000, gpu: 'cheap', ram: 5, case: -1 } }])
+    expect(read.prices).toEqual({ cpu: 7000 })
+    expect(sanitizeSavedBuilds([{ id: 'y', name: 'Y', ids }])[0].prices).toBeUndefined()
+  })
+
+  it('gives builds saved before price tracking today\'s prices as their starting point', () => {
+    const tracked = withPrices({ cpu: 1 })
+    const [old, kept] = withPriceBaseline([saved('old', ids), tracked])
+    expect(old.prices).toEqual(currentPrices(ids, undefined))
+    expect(kept).toBe(tracked)
+  })
+
+  it('accepts the new prices for chosen builds only', () => {
+    const list = [withPrices({ cpu: 1 }), { ...withPrices({ cpu: 1 }), id: 'q' }]
+    const accepted = acceptPrices(list, ['p'])
+    expect(priceMoves(accepted[0])).toEqual([])
+    expect(accepted[1]).toBe(list[1])
+    expect(acceptPrices(list).every(b => priceMoves(b).length === 0)).toBe(true)
+  })
+
+  it('carries the saved price on each build line', () => {
+    const tracked = withPrices({ cpu: 1234 })
+    expect(buildLines(tracked, inspectBuild(tracked)).find(l => l.category === 'cpu')!.savedPrice).toBe(1234)
   })
 })

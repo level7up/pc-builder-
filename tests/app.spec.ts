@@ -2,9 +2,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { enableAutoUnmount, flushPromises, mount, type VueWrapper } from '@vue/test-utils'
 import App from '../src/App.vue'
 import '../src/components/PriceChanges.vue'
-import { catalog, cpus } from '../src/data/parts'
+import { catalog, cpus, OFFER_SOURCE } from '../src/data/parts'
 import { CATEGORIES, resolveBuild, totalPriceEgp } from '../src/domain/build'
-import { catalogAt, STORES } from '../src/domain/store'
+import { catalogAt, compareStores, STORES } from '../src/domain/store'
 import { formatEgp } from '../src/format'
 import { CARDS_PER_PAGE } from '../src/domain/browse'
 import { useWishlist } from '../src/useWishlist'
@@ -254,6 +254,12 @@ describe('app', () => {
     expect(wrapper.findAll('.picker .trigger')).toHaveLength(0)
     await page.find('input[type="search"]').setValue('7500F')
     expect(page.findAll('tbody tr').map(r => r.find('.name').text())).toEqual([nameOf('r5-7500f')])
+    await page.find('select.store-filter').setValue('compumarts')
+    expect(page.find('.period').text()).toContain('Compumarts')
+    expect(page.findAll('tbody tr').map(r => r.find('.name').text())).toEqual([nameOf('r5-7500f')])
+    await page.find('input[type="search"]').setValue('')
+    const atStore = Object.values(OFFER_SOURCE.items).filter(offers => offers.some(o => o.store === 'compumarts')).length
+    expect(page.findAll('tbody tr').length).toBe(atStore)
     window.location.hash = ''
     window.dispatchEvent(new HashChangeEvent('hashchange'))
     await flushPromises()
@@ -481,6 +487,27 @@ describe('app', () => {
     expect(table.findAll('thead th.build').map(th => th.text())).toEqual(['Fast', 'Cheap'])
     expect(table.find('tr[data-row="total"] td.best').text()).toBe(formatEgp(totalPriceEgp(resolveBuild(PRESETS[0].ids)), 'ar'))
     expect(table.find('tr[data-part="gpu"]').classes()).toContain('differs')
+  })
+
+  it('compares one saved build across every store and switches it to another store', async () => {
+    const saved = useSavedBuilds()
+    const id = saved.save('Desk', { ids: PRESETS[1].ids, storeId: 'compumarts' })
+    window.history.replaceState(null, '', '/#builds')
+    const wrapper = mount(App)
+    expect(wrapper.find('.build-stores').exists()).toBe(false)
+    await wrapper.find(`.build-card[data-build="${id}"] button.stores`).trigger('click')
+    const panel = () => wrapper.find('.build-stores')
+    expect(panel().attributes('data-build')).toBe(id)
+    expect(panel().findAll('thead th[data-store]').map(th => th.attributes('data-store'))).toEqual(compareStores(PRESETS[1].ids).map(q => q.store.id))
+    expect(panel().find('thead th.current').attributes('data-store')).toBe('compumarts')
+    expect(panel().findAll('tbody tr')).toHaveLength(Object.keys(PRESETS[1].ids).length)
+    const other = panel().findAll('tfoot td[data-store]').find(td => td.attributes('data-store') !== 'compumarts')!
+    const otherId = other.attributes('data-store')
+    await other.find('button.use').trigger('click')
+    expect(saved.builds.value[0].storeId).toBe(otherId)
+    expect(panel().find('thead th.current').attributes('data-store')).toBe(otherId)
+    await panel().find('button.close').trigger('click')
+    expect(wrapper.find('.build-stores').exists()).toBe(false)
   })
 
   it('renames and deletes a saved build after confirming', async () => {

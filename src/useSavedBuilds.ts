@@ -1,5 +1,5 @@
 import { computed, readonly, ref, watch, type ComputedRef, type Ref } from 'vue'
-import { addBuild, removeBuild, renameBuild, sanitizeSavedBuilds, updateBuild, type BuildContent, type SavedBuild } from './domain/savedBuilds'
+import { acceptPrices, addBuild, removeBuild, renameBuild, sanitizeSavedBuilds, updateBuild, withPriceBaseline, type BuildContent, type SavedBuild } from './domain/savedBuilds'
 
 const BUILDS_KEY = 'pcb-builds'
 const ACTIVE_KEY = 'pcb-active-build'
@@ -22,7 +22,9 @@ function write(key: string, value: unknown): void {
   }
 }
 
-const builds = ref<SavedBuild[]>(read(BUILDS_KEY, [], sanitizeSavedBuilds))
+const stored = read(BUILDS_KEY, [], sanitizeSavedBuilds)
+const builds = ref<SavedBuild[]>(withPriceBaseline(stored))
+if (stored.some(build => !build.prices)) write(BUILDS_KEY, builds.value)
 const activeId = ref<string | undefined>(read(ACTIVE_KEY, undefined, raw => (typeof raw === 'string' && builds.value.some(b => b.id === raw) ? raw : undefined)))
 
 watch(builds, value => write(BUILDS_KEY, value))
@@ -38,6 +40,7 @@ export interface SavedBuilds {
   update: (id: string, content: BuildContent) => void
   rename: (id: string, name: string) => void
   remove: (id: string) => void
+  acceptPrices: (ids?: readonly string[]) => void
   setActive: (id: string | undefined) => void
   clear: () => void
 }
@@ -58,6 +61,7 @@ export function useSavedBuilds(): SavedBuilds {
       builds.value = removeBuild(builds.value, id)
       if (activeId.value === id) activeId.value = undefined
     },
+    acceptPrices: ids => { builds.value = acceptPrices(builds.value, ids) },
     setActive: id => { activeId.value = id },
     clear: () => {
       builds.value = []

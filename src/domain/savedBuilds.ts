@@ -11,12 +11,15 @@ import type { Build, BuildIds, Category, Issue, PartBase, Resolution } from './t
 export const MAX_SAVED_BUILDS = 30
 export const MAX_NAME_LENGTH = 40
 
+export type SavedPrices = Partial<Record<Category, number>>
+
 export interface SavedBuild {
   id: string
   name: string
   ids: BuildIds
   storeId?: string
   savedAt: string
+  prices?: SavedPrices
 }
 
 export interface BuildContent {
@@ -28,13 +31,30 @@ export const cleanName = (raw: string, fallback: string): string => raw.trim().r
 
 const withStore = (storeId: string | undefined) => (storeById(storeId) ? { storeId } : {})
 
+export function currentPrices(ids: BuildIds, storeId: string | undefined): SavedPrices {
+  const build = resolveBuild(ids, catalogAt(storeId))
+  return Object.fromEntries(CATEGORIES.flatMap(category => {
+    const part: PartBase | undefined = build[category]
+    return part ? [[category, part.listing.priceEgp]] : []
+  })) as SavedPrices
+}
+
+const savedContent = (content: BuildContent) => ({ ids: { ...content.ids }, ...withStore(content.storeId) })
+const pricedAt = (content: BuildContent) => ({ prices: currentPrices(content.ids, storeById(content.storeId)?.id) })
+
 export function addBuild(list: readonly SavedBuild[], content: BuildContent & { name: string }, id: string, savedAt: string): SavedBuild[] {
-  const build: SavedBuild = { id, name: content.name, ids: { ...content.ids }, ...withStore(content.storeId), savedAt }
+  const build: SavedBuild = { id, name: content.name, ...savedContent(content), savedAt, ...pricedAt(content) }
   return [build, ...list].slice(0, MAX_SAVED_BUILDS)
 }
 
 export const updateBuild = (list: readonly SavedBuild[], id: string, content: BuildContent, savedAt: string): SavedBuild[] =>
-  list.map(build => (build.id === id ? { id: build.id, name: build.name, ids: { ...content.ids }, ...withStore(content.storeId), savedAt } : build))
+  list.map(build => (build.id === id ? { id: build.id, name: build.name, ...savedContent(content), savedAt, ...pricedAt(content) } : build))
+
+export const withPriceBaseline = (list: readonly SavedBuild[]): SavedBuild[] =>
+  list.map(build => (build.prices ? build : { ...build, prices: currentPrices(build.ids, build.storeId) }))
+
+export const acceptPrices = (list: readonly SavedBuild[], ids?: readonly string[]): SavedBuild[] =>
+  list.map(build => (!ids || ids.includes(build.id) ? { ...build, prices: currentPrices(build.ids, build.storeId) } : build))
 
 export const renameBuild = (list: readonly SavedBuild[], id: string, name: string): SavedBuild[] =>
   list.map(build => (build.id === id ? { ...build, name: cleanName(name, build.name) } : build))
@@ -49,13 +69,21 @@ export function isSameBuild(saved: SavedBuild, ids: BuildIds, storeId: string | 
   return saved.storeId === storeById(storeId)?.id && [...keys].every(key => saved.ids[key] === current[key])
 }
 
+function readPrices(raw: unknown): SavedPrices | undefined {
+  if (typeof raw !== 'object' || raw === null) return undefined
+  const entries = Object.entries(raw as Record<string, unknown>)
+    .filter(([category, price]) => (CATEGORIES as readonly string[]).includes(category) && typeof price === 'number' && Number.isFinite(price) && price > 0)
+  return Object.fromEntries(entries) as SavedPrices
+}
+
 function readSaved(raw: unknown): SavedBuild | undefined {
   if (typeof raw !== 'object' || raw === null) return undefined
   const item = raw as Record<string, unknown>
   if (typeof item.id !== 'string' || typeof item.name !== 'string') return undefined
   const savedAt = typeof item.savedAt === 'string' ? item.savedAt : new Date(0).toISOString()
   const storeId = typeof item.storeId === 'string' ? item.storeId : undefined
-  return { id: item.id, name: cleanName(item.name, item.id), ids: sanitizeIds(item.ids), ...withStore(storeId), savedAt }
+  const prices = readPrices(item.prices)
+  return { id: item.id, name: cleanName(item.name, item.id), ids: sanitizeIds(item.ids), ...withStore(storeId), savedAt, ...(prices ? { prices } : {}) }
 }
 
 export function sanitizeSavedBuilds(raw: unknown): SavedBuild[] {
@@ -111,14 +139,34 @@ export interface BuildLine {
   part: PartBase | undefined
   name: string | undefined
   unavailable: boolean
+  savedPrice: number | undefined
 }
 
 export const buildLines = (saved: SavedBuild, details: BuildDetails): BuildLine[] =>
   CATEGORIES.map(category => {
     const id = saved.ids[category]
     const part: PartBase | undefined = details.build[category]
-    return { category, id, part, name: part?.name ?? (id ? findPart(id)?.part.name : undefined), unavailable: details.unavailable.includes(category) }
+    const name = part?.name ?? (id ? findPart(id)?.part.name : undefined)
+    return { category, id, part, name, unavailable: details.unavailable.includes(category), savedPrice: saved.prices?.[category] }
   })
+
+export interface PriceMove {
+  category: Category
+  before: number
+  after: number
+  delta: number
+}
+
+export function priceMoves(saved: SavedBuild, details: BuildDetails = inspectBuild(saved)): PriceMove[] {
+  return CATEGORIES.flatMap(category => {
+    const before = saved.prices?.[category]
+    const part: PartBase | undefined = details.build[category]
+    if (before === undefined || !part || part.listing.priceEgp === before) return []
+    return [{ category, before, after: part.listing.priceEgp, delta: part.listing.priceEgp - before }]
+  })
+}
+
+export const totalMove = (moves: readonly PriceMove[]): number => moves.reduce((sum, move) => sum + move.delta, 0)
 
 export function summarizeBuild(saved: SavedBuild): BuildSummary {
   const { build, issues, total, loadW } = inspectBuild(saved)

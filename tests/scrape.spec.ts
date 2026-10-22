@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { isSanePrice, matchesRule, normalize, pickOffer } from '../scripts/lib/match.mjs'
-import { decodeEntities, fromOpenCartHtml, fromShopifyProducts, fromSigmaHtml, fromWooProducts, parseEgp, readJsonValue } from '../scripts/lib/stores.mjs'
+import { decodeEntities, fromOpenCartHtml, fromShopifyProducts, fromSigmaHtml, fromWooProducts, parseEgp, readJsonValue, STORES } from '../scripts/lib/stores.mjs'
 import { listingFor, type ListingSource, type OfferSource } from '../src/data/parts'
 
 const product = (title: string, priceEgp: number, inStock = true) => ({ title, priceEgp, inStock, url: `https://shop.test/${priceEgp}` })
@@ -60,6 +60,13 @@ describe('offer choice', () => {
   it('falls back to an out-of-stock match and ignores odd prices', () => {
     expect(pickOffer([product('Ryzen 5 7500F', 7100, false), product('Ryzen 5 7500F (October #16)', 50000)], rule, 7500)).toMatchObject({ priceEgp: 7100, inStock: false })
     expect(pickOffer([product('Ryzen 5 7600', 8000)], rule, 7500)).toBeUndefined()
+  })
+})
+
+describe('request pacing', () => {
+  it('only waits between searches at stores that are searched per part', () => {
+    const paced = (STORES as { id: string; usesCatalog?: boolean }[]).filter(store => !store.usesCatalog).map(store => store.id)
+    expect(paced).toEqual(['sigma', 'elbadr', 'maximum', 'alfrensia', 'uptodate'])
   })
 })
 

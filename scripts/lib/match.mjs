@@ -4,8 +4,16 @@ export const MAX_PRICE_RATIO = 1.8
 const EXCLUDED_PHRASES = ['bundle', 'combo', 'build', 'laptop', 'notebook', 'gaming pc', 'desktop pc', 'prebuilt', 'used', 'open box', 'hx', 'hz', 'inch', 'ryzen ai', 'oled', 'windows', 'win11']
 const BUNDLE_MARK = /[+]/
 
+const normalized = new Map()
+
 export function normalize(text) {
-  const words = String(text)
+  const key = String(text)
+  if (!normalized.has(key)) normalized.set(key, clean(key))
+  return normalized.get(key)
+}
+
+function clean(text) {
+  const words = text
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, ' ')
     .replace(/([a-z])(\d)/g, '$1 $2')

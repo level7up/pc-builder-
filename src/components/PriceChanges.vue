@@ -3,7 +3,8 @@ import { computed, ref } from 'vue'
 import { PRICES_CHECKED_ON } from '../data/parts'
 import { PREVIOUS_OFFER_SOURCE } from '../data/previous'
 import { CATEGORIES } from '../domain/build'
-import { CHANGE_STATUSES, countByStatus, priceChanges, type ChangeStatus, type PricePoint } from '../domain/changes'
+import { CHANGE_STATUSES, countByStatus, priceChanges, storePriceChanges, type ChangeStatus, type PricePoint } from '../domain/changes'
+import { STORES, storeById } from '../domain/store'
 import type { Category } from '../domain/types'
 import type { Locale, Messages } from '../i18n/messages'
 import { formatDate, formatEgp, formatEgpChange, formatPercentChange } from '../format'
@@ -11,17 +12,24 @@ import { matchesQuery } from '../search'
 
 const props = defineProps<{ t: Messages; locale: Locale }>()
 
-const changes = priceChanges(PREVIOUS_OFFER_SOURCE)
-const counts = countByStatus(changes)
+const cheapestChanges = priceChanges(PREVIOUS_OFFER_SOURCE)
 
+const storeId = ref('')
 const query = ref('')
 const status = ref<ChangeStatus | undefined>(undefined)
 const category = ref<Category | ''>('')
 
+const store = computed(() => storeById(storeId.value))
+const changes = computed(() => (store.value ? storePriceChanges(store.value.id, PREVIOUS_OFFER_SOURCE) : cheapestChanges))
+const counts = computed(() => countByStatus(changes.value))
 const shown = computed(() =>
-  changes.filter(c => (!status.value || c.status === status.value) && (!category.value || c.category === category.value) && matchesQuery(c.part.name, query.value))
+  changes.value.filter(c => (!status.value || c.status === status.value) && (!category.value || c.category === category.value) && matchesQuery(c.part.name, query.value))
 )
-const period = computed(() => props.t.changes.period(formatDate(PREVIOUS_OFFER_SOURCE.checkedOn, props.locale), formatDate(PRICES_CHECKED_ON, props.locale)))
+const period = computed(() => {
+  const from = formatDate(PREVIOUS_OFFER_SOURCE.checkedOn, props.locale)
+  const to = formatDate(PRICES_CHECKED_ON, props.locale)
+  return store.value ? props.t.changes.periodAt(from, to, store.value.name) : props.t.changes.period(from, to)
+})
 const priceText = (point: PricePoint) => formatEgp(point.priceEgp, props.locale)
 </script>
 
@@ -54,6 +62,10 @@ const priceText = (point: PricePoint) => formatEgp(point.priceEgp, props.locale)
       </div>
       <div class="narrow">
         <input v-model="query" type="search" class="search" :placeholder="t.changes.search" :aria-label="t.changes.search" autocomplete="off" spellcheck="false" />
+        <select v-model="storeId" class="store-filter" :aria-label="t.changes.store">
+          <option value="">{{ t.changes.allStores }}</option>
+          <option v-for="s in STORES" :key="s.id" :value="s.id">{{ s.name }}</option>
+        </select>
         <select v-model="category" :aria-label="t.changes.part">
           <option value="">{{ t.changes.all }}</option>
           <option v-for="c in CATEGORIES" :key="c" :value="c">{{ t.categories[c] }}</option>
