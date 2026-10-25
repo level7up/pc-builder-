@@ -1,4 +1,5 @@
 import type { Messages } from './i18n/messages'
+import { storageInterface } from './domain/storage'
 import type { Case, Category, Cooler, Cpu, Gpu, Memory, Motherboard, PartBase, Psu, Storage } from './domain/types'
 
 type Describe = (part: PartBase, m: Messages) => string[]
@@ -22,7 +23,7 @@ const DESCRIBE: Record<Category, Describe> = {
   },
   storage: p => {
     const s = p as Storage
-    return [s.capacityGb >= 1000 ? `${s.capacityGb / 1000} TB` : `${s.capacityGb} GB`, `PCIe ${s.pcieGen}`]
+    return [s.capacityGb >= 1000 ? `${s.capacityGb / 1000} TB` : `${s.capacityGb} GB`, storageInterface(s)]
   },
   psu: p => {
     const s = p as Psu

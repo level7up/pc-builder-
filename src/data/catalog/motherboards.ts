@@ -262,5 +262,17 @@ export const MOTHERBOARD_SPECS: Spec<Motherboard>[] = [
   { id: 'mb-msi-z890-edge-ti-wifi', name: 'MSI Z890 EDGE TI WIFI', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
   { id: 'mb-msi-z890-p-wifi', name: 'MSI Z890-P WIFI6E', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
   { id: 'mb-msi-z890-s-wifi', name: 'MSI Z890-S WIFI', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
-  { id: 'mb-msi-z890-tomahawk-wifi', name: 'MSI Z890 Tomahawk WiFi', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true }
+  { id: 'mb-msi-z890-tomahawk-wifi', name: 'MSI Z890 Tomahawk WiFi', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-arktek-b760m-eg', name: 'ARKTEK AK-B760M EG', socket: 'LGA1700', chipset: 'B760', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 180, canOverclock: false, wifi: false },
+  { id: 'mb-asus-tuf-a620m-plus', name: 'ASUS TUF Gaming A620M-PLUS', socket: 'AM5', chipset: 'A620', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 162, canOverclock: false, wifi: false },
+  { id: 'mb-gigabyte-b760m-d3hp-wifi', name: 'Gigabyte B760M D3HP WiFi6', socket: 'LGA1700', chipset: 'B760', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 180, canOverclock: false, wifi: true },
+  { id: 'mb-asus-prime-b650m-a-ii-wifi', name: 'ASUS Prime B650M-A II WiFi', socket: 'AM5', chipset: 'B650', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 230, canOverclock: true, wifi: true },
+  { id: 'mb-gigabyte-b760m-x-wifi', name: 'Gigabyte B760M GAMING X WiFi6E', socket: 'LGA1700', chipset: 'B760', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 253, canOverclock: false, wifi: true },
+  { id: 'mb-gigabyte-x870-gaming-wifi6', name: 'Gigabyte X870 Gaming WiFi6', socket: 'AM5', chipset: 'X870', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-msi-z790-project-zero', name: 'MSI Z790 Project Zero', socket: 'LGA1700', chipset: 'Z790', memory: 'DDR5', formFactor: 'mATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-gigabyte-z890-elite-duo-x', name: 'Gigabyte Z890 AORUS Elite DUO X', socket: 'LGA1851', chipset: 'Z890', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-asus-rog-strix-b650e-f-wifi', name: 'ASUS ROG STRIX B650E-F Gaming WiFi', socket: 'AM5', chipset: 'B650E', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 230, canOverclock: true, wifi: true },
+  { id: 'mb-gigabyte-x870-elite-x3d', name: 'Gigabyte X870 AORUS Elite X3D', socket: 'AM5', chipset: 'X870', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-gigabyte-x870-elite-wifi-ice', name: 'Gigabyte X870 AORUS Elite WIFI7 ICE', socket: 'AM5', chipset: 'X870', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true },
+  { id: 'mb-gigabyte-b850-ai-top', name: 'Gigabyte B850 AI TOP', socket: 'AM5', chipset: 'B850', memory: 'DDR5', formFactor: 'ATX', maxCpuPowerW: 300, canOverclock: true, wifi: true }
 ]

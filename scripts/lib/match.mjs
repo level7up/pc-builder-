@@ -3,6 +3,7 @@ export const MAX_PRICE_RATIO = 1.8
 
 const EXCLUDED_PHRASES = ['bundle', 'combo', 'build', 'laptop', 'notebook', 'gaming pc', 'desktop pc', 'prebuilt', 'used', 'open box', 'hx', 'hz', 'inch', 'ryzen ai', 'oled', 'windows', 'win11']
 const BUNDLE_MARK = /[+]/
+const NOT_A_BUNDLE = /\d\+|cores?\s*\+|\+\s*fan\b/gi
 
 const normalized = new Map()
 
@@ -26,7 +27,7 @@ function clean(text) {
 const hasPhrase = (text, phrase) => text.includes(normalize(phrase))
 
 export function matchesRule(title, rule) {
-  if (BUNDLE_MARK.test(title)) return false
+  if (BUNDLE_MARK.test(title.replace(NOT_A_BUNDLE, ''))) return false
   const text = normalize(title)
   const allowed = rule.allow ?? []
   if (EXCLUDED_PHRASES.some(phrase => !allowed.includes(phrase) && hasPhrase(text, phrase))) return false

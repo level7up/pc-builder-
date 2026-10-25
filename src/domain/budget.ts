@@ -2,9 +2,10 @@ import { catalog as fullCatalog } from '../data/parts'
 import { cpuCapacity, gpuCapacity } from './bottleneck'
 import { totalPriceEgp } from './build'
 import { checkBuild } from './compatibility'
-import { PSU_RATINGS, type Build, type BuildIds, type Case, type Catalog, type Cooler, type Cpu, type Gpu, type Memory, type Motherboard, type PartBase, type Psu, type Resolution } from './types'
+import { PSU_RATINGS, type Build, type BuildIds, type Case, type Catalog, type Cooler, type Cpu, type Gpu, type Memory, type Motherboard, type PartBase, type Psu, type Resolution, type Storage } from './types'
 import { recommendedPsuW } from './power'
 import { inStockOnly } from './stock'
+import { isNvme } from './storage'
 import { toWesternDigits } from '../search'
 
 export const MIN_DUAL_CHANNEL_GB = 16
@@ -41,6 +42,14 @@ const cheapestPerSize = (kits: Memory[]): Memory[] => {
 const memoryOptions = (catalog: Catalog, type: Memory['type']): Memory[] =>
   cheapestPerSize(catalog.memory.filter(m => m.type === type && m.sticks >= 2 && m.totalGb >= MIN_DUAL_CHANNEL_GB))
 
+const STORAGE_TIERS_GB = [0, 1000, 2000]
+
+const storageOptions = (catalog: Catalog): Storage[] => {
+  const drives = catalog.storage.filter(isNvme)
+  const picks = STORAGE_TIERS_GB.flatMap(minimum => cheapest(drives, d => d.capacityGb >= minimum) ?? [])
+  return picks.filter((drive, index) => picks.indexOf(drive) === index)
+}
+
 const isGoldOrBetter = (psu: Psu): boolean => PSU_RATINGS.indexOf(psu.rating) >= PSU_RATINGS.indexOf('Gold')
 
 const psuFor = (catalog: Catalog, cpu: Cpu, gpu: Gpu, preferGold: boolean): Psu | undefined => {
@@ -58,7 +67,7 @@ export const performanceOf = (cpu: Cpu, gpu: Gpu, memory: Memory, resolution: Re
   Math.min(cpuCapacity(cpu, memory), gpuCapacity(gpu, resolution))
 
 const comfortOf = (build: Build): number =>
-  (build.memory!.totalGb >= 32 ? 2 : 0) + (build.storage!.capacityGb >= 1000 ? 1 : 0) + (build.storage!.capacityGb >= 2000 ? 1 : 0) + (isGoldOrBetter(build.psu!) ? 1 : 0)
+  (build.memory!.totalGb >= 32 ? 2 : 0) + (build.storage!.capacityGb >= STORAGE_TIERS_GB[1] ? 1 : 0) + (build.storage!.capacityGb >= STORAGE_TIERS_GB[2] ? 1 : 0) + (isGoldOrBetter(build.psu!) ? 1 : 0)
 
 const isClean = (build: Build): boolean => checkBuild(build).every(i => i.severity === 'info')
 
@@ -69,7 +78,7 @@ function candidatesFor(catalog: Catalog, cpu: Cpu, gpu: Gpu, resolution: Resolut
     if (!board || !cooler) return []
     const pcCase = caseFor(catalog, board, gpu)
     if (!pcCase) return []
-    return memoryOptions(catalog, type).flatMap(memory => catalog.storage.flatMap(storage => [false, true].flatMap(preferGold => {
+    return memoryOptions(catalog, type).flatMap(memory => storageOptions(catalog).flatMap(storage => [false, true].flatMap(preferGold => {
       const psu = psuFor(catalog, cpu, gpu, preferGold)
       if (!psu) return []
       const build: Build = { cpu, gpu, motherboard: board, memory, storage, psu, case: pcCase, cooler }

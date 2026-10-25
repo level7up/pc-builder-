@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { catalog } from '../src/data/parts'
 import { compareParts, MAX_COMPARE, sanitizeCompare, withCompared, type CompareRow } from '../src/domain/compare'
-import type { PartBase } from '../src/domain/types'
+import type { PartBase, Storage } from '../src/domain/types'
 
 const gpus = [...catalog.gpu].sort((a, b) => a.listing.priceEgp - b.listing.priceEgp)
 const cheapGpu = gpus.find(g => g.listing.inStock)!
@@ -59,11 +59,18 @@ describe('comparing parts', () => {
     const ids = (category: Parameters<typeof compareParts>[0]) => compareParts(category, catalog[category].slice(0, 2)).map(r => r.id)
     expect(ids('cpu')).toEqual(expect.arrayContaining(['price', 'performance', 'value', 'cores', 'threads', 'power', 'socket']))
     expect(ids('memory')).toEqual(expect.arrayContaining(['capacity', 'speed', 'pricePerGb']))
-    expect(ids('storage')).toEqual(expect.arrayContaining(['capacity', 'pcie', 'pricePerTb']))
+    expect(ids('storage')).toEqual(expect.arrayContaining(['capacity', 'interface', 'pricePerTb']))
     expect(ids('psu')).toEqual(expect.arrayContaining(['watts', 'rating']))
     expect(ids('case')).toEqual(expect.arrayContaining(['formFactors', 'maxGpu']))
     expect(ids('cooler')).toEqual(expect.arrayContaining(['kind', 'rated']))
     expect(ids('motherboard')).toEqual(expect.arrayContaining(['chipset', 'wifi', 'overclock', 'maxCpuPower']))
+  })
+
+  it('ranks NVMe drives above SATA SSDs and SATA SSDs above hard drives', () => {
+    const drive = (kind: Storage['kind'], pcieGen?: Storage['pcieGen']) => ({ ...catalog.storage[0], id: kind, kind, pcieGen })
+    const cells = row(compareParts('storage', [drive('hdd'), drive('sata'), drive('nvme', 4)]), 'interface').cells
+    expect(cells.map(c => c.value.kind === 'text' && c.value.value)).toEqual(['HDD', 'SATA SSD', 'NVMe PCIe 4'])
+    expect(cells.map(c => c.best)).toEqual([false, false, true])
   })
 
   it('treats a yes as better than a no', () => {

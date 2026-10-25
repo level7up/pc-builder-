@@ -35,6 +35,15 @@ describe('title matching', () => {
     expect(matchesRule('AMD Ryzen 5 7500F Tray', rule)).toBe(true)
   })
 
+  it('does not mistake 80+ ratings, core counts or speed ceilings for bundles', () => {
+    expect(matchesRule('Seasonic VERTEX PX-1200 1200W ATX 3.1 80+ Platinum Fully Modular', { all: ['vertex px', '1200'] })).toBe(true)
+    expect(matchesRule('Intel Core i9-14900KF 24 cores (8 P-cores + 16 E-cores)', { all: ['14900kf'] })).toBe(true)
+    expect(matchesRule('MSI B840 Gaming Plus WiFi – AM5 ATX DDR5‑8000+ (OC) Motherboard', { all: ['b840', 'plus'] })).toBe(true)
+    expect(matchesRule('AMD Ryzen 7 8700F MPK + Fan Tray Processor', { all: ['8700f'] })).toBe(true)
+    expect(matchesRule('Cougar Uniface Mini RGB +STC600 Mid Tower Case', { all: ['uniface mini'] })).toBe(false)
+    expect(matchesRule('GAMDIAS ATLAS M5 Black Case + HELIOS M2-750B 750W PSU', { all: ['atlas m5'] })).toBe(false)
+  })
+
   it('lets a rule allow a globally excluded phrase', () => {
     const title = 'Lian Li HydroShift II OLED Curved 360MM AIO Liquid Cooler'
     expect(matchesRule(title, { all: ['hydroshift ii', '360'] })).toBe(false)

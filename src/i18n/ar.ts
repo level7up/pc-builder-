@@ -122,7 +122,7 @@ export const ar: Messages = {
     browse: 'اختار قطع من كل القطع',
     inBuild: 'في تجميعتك ✓',
     storesTitle: 'السعر في كل محل',
-    rows: { price: 'أرخص سعر', stores: 'متوفرة في', performance: 'الأداء في الألعاب', value: 'الأداء مقابل السعر', cores: 'الكور', threads: 'الثريد', power: 'الاستهلاك', socket: 'السوكيت', memoryType: 'نوع الرامات', igpu: 'جرافيك داخلي', vram: 'الـ VRAM', length: 'الطول', chipset: 'الشيبست', formFactor: 'المقاس', maxCpuPower: 'أقصى باور للبروسيسور', overclock: 'أوفركلوك', wifi: 'Wi-Fi', capacity: 'المساحة', sticks: 'عدد الرامات', speed: 'السرعة', pricePerGb: 'سعر الجيجا', pcie: 'الـ PCIe', pricePerTb: 'سعر التيرا', watts: 'القدرة', rating: 'الشهادة', formFactors: 'المازربوردات', maxGpu: 'أطول كارت', kind: 'النوع', rated: 'يبرّد لحد' },
+    rows: { price: 'أرخص سعر', stores: 'متوفرة في', performance: 'الأداء في الألعاب', value: 'الأداء مقابل السعر', cores: 'الكور', threads: 'الثريد', power: 'الاستهلاك', socket: 'السوكيت', memoryType: 'نوع الرامات', igpu: 'جرافيك داخلي', vram: 'الـ VRAM', length: 'الطول', chipset: 'الشيبست', formFactor: 'المقاس', maxCpuPower: 'أقصى باور للبروسيسور', overclock: 'أوفركلوك', wifi: 'Wi-Fi', capacity: 'المساحة', sticks: 'عدد الرامات', speed: 'السرعة', pricePerGb: 'سعر الجيجا', interface: 'الواجهة', pricePerTb: 'سعر التيرا', watts: 'القدرة', rating: 'الشهادة', formFactors: 'المازربوردات', maxGpu: 'أطول كارت', kind: 'النوع', rated: 'يبرّد لحد' },
     yes: 'أيوه',
     no: 'لأ',
     units: { mm: n => `${n} مم`, mts: n => `${n} MT/s`, stores: n => `${n} محلات`, pcie: n => `PCIe ${n}`, gb: n => `${n} جيجا`, tb: n => `${n} تيرا`, fps: n => `${n} فريم` }

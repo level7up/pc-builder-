@@ -41,7 +41,8 @@ Store (Shopify catalogue feeds), Sigma Computer (search page data), El Badr
 Group and Maximum Hardware (OpenCart search pages), Alfrensia and Uptodate
 Store (WooCommerce store API). Each part shows the cheapest in-stock offer and
 a list to compare all stores. Listings are matched by title terms, with
-bundles, PC builds and laptops rejected, and a match is ignored when its price
+bundles, PC builds and laptops rejected (a `+` counts as a bundle unless it is
+part of "80+", "8000+", "P-cores + E-cores" or "+ Fan"), and a match is ignored when its price
 is outside 0.6–1.8× the reference price. CPUs, boards, memory,
 storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
 VRAM, so other stores may list a different card of the same GPU. A store that
@@ -58,6 +59,12 @@ maker's spec or the store description; where neither states it, the value is
 an estimate, marked "(est.)", and an over-long card is a warning, not an error.
 Cooler ratings use the maker's TDP where it is published; otherwise they are
 estimated from the design (single or dual tower, radiator size).
+Storage covers NVMe SSDs, 2.5" SATA SSDs and desktop hard drives (`kind` in
+`src/data/catalog/storage.ts`); portable, enterprise and surveillance drives are
+left out. The budget builder only picks an NVMe drive as the boot drive.
+The October 25 Compumarts survey added every in-stock component it sells that
+was missing, apart from those cases, listings with placeholder prices (1 or
+1,010,000 EGP), case + PSU bundles and prebuilt PCs.
 
 To add a part: add its listing to `listings.json` (for Compumarts the store
 handle is the last part of the product URL; for another store give its store id

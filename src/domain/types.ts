@@ -64,9 +64,12 @@ export interface Memory extends PartBase {
   speedMts: number
 }
 
+export type StorageKind = 'nvme' | 'sata' | 'hdd'
+
 export interface Storage extends PartBase {
   capacityGb: number
-  pcieGen: 3 | 4 | 5
+  kind: StorageKind
+  pcieGen?: 3 | 4 | 5
 }
 
 export const PSU_RATINGS = ['Standard', 'Bronze', 'Silver', 'Gold', 'Platinum', 'Titanium'] as const

@@ -1,5 +1,6 @@
 import { inStockCount } from './browse'
 import { findPart } from './lookup'
+import { storageInterface } from './storage'
 import { PSU_RATINGS, type Case, type Category, type Cooler, type Cpu, type Gpu, type Memory, type Motherboard, type PartBase, type Psu, type Storage } from './types'
 
 export const MAX_COMPARE = 4
@@ -34,7 +35,7 @@ export type CellValue =
 export type RowId =
   | 'price' | 'stores' | 'performance' | 'value' | 'cores' | 'threads' | 'power' | 'socket' | 'memoryType' | 'igpu'
   | 'vram' | 'length' | 'chipset' | 'formFactor' | 'maxCpuPower' | 'overclock' | 'wifi' | 'capacity' | 'sticks'
-  | 'speed' | 'pricePerGb' | 'pcie' | 'pricePerTb' | 'watts' | 'rating' | 'formFactors' | 'maxGpu' | 'kind' | 'rated'
+  | 'speed' | 'pricePerGb' | 'interface' | 'pricePerTb' | 'watts' | 'rating' | 'formFactors' | 'maxGpu' | 'kind' | 'rated'
 
 export interface CompareCell {
   value: CellValue
@@ -58,6 +59,10 @@ const text = (value: string, rank?: number): CellValue => ({ kind: 'text', value
 const flag = (value: boolean): CellValue => ({ kind: 'flag', value })
 
 const priceOf = (part: PartBase): number => part.listing.priceEgp
+
+const INTERFACE_RANK = { hdd: 0, sata: 1, nvme: 2 } as const
+
+const interfaceRank = (p: Storage): number => INTERFACE_RANK[p.kind] + (p.pcieGen ?? 0)
 const relative = (score: number, best: number): number => Math.round((score / best) * PERCENT)
 
 type Scored = PartBase & { gamingScore: number }
@@ -111,7 +116,7 @@ const ROWS: { [K in Category]: RowSpec<never>[] } = {
   ],
   storage: [
     { id: 'capacity', better: 'higher', read: (p: Storage) => num(p.capacityGb, 'gb') },
-    { id: 'pcie', better: 'higher', read: (p: Storage) => num(p.pcieGen, 'pcie') },
+    { id: 'interface', better: 'higher', read: (p: Storage) => text(storageInterface(p), interfaceRank(p)) },
     { id: 'pricePerTb', better: 'lower', buyableOnly: true, read: (p: Storage) => num(Math.round((priceOf(p) * GB_PER_TB) / p.capacityGb), 'egp') }
   ],
   psu: [

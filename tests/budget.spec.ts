@@ -18,6 +18,10 @@ describe('budget builder', () => {
     expect(checkBuild(build).filter(i => i.severity !== 'info')).toEqual([])
   })
 
+  it.each([40_000, 130_000])('boots from an NVMe drive at %i EGP', budget => {
+    expect(resolveBuild(ok(budget).ids).storage!.kind).toBe('nvme')
+  })
+
   it('gets faster as the budget grows', () => {
     const perf = [50_000, 80_000, 120_000, 200_000].map(b => ok(b, '1440p').performance)
     expect([...perf].sort((a, b) => a - b)).toEqual(perf)

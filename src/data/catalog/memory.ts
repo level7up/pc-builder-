@@ -144,5 +144,10 @@ export const MEMORY_SPECS: Spec<Memory>[] = [
   { id: 'ram-5-patriot-viper-elite-5-ultra-rgb-32-2x-6400', name: 'Patriot Viper Elite 5 Ultra RGB 32GB (2×16) DDR5-6400', type: 'DDR5', totalGb: 32, sticks: 2, speedMts: 6400 },
   { id: 'ram-5-pny-16-1x-4800', name: 'PNY 16GB DDR5-4800', type: 'DDR5', totalGb: 16, sticks: 1, speedMts: 4800 },
   { id: 'ram-5-teamgroup-elite-16-1x-5200', name: 'TeamGroup Elite 16GB DDR5-5200', type: 'DDR5', totalGb: 16, sticks: 1, speedMts: 5200 },
-  { id: 'ram-5-xpg-lancer-blade-rgb-16-1x-6000', name: 'XPG Lancer Blade RGB 16GB DDR5-6000', type: 'DDR5', totalGb: 16, sticks: 1, speedMts: 6000 }
+  { id: 'ram-5-xpg-lancer-blade-rgb-16-1x-6000', name: 'XPG Lancer Blade RGB 16GB DDR5-6000', type: 'DDR5', totalGb: 16, sticks: 1, speedMts: 6000 },
+  { id: 'ram-4-apacer-8-1x-3200', name: 'Apacer 8GB DDR4-3200', type: 'DDR4', totalGb: 8, sticks: 1, speedMts: 3200 },
+  { id: 'ram-4-hiksemi-hiker-8-1x-3200', name: 'HIKSEMI Hiker 8GB DDR4-3200', type: 'DDR4', totalGb: 8, sticks: 1, speedMts: 3200 },
+  { id: 'ram-5-micron-8-1x-5600', name: 'Micron 8GB DDR5-5600', type: 'DDR5', totalGb: 8, sticks: 1, speedMts: 5600 },
+  { id: 'ram-5-samsung-16-1x-6400-cudimm', name: 'Samsung 16GB DDR5-6400 CUDIMM', type: 'DDR5', totalGb: 16, sticks: 1, speedMts: 6400 },
+  { id: 'ram-5-teamgroup-vulcan-32-2x-6400', name: 'TeamGroup Vulcan 32GB (2×16) DDR5-6400', type: 'DDR5', totalGb: 32, sticks: 2, speedMts: 6400 }
 ]

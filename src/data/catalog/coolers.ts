@@ -201,5 +201,18 @@ export const COOLER_SPECS: Spec<Cooler>[] = [
   { id: 'cool-xpg-levante-x-360', name: 'XPG Levante X 360 ARGB (360mm AIO)', kind: 'liquid', ratedW: 350 },
   { id: 'cool-zalman-alpha2-ds-a36', name: 'Zalman Alpha2 DS A36 (360mm AIO)', kind: 'liquid', ratedW: 330 },
   { id: 'cool-zalman-alpha2-se-a36', name: 'Zalman Alpha2 SE A36 (360mm AIO)', kind: 'liquid', ratedW: 300 },
-  { id: 'cool-bequiet-pure-loop-2-fx-240', name: 'be quiet! Pure Loop 2 FX 240 (240mm AIO)', kind: 'liquid', ratedW: 280 }
+  { id: 'cool-bequiet-pure-loop-2-fx-240', name: 'be quiet! Pure Loop 2 FX 240 (240mm AIO)', kind: 'liquid', ratedW: 280 },
+  { id: 'cool-havit-f2005', name: 'Havit Gamenote F2005', kind: 'air', ratedW: 200 },
+  { id: 'cool-arctic-freezer-8i', name: 'ARCTIC Freezer 8i', kind: 'air', ratedW: 150 },
+  { id: 'cool-cm-hyper-212-spectrum-v2', name: 'Cooler Master Hyper 212 Spectrum V2', kind: 'air', ratedW: 180 },
+  { id: 'cool-snowman-ks120', name: 'Snowman KS120 ARGB (120mm AIO)', kind: 'liquid', ratedW: 200 },
+  { id: 'cool-xigmatek-fenix-360', name: 'Xigmatek Fenix 360 ARGB (360mm AIO)', kind: 'liquid', ratedW: 300 },
+  { id: 'cool-fractal-celsius-s24-prisma', name: 'Fractal Design Celsius S24 Prisma (240mm AIO)', kind: 'liquid', ratedW: 250 },
+  { id: 'cool-pccooler-dc360-pro', name: 'PCCooler DC360 Pro ARGB Display (360mm AIO)', kind: 'liquid', ratedW: 330 },
+  { id: 'cool-nzxt-kraken-core-360-rgb', name: 'NZXT Kraken Core 360 RGB (360mm AIO)', kind: 'liquid', ratedW: 330 },
+  { id: 'cool-asus-tuf-lc-iii-360', name: 'ASUS TUF Gaming LC III 360 ARGB (360mm AIO)', kind: 'liquid', ratedW: 350 },
+  { id: 'cool-lianli-hydroshift-ii-lcd-c-360', name: 'Lian Li HydroShift II LCD-C 360TL (360mm AIO)', kind: 'liquid', ratedW: 350 },
+  { id: 'cool-lianli-hydroshift-ii-lcd-s-360', name: 'Lian Li HydroShift II LCD-S 360TL (360mm AIO)', kind: 'liquid', ratedW: 350 },
+  { id: 'cool-lianli-hydroshift-ii-oled-fanless-360', name: 'Lian Li HydroShift II OLED Curved Fanless 360 (360mm AIO)', kind: 'liquid', ratedW: 350 },
+  { id: 'cool-lianli-hydroshift-ii-oled-360-tl', name: 'Lian Li HydroShift II OLED Curved 360 TL Flex (360mm AIO)', kind: 'liquid', ratedW: 350 }
 ]

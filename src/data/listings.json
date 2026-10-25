@@ -5336,6 +5336,918 @@
       "store": "sigma",
       "url": "https://www.sigma-computer.com/en/item?id=be-quiet-pure-loop-2-fx-240mm-bw013-qyr4t4vp5xkp",
       "title": "be quiet PURE LOOP 2 FX 240mm - bw013"
+    },
+    "case-gigabyte-c102-glass": {
+      "priceEgp": 1999,
+      "handle": "gigabyte-c102-glass",
+      "variant": "Black",
+      "title": "GIGABYTE C102 GLASS ICE"
+    },
+    "case-deepcool-macube-110": {
+      "priceEgp": 2000,
+      "handle": "case-deepcool-macube-110",
+      "variant": "White",
+      "title": "DeepCool MACUBE110 PK"
+    },
+    "case-xigmatek-aqua-compact": {
+      "priceEgp": 2499,
+      "handle": "xigmatek-aqua-compact-4fan-argb-pwm-mid-tower-case",
+      "variant": "Default Title",
+      "title": "Xigmatek Aqua Compact 4 Fan ARGB PWM Mid Tower Case"
+    },
+    "case-fantech-aero-2-cg83": {
+      "priceEgp": 2749,
+      "handle": "fantech-aero-2-cg83-middle-tower-gaming-case-black-4-rgb-fans-300mm-gpu-160mm-cpu-cooler-380x200x450mm-egypt",
+      "variant": "Default Title",
+      "title": "Fantech Aero 2 CG83 Middle Tower Gaming Case Black 4 RGB Fans 300mm GPU Support 160mm CPU Cooler Height 380 x 200 x 450mm"
+    },
+    "case-cougar-uniface-rgb": {
+      "priceEgp": 2750,
+      "handle": "cougar-uniface-rgb-mid-tower-case-egypt",
+      "variant": "Black",
+      "title": "COUGAR UNIFACE RGB Mid Tower PC Case with 4 × 120mm ARGB Fans, ATX / E-ATX Support"
+    },
+    "case-msi-forge-112r": {
+      "priceEgp": 2950,
+      "handle": "msi-mag-forge-112r-premium-mid-tower-gaming-pc-case-tempered-glass-side-panel-argb-120mm-fans-liquid-cooling-support-up-to-240mm-radiator-vented-front-panel",
+      "variant": "Default Title",
+      "title": "MSI MAG Forge 112R - Premium Mid-Tower Gaming PC Case - Tempered Glass Side Panel - ARGB 120mm Fans - Liquid Cooling Support up to 240mm Radiator - Vented Front Panel"
+    },
+    "case-xigmatek-crystal-storm": {
+      "priceEgp": 2980,
+      "handle": "xigmatek-crystal-storm-4-fan-pwm-argb-mid-tower-case-egypt",
+      "variant": "Default Title",
+      "title": "Xigmatek Crystal Storm 4 fan PWM Argb Curved TG Mid Tower Case"
+    },
+    "case-xigmatek-crystal-storm-v2": {
+      "priceEgp": 3185,
+      "handle": "xigmatek-crystal-storm-v2-mid-tower-case-egypt",
+      "variant": "Black / Case Only",
+      "title": "Xigmatek Crystal Storm V2 Mid Tower Case Curved Tempered Glass E-ATX ATX Steel 4 Fans PWM ARGB"
+    },
+    "case-cm-cmp-520": {
+      "priceEgp": 2999,
+      "handle": "cooler-master-case-mid-tower-cmp-520",
+      "variant": "CMP 520",
+      "title": "CASE COOLER MASTER CMP 520"
+    },
+    "case-cm-cmp-510": {
+      "priceEgp": 3750,
+      "handle": "cooler-master-cmp-510-atx-mid-tower",
+      "variant": "Default Title",
+      "title": "Cooler Master CMP 510 ATX Mid-Tower"
+    },
+    "case-tt-navigator-f4": {
+      "priceEgp": 3000,
+      "handle": "thermaltake-navigator-f4-mini-small-chassis-water-cooled-computer-case-egypt",
+      "variant": "Black",
+      "title": "Thermaltake Navigator F4 Mini Small Chassis Water-Cooled Computer Case Supports M-ATX ITX Motherboard Tempered Glass Side View Iron Mesh Panel Back Cable Design"
+    },
+    "case-cm-elite-502": {
+      "priceEgp": 3030,
+      "handle": "products-cooler-master-elite-502-mid-tower-atx-e-atx-argb-case",
+      "variant": "BLACK",
+      "title": "COOLER MASTER Elite 502 Mid Tower Case ATX E-ATX Support Tempered Glass Side Panel 3x 120mm ARGB Fans USB 3.2 Gen1 Type-C Elite Series"
+    },
+    "case-antec-ax1000-lite": {
+      "priceEgp": 3099,
+      "handle": "antec-ax1000-lite-gaming-case-4-argb-fans",
+      "variant": "Default Title",
+      "title": "Antec AX1000 Lite Case – 4 ARGB Fans – Mid Tower Gaming Case"
+    },
+    "case-zalman-chronix-v2": {
+      "priceEgp": 3100,
+      "handle": "zalman-chronix-v2-atx-case-argb-egypt",
+      "variant": "Black",
+      "title": "ZALMAN CHRONIX V2 black"
+    },
+    "case-cm-masterbox-520-mesh": {
+      "priceEgp": 3535,
+      "handle": "cooler-master-masterbox-520-mesh-argb-atx-case",
+      "variant": "Black",
+      "title": "CASE COOLER MASTER MASTERBOX 520 MESH"
+    },
+    "case-cm-qube-500": {
+      "priceEgp": 3600,
+      "handle": "cooler-master-qube-500-flatpack-small-high-airflow-mid-tower",
+      "variant": "White",
+      "title": "CASE COOLER MASTER Qube 500 Flatpack White"
+    },
+    "case-antec-p30": {
+      "priceEgp": 3749,
+      "handle": "antec-p30-argb-mid-tower-case",
+      "variant": "Default Title",
+      "title": "Antec P30 ARGB Mid Tower ATX Case Tempered Glass 5 PWM Fans Type-C Support 360mm Radiator"
+    },
+    "case-xander-velox-flow": {
+      "priceEgp": 3900,
+      "handle": "products-xander-velox-flow-400mm-gpu-support-360mm-radiator-support-gaming-case",
+      "variant": "Default Title",
+      "title": "XANDER  VELOX Flow E-ATX ATX M-ATX ITX Gaming Case with Mesh Front Panel Tempered Glass Side Panel 400mm GPU Support 170mm CPU Cooler Clearance 360mm Radiator Support and 10 Fan Support"
+    },
+    "case-xigmatek-alphard-pro": {
+      "priceEgp": 3999,
+      "handle": "xigmatek-alphard-pro-lcd-mid-tower-case-argb-egypt",
+      "variant": "Default Title",
+      "title": "Xigmatek Alphard Pro Mid Tower Case with 6\" LCD Display, 6 ARGB PWM Fans, E-ATX Support, Tempered Glass – Black (XG-ALPHARDPRO-LCD)"
+    },
+    "case-xpg-lander-501": {
+      "priceEgp": 4040,
+      "handle": "xpg-lander-501-mid-tower-atx-eatx-case-argb-usb-c-egypt",
+      "variant": "Default Title",
+      "title": "XPG Lander 501 Mid Tower ATX/E-ATX Case – 4×120mm ARGB Fans, Tempered Glass, USB-C"
+    },
+    "case-fantech-lumina-cg85x": {
+      "priceEgp": 4300,
+      "handle": "fantech-lumina-cg85x-mid-tower-gaming-case-egypt",
+      "variant": "Black",
+      "title": "Fantech Lumina CG85X Mid Tower Gaming Case ATX Tempered Glass"
+    },
+    "case-cm-elite-690-wood": {
+      "priceEgp": 4500,
+      "handle": "cooler-master-elite-690-wood-argb-atx-case-egypt",
+      "variant": "BLACK",
+      "title": "CASE Cooler Master CoolerMaster Elite 690 Wood"
+    },
+    "case-msi-velox-100r": {
+      "priceEgp": 4500,
+      "handle": "msi-mpg-velox-100r-white-mid-tower-gaming-pc-case-tempered-glass-side-panel-4-x-120mm-argb-fans-liquid-cooling-support-up-to-360mm-radiator-mesh-panel-for-optimized-airflow",
+      "variant": "Black",
+      "title": "MSI MPG Velox 100R BLACK - Mid-Tower Gaming PC Case - Tempered Glass Side Panel - 4 x 120mm ARGB Fans - Liquid Cooling Support up to 360mm Radiator - Mesh Panel for Optimized Airflow"
+    },
+    "case-antec-dp503": {
+      "priceEgp": 4800,
+      "handle": "case-antec-dp503-mesh-3fan-3-120m-argb",
+      "variant": "Default Title",
+      "title": "Case Antec DP503 Mesh 3Fan 3*120M ARGB"
+    },
+    "case-cougar-mx600-rgb": {
+      "priceEgp": 5499,
+      "handle": "cougar-mx600-rgb-full-tower-case-egypt",
+      "variant": "Black",
+      "title": "Cougar MX600 RGB Full Tower Black Case with 4 x ARGB Fans"
+    },
+    "case-asus-proart-pa401-wood": {
+      "priceEgp": 5699,
+      "handle": "asus-proart-pa401-wood-edition-atx-case",
+      "variant": "Default Title",
+      "title": "ASUS PROART PA401 WOOD TG PWM BLACK"
+    },
+    "case-xigmatek-heaven": {
+      "priceEgp": 5960,
+      "handle": "xigmatek-heaven-8-argb-eatx-case",
+      "variant": "Black",
+      "title": "Case Xigmatek Heaven Arctic Mid Tower 8 ARGB PWM Fans E-ATX BTF Support Curved Glass"
+    },
+    "case-nzxt-h6-flow-rgb": {
+      "priceEgp": 5999,
+      "handle": "nzxt-h6-flow-rgb-mid-tower-pc-case-3-rgb-fans-usb-type-c-atx-egypt",
+      "variant": "BLACK",
+      "title": "NZXT H6 Flow RGB Mid-Tower PC Case, 3 RGB Fans, USB Type-C, ATX Support"
+    },
+    "case-zalman-p60": {
+      "priceEgp": 6500,
+      "handle": "zalman-p60-black-white-atx-mid-tower-435mm-gpu-360mm-radiator",
+      "variant": "Black",
+      "title": "Zalman P60 ATX Mid Tower Tempered Glass Case Black White 435mm GPU Support 5 Fans"
+    },
+    "case-cm-haf-500": {
+      "priceEgp": 6500,
+      "handle": "cooler-master-haf-500-argb-mid-tower-case",
+      "variant": "White",
+      "title": "Cooler Master HAF 500 ATX Mid Tower Case with Tempered Glass 2x 200mm ARGB Fans USB 3.2 Gen 2 Type-C Mesh Front Black White"
+    },
+    "case-tortox-vidrio": {
+      "priceEgp": 6565,
+      "handle": "tortox-vidrio-atx-full-tower-case",
+      "variant": "White",
+      "title": "Tortox Vidrio ATX Case with 6 ARGB Fans (White)"
+    },
+    "case-asus-tuf-gt302": {
+      "priceEgp": 6999,
+      "handle": "case-asus-tuf-gaming-gt302-tg-argb",
+      "variant": "Black",
+      "title": "ASUS  TUF GAMING GT302 TG ARGB BLACK"
+    },
+    "case-cm-masterframe-500-mesh": {
+      "priceEgp": 7325,
+      "handle": "masterframe-500-mesh-argb-mid-tower-case",
+      "variant": "Black",
+      "title": "CASE Cooler Master MasterFrame 500 Mesh ARGB"
+    },
+    "case-lianli-o11d-evo-rgb": {
+      "priceEgp": 7980,
+      "handle": "lian-li-o11-dynamic-evo-mid-tower-gaming-case",
+      "variant": "White",
+      "title": "Lian Li O11 Dynamic Evo RGB White Mid Tower Case"
+    },
+    "case-asus-tuf-gt502-horizon": {
+      "priceEgp": 8799,
+      "handle": "asus-tuf-gaming-gt502-horizon-atx-mid-tower-gaming-case",
+      "variant": "White",
+      "title": "ASUS TUF GAMING GT502 HORIZON TG ARGB WHITE"
+    },
+    "case-nzxt-h9-flow-rgb": {
+      "priceEgp": 9999,
+      "handle": "nzxt-h9-flow-rgb-mid-tower-pc-case-4-rgb-fans-atx-btf-type-c-egypt",
+      "variant": "Black",
+      "title": "NZXT H9 Flow RGB Mid-Tower PC Case with 4 RGB Fans, ATX BTF Support, USB Type-C, Up to 459mm GPU Clearance, 190mm Air Clearance, 2-Year Warranty"
+    },
+    "case-nzxt-h9-elite": {
+      "priceEgp": 9999,
+      "handle": "case-nzxt-h9-elite-edition-white-atx-mid-tower-vertical-gpu-nzxt-white",
+      "variant": "Default Title",
+      "title": "CASE NZXT H9 ELITE EDITION WHITE ATX MID TOWER"
+    },
+    "case-cm-masterframe-360-panorama": {
+      "priceEgp": 10500,
+      "handle": "cooler-master-masterframe-360-panorama-mid-tower-case",
+      "variant": "Default Title",
+      "title": "COOLER MASTER MasterFrame 360 PANORAMA Mid Tower Case Tempered Glass ATX BTF Support PCIe 5.0 Riser Black"
+    },
+    "case-antec-p101-silent": {
+      "priceEgp": 10500,
+      "handle": "antec-p101-silent-mid-tower-atx-pc-case",
+      "variant": "Default Title",
+      "title": "Case Antec P101 SILENT 4 Fan Normal"
+    },
+    "case-lianli-o11d-evo-xl": {
+      "priceEgp": 10999,
+      "handle": "lian-li-o11-dynamic-evo-xl-full-tower-gaming-case",
+      "variant": "Black",
+      "title": "Lian Li O11 Dynamic EVO XL white Full Tower Gaming Case"
+    },
+    "case-cm-haf-700": {
+      "priceEgp": 12500,
+      "handle": "cooler-master-haf-700-argb-mid-tower-case",
+      "variant": "Default Title",
+      "title": "CASE COOLER MASTER HAF 700"
+    },
+    "case-cm-masterframe-360-stage": {
+      "priceEgp": 18500,
+      "handle": "cooler-master-masterframe-360-stage-lcd-usb4-typec-atx-mid-tower-case",
+      "variant": "Default Title",
+      "title": "COOLER MASTER MASTERFRAME 360 STAGE LCD Mid Tower Case Tempered Glass Panels USB 4.0 Type-C 20Gbps ATX Support Black"
+    },
+    "case-cm-haf-700-evo": {
+      "priceEgp": 20500,
+      "handle": "cooler-master-haf-700-evo-argb-full-tower-case",
+      "variant": "White",
+      "title": "CASE COOLER MASTER HAF 700 EVO"
+    },
+    "cool-havit-f2005": {
+      "priceEgp": 1034,
+      "handle": "havit-gamenote-f2005-120mm-rgb-cpu-fan-copper-tube-intel-lga1700",
+      "variant": "Default Title",
+      "title": "HAVIT Gamenote F2005 120mm RGB CPU Fan 6×6mm Copper Heat Pipes 200W TDP PWM Intel LGA1700"
+    },
+    "cool-arctic-freezer-8i": {
+      "priceEgp": 1250,
+      "handle": "arctic-freezer-8i-cpu-cooler-egypt",
+      "variant": "Default Title",
+      "title": "ARCTIC Freezer 8i CPU Cooler – Dual Heatpipe, 100mm PWM Fan, MX-6 Pre-Applied, Intel LGA1851/1700"
+    },
+    "cool-cm-hyper-212-spectrum-v2": {
+      "priceEgp": 1750,
+      "handle": "hyper-212-spectrum-v2",
+      "variant": "Default Title",
+      "title": "Cooler Master HYPER 212 SPECTRUM V2-RR-2V2L-18PD-R1"
+    },
+    "cool-snowman-ks120": {
+      "priceEgp": 2200,
+      "handle": "snowman-ks120-argb-all-in-one-liquid-cpu-cooler-120mm-aluminum-radiator-copper-water-block-800-1800-rpm-5v-3-pin-argb-4-pin-pwm-up-to-200w-egypt",
+      "variant": "White",
+      "title": "Snowman KS120 ARGB All-in-One Liquid CPU Cooler 120mm BLACK"
+    },
+    "cool-xigmatek-fenix-360": {
+      "priceEgp": 3185,
+      "handle": "xigmatek-fenix-360-arctic-argb-aio-liquid-cpu-cooler",
+      "variant": "Black",
+      "title": "Xigmatek Fenix 360 ARGB Aio Liquid Cpu Cooler"
+    },
+    "cool-fractal-celsius-s24-prisma": {
+      "priceEgp": 5500,
+      "handle": "fractal-design-celsius-s24-prisma-pwm-argb-240mm-silent-performance-slim-radiator-aio-cpu-liquid-water-cooler",
+      "variant": "Default Title",
+      "title": "FRACTAL CELSIUS S24 PRISMA ARGB"
+    },
+    "cool-pccooler-dc360-pro": {
+      "priceEgp": 6165,
+      "handle": "pccooler-dc360-pro-argb-display-aio-cpu-cooler",
+      "variant": "White",
+      "title": "CPU WATER COOLER CPS DC360 Pro ARGB Display"
+    },
+    "cool-nzxt-kraken-core-360-rgb": {
+      "priceEgp": 6999,
+      "handle": "nzxt-kraken-core-360-rgb-360mm-aio-liquid-cooler-black-egypt",
+      "variant": "Default Title",
+      "title": "NZXT Kraken Core 360 RGB 360mm AIO Liquid Cooler – 6 years warranty"
+    },
+    "cool-asus-tuf-lc-iii-360": {
+      "priceEgp": 9500,
+      "handle": "asus-tuf-gaming-lc-iii-360-argb-liquid-cpu-cooler",
+      "variant": "Black",
+      "title": "TUF GAMING LC III 360 ARGB"
+    },
+    "cool-lianli-hydroshift-ii-lcd-c-360": {
+      "priceEgp": 10199,
+      "handle": "lian-li-hydroshift-ii-lcd-c-360tl-egypt",
+      "variant": "Black",
+      "title": "Lian Li HydroShift II LCD-C 360TL – 360mm – Black/White – Intel LGA1700 & AMD"
+    },
+    "cool-lianli-hydroshift-ii-lcd-s-360": {
+      "priceEgp": 10399,
+      "handle": "hydroshift-ii-lcd-s-360-tl-liquid-cooler-3-4-ips-lcd-480x480-60hz-pump-1600-3200rpm-liquid-cooling-system",
+      "variant": "black",
+      "title": "HydroShift II LCD-S 360TL 3.4″ IPS LCD 360mm Compact Radiator 400 × 122 × 24 mm AIO Liquid Cooler Pump 1600–3200 RPM 480×480 Display 500 nits Cooling System"
+    },
+    "cool-lianli-hydroshift-ii-oled-fanless-360": {
+      "priceEgp": 13000,
+      "handle": "lian-li-hydroshift-ii-oled-curved-fanless-360mm-aio-liquid-cpu-cooler-ghs2oldc36nw-egypt",
+      "variant": "Black",
+      "title": "Lian Li HydroShift II OLED Curved Fanless 360MM AIO Liquid CPU Cooler"
+    },
+    "cool-lianli-hydroshift-ii-oled-360-tl": {
+      "priceEgp": 18000,
+      "handle": "lian-li-hydroshift-ii-oled-curved-360tl-aio-cooler-egypt",
+      "variant": "White",
+      "title": "Lian Li HydroShift II Oled Curved 360MM White with UNI FAN TL Flex AIO Liquid Cpu Cooler"
+    },
+    "i9-14900ks": {
+      "priceEgp": 37310,
+      "handle": "intel-core-i9-14900ks-core-i9-14th-gen-raptor-lake-24-core-8p-16e-lga-1700-150w-intel-uhd-graphics-770-desktop-processor-bx8071514900ks",
+      "variant": "Default Title",
+      "title": "CPU INTEL Core I9-14900KS"
+    },
+    "ram-4-apacer-8-1x-3200": {
+      "priceEgp": 3100,
+      "handle": "apacer-8gb-ddr4-3200mhz-cl22-desktop-memory-module-au08ggb32csybgh-egypt",
+      "variant": "Default Title",
+      "title": "Apacer 8GB DDR4 3200MHz CL22 Desktop Memory Module AU08GGB32CSYBGH"
+    },
+    "ram-4-hiksemi-hiker-8-1x-3200": {
+      "priceEgp": 3640,
+      "handle": "products-hiksemi-hiker-8gb-ddr4-3200mhz-udimm-desktop-memory",
+      "variant": "Default Title",
+      "title": "HIKSEMI HIKER 8GB DDR4 3200MHz UDIMM Desktop Memory for Gaming and Productivity Desktop PCs"
+    },
+    "ram-5-micron-8-1x-5600": {
+      "priceEgp": 12205,
+      "handle": "micron-mtc4c10163s1uc56bd1-ddr5-8gb-5600mhz-pc5-44800-non-ecc-unbuffered-1rx16-288-pin-1-1v-udimm-desktop-memory",
+      "variant": "Default Title",
+      "title": "Micron MTC4C10163S1UC56BD1 DDR5 8GB 5600MHz PC5-44800 Non-ECC Unbuffered 1Rx16 288-Pin 1.1V UDIMM Desktop Memory"
+    },
+    "ram-5-samsung-16-1x-6400-cudimm": {
+      "priceEgp": 14545,
+      "handle": "samsung-16gb-ddr5-6400mhz-desktop-cudimm-ram-pc5-6400b-m333r2ga3pb1-ccpsg",
+      "variant": "Default Title",
+      "title": "Samsung 16GB DDR5 6400MHz Desktop CUDIMM RAM – PC5-6400B – M333R2GA3PB1-CCPSG"
+    },
+    "ram-5-teamgroup-vulcan-32-2x-6400": {
+      "priceEgp": 33460,
+      "handle": "teamgroup-t-force-vulcan-ddr5-32gb-6400mhz-cl32-ram",
+      "variant": "Default Title",
+      "title": "RAM PC T-FORCE VULCAN 32G ( 2x16 ) 6400MHZ"
+    },
+    "mb-arktek-b760m-eg": {
+      "priceEgp": 4199,
+      "handle": "arktek-ak-b760m-eg-lga1700-ddr5-motherboard-egypt",
+      "variant": "Default Title",
+      "title": "ARKTEK AK-B760M EG Socket LGA 1700 Motherboard"
+    },
+    "mb-asus-tuf-a620m-plus": {
+      "priceEgp": 5500,
+      "handle": "asus-tuf-gaming-a620m-plus-motherboard",
+      "variant": "Default Title",
+      "title": "ASUS TUF Gaming A620M-PLUS Motherboard"
+    },
+    "mb-gigabyte-b760m-d3hp-wifi": {
+      "priceEgp": 6400,
+      "handle": "gigabyte-b760m-d3hp-wifi6",
+      "variant": "Default Title",
+      "title": "GIGABYTE B760M D3HP WiFi 6 – LGA 1700, Dual‑Channel DDR5, PCIe 4.0, 2× M.2 Gen4, GbE LAN & Wi‑Fi 6"
+    },
+    "mb-asus-prime-b650m-a-ii-wifi": {
+      "priceEgp": 7325,
+      "handle": "asus-prime-b650m-a-wifi-ii",
+      "variant": "Default Title",
+      "title": "MOTHERBOARD ASUS PRIME B650M-A II WIFI"
+    },
+    "mb-gigabyte-b760m-x-wifi": {
+      "priceEgp": 8400,
+      "handle": "gigabyte-b760m-gaming-x-wifi6e-gen5",
+      "variant": "Default Title",
+      "title": "GIGABYTE B760M GAMING X WiFi6E Gen5 – LGA1700 Micro-ATX DDR5 Motherboard with PCIe 5.0 & Wi-Fi 6EV"
+    },
+    "mb-gigabyte-x870-gaming-wifi6": {
+      "priceEgp": 10900,
+      "handle": "gigabyte-x870-gaming-wifi6-amd-am5-lga-1718-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE X870 Gaming WIFI6 AMD AM5 LGA 1718 Motherboard"
+    },
+    "mb-msi-z790-project-zero": {
+      "priceEgp": 13000,
+      "handle": "msi-z790-project-zero-motherboard",
+      "variant": "Default Title",
+      "title": "MSI Z790 PROJECT ZERO Motherboard"
+    },
+    "mb-gigabyte-z890-elite-duo-x": {
+      "priceEgp": 15800,
+      "handle": "gigabyte-z890-aorus-elite-duo-x-motherboard-lga1851-ddr5-pcie5-egypt",
+      "variant": "Default Title",
+      "title": "GIGABYTE Z890 AORUS ELITE DUO X Motherboard, Intel Z890, LGA1851, DDR5 up to 10266+MT/s OC, PCIe 5.0, Wi-Fi 7, USB4, ATX"
+    },
+    "mb-asus-rog-strix-b650e-f-wifi": {
+      "priceEgp": 16000,
+      "handle": "asus-rog-strix-b650e-f-gaming-wifi-am5",
+      "variant": "Default Title",
+      "title": "MOTHERBOARD ASUS ROGSTRIX B650E-F GAMING WIF"
+    },
+    "mb-gigabyte-x870-elite-x3d": {
+      "priceEgp": 16600,
+      "handle": "gigabyte-x870-aorus-elite-x3d-am5-ddr5-pcie-5-motherboard-egypt",
+      "variant": "ICE",
+      "title": "GIGABYTE X870 AORUS ELITE X3D ATX AM5 Motherboard, AMD X870 Chipset, DDR5 8800MHz OC, PCIe 5.0, Dual USB4, Wi-Fi 7, 5GbE LAN"
+    },
+    "mb-gigabyte-x870-elite-wifi-ice": {
+      "priceEgp": 17120,
+      "handle": "gigabyte-x870-aorus-elite-wifi7-ice-motherboard",
+      "variant": "Default Title",
+      "title": "GIGABYTE X870 AORUS Elite WIFI7 ICE"
+    },
+    "mb-gigabyte-b850-ai-top": {
+      "priceEgp": 22500,
+      "handle": "gigabyte-b850-ai-top-am5",
+      "variant": "Default Title",
+      "title": "GIGABYTE B850 AI TOP AM5 ATX DDR5 8600MT/s PCIe 5.0 Wi‑Fi 7 Dual 10GbE Motherboard"
+    },
+    "psu-deepcool-pf500": {
+      "priceEgp": 1499,
+      "handle": "deepcool-pf500-500-watts-psu-smps-80-plus",
+      "variant": "Default Title",
+      "title": "PSU DEEPCOOL  PF500W 80+"
+    },
+    "psu-acer-ac550": {
+      "priceEgp": 2200,
+      "handle": "acer-ac-550-550w-full-modular-80-plus-bronze-power-supply-dc-dc-120mm-fan-egypt",
+      "variant": "Default Title",
+      "title": "Acer AC-550 550W Full Modular 80 Plus Bronze Power Supply DC-DC 120mm Fan"
+    },
+    "psu-seasonic-s12iii-550": {
+      "priceEgp": 2200,
+      "handle": "seasonic-s12iii-550-ssr-550gb3-550w-80-bronze-atx12v-eps12v-direct-output-smart-silent-fan-control",
+      "variant": "Default Title",
+      "title": "Seasonic S12III 550 SSR-550GB3 550W 80+ Bronze"
+    },
+    "psu-antec-atom-v650": {
+      "priceEgp": 2250,
+      "handle": "antec-atom-v650-650w-power-supply",
+      "variant": "Default Title",
+      "title": "Power Supply Antec Atom V650"
+    },
+    "psu-acer-ac650": {
+      "priceEgp": 2700,
+      "handle": "acer-ac-650-650w-full-modular-80-plus-bronze-power-supply-dc-dc-120mm-fan-egypt",
+      "variant": "Default Title",
+      "title": "Acer AC-650 650W Full Modular 80 Plus Bronze Power Supply DC-DC 120mm Fan"
+    },
+    "psu-xpg-probe-700": {
+      "priceEgp": 2750,
+      "handle": "xpg-probe-bronze-power-supply",
+      "variant": "700 Watt",
+      "title": "PSU XPG PROBE 700W BRONZE 80+"
+    },
+    "psu-xigmatek-thor-850": {
+      "priceEgp": 3099,
+      "handle": "xigmatek-thor-t850m-850w-80-bronze-full-modular-power-supply",
+      "variant": "Default Title",
+      "title": "PSU XIGMATEK THOR T850W V3 80 PLUS BRONZE ATX 3.1 PCIE 5.0 FULL MODULAR"
+    },
+    "psu-seasonic-bc-650": {
+      "priceEgp": 3100,
+      "handle": "products-seasonic-core-bc-650-650w-80plus-bronze-atx-power-supply",
+      "variant": "Default Title",
+      "title": "Seasonic Core BC-650 650W 80PLUS Bronze ATX Power Supply with Fixed Black Braided Cables Hydro Dynamic Bearing Fan and Full Protection Support"
+    },
+    "psu-thermalright-tg-750s": {
+      "priceEgp": 3700,
+      "handle": "tg-750s-750w-80-plus-gold-power-supply-egypt",
+      "variant": "Default Title",
+      "title": "TG-750S 750W 80 PLUS GOLD Fixed Cable Power Supply Unit"
+    },
+    "psu-cm-mwe-gold-750-v3": {
+      "priceEgp": 4000,
+      "handle": "cooler-master-mwe-750w-v3-gold-egypt",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 750W V3 NON Modular PSU – ATX 3.1 – 80 PLUS Gold – 12V-2x6"
+    },
+    "psu-cm-mwe-gold-750-v3-fm": {
+      "priceEgp": 4900,
+      "handle": "cooler-master-mwe-gold-750v3-psu",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 750 V3 ATX 3.1 Fully Modular 80+ Gold Power Supply – 750W"
+    },
+    "psu-nzxt-c750-bronze": {
+      "priceEgp": 4099,
+      "handle": "nzxt-c750-bronze-750w-80-plus-bronze-atx-3-1-psu-egypt",
+      "variant": "Default Title",
+      "title": "NZXT C750 Bronze 750W Power Supply – 80 PLUS Bronze – Non-Modular – ATX 3.1-7 Years"
+    },
+    "psu-cm-elite-gold-750": {
+      "priceEgp": 4145,
+      "handle": "cooler-master-elite-gold-750w-power-supply-egypt",
+      "variant": "Default Title",
+      "title": "Cooler Master Elite Gold 750W ATX 3.1 Fully Modular Power Supply ELITE GOLD 750 750W"
+    },
+    "psu-thermalright-tg-850s": {
+      "priceEgp": 4200,
+      "handle": "thermalright-tg-850s-850w-80-plus-gold-fixed-cable-power-supply-120mm-fan-egypt",
+      "variant": "Default Title",
+      "title": "Thermalright TG-850S 850W 80 PLUS Gold Fixed Cable Power Supply 120mm Fan"
+    },
+    "psu-corsair-sf600": {
+      "priceEgp": 4500,
+      "handle": "corsair-sf600-platinum-fully-modular-power-supply-black",
+      "variant": "Default Title",
+      "title": "Corsair SF600 Platinum Fully Modular Power Supply Black"
+    },
+    "psu-cm-gx2-850": {
+      "priceEgp": 4549,
+      "handle": "gx-ii-gold-850w-fully-modular-atx-psu",
+      "variant": "Default Title",
+      "title": "Cooler Master GX2 850 Gold Fully Modular ATX Power Supply – A/EU Cord, Color Box"
+    },
+    "psu-seasonic-gx-750": {
+      "priceEgp": 4600,
+      "handle": "products-seasonic-core-gx750-atx3-750w-80plus-gold-fully-modular-power-supply",
+      "variant": "Default Title",
+      "title": "Seasonic Core GX-750 ATX3 750W 80 Plus Gold Cybenetics Platinum Fully Modular ATX Power Supply Hydro Dynamic Bearing Fan OptiSink Design"
+    },
+    "psu-cm-g-gold-750-v2": {
+      "priceEgp": 5200,
+      "handle": "cooler-master-g-gold-750-v2-full-range",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER G Gold 750 V2 Full Range A EU cord"
+    },
+    "psu-antec-gsk-850": {
+      "priceEgp": 5305,
+      "handle": "power-supply-antec-gsk-gsk850-850w-80-gold-full-modular-atx3-1",
+      "variant": "Black",
+      "title": "PSU ANTEC GSK850 850W 80+ GOLD FULL MODULAR ATX3.1"
+    },
+    "psu-cm-elite-gold-850": {
+      "priceEgp": 5355,
+      "handle": "elite-gold-850-fm-a-eu-cord-850w-80-plus-gold-fully-modular-atx-power-supply",
+      "variant": "Default Title",
+      "title": "Cooler Master Elite Gold 850W ATX 3.1 PCI 5.1 FULL MODULAR"
+    },
+    "psu-cm-mwe-gold-750-v2": {
+      "priceEgp": 5400,
+      "handle": "cooler-master-mwe-gold-750-v2-full-modular-750w-80-gold-efficiency",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 750 V2 Full Modular, 750W, 80+ Gold Efficiency"
+    },
+    "psu-asus-tuf-750g": {
+      "priceEgp": 5405,
+      "handle": "asus-tuf-gaming-750w-gold-750-watt-fully-modular-power-supply-80-gold-certified-atx-3-0-compatible-military-grade-components-dual-ball-bearing-axial-tech-fan-pcb-coating-10-year-warranty",
+      "variant": "Default Title",
+      "title": "ASUS TUF Gaming 750W Gold (750 Watt, Fully Modular Power Supply, 80+ Gold Certified, ATX 3.0/3.1 Compatible, Military-Grade Components, Dual Ball Bearing, Axial-tech Fan, PCB Coating, 10 Year Warranty)"
+    },
+    "psu-nzxt-c750-gold": {
+      "priceEgp": 5799,
+      "handle": "nzxt-c750-gold-core-750w-fully-modular-atx-3-1-power-supply-black-egypt",
+      "variant": "Default Title",
+      "title": "NZXT C750 Gold Core 750W Fully Modular ATX 3.1 Power Supply, 80 PLUS Gold, Cybenetics Platinum, 135mm FDB Fan, Black"
+    },
+    "psu-cm-mwe-gold-850-v2": {
+      "priceEgp": 5899,
+      "handle": "cooler-master-mwe-gold-850-v2-full-modular-850w-80-gold-efficiency",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 850 V2 Full Modular, 850W, 80+ Gold Efficiency ATX 3.0 PCIE 5.0 12 VHPWR"
+    },
+    "psu-deepcool-dq750-m-v2l": {
+      "priceEgp": 6565,
+      "handle": "power-supply-deepcool-dq750-m-v2l-80gold",
+      "variant": "Default Title",
+      "title": "DeepCool DQ750-M V2L 80+Gold"
+    },
+    "psu-acer-ac1000": {
+      "priceEgp": 6600,
+      "handle": "acer-ac-1000-1000w-80-plus-gold-fully-modular-atx-power-supply-dc-dc-pcie-5-0-black-egypt",
+      "variant": "Default Title",
+      "title": "Acer AC-1000 1000W 80 Plus Gold Fully Modular ATX Gaming Power Supply DC-DC PCIe 5.0 14cm Fan Black"
+    },
+    "psu-nzxt-c850-gold": {
+      "priceEgp": 6799,
+      "handle": "nzxt-c850-gold-atx-31-850w-psu-egypt",
+      "variant": "Default Title",
+      "title": "NZXT C850 Gold ATX 3.1 850W 80 PLUS Gold Fully Modular Power Supply / 10 years Warranty"
+    },
+    "psu-antec-ne1000": {
+      "priceEgp": 7275,
+      "handle": "power-supply-antec-neoeco-ne1000-1000w-80-gold-full-modular-atx3-0",
+      "variant": "Black",
+      "title": "Power Supply Antec NeoECO NE1000 1000W 80+ Gold Full Modular ATX3.0"
+    },
+    "psu-cm-mwe-gold-1050-v2": {
+      "priceEgp": 7350,
+      "handle": "cooler-master-mwe-gold-1050v2-psu",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER MWE Gold 1050 V2 ATX3.1 A EU cord"
+    },
+    "psu-lianli-sx1000p": {
+      "priceEgp": 7575,
+      "handle": "products-lian-li-sx1000p-platinum-1000w-full-modular-atx-31-pcie-51-power-supply-black",
+      "variant": "Black",
+      "title": "Lian Li SX1000P 1000W 80 Plus Platinum ATX 3.1 Full Modular Power Supply"
+    },
+    "psu-gigabyte-aorus-p1000w": {
+      "priceEgp": 7855,
+      "handle": "gigabyte-aorus-elite-p1000w-80-platinum-full-modular-pcie-5-0-atx-3-0-and-pcie-gen-5-0-80-plus-platinum-100-japanese-capacitors-compact-design-gp-ae1000pm-pg5",
+      "variant": "White",
+      "title": "GIGABYTE AORUS ELITE P1000W 80+ Platinum Modular PCIe 5.0 ICE  ATX 3.0 and PCIe Gen 5.0 ready 80 PLUS Platinum GP-AE1000PM PG5 ICE"
+    },
+    "psu-xigmatek-titan-1200": {
+      "priceEgp": 7900,
+      "handle": "xigmatek-titan-1200w-80-plus-platinum-fully-modular-gen-5-power-supply",
+      "variant": "Default Title",
+      "title": "POWER SUPPLY XIGMATEK TITAN 1200W 80+ PLATINUM FULLY MODULAR GEN 5"
+    },
+    "psu-seasonic-focus-gx-850": {
+      "priceEgp": 8000,
+      "handle": "seasonic-focus-gx-850-atx3-850w-atx-3-1-80-plus-gold-fully-modular-power-supply",
+      "variant": "black",
+      "title": "Seasonic Focus GX-850 ATX3 850W Atx 3.1 80 Plus Gold Fully Modular Hybrid Fan Power Supply 850 W"
+    },
+    "psu-msi-a1000g": {
+      "priceEgp": 8030,
+      "handle": "msi-mpg-a1000g-pcie-5-atx-3-0-gaming-power-supply",
+      "variant": "Default Title",
+      "title": "MSI MPG A1000G PCIE 5 & ATX 3.0 Gaming Power Supply"
+    },
+    "psu-cm-mwe-gold-1250-v2": {
+      "priceEgp": 8300,
+      "handle": "cooler-master-mwe-gold-1250-v2-fully-modular-1250w-80-gold-efficiency-quiet-140mm-fdb-fan",
+      "variant": "Default Title",
+      "title": "Cooler Master MWE Gold 1250 V2 Fully Modular, 1250W, 80+ Gold Efficiency, Quiet 140mm FDB Fan"
+    },
+    "psu-cm-gx3-1050": {
+      "priceEgp": 8444,
+      "handle": "cooler-master-gx3-1050-gold-modular-a-uk-cord-cable-power-supply",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER GX3 1050W GOLD MODULAR"
+    },
+    "psu-nzxt-c1000-gold": {
+      "priceEgp": 8999,
+      "handle": "nzxt-c1000-gold-core-1000w-atx-3-1-egypt",
+      "variant": "Default Title",
+      "title": "NZXT C1000 Gold Core 1000W 80 PLUS Gold Fully Modular ATX 3.1 Power Supply-\t 7 Years"
+    },
+    "psu-antec-ne1300": {
+      "priceEgp": 9000,
+      "handle": "power-supply-antec-neoeco-ne1300-1300w-80-gold-full-modular-atx3-0",
+      "variant": "Default Title",
+      "title": "Power Supply Antec NeoECO NE1300 1300W 80+ Gold Full Modular ATX3.0"
+    },
+    "psu-cm-gx3-1250": {
+      "priceEgp": 10500,
+      "handle": "coolermaster-gx-iii-gold-1250-1250w-modular-80-gold-mpx-c503-afag-beu",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER GX3 1250 GOLD MODULAR"
+    },
+    "psu-nzxt-c1200-gold": {
+      "priceEgp": 11499,
+      "handle": "nzxt-c-series-atx-3-0-1200w-80-plus-gold-full-modular-power-supply",
+      "variant": "Default Title",
+      "title": "NZXT C Series 1200W 80 Plus Gold Fully Modular ATX Power Supply with PCIe 5.0 12VHPWR 600W Connector and 10-Year Warranty"
+    },
+    "psu-nzxt-c1500-platinum": {
+      "priceEgp": 19499,
+      "handle": "nzxt-c1500-platinum-atx-31-1500w-psu-egypt",
+      "variant": "Default Title",
+      "title": "NZXT C1500 Platinum ATX 3.1 1500W 80 PLUS Platinum Fully Modular Power Supply / 10 Years Warranty"
+    },
+    "psu-cm-v1300-platinum": {
+      "priceEgp": 22000,
+      "handle": "cooler-master-v-platinum-1300w-psu",
+      "variant": "Default Title",
+      "title": "Cooler Master V1300 30th Anniversary 1300W Fully Modular 80 Plus Platinum ATX Power Supply"
+    },
+    "psu-cm-x-mighty-2000": {
+      "priceEgp": 23999,
+      "handle": "cooler-master-x-mighty-2000w-platinum-power-supply-fully-modular",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER X Mighty Plat. 2000W 230V A EU Cable"
+    },
+    "psu-cm-x-silent-edge-1100": {
+      "priceEgp": 28000,
+      "handle": "cooler-master-x-silent-edge-platinum-1100-230v-power-supply",
+      "variant": "Default Title",
+      "title": "PSU COOLER MASTER X Silent Edge Plat. 1100W 230V EU Cable"
+    },
+    "psu-asus-pro-ws-2200p": {
+      "priceEgp": 30300,
+      "handle": "asus-pro-ws-2200w-platinum-psu-egypt",
+      "variant": "Default Title",
+      "title": "ASUS-PRO-WS-2200P\t90YE00Z1-B0NA00"
+    },
+    "ssd-sata-hiksemi-wave-s-512": {
+      "priceEgp": 3030,
+      "handle": "hiksemi-wave-s-256gb-2-5-inch-sata-iii-internal-ssd-egypt",
+      "variant": "512GB",
+      "title": "HIKSEMI WAVE(S) 2.5-Inch SATA III SSD 128GB / 256GB / 512GB / 2048GB / 1TB 3D NAND"
+    },
+    "ssd-sata-hiksemi-wave-s-1t": {
+      "priceEgp": 6350,
+      "handle": "hiksemi-wave-s-256gb-2-5-inch-sata-iii-internal-ssd-egypt",
+      "variant": "1TB",
+      "title": "HIKSEMI WAVE(S) 2.5-Inch SATA III SSD 128GB / 256GB / 512GB / 2048GB / 1TB 3D NAND"
+    },
+    "ssd-sata-acer-sa100-240": {
+      "priceEgp": 2000,
+      "handle": "acer-sa100-240gb-sata-iii-2-5-inch-internal-ssd-bl-9bwwa-102-egypt",
+      "variant": "Default Title",
+      "title": "Acer SA100 240GB SATA III 2.5 Inch Internal SSD 6Gb/s – BL.9BWWA.102"
+    },
+    "ssd-sata-redragon-rm113-256": {
+      "priceEgp": 2000,
+      "handle": "redragon-dragon-knight-rm113-256gb-2-5-sata-iii-ssd-with-up-to-500mb-s-read-400mb-s-write",
+      "variant": "Default Title",
+      "title": "Redragon Dragon Knight RM113 256GB 2.5 SATA III SSD with up to 500MB/s read, 400MB/s write"
+    },
+    "ssd-sata-wd-green-480": {
+      "priceEgp": 3150,
+      "handle": "wd-green-2-5-120g-ssd",
+      "variant": "480GB",
+      "title": "Western Digital WD Green 240GB / 480GB 2.5-Inch SATA Internal SSD 3D NAND"
+    },
+    "ssd-sata-sandisk-plus-480": {
+      "priceEgp": 3300,
+      "handle": "sandisk-ssd-plus-2-5-sata-ssd-up-to-530mb-s-read-and-440mb-s-write-speeds",
+      "variant": "480GB",
+      "title": "SanDisk SSD PLUS - 2.5” SATA SSD, up to 530MB/s Read and 440MB/s Write speeds"
+    },
+    "ssd-sata-crucial-bx500-240": {
+      "priceEgp": 3450,
+      "handle": "ssd-crucial-480gb-ssd-bx500-2-5-sata-3-0-pn-ct480bx500ssd1",
+      "variant": "240GB",
+      "title": "HARD SSD CRUCIAL 2T 2.5 BX500"
+    },
+    "ssd-sata-crucial-bx500-500": {
+      "priceEgp": 5300,
+      "handle": "ssd-crucial-480gb-ssd-bx500-2-5-sata-3-0-pn-ct480bx500ssd1",
+      "variant": "500GB",
+      "title": "HARD SSD CRUCIAL 2T 2.5 BX500"
+    },
+    "ssd-sata-crucial-bx500-1t": {
+      "priceEgp": 7350,
+      "handle": "ssd-crucial-480gb-ssd-bx500-2-5-sata-3-0-pn-ct480bx500ssd1",
+      "variant": "1TB",
+      "title": "HARD SSD CRUCIAL 2T 2.5 BX500"
+    },
+    "ssd-sata-lexar-nq100-1t": {
+      "priceEgp": 4040,
+      "handle": "lexar-nq100-2-5-sata-iii-6g-s-ssd-240gb",
+      "variant": "1TB",
+      "title": "Lexar NQ100 2.5” SATA III (6G/S) SSD"
+    },
+    "ssd-sata-gigabyte-1t": {
+      "priceEgp": 8000,
+      "handle": "products-gigabyte-ssd-1tb-sata-6gbps-550mbs-read-500mbs-write-25-inch-internal-ssd",
+      "variant": "Default Title",
+      "title": "GIGABYTE SSD 1TB SATA 6.0Gb/s 2.5 Inch Internal SSD 3D NAND Flash Up to 550MB/s Read Up to 500MB/s Write"
+    },
+    "ssd-hiksemi-wave-p-256": {
+      "priceEgp": 2500,
+      "handle": "hiksemi-wave-512gb-pcie-gen-3-nvme-m2-2280-ssd",
+      "variant": "256GB",
+      "title": "HIKSEMI WAVE(P) PCIe Gen 3 NVMe M.2 2280 SSD 512GB / 2048GB / 256GB"
+    },
+    "ssd-hiksemi-wave-p-2t": {
+      "priceEgp": 11000,
+      "handle": "hiksemi-wave-512gb-pcie-gen-3-nvme-m2-2280-ssd",
+      "variant": "2TB",
+      "title": "HIKSEMI WAVE(P) PCIe Gen 3 NVMe M.2 2280 SSD 512GB / 2048GB / 256GB"
+    },
+    "ssd-patriot-p300-256": {
+      "priceEgp": 2650,
+      "handle": "hard-patriot-p300-m-2-pcie-gen-3-x4-512gb-low-power-consumption-ssd",
+      "variant": "256GB",
+      "title": "Patriot P300 M.2 PCIe Gen 3 x4 Low-Power Consumption SSD"
+    },
+    "ssd-crucial-e100-480": {
+      "priceEgp": 4450,
+      "handle": "crucial-e100-ssd-m-2-nvme-pcie-gen4-internal-ssd-up-to-4-700mb-s-laptop-desktop-compatible",
+      "variant": "480GB",
+      "title": "Crucial E100 NVMe SSD  GEN 4"
+    },
+    "ssd-crucial-e100-1t": {
+      "priceEgp": 7950,
+      "handle": "crucial-e100-ssd-m-2-nvme-pcie-gen4-internal-ssd-up-to-4-700mb-s-laptop-desktop-compatible",
+      "variant": "1TB",
+      "title": "Crucial E100 NVMe SSD  GEN 4"
+    },
+    "ssd-crucial-e100-2t": {
+      "priceEgp": 13000,
+      "handle": "crucial-e100-2tb-m2-nvme-pcie-gen4-internal-ssd-5000mbs-egypt",
+      "variant": "Default Title",
+      "title": "Crucial E100 2TB M.2 NVMe PCIe Gen4 Internal SSD Up to 5,000MB/s"
+    },
+    "ssd-kioxia-bg6-512": {
+      "priceEgp": 4800,
+      "handle": "kioxia-bg6-kbg6aznt512g-512gb-m2-2242-nvme-ssd-egypt",
+      "variant": "Default Title",
+      "title": "KIOXIA BG6 KBG6AZNT512G 512GB M.2 2242 NVMe PCIe 4.0 x4 TLC SED SSD"
+    },
+    "ssd-lexar-nm800pro-500": {
+      "priceEgp": 6100,
+      "handle": "lexar-professional-nm800pro-with-heatsink-m-2-2280-pcie-gen4x4-nvme-ssd-7500mb",
+      "variant": "Default Title",
+      "title": "Lexar Professional NM800PRO with Heatsink M.2 2280 PCIe Gen4x4 NVMe SSD (7500MB) 500GB"
+    },
+    "ssd-crucial-p3-1t": {
+      "priceEgp": 7950,
+      "handle": "crucial-p3-m-2-pcie-gen3-nvme-internal-ssd-up-to-3500mb-s-sequential-read-3000-mb-s-sequential-write-ct1000p3ssd8",
+      "variant": "1TB",
+      "title": "Crucial P3 1TB M.2 2280 NVMe PCIe Gen3x4 SSD"
+    },
+    "ssd-crucial-p3-plus-2t": {
+      "priceEgp": 12000,
+      "handle": "crucial-p3-plus-nvme-ssd",
+      "variant": "2TB",
+      "title": "SSD CRUCIAL P3 PLUS 1T M.2 NVME GEN 4"
+    },
+    "ssd-msi-m461-1t": {
+      "priceEgp": 8250,
+      "handle": "msi-spatium-m461-pcie-4-0-nvme-m-2-internal-ssd",
+      "variant": "1TB",
+      "title": "MSI SPATIUM M461 PCIe 4.0 NVMe M.2 Internal SSD"
+    },
+    "ssd-msi-m461-4t": {
+      "priceEgp": 28499,
+      "handle": "msi-spatium-m461-pcie-4-0-nvme-m-2-internal-ssd",
+      "variant": "4TB",
+      "title": "MSI SPATIUM M461 PCIe 4.0 NVMe M.2 Internal SSD"
+    },
+    "ssd-gigabyte-aorus-7300-1t": {
+      "priceEgp": 9500,
+      "handle": "products-gigabyte-aorus-gen4-7300-1tb-pcie-4-0-x4-nvme-1-4-m-2-2280-ssd",
+      "variant": "Default Title",
+      "title": "GIGABYTE AORUS Gen4 7300 SSD 1TB PCI-Express 4.0 x4 NVMe 1.4 M.2 2280 3D TLC NAND Flash SSD with DDR4 1GB Cache Up to 7300 MB/s Read and 6000 MB/s Write"
+    },
+    "ssd-gigabyte-4000e-1t": {
+      "priceEgp": 10500,
+      "handle": "products-gigabyte-gen4-4000e-1tb-pcie-4x4-nvme-14-m2-2280-ssd",
+      "variant": "Default Title",
+      "title": "GIGABYTE Gen4 4000E SSD 1TB PCI Express 4.0x4 NVMe 1.4 M.2 2280 Internal Solid State Drive Up to 4000MB/s Read and 3900MB/s Write"
+    },
+    "ssd-lexar-nm620-2t": {
+      "priceEgp": 10100,
+      "handle": "lexar-nm620-m-2-2280-internal-ssd",
+      "variant": "2TB",
+      "title": "SSD M.2 2TB LEXAR NVME 2280 LNM620"
+    },
+    "ssd-addlink-g55-1t": {
+      "priceEgp": 10999,
+      "handle": "addlink-g55-m2-2280-pcie-gen5-nvme-internal-solid-state-drive-ssd",
+      "variant": "1TB",
+      "title": "Addlink G55 2TB M.2 2280 PCIe Gen5x4 NVMe SSD"
+    },
+    "ssd-lexar-nm1090-pro-1t": {
+      "priceEgp": 11500,
+      "handle": "lexar-nm1090-pro-1tb-m2-nvme-with-heatsink-rgb-fan-pcie-gen-5-internal-solid-state-drive-ssd",
+      "variant": "1TB",
+      "title": "Lexar Nm1090 Pro 1TB - 2TB  M2 Nvme With Heatsink RGB Fan Pcie Gen 5 Internal Solid State Drive SSD"
+    },
+    "ssd-wd-green-sn3000-2t": {
+      "priceEgp": 11900,
+      "handle": "western-digital-wd-green-sn3000-m2-nvme-ssd-egypt",
+      "variant": "2TB",
+      "title": "Western Digital WD Green SN3000 1TB \\2TB M.2 NVMe Internal SSD"
+    },
+    "ssd-crucial-t705-4t": {
+      "priceEgp": 35350,
+      "handle": "crucial-t705-4tb-gen5-nvme-ssd",
+      "variant": "Default Title",
+      "title": "Crucial T705 4TB PCIe Gen5 NVMe M.2 SSD with Heatsink CT4000T705SSD5 Up to 14100MB/s Extreme Speed Gaming & Creator Storage"
+    },
+    "ssd-samsung-9100-pro-4t": {
+      "priceEgp": 38380,
+      "handle": "samsung-9100-pro-nvme-m-2-ssd-pcie-5-0-14-700-mb-s-read-13-400-mb-s-write-internal-ssd-for-gaming-video-editing-and-ai",
+      "variant": "4TB",
+      "title": "Samsung 9100 PRO 1TB PCIe 5.0 NVMe M.2 2280 Internal SSD"
+    },
+    "hdd-seagate-barracuda-1t": {
+      "priceEgp": 2888,
+      "handle": "seagate-barracuda-1tb-internal-hard-drive-hdd-c2-96-3-5-inch-sata-6-gb-s-7200-rpm-64mb-cache-for-computer-desktop-pc",
+      "variant": "1TB",
+      "title": "HARD PC 1TB SEAGATE BARRACUDA 7200"
+    },
+    "hdd-wd-blue-2t": {
+      "priceEgp": 6999,
+      "handle": "western-digital-wd-blue-2tb-3-5-inch-sata-hdd-egypt",
+      "variant": "Default Title",
+      "title": "Western Digital WD Blue 2TB 3.5-Inch SATA Internal Mechanical Hard Drive"
     }
   }
 }

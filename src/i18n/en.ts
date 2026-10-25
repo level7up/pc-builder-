@@ -122,7 +122,7 @@ export const en: Messages = {
     browse: 'Pick parts from All parts',
     inBuild: 'In your build ✓',
     storesTitle: 'Price at each store',
-    rows: { price: 'Cheapest price', stores: 'In stock at', performance: 'Gaming performance', value: 'Performance per pound', cores: 'Cores', threads: 'Threads', power: 'Power draw', socket: 'Socket', memoryType: 'Memory type', igpu: 'Integrated graphics', vram: 'VRAM', length: 'Length', chipset: 'Chipset', formFactor: 'Form factor', maxCpuPower: 'Max CPU power', overclock: 'Overclocking', wifi: 'Wi-Fi', capacity: 'Capacity', sticks: 'Sticks', speed: 'Speed', pricePerGb: 'Price per GB', pcie: 'PCIe', pricePerTb: 'Price per TB', watts: 'Wattage', rating: 'Rating', formFactors: 'Boards', maxGpu: 'Longest GPU', kind: 'Type', rated: 'Cooling up to' },
+    rows: { price: 'Cheapest price', stores: 'In stock at', performance: 'Gaming performance', value: 'Performance per pound', cores: 'Cores', threads: 'Threads', power: 'Power draw', socket: 'Socket', memoryType: 'Memory type', igpu: 'Integrated graphics', vram: 'VRAM', length: 'Length', chipset: 'Chipset', formFactor: 'Form factor', maxCpuPower: 'Max CPU power', overclock: 'Overclocking', wifi: 'Wi-Fi', capacity: 'Capacity', sticks: 'Sticks', speed: 'Speed', pricePerGb: 'Price per GB', interface: 'Interface', pricePerTb: 'Price per TB', watts: 'Wattage', rating: 'Rating', formFactors: 'Boards', maxGpu: 'Longest GPU', kind: 'Type', rated: 'Cooling up to' },
     yes: 'Yes',
     no: 'No',
     units: { mm: n => `${n} mm`, mts: n => `${n} MT/s`, stores: n => `${n} stores`, pcie: n => `PCIe ${n}`, gb: n => `${n} GB`, tb: n => `${n} TB`, fps: n => `${n} FPS` }

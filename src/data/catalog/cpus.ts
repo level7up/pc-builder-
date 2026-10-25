@@ -68,5 +68,6 @@ export const CPU_SPECS: Spec<Cpu>[] = [
   { id: 'u5-225', name: 'Intel Core Ultra 5 225', brand: 'Intel', socket: 'LGA1851', cores: 10, threads: 10, powerW: 121, hasIgpu: true, gamingScore: 62, memory: DDR5 },
   { id: 'u5-245kf', name: 'Intel Core Ultra 5 245KF', brand: 'Intel', socket: 'LGA1851', cores: 14, threads: 14, powerW: 159, hasIgpu: false, gamingScore: 72, memory: DDR5 },
   { id: 'u7-265', name: 'Intel Core Ultra 7 265', brand: 'Intel', socket: 'LGA1851', cores: 20, threads: 20, powerW: 182, hasIgpu: true, gamingScore: 76, memory: DDR5 },
-  { id: 'u9-285k', name: 'Intel Core Ultra 9 285K', brand: 'Intel', socket: 'LGA1851', cores: 24, threads: 24, powerW: 250, hasIgpu: true, gamingScore: 80, memory: DDR5 }
+  { id: 'u9-285k', name: 'Intel Core Ultra 9 285K', brand: 'Intel', socket: 'LGA1851', cores: 24, threads: 24, powerW: 250, hasIgpu: true, gamingScore: 80, memory: DDR5 },
+  { id: 'i9-14900ks', name: 'Intel Core i9-14900KS', brand: 'Intel', socket: 'LGA1700', cores: 24, threads: 32, powerW: 253, hasIgpu: true, gamingScore: 84, memory: DDR4_OR_5 }
 ]
