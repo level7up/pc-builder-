@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import type { StoreListing } from '../domain/browse'
 import type { Locale, Messages } from '../i18n/messages'
 import { formatEgp } from '../format'
-import { partHash } from '../useRoute'
+import { partHash, storeHash } from '../useRoute'
 import { wishKey } from '../domain/wishlist'
 import FavoriteButton from './FavoriteButton.vue'
 import CompareButton from './CompareButton.vue'
@@ -22,7 +22,7 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
       <span v-else class="placeholder">{{ offer.store }}</span>
     </a>
     <div class="top">
-      <span class="store">{{ offer.store }}</span>
+      <a class="store" :href="storeHash(listing.storeId)">{{ offer.store }}</a>
       <span class="actions">
         <CompareButton :id="listing.part.id" :t="t" />
         <FavoriteButton :wish-key="wishKey(listing.part.id, listing.storeId)" :t="t" />
@@ -49,7 +49,8 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
 .placeholder { color: #8a8f98; font-weight: 700; font-size: 14px; }
 .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .actions { display: flex; gap: 6px; flex: 0 0 auto; }
-.store { font-size: 13px; font-weight: 800; padding: 2px 10px; border-radius: 999px; color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--panel)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.store { text-decoration: none; font-size: 13px; font-weight: 800; padding: 2px 10px; border-radius: 999px; color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--panel)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.store:hover { background: var(--accent); color: var(--accent-ink); }
 .title { font-weight: 700; font-size: 16px; color: inherit; text-decoration: none; line-height: 1.4; direction: ltr; unicode-bidi: plaintext; text-align: start; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .title:hover { color: var(--accent); }
 .part { display: flex; align-items: baseline; gap: 6px; min-width: 0; font-size: 13px; color: var(--muted); text-decoration: none; }

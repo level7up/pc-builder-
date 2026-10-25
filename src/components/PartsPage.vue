@@ -7,6 +7,7 @@ import type { Locale, Messages } from '../i18n/messages'
 import PartsGrid from './PartsGrid.vue'
 import PartCard from './PartCard.vue'
 import ListingCard from './ListingCard.vue'
+import { formatCount } from '../format'
 
 type View = 'parts' | 'listings'
 const VIEWS: readonly View[] = ['listings', 'parts']
@@ -19,7 +20,7 @@ const parts = computed(() => (view.value === 'parts' ? browseParts(filter.value)
 const listings = computed(() => (view.value === 'listings' ? browseListings(filter.value) : []))
 const count = computed(() => (view.value === 'parts' ? parts.value.length : listings.value.length))
 const countText = computed(() => {
-  const formatted = new Intl.NumberFormat(props.locale === 'ar' ? 'ar-EG' : 'en-EG').format(count.value)
+  const formatted = formatCount(count.value, props.locale)
   return view.value === 'parts' ? props.t.browse.count(formatted) : props.t.browse.listingCount(formatted)
 })
 

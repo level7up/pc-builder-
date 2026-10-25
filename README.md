@@ -151,6 +151,15 @@ parts picked, the panel also compares the build's cost at each store, stores
 that have every part first, then cheapest. The chosen store is remembered and
 travels in the share link (`store=`).
 
+## Store profiles
+
+`#stores` lists every store with how many products it lists, how many are in
+stock, a count per category, and how many parts it is the cheapest for
+(`src/domain/storeProfile.ts`). `#store/<id>` is one store's profile: all its
+products, sold-out ones included, with category chips, search, sort and an
+in-stock filter. Store names on product cards and part pages link to the
+profile, and the header has a Stores link.
+
 ## Installments
 
 The builder and each saved build page split the total into monthly payments

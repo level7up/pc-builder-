@@ -15,3 +15,7 @@ export function formatEgpChange(amount: number, locale: Locale): string {
 export function formatPercentChange(percent: number, locale: Locale): string {
   return new Intl.NumberFormat(locale === 'ar' ? 'ar-EG' : 'en-EG', { style: 'percent', maximumFractionDigits: 1, signDisplay: 'exceptZero' }).format(percent / 100)
 }
+
+export function formatCount(count: number, locale: Locale): string {
+  return new Intl.NumberFormat(locale === 'ar' ? 'ar-EG' : 'en-EG').format(count)
+}

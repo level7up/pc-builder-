@@ -252,6 +252,17 @@ export const en: Messages = {
     empty: 'No parts match',
     loading: 'Loading prices…'
   },
+  shops: {
+    nav: 'Stores',
+    title: 'Stores',
+    hint: 'Every store we track and what it stocks right now. Open one to see all its products.',
+    products: count => `${count} products`,
+    inStock: count => `${count} in stock`,
+    cheapest: count => `Cheapest anywhere for ${count} parts`,
+    open: 'See all products',
+    visit: 'Visit the store website',
+    back: 'Back to all stores',
+  },
   store: {
     title: 'Buy everything from one store',
     all: 'All stores',

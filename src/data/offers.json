@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-10-22",
+  "checkedOn": "2026-10-25",
   "stores": [
     {
       "id": "compumarts",
@@ -86,11 +86,11 @@
       },
       {
         "store": "compumarts",
-        "title": "AMD Ryzen 5 5500 Desktop Processor 6 Cores 12 Threads Up to 4.2GHz Boost AM4 Socket 65W TDP Tray Tray",
-        "priceEgp": 4790,
+        "title": "AMD Ryzen 5 5500 Desktop Processor 6 Cores 12 Threads Up to 4.2GHz Boost AM4 Socket 65W TDP Tray Box",
+        "priceEgp": 4700,
         "inStock": true,
-        "url": "https://www.compumarts.com/products/ryzen-5-5500?variant=46460011905173",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/products/Processors-AMD-Ryzen_-5-5500-Desktop-6-incredible-cores_03.jpg?v=1758995528&width=300"
+        "url": "https://www.compumarts.com/products/ryzen-5-5500?variant=46460011872405",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Processors-AMD-Ryzen-5-5500-Desktop-6-incredible-cores_01.jpg?v=1758995528&width=300"
       }
     ],
     "r5-5600": [
@@ -253,14 +253,6 @@
     ],
     "r5-8400f": [
       {
-        "store": "compumarts",
-        "title": "AMD Ryzen 5 8400F Tray-MPK processor TRAY",
-        "priceEgp": 5457,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/amd-ryzen-5-8400f-4-2-ghz-ryzen-5-8000-series-6-core-12-threads-socket-am5-65w-processor-100-100001591box?variant=46459571994773",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/AMD-Ryzen-5-8400F-Tray-MPK-Processor-6-Cores-12-Threads-4.7GHz-AM5_02.jpg?v=1791629813&width=300"
-      },
-      {
         "store": "ahw",
         "title": "AMD Ryzen 5 8400F Processor 6 Cores 12 Threads 4.7 Ghz Max Boost AM5 Socket Tray",
         "priceEgp": 5699,
@@ -275,6 +267,14 @@
         "inStock": true,
         "url": "https://alfrensia.com/en/product/amd-ryzen-5-8400f-6-core-12-thread-4-7ghz-am5-65w-tray-processor/",
         "image": "https://alfrensia.com/wp-content/uploads/2026/09/AMD-Ryzen-5-8400F-6-Core-12-Thread-4.7GHz-AM5-65W-Tray-Processor-300x300.webp"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 5 8400F Tray-MPK processor MPK",
+        "priceEgp": 5871,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-5-8400f-4-2-ghz-ryzen-5-8000-series-6-core-12-threads-socket-am5-65w-processor-100-100001591box?variant=67677941792917",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/AMD-Ryzen-5-8400F-Tray-MPK-Processor-6-Cores-12-Threads-4.7GHz-AM5_02.jpg?v=1791629813&width=300"
       },
       {
         "store": "sigma",
@@ -343,20 +343,20 @@
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/AMDRyzen57500FProcessor_5.0GHz38MB_6CoreAM5Tray.jpg?v=1786024495&width=300"
       },
       {
-        "store": "sigma",
-        "title": "AMD RYZEN 5-7500F 6 Core/12 Threads 3.7 GHz (5.0 GHz Turbo) Socket AM5 LGA 1718 TRAY.",
-        "priceEgp": 7500,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-7500f-6-core12-threads-37-ghz-50-ghz-turbo-socket-am5-lga-1718-tray-jasx6s6qbjye",
-        "image": "https://api.sigma-computer.com/media/cd9cd83b-84e4-4d95-acc9-a757c1050fc7"
-      },
-      {
         "store": "compumarts",
         "title": "AMD Ryzen 5 7500F Desktop Processor – 6 Cores, 12 Threads, Up to 5.0GHz Boost, AM5 CPU (Tray, No Cooler, No iGPU)",
         "priceEgp": 7500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/amd-ryzen-5-7500f-6c-12t-3-70-5-00ghz-tray",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/AMD-Ryzen-5-7500F-tray_01.jpg?v=1759066458&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "AMD RYZEN 5-7500F 6 Core/12 Threads 3.7 GHz (5.0 GHz Turbo) Socket AM5 LGA 1718 TRAY.",
+        "priceEgp": 7500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=amd-ryzen-5-7500f-6-core12-threads-37-ghz-50-ghz-turbo-socket-am5-lga-1718-tray-jasx6s6qbjye",
+        "image": "https://api.sigma-computer.com/media/cd9cd83b-84e4-4d95-acc9-a757c1050fc7"
       },
       {
         "store": "ahw",
@@ -585,14 +585,6 @@
     ],
     "r7-7800x3d": [
       {
-        "store": "compumarts",
-        "title": "CPU AMD RYZEN7 7800X3D TRAY",
-        "priceEgp": 15965,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/amd-ryzen-7-7800x3d-tray-processor",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/AMD_Ryzen_7_7800X3D_Tray_Processor2.jpg?v=1753795302&width=300"
-      },
-      {
         "store": "alfrensia",
         "title": "AMD Ryzen 7 7800X3D Tray Processor",
         "priceEgp": 15999,
@@ -631,6 +623,14 @@
         "inStock": false,
         "url": "https://ahw.store/products/amd-ryzen-7-7800x3d-processor-8-cores-16-threads-5-0-ghz-max-boost-am5-socket-radeon-graphics-tray",
         "image": "https://cdn.shopify.com/s/files/1/0774/2118/3194/files/amd-ryzen-7-7800x3d-processor-8-cores-16-threads-50-ghz-max-boost-am5-socket-radeon-graphics-tray-4385170.webp?v=1781035572&width=300"
+      },
+      {
+        "store": "compumarts",
+        "title": "AMD Ryzen 7 7800X3D 8-Core, 16-Thread Desktop Processor",
+        "priceEgp": 18555,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/amd-ryzen-7-7800x3d-8-core-16-thread-desktop-processor",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/AMD-Ryzen-7-7800X3D-8-Core_01.jpg?v=1685353289&width=300"
       },
       {
         "store": "sigma",
@@ -1175,7 +1175,7 @@
       {
         "store": "compumarts",
         "title": "CPU INTEL ULTRA 5 245K BOX",
-        "priceEgp": 12130,
+        "priceEgp": 12850,
         "inStock": true,
         "url": "https://www.compumarts.com/products/intel-core-ultra-5-desktop-processor-245k-14-cores-6-p-cores-8-e-cores-up-to-5-2-ghz",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Intel-Core-Ultra-5-Desktop-Processor-245K---14-cores-_6-P-cores-_-8-E-cores_-up-to-5.2-GHz_03.jpg?v=1753882049&width=300"
@@ -1293,7 +1293,7 @@
       {
         "store": "compumarts",
         "title": "CPU INTEL Core Ultra 7 270K Plus 24-Core Desktop Processor BOX",
-        "priceEgp": 20950,
+        "priceEgp": 19450,
         "inStock": true,
         "url": "https://www.compumarts.com/products/intel-core-ultra-7-270k-plus-lga1851-processor",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Intel-Core-Ultra-7-270K_02.jpg?v=1776857062&width=300"
@@ -1534,11 +1534,11 @@
     "rtx5060": [
       {
         "store": "compumarts",
-        "title": "GIGABYTE GeForce RTX 5060 EAGLE MAX OC 8GB – GDDR7, Dual‑Fan PCIe 5.0 Graphics Card",
-        "priceEgp": 22250,
+        "title": "Palit RTX 5060 Infinity 2 OC 8GB GDDR7 Gaming Graphics Card PCIe 5.0 DLSS 4 Blackwell GPU",
+        "priceEgp": 23500,
         "inStock": true,
-        "url": "https://www.compumarts.com/products/gigabyte-geforce-rtx-5060-eagle-max-oc-8gb",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/GIGABYTE_01_04.jpg?v=1783435126&width=300"
+        "url": "https://www.compumarts.com/products/palit-rtx-5060-infinity-2-oc-8gb-gddr7-gaming-graphics-card",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/PALIT-GeForce-RTX_-5060-Infinity-2-OC_01.jpg?v=1776782571&width=300"
       },
       {
         "store": "maximum",
@@ -1641,6 +1641,14 @@
     ],
     "rtx5060ti-16": [
       {
+        "store": "compumarts",
+        "title": "GALAX GeForce RTX 5060 Ti 1-Click OC GDDR7 Dual Fan Graphics Card 16GB 4608 CUDA Cores",
+        "priceEgp": 32980,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/galax-rtx-5060ti-1click-oc-gddr7",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/galax-rtx5060ti-1clickoc_01.jpg?v=1754139822&width=300"
+      },
+      {
         "store": "uptodate",
         "title": "ZOTAC GAMING GeForce RTX 5060 Ti 16GB Twin Edge",
         "priceEgp": 35000,
@@ -1655,14 +1663,6 @@
         "inStock": true,
         "url": "https://elbadrgroupeg.store/zotac-rtx-5060-ti-16gb-gddr7-twin-edge-oc",
         "image": "https://elbadrgroupeg.store/image/cache/catalog/Zotac/UP5KelQDZqvQ0ndRcaFr2LCmt7-250x250.png"
-      },
-      {
-        "store": "compumarts",
-        "title": "GRAPHIC CARD MSI GEFORCE RTX 5060 TI 16G VENTUS 2X OC PLUS",
-        "priceEgp": 37370,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/msi-geforce-rtx-5060-ti-16g-ventus-2x-oc-plus-graphic-card",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-RTX-5060-TI-2X-OC-PLUS_01.jpg?v=1750343314&width=300"
       },
       {
         "store": "sigma",
@@ -2250,7 +2250,7 @@
         "store": "compumarts",
         "title": "MSI B550M PRO-VDH DDR4 Motherboard",
         "priceEgp": 5150,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/msi-b550m-pro-vdh-am4-ddr4-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-B550M-PRO-VDH-AM4-DDR4-Motherboard_01.jpg?v=1754574613&width=300"
       },
@@ -2526,7 +2526,7 @@
         "store": "compumarts",
         "title": "GIGABYTE H610M K DDR4 Motherboar",
         "priceEgp": 3235,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/gigabyte-h610m-k-ddr4-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/H610M-K-DDR4_01.jpg?v=1721566975&width=300"
       },
@@ -2631,20 +2631,20 @@
         "image": "https://alfrensia.com/wp-content/uploads/2025/07/Gigabyte-B760M-DS3H-Gen5-UD-LGA1700-Motherboard-300x300.webp"
       },
       {
-        "store": "sigma",
-        "title": "Gigabyte INTEL B760M DS3H GEN5 1.0",
-        "priceEgp": 6300,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b760m-ds3h-ddr5-rev-10-2kmyuisewp0y",
-        "image": "https://api.sigma-computer.com/media/1d0677cb-8ae4-40cc-bebf-e5496732ac26"
-      },
-      {
         "store": "compumarts",
         "title": "Gigabyte B760m DS3H Gen5 Motherboard – Intel LGA1700, DDR5, PCIe 5.0, 2.5GbE LAN",
         "priceEgp": 6300,
         "inStock": true,
         "url": "https://www.compumarts.com/products/motherboard-b760-ds3h-gen5-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Gigabyte-B760-DS3H-WiFi-6E-Gen5-Motherboard_01_8915ec2b-3f69-400b-a927-b3c4dbb3a160.jpg?v=1783341492&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Gigabyte INTEL B760M DS3H GEN5 1.0",
+        "priceEgp": 6300,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b760m-ds3h-ddr5-rev-10-2kmyuisewp0y",
+        "image": "https://api.sigma-computer.com/media/1d0677cb-8ae4-40cc-bebf-e5496732ac26"
       },
       {
         "store": "ahw",
@@ -2741,14 +2741,6 @@
         "image": "https://cdn.shopify.com/s/files/1/0774/2118/3194/files/msi-pro-b860m-e-ddr5-lga-1851-atx-motherboard-8730581.jpg?v=1785353826&width=300"
       },
       {
-        "store": "compumarts",
-        "title": "MSI PRO B860M-E LGA1851 DDR5 mATX Motherboard",
-        "priceEgp": 6450,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/msi-pro-b860m-e-lga1851-ddr5-motherboard-egypt",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-PRO-B860M-E-LGA1851-DDR5-mATX-Motherboard_01.jpg?v=1775224006&width=300"
-      },
-      {
         "store": "kimo",
         "title": "MSI PRO B860M-E DDR5 Motherboard LGA 1851",
         "priceEgp": 6550,
@@ -2763,6 +2755,14 @@
         "inStock": true,
         "url": "https://elbadrgroupeg.store/msi-pro-b860m-e-lga-1851-ddr5-motherboard",
         "image": "https://elbadrgroupeg.store/image/cache/catalog/MSI/UfJW45UzlpUEKV7pifrY8FNQUK-250x250.png"
+      },
+      {
+        "store": "compumarts",
+        "title": "MSI PRO B860M-E LGA1851 DDR5 mATX Motherboard",
+        "priceEgp": 6761,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/msi-pro-b860m-e-lga1851-ddr5-motherboard-egypt",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-PRO-B860M-E-LGA1851-DDR5-mATX-Motherboard_01.jpg?v=1775224006&width=300"
       },
       {
         "store": "alfrensia",
@@ -2807,20 +2807,20 @@
         "image": "https://uptodate.store/wp-content/uploads/2025/10/B860M-DS3H-01-600x600.webp"
       },
       {
-        "store": "sigma",
-        "title": "GIGABYTE B860M DS3H Socket LGA 1851 Motherboard",
-        "priceEgp": 7500,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b860m-ds3h-lga1851-ddr5-9066-pcie-50-2x-m2-25gbe-lan-hdmi-21-dp-21-usb-32-micro-atx-i9rtpsxjtwlo",
-        "image": "https://api.sigma-computer.com/media/c115b97c-3fff-4277-a087-18776a9c5781"
-      },
-      {
         "store": "compumarts",
         "title": "GIGABYTE B860M DS3H DDR5 MOTHERBOARD",
         "priceEgp": 7500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gigabyte-b860m-ds3h-ddr5-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/GIGABYTE-B860M-DS3H-DDR5-MOTHERBOARD_01.jpg?v=1738075593&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE B860M DS3H Socket LGA 1851 Motherboard",
+        "priceEgp": 7500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b860m-ds3h-lga1851-ddr5-9066-pcie-50-2x-m2-25gbe-lan-hdmi-21-dp-21-usb-32-micro-atx-i9rtpsxjtwlo",
+        "image": "https://api.sigma-computer.com/media/c115b97c-3fff-4277-a087-18776a9c5781"
       }
     ],
     "mb-z890-eagle": [
@@ -2914,7 +2914,7 @@
         "store": "compumarts",
         "title": "Lexar THOR DDR4 RAM 32GB Kit (2x16GB) 3200 MHz, DRAM 288-Pin UDIMM Desktop Memory, XMP 2.0 High Performance Computer Memory, CL16-18-18-38, 1.35V (LD4BU016G-R3200GDXG) SUPPORT AMD",
         "priceEgp": 15280,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/lexar-thor-ddr4-32gb-3200mhz-cl16-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lexar-THOR-DDR4-RAM-32GB-Kit-_2x16GB_-3200-MHz_-DRAM-288-Pin-UDIMM-Desktop-Memory_-XMP-2.0-High-Performance-Computer-Memory_-CL16-18-18-38_-1.35V-_LD4BU016G-R3200GDXG__01.jpg?v=1768810574&width=300"
       },
@@ -3109,20 +3109,20 @@
         "image": "https://elbadrgroupeg.store/image/cache/catalog/WD/bhP4WZmjtpaK2YB8QMVh25iMno-250x250.png"
       },
       {
+        "store": "compumarts",
+        "title": "Western Digital WD Blue SN5000 NVMe 2TB",
+        "priceEgp": 12700,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/western-digital-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd-pcie-gen-4-0-m-2-2280-up-to-5-150-mb-s?variant=45999370993813",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Western-Digital-WD-Blue-SN5000-NVMe-Internal-Solid-State_02.jpg?v=1746453884&width=300"
+      },
+      {
         "store": "sigma",
         "title": "WD Blue SN5000 (WDS200T4B0E-00CNZ0) – 2TB NVMe SSD, PCIe Gen4 x4, 5150MB/s Read, 4850MB/s Write, 900TBW",
         "priceEgp": 12700,
         "inStock": true,
         "url": "https://www.sigma-computer.com/en/item?id=wd-blue-sn5000-wds200t4b0e-00cnz0-2tb-nvme-ssd-pcie-gen4-x4-5150mbs-read-4850mbs-write-900tbw-g1ewxahhiz1d",
         "image": "https://api.sigma-computer.com/media/0d62f55d-06b6-49a7-955c-6550244bdd6f"
-      },
-      {
-        "store": "compumarts",
-        "title": "HARD Western Digital WD Blue SN5000 NVMe 2TB",
-        "priceEgp": 13550,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/western-digital-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd-pcie-gen-4-0-m-2-2280-up-to-5-150-mb-s?variant=45999370993813",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Western-Digital-WD-Blue-SN5000-NVMe-Internal-Solid-State_02.jpg?v=1746453884&width=300"
       }
     ],
     "psu-650": [],
@@ -3139,7 +3139,7 @@
         "store": "compumarts",
         "title": "PSU XIGMATEK THOR T750W V3 80 PLUS BRONZE ATX 3.1 PCIE 5.0 FULL MODULAR",
         "priceEgp": 2850,
-        "inStock": false,
+        "inStock": true,
         "url": "https://www.compumarts.com/products/xigmatek-thor-t750m-v3-750w-80-bronze-atx-3-1-pci-e-5-0-full-modular-power-supply",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Xigmatek-Thor-T750M-V3-750W-80_-Bronze-ATX-3.1-PCI-E-5.0_01.jpg?v=1771332964&width=300"
       }
@@ -3172,20 +3172,20 @@
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/CoolerMasterMWEGold850V3850W80PLUSGoldCertifiedPowerSupply_2_17f068aa-4892-4962-8caa-1720bc205a0f.jpg?v=1789922891&width=300"
       },
       {
-        "store": "sigma",
-        "title": "Cooler Master MWE Gold 850 V3 Fully Modular 80 Plus Gold ATX 3.1 Power Supply",
-        "priceEgp": 5200,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-mwe-gold-850-v3-fully-modular-80-plus-gold-atx-31-power-supply-j9nnpqvbo4jj",
-        "image": "https://api.sigma-computer.com/media/c1b9226e-12b9-43a2-b104-9228d69eb878"
-      },
-      {
         "store": "compumarts",
         "title": "Cooler Master MWE Gold 850 V3 ATX 3.1 Fully Modular 850W 80 PLUS Gold Power Supply",
         "priceEgp": 5200,
         "inStock": true,
         "url": "https://www.compumarts.com/products/cooler-master-mwe-gold-850w-v3-atx3-psu",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Cooler-Master-MWE-Gold-850-V3-ATX-3.1-Fully-Modular-80_-Gold-Power-Supply-_-850W_02.jpg?v=1757509964&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Cooler Master MWE Gold 850 V3 Fully Modular 80 Plus Gold ATX 3.1 Power Supply",
+        "priceEgp": 5200,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-mwe-gold-850-v3-fully-modular-80-plus-gold-atx-31-power-supply-j9nnpqvbo4jj",
+        "image": "https://api.sigma-computer.com/media/c1b9226e-12b9-43a2-b104-9228d69eb878"
       }
     ],
     "psu-1000g": [
@@ -3363,20 +3363,20 @@
     ],
     "cool-se903": [
       {
-        "store": "sigma",
-        "title": "ID-COOLING SE 903 SD V3 3 Heatpipe Direct Touch With 92mm Hydraulic Bearing Fan Black",
-        "priceEgp": 525,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=id-cooling-se-903-sd-v3-3-heatpipe-direct-touch-with-92mm-hydraulic-bearing-fan-black-cnzmduk0wra2",
-        "image": "https://api.sigma-computer.com/media/06df6919-9bd6-4dba-965b-677bc771c2a1"
-      },
-      {
         "store": "compumarts",
         "title": "ID-COOLING SE-903-SD V3 CPU Air Cooler with 3 Direct Touch Heatpipes 92mm Fan 130W TDP Support for Intel LGA1851 1700 1200 115X and AMD AM5 AM4",
         "priceEgp": 525,
         "inStock": true,
         "url": "https://www.compumarts.com/products/products-id-cooling-se-903-sd-v3-130w-92mm-cpu-air-cooler",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ID-COOLING-SE-903-SD-V3-CPU-Cooler_01.jpg?v=1779101485&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ID-COOLING SE 903 SD V3 3 Heatpipe Direct Touch With 92mm Hydraulic Bearing Fan Black",
+        "priceEgp": 525,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=id-cooling-se-903-sd-v3-3-heatpipe-direct-touch-with-92mm-hydraulic-bearing-fan-black-cnzmduk0wra2",
+        "image": "https://api.sigma-computer.com/media/06df6919-9bd6-4dba-965b-677bc771c2a1"
       },
       {
         "store": "kimo",
@@ -3413,20 +3413,20 @@
     ],
     "cool-a450": [
       {
-        "store": "sigma",
-        "title": "ANTEC A450F RGB CPU AIR COOLER",
-        "priceEgp": 750,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=antec-a450f-rgb-11kz9hydlmvh",
-        "image": "https://api.sigma-computer.com/media/671b5341-3a17-474b-9816-cd64a4cb762b"
-      },
-      {
         "store": "compumarts",
         "title": "Antec A450 FRGB CPU Air Cooler – 4 Heat Pipes, 120mm PWM Fan, 180W TDP Cooling",
         "priceEgp": 750,
         "inStock": true,
         "url": "https://www.compumarts.com/products/antec-a450-frgb-cpu-air-cooler",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Antec-A450-FRGB-CPU-Air-Coole_01.jpg?v=1776634011&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ANTEC A450F RGB CPU AIR COOLER",
+        "priceEgp": 750,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-a450f-rgb-11kz9hydlmvh",
+        "image": "https://api.sigma-computer.com/media/671b5341-3a17-474b-9816-cd64a4cb762b"
       },
       {
         "store": "kimo",
@@ -4820,7 +4820,7 @@
         "store": "compumarts",
         "title": "CPU INTEL CORE I5-14600K",
         "priceEgp": 15555,
-        "inStock": false,
+        "inStock": true,
         "url": "https://www.compumarts.com/products/intel-core-i5-processor-14600k-24m-cache-up-to-5-30-ghz",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/14600k_02.jpg?v=1701264499&width=300"
       }
@@ -5054,7 +5054,7 @@
         "priceEgp": 19300,
         "inStock": true,
         "url": "https://www.compumarts.com/products/intel-core-ultra7-265-20core-5-3ghz-processor-egypt",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Intel-Core-Ultra-7-265-Desktop-Processor_01.jpg?v=1777305025&width=300"
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/gemini.google_-_2026-10-22T234159.219.png?v=1792701784&width=300"
       }
     ],
     "u9-285k": [
@@ -6779,20 +6779,20 @@
     "case-aerocool-p500d": [],
     "case-antec-c3": [
       {
-        "store": "sigma",
-        "title": "Antec C3 ARGB Black Mid-Tower ATX PC Case",
-        "priceEgp": 3999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=antec-c3-argb-black-mid-tower-atx-pc-case-pjcyvzph3xdi",
-        "image": "https://api.sigma-computer.com/media/e1f10b28-c049-4832-a7c5-0a71f933f023"
-      },
-      {
         "store": "compumarts",
         "title": "CASE ANTEC C3 ARGB Black",
         "priceEgp": 3999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/antec-c3-argb-3-x-120mm-1-x-120mm-argb-pwm-fans-included-360mm-radiator-support-mid-tower-atx-pc-case?variant=45419976163477",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Antec-C3-ARGB_-3-x-120mm-_-1-x-120mm-ARGB-PWM-Fans-Included_-360mm-Radiator-Support_-Mid-Tower-ATX-PC-Case_01_d116e3f8-94e8-417f-807b-7842e7e0f37d.jpg?v=1776612986&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Antec C3 ARGB Black Mid-Tower ATX PC Case",
+        "priceEgp": 3999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-c3-argb-black-mid-tower-atx-pc-case-pjcyvzph3xdi",
+        "image": "https://api.sigma-computer.com/media/e1f10b28-c049-4832-a7c5-0a71f933f023"
       },
       {
         "store": "maximum",
@@ -6971,20 +6971,20 @@
         "image": "https://uptodate.store/wp-content/uploads/2025/11/gallery-c8-white-argb-01.jpg"
       },
       {
-        "store": "sigma",
-        "title": "Antec C8 ARGB Full Tower E-ATX PC Case",
-        "priceEgp": 6999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=antec-c8-argb-2x-tqr-160mm-1x-tq-140mm-argb-pwm-fans-included-full-tower-e-atx-pc-case-mufcpaam8pre",
-        "image": "https://api.sigma-computer.com/media/54e03e6c-078e-4b0e-9af0-9302c73d98f8"
-      },
-      {
         "store": "compumarts",
         "title": "CASE ANTEC C8 ARGB Black",
         "priceEgp": 6999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/antec-c8-argb-2x-tqr-160mm-1x-tq-140mm-argb-pwm-fans-included-dual-chamber-layout-type-c-360mm-radiator-support-seamless-tg-front-side-panels-rtx-40-compatible-full-tower-e-atx-pc-case?variant=45651795771541",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Antec-C8-ARGB_01.jpg?v=1759059062&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Antec C8 ARGB Full Tower E-ATX PC Case",
+        "priceEgp": 6999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-c8-argb-2x-tqr-160mm-1x-tq-140mm-argb-pwm-fans-included-full-tower-e-atx-pc-case-mufcpaam8pre",
+        "image": "https://api.sigma-computer.com/media/54e03e6c-078e-4b0e-9af0-9302c73d98f8"
       },
       {
         "store": "alfrensia",
@@ -7013,20 +7013,20 @@
     ],
     "case-antec-flux": [
       {
-        "store": "sigma",
-        "title": "ANTEC FLUX M 6FAN ARGB MINI TOWER",
-        "priceEgp": 3250,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=antec-flux-m-fan-argb-mini-tower-ljgxgds8vlpl",
-        "image": "https://api.sigma-computer.com/media/3e51482c-3ac6-4a6f-afbd-e09c2ce22b0b"
-      },
-      {
         "store": "compumarts",
         "title": "Antec FLUX M Micro ATX Case Compact Gaming Case Tempered Glass 6 PWM ARGB Fans USB-C 360mm Radiator",
         "priceEgp": 3250,
         "inStock": true,
         "url": "https://www.compumarts.com/products/antec-flux-m-micro-atx-case",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Antec-FLUX-M-Micro-ATX-Case-Compact_01.jpg?v=1776616392&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ANTEC FLUX M 6FAN ARGB MINI TOWER",
+        "priceEgp": 3250,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-flux-m-fan-argb-mini-tower-ljgxgds8vlpl",
+        "image": "https://api.sigma-computer.com/media/3e51482c-3ac6-4a6f-afbd-e09c2ce22b0b"
       },
       {
         "store": "uptodate",
@@ -7334,20 +7334,20 @@
     "case-asus-helios2": [],
     "case-asus-gr701": [
       {
-        "store": "sigma",
-        "title": "ASUS GR701 ROG HYPERION WHITE",
-        "priceEgp": 19499,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-hyperion-gr701-e-atx-computer-case-420-mm-dual-radiator-support-four-140-mm-fans-metal-gpu-holder-component-storage-argb-fan-hub-60w-fast-charging-white-edition-yujzsi00nczs",
-        "image": "https://api.sigma-computer.com/media/f176bf64-72bb-43f4-920f-a7a78ce41108"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS ROG Hyperion GR701 Full-Tower Case WHITE White",
         "priceEgp": 19499,
         "inStock": false,
         "url": "https://www.compumarts.com/products/asus-rog-hyperion-gr701-full-tower-case?variant=43779707502741",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Hyperion-GR701-F_01.jpg?v=1758976938&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS GR701 ROG HYPERION WHITE",
+        "priceEgp": 19499,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-hyperion-gr701-e-atx-computer-case-420-mm-dual-radiator-support-four-140-mm-fans-metal-gpu-holder-component-storage-argb-fan-hub-60w-fast-charging-white-edition-yujzsi00nczs",
+        "image": "https://api.sigma-computer.com/media/f176bf64-72bb-43f4-920f-a7a78ce41108"
       },
       {
         "store": "alfrensia",
@@ -7690,20 +7690,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Fractal-Design/1-2-300x300h.jpg"
       },
       {
-        "store": "sigma",
-        "title": "Fractal North Chalk White TG Clear Tint ATX Mid Tower Case",
-        "priceEgp": 7699,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=fractal-design-north-chalk-white-tempered-glass-clear-genuine-oak-wood-front-glass-side-panel-two-140mm-aspect-pwm-fans-included-type-c-usb-atx-airflow-mid-tower-pc-gaming-case-zj7y4sqyswxg",
-        "image": "https://api.sigma-computer.com/media/e8027e32-2250-46f9-a7d1-f5e3ee6549a2"
-      },
-      {
         "store": "compumarts",
         "title": "Fractal North CASE Charcoal Black",
         "priceEgp": 7699,
         "inStock": false,
         "url": "https://www.compumarts.com/products/fractal-north-case?variant=45461527363733",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Fractal-North-CASE-FD-C-NOR1C-01_01.jpg?v=1759053489&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Fractal North Chalk White TG Clear Tint ATX Mid Tower Case",
+        "priceEgp": 7699,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=fractal-design-north-chalk-white-tempered-glass-clear-genuine-oak-wood-front-glass-side-panel-two-140mm-aspect-pwm-fans-included-type-c-usb-atx-airflow-mid-tower-pc-gaming-case-zj7y4sqyswxg",
+        "image": "https://api.sigma-computer.com/media/e8027e32-2250-46f9-a7d1-f5e3ee6549a2"
       }
     ],
     "case-fractal-torrent": [
@@ -8026,20 +8026,20 @@
         "image": "https://elbadrgroupeg.store/image/cache/catalog/Gigabyte/1P2tGAYaHQ4BMhqzNdVMR1EHbk-250x250.png"
       },
       {
-        "store": "sigma",
-        "title": "GIGABYTE C201 P Mid-Tower Case E-ATX - 3 Fans",
-        "priceEgp": 2500,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-c201-p-mid-tower-case-e-atx-yuvvzdtfbfag",
-        "image": "https://api.sigma-computer.com/media/5bab2574-5743-40f2-ae7d-5b7e8f832846"
-      },
-      {
         "store": "compumarts",
         "title": "GIGABYTE C201 P Mid-Tower Case E-ATX ATX Micro-ATX Steel & Plastic Matte Black Tempered Glass GPU Clearance up to 330mm Cooling Support Radiator Compatible PC Case Black",
         "priceEgp": 2500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gigabyte-c201-panoramic-case-egypt?variant=47543038378133",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Template-_-watermark-_-Warranty-2-Recovered-Recovered_02_bd4a27dc-4c6e-4c76-8fec-42fe57baa5e2.jpg?v=1783512487&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE C201 P Mid-Tower Case E-ATX - 3 Fans",
+        "priceEgp": 2500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-c201-p-mid-tower-case-e-atx-yuvvzdtfbfag",
+        "image": "https://api.sigma-computer.com/media/5bab2574-5743-40f2-ae7d-5b7e8f832846"
       },
       {
         "store": "alfrensia",
@@ -8248,20 +8248,20 @@
     ],
     "case-hyte-y40": [
       {
-        "store": "sigma",
-        "title": "HYTE Y40 Modern Aesthetic Panoramic Tempered Glass Mid-Tower ATX Computer Gaming Case with PCIE 4.0 Riser Cable Included, Black (CS-HYTE-Y40-BB)",
-        "priceEgp": 5999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=hyte-y40-modern-aesthetic-panoramic-tempered-glass-mid-tower-atx-computer-gaming-case-with-pcie-40-riser-cable-included-black-cs-hyte-y40-bb-hh0jugiix93d",
-        "image": "https://api.sigma-computer.com/media/31e66e05-0a96-4057-a57c-f1dbdc605f6a"
-      },
-      {
         "store": "compumarts",
         "title": "HYTE Y40 Modern Aesthetic Panoramic Tempered Glass Mid-Tower ATX Computer Gaming Case with PCIE 4.0 Riser Cable Included WHITE/WHITE Snow White",
         "priceEgp": 5999,
         "inStock": false,
         "url": "https://www.compumarts.com/products/hyte-y40-modern-aesthetic-panoramic-tempered-glass-mid-tower-atx-computer-gaming-case-with-pcie-4-0-riser-cable-included?variant=45612068798613",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/HYTE-Y40-Modern-Aesthetic-Panoramic-Tempered-Glass_03_fff5d5f5-1412-4181-8497-9089bf0440f0.jpg?v=1759060009&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "HYTE Y40 Modern Aesthetic Panoramic Tempered Glass Mid-Tower ATX Computer Gaming Case with PCIE 4.0 Riser Cable Included, Black (CS-HYTE-Y40-BB)",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=hyte-y40-modern-aesthetic-panoramic-tempered-glass-mid-tower-atx-computer-gaming-case-with-pcie-40-riser-cable-included-black-cs-hyte-y40-bb-hh0jugiix93d",
+        "image": "https://api.sigma-computer.com/media/31e66e05-0a96-4057-a57c-f1dbdc605f6a"
       },
       {
         "store": "elbadr",
@@ -8450,20 +8450,20 @@
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/LianLiDANA3-mATXGamingMicroTowerCase.jpg?v=1788013214&width=300"
       },
       {
-        "store": "sigma",
-        "title": "Lian Li DAN A3 White Micro Tower Gaming Case",
-        "priceEgp": 3650,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-a3-matx-white-compact-263l-steel-case-supporting-m-atxitx-415mm-gpu-atxsfx-psu-360mm-radiator-and-up-to-10-fans-p5jhevj154lo",
-        "image": "https://api.sigma-computer.com/media/85c69aef-bfdc-49f6-a15c-4290746453d7"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li DAN A3 Micro Tower Gaming Case Black",
         "priceEgp": 3650,
         "inStock": true,
         "url": "https://www.compumarts.com/products/lian-li-dan-a3-black-micro-tower-gaming-case?variant=45999365456021",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-DAN-A3-Black-Micro-Tower-Gaming-Case_01.jpg?v=1759143091&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Lian Li DAN A3 White Micro Tower Gaming Case",
+        "priceEgp": 3650,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-a3-matx-white-compact-263l-steel-case-supporting-m-atxitx-415mm-gpu-atxsfx-psu-360mm-radiator-and-up-to-10-fans-p5jhevj154lo",
+        "image": "https://api.sigma-computer.com/media/85c69aef-bfdc-49f6-a15c-4290746453d7"
       },
       {
         "store": "uptodate",
@@ -8516,6 +8516,14 @@
         "image": "https://uptodate.store/wp-content/uploads/2026/01/L207-0b-1.jpg"
       },
       {
+        "store": "compumarts",
+        "title": "Lian Li Lancool 207 RGB White Mid Tower Gaming Case White",
+        "priceEgp": 3950,
+        "inStock": false,
+        "url": "https://www.compumarts.com/products/lian-li-lancool-207-rgb-mid-tower-gaming-case?variant=46000966434965",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Lancool-207-RGBMid-Tower-Gaming-Case_02.jpg?v=1759140802&width=300"
+      },
+      {
         "store": "alfrensia",
         "title": "Lian Li Lancool 207 RGB White Mid Tower Gaming Case",
         "priceEgp": 3950,
@@ -8538,14 +8546,6 @@
         "inStock": false,
         "url": "https://elbadrgroupeg.store/lian-li-lancool-207-b",
         "image": "https://elbadrgroupeg.store/image/cache/catalog/Lian-Li/kUURLVuMRX34g3a7Uct7P8SzXY-250x250.png"
-      },
-      {
-        "store": "compumarts",
-        "title": "Lian Li Lancool 207 Digital Mid Tower Gaming Case",
-        "priceEgp": 5199,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/lian-li-lancool-207-digital-mid-tower-gaming-case",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/LANCOOL-207-DIGITAL_01.jpg?v=1756543011&width=300"
       }
     ],
     "case-lianli-lancool-217": [
@@ -8566,20 +8566,20 @@
         "image": "https://uptodate.store/wp-content/uploads/2026/07/n_217_INFb_01-scaled-1-600x600.jpg"
       },
       {
-        "store": "sigma",
-        "title": "LIAN LI LANCOOL 217 INF White Mid Tower Gaming Case",
-        "priceEgp": 5999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-lancool-217-inf-white-mid-tower-gaming-case-kwvaxa3v9gew",
-        "image": "https://api.sigma-computer.com/media/25686dcb-c43b-48d4-8360-465b43b42eab"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li Lancool 217 INF BLACK Mid Tower Gaming Case White",
         "priceEgp": 5999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/lian-li-lancool-217-inf-white-mid-tower-gaming-case-dual-170mm-front-fans?variant=47539988889749",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/lianlicase1white.png?v=1783434815&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "LIAN LI LANCOOL 217 INF White Mid Tower Gaming Case",
+        "priceEgp": 5999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-lancool-217-inf-white-mid-tower-gaming-case-kwvaxa3v9gew",
+        "image": "https://api.sigma-computer.com/media/25686dcb-c43b-48d4-8360-465b43b42eab"
       },
       {
         "store": "alfrensia",
@@ -8776,20 +8776,20 @@
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/LianLiO11VisionMMicroTowerCase-Black_9.jpg?v=1788258705&width=300"
       },
       {
-        "store": "sigma",
-        "title": "LIAN LI-O11 Vision M Black Micro Tower Gaming Case",
-        "priceEgp": 3500,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-o11-vision-m-black-micro-tower-gaming-case-c6jrmbob3dvp",
-        "image": "https://api.sigma-computer.com/media/7aa69083-f354-4188-8461-18cb2821c311"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li O11 Vision M Micro Tower Gaming Case O11VMX O11VMW M-ATX Mini-ITX 410mm GPU Clearance Black",
         "priceEgp": 3500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/lian-li-o11-vision-m-white-micro-tower-gaming-case-egypt?variant=47766029795477",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-O11-Vision-M_01.jpg?v=1787399754&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "LIAN LI-O11 Vision M Black Micro Tower Gaming Case",
+        "priceEgp": 3500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-o11-vision-m-black-micro-tower-gaming-case-c6jrmbob3dvp",
+        "image": "https://api.sigma-computer.com/media/7aa69083-f354-4188-8461-18cb2821c311"
       },
       {
         "store": "alfrensia",
@@ -8894,20 +8894,20 @@
         "image": "https://alfrensia.com/wp-content/uploads/2026/08/Lian-Li-Vector-V150-INF-Type-C-Black-Mid-Tower-Gaming-Case-300x300.webp"
       },
       {
-        "store": "sigma",
-        "title": "Lian Li Vector V150 INF Type C Black Mid Tower Gaming Case",
-        "priceEgp": 3900,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-vector-v150-inf-type-c-black-mid-tower-gaming-case-0y5c8w8doyxt",
-        "image": "https://api.sigma-computer.com/media/535b7fd0-51c4-4615-b2f2-7fcf33dd1869"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li Vector V150 INF Type C Black Mid Tower Gaming Case V150INFX",
         "priceEgp": 3900,
         "inStock": false,
         "url": "https://www.compumarts.com/products/lian-li-vector-v150-inf-v150infx-black-mid-tower-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Vector-V150-INF_01_b6cb2174-8119-438c-b651-97b91051e48b.jpg?v=1787392623&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Lian Li Vector V150 INF Type C Black Mid Tower Gaming Case",
+        "priceEgp": 3900,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-vector-v150-inf-type-c-black-mid-tower-gaming-case-0y5c8w8doyxt",
+        "image": "https://api.sigma-computer.com/media/535b7fd0-51c4-4615-b2f2-7fcf33dd1869"
       }
     ],
     "case-msi-forge-321r": [
@@ -9076,20 +9076,20 @@
     ],
     "case-nzxt-h5-flow": [
       {
-        "store": "sigma",
-        "title": "NZXT H5 Flow 3 Fans RGB - WHITE - CC-H52FW-R1",
-        "priceEgp": 4999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=nzxt-h5-flow-3-fans-rgb-white-cc-h52fw-r1-oqxerpgm0ejz",
-        "image": "https://api.sigma-computer.com/media/862a536f-5d21-42d1-921c-5863dcc4506d"
-      },
-      {
         "store": "compumarts",
         "title": "NZXT H5 Flow RGB ATX Mid-Tower Gaming Case - High Airflow, Tempered Glass, Cable Management, 280mm Radiator Support 2 Years Black",
         "priceEgp": 4999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/nzxt-h5-flow-rgb-atx-mid-tower-gaming-case-high-airflow-tempered-glass-cable-management-280mm-radiator-support?variant=45569489633429",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/NZXT-H5-Flow-RGB-ATX-Mid-Tower-Gaming-Case_01_33f58706-c243-4497-ad9e-ae7e3034b594.jpg?v=1792234274&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "NZXT H5 Flow 3 Fans RGB - WHITE - CC-H52FW-R1",
+        "priceEgp": 4999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=nzxt-h5-flow-3-fans-rgb-white-cc-h52fw-r1-oqxerpgm0ejz",
+        "image": "https://api.sigma-computer.com/media/862a536f-5d21-42d1-921c-5863dcc4506d"
       },
       {
         "store": "alfrensia",
@@ -9212,20 +9212,20 @@
     ],
     "case-havn-hs420": [
       {
-        "store": "sigma",
-        "title": "HAVN-HS 420 Black CASE | AIR Cooling Up to 185mm | VGA Support Up to 480mm | Type-C Ready | GPU Holder",
-        "priceEgp": 9300,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=havn-hs-420-black-case-air-cooling-up-to-185mm-vga-support-up-to-480mm-type-c-ready-gpu-holder-wvgbmlb1p9yt",
-        "image": "https://api.sigma-computer.com/media/ab299e5d-d481-47c1-8b30-62f8d63ba83c"
-      },
-      {
         "store": "compumarts",
         "title": "HAVN HS 420 Dual-Chamber Mid-Tower Gaming Case 420mm Radiator Support 480mm GPU Clearance E-ATX Black",
         "priceEgp": 9300,
         "inStock": false,
         "url": "https://www.compumarts.com/products/havn-hs-420-mid-tower-pc-case-egypt?variant=46316243288213",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/HAVN-HS_420-Mid_Tower-PC-Case-_-Dual_Chamber_02.jpg?v=1759047100&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "HAVN-HS 420 Black CASE | AIR Cooling Up to 185mm | VGA Support Up to 480mm | Type-C Ready | GPU Holder",
+        "priceEgp": 9300,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=havn-hs-420-black-case-air-cooling-up-to-185mm-vga-support-up-to-480mm-type-c-ready-gpu-holder-wvgbmlb1p9yt",
+        "image": "https://api.sigma-computer.com/media/ab299e5d-d481-47c1-8b30-62f8d63ba83c"
       },
       {
         "store": "ahw",
@@ -9474,20 +9474,20 @@
         "image": "https://uptodate.store/wp-content/uploads/2026/05/Cloud-M-DGT-產品圖-09-600x600.png"
       },
       {
-        "store": "compumarts",
-        "title": "Xigmatek Cloud M DGT 3AF Digital LCD 3 Fan ARGB PWM BTF Micro Tower Case Black",
-        "priceEgp": 2830,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/xigmatek-cloud-m-dgt-3af-micro-atx-gaming-case-egypt?variant=47313366089877",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Cloud-M-DGT-3AF_01.jpg?v=1777533651&width=300"
-      },
-      {
         "store": "kimo",
         "title": "Xigmatek Cloud M DGT 3AF LCD ARGB Gaming Micro Tower Case",
         "priceEgp": 2849,
         "inStock": true,
         "url": "https://kimostore.net/products/xigmatek-cloud-m-dgt-3af-argb-gaming-micro-tower-case-1",
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/XigmatekCloudMDGT3AFLCDARGBGamingMicroTowerCase_7.jpg?v=1788077823&width=300"
+      },
+      {
+        "store": "compumarts",
+        "title": "Xigmatek Cloud M DGT 3AF Digital LCD 3 Fan ARGB PWM BTF Micro Tower Case White",
+        "priceEgp": 2899,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/xigmatek-cloud-m-dgt-3af-micro-atx-gaming-case-egypt?variant=47313366122645",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Cloud-M-DGT-3AF-Arctic_02.jpg?v=1777533652&width=300"
       },
       {
         "store": "sigma",
@@ -9804,20 +9804,20 @@
         "image": "https://alfrensia.com/wp-content/uploads/2024/11/Xigmatek-Vision-Full-Tower-Case-300x300.jpg"
       },
       {
-        "store": "sigma",
-        "title": "XIGMATEK Vision Full Tower Case",
-        "priceEgp": 5399,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=xigmatek-vision-full-tower-case-supports-e-atx-up-to-8-fans-360mm-radiator-180mm-cpu-cooler-420mm-gpu-220mm-btf-support-lcd-control-panel-includes-usb-30-and-usb-c-ports-rh8tnfu5wex5",
-        "image": "https://api.sigma-computer.com/media/e6cb0495-546e-4842-97ef-fcead7006e3b"
-      },
-      {
         "store": "compumarts",
         "title": "CASE XIGMATEK VISION FULL TOWER",
         "priceEgp": 5399,
         "inStock": false,
         "url": "https://www.compumarts.com/products/xigmatek-vision-full-tower-case",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Xigmatek-Vision-Full-Tower-Case_01.jpg?v=1730674628&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "XIGMATEK Vision Full Tower Case",
+        "priceEgp": 5399,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=xigmatek-vision-full-tower-case-supports-e-atx-up-to-8-fans-360mm-radiator-180mm-cpu-cooler-420mm-gpu-220mm-btf-support-lcd-control-panel-includes-usb-30-and-usb-c-ports-rh8tnfu5wex5",
+        "image": "https://api.sigma-computer.com/media/e6cb0495-546e-4842-97ef-fcead7006e3b"
       },
       {
         "store": "maximum",
@@ -10071,7 +10071,7 @@
         "store": "compumarts",
         "title": "HAVIT CF923 Cam Gaming Gaming Player Case Black",
         "priceEgp": 1656,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/havit-cf923-cam-gaming-gaming-player-case-black-5-fan-itx-m-atx-345mm-vga-165mm-cpu-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/HAVIT-CF923-Cam-Gaming-Gaming-Player-Case-BLACK_01.jpg?v=1787070997&width=300"
       }
@@ -10734,20 +10734,20 @@
         "image": "https://uptodate.store/wp-content/uploads/2025/12/UD1600PM-PG5-AI-TOP-01-600x600.png"
       },
       {
-        "store": "sigma",
-        "title": "GIGABAYT UD1600PM PG5 ,1600W, 80PLUS Platinum, ATX 3.1 and PCIe Gen 5.0 ready, Japanese capacitors, Fully modular",
-        "priceEgp": 18999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabayt-ud1600pm-pg5-1600w-80plus-platinum-atx-31-and-pcie-gen-50-ready-japanese-capacitors-fully-modular-4eaktquzpndo",
-        "image": "https://api.sigma-computer.com/media/e4d3ca77-b612-4680-a258-2b7cae45ca51"
-      },
-      {
         "store": "compumarts",
         "title": "Gigabyte UD1600PM PG5 1600W 80PLUS Platinum ATX 3.1 and PCIe Gen 5.0 ready Japanese capacitors, Fully modular",
         "priceEgp": 18999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gigabyte-ud1600pm-pg5-1600w-80plus-platinum-atx-3-1-and-pcie-gen-5-0-ready-japanese-capacitors-fully-modular",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Gigabyte-UD1600PM-PG5_01.jpg?v=1731501845&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABAYT UD1600PM PG5 ,1600W, 80PLUS Platinum, ATX 3.1 and PCIe Gen 5.0 ready, Japanese capacitors, Fully modular",
+        "priceEgp": 18999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabayt-ud1600pm-pg5-1600w-80plus-platinum-atx-31-and-pcie-gen-50-ready-japanese-capacitors-fully-modular-4eaktquzpndo",
+        "image": "https://api.sigma-computer.com/media/e4d3ca77-b612-4680-a258-2b7cae45ca51"
       },
       {
         "store": "alfrensia",
@@ -10872,20 +10872,20 @@
     ],
     "psu-lianli-eg1000g": [
       {
-        "store": "sigma",
-        "title": "LIAN LI Edge Gold EG1000G 1000W 80 Plus Gold ATX 3.1 Full Modular PSU-EG1000G",
-        "priceEgp": 7199,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-edge-gold-1000w-fully-modular-atx-31-psu-with-80-gold-efficiency-pcie-51-12v-2x6-support-braided-cables-magnetic-dust-filter-and-detachable-usbpwm-hub-9foi9eoxnusr",
-        "image": "https://api.sigma-computer.com/media/ff82c0e4-5191-42f8-9a0c-92f2dc6b1ad5"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li Edge Gold EG1000G 1000W 80 Plus Gold ATX 3.1 Full Modular Power Supply Black",
         "priceEgp": 7199,
         "inStock": true,
         "url": "https://www.compumarts.com/products/lian-li-edge-gold-eg1000g-1000w-80-plus-gold-atx-3-1-full-modular-white-power-supply?variant=46016837648533",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Edge-Gold-80-Plus-Gold-ATX-3.1-Full-Modular-Power-Supply_03.jpg?v=1747133561&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "LIAN LI Edge Gold EG1000G 1000W 80 Plus Gold ATX 3.1 Full Modular PSU-EG1000G",
+        "priceEgp": 7199,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-edge-gold-1000w-fully-modular-atx-31-psu-with-80-gold-efficiency-pcie-51-12v-2x6-support-braided-cables-magnetic-dust-filter-and-detachable-usbpwm-hub-9foi9eoxnusr",
+        "image": "https://api.sigma-computer.com/media/ff82c0e4-5191-42f8-9a0c-92f2dc6b1ad5"
       },
       {
         "store": "ahw",
@@ -10943,7 +10943,7 @@
         "store": "compumarts",
         "title": "Lian Li Edge EG1000 1000W 80 Plus PLATINUM ATX 3.1 Full Modular Power Supply 1000 Watt",
         "priceEgp": 7200,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/lian-li-edge-full-modular-power-supply-80-plus-platinum-atx-3-0-3-1-pcie-5-1-l-shape-design-for-dual-chamber-case-120mm-fdb-fan-supports-up-to-4x-usb-devices?variant=46220224004245",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Edge-Full-Modular-Power-Supply-80-Plus-Platinum_01.jpg?v=1752839606&width=300"
       },
@@ -11838,20 +11838,20 @@
         "image": "https://alfrensia.com/wp-content/uploads/2026/02/Xigmatek-Prime-M-850W-80-Plus-Gold-ATX-3.1-Full-Modular-Power-Supply-300x300.webp"
       },
       {
-        "store": "sigma",
-        "title": "XIGMATEK Prime M 850W 80 PLUS EU Gold PCIe 5.1 Power Supply - Black | EN48067",
-        "priceEgp": 4299,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=xigmatek-prime-m-850w-80-plus-eu-gold-pcie-51-power-supply-black-en48067-uw9zg7tj0mtn",
-        "image": "https://api.sigma-computer.com/media/fb18e53c-5dc1-4f90-a756-5e9615c6a9df"
-      },
-      {
         "store": "compumarts",
         "title": "Xigmatek Prime M 850W Gold Full Modular PSU (EN48067) | ATX 3.1 & PCIe 5.1 Ready | 12V-2x6 Connector",
         "priceEgp": 4299,
         "inStock": true,
         "url": "https://www.compumarts.com/products/xigmatek-prime-m-850w-gold-full-modular",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Xigmatek-Prime-M-850W-Gold-Full-Modular-PSU_01.jpg?v=1773748505&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "XIGMATEK Prime M 850W 80 PLUS EU Gold PCIe 5.1 Power Supply - Black | EN48067",
+        "priceEgp": 4299,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=xigmatek-prime-m-850w-80-plus-eu-gold-pcie-51-power-supply-black-en48067-uw9zg7tj0mtn",
+        "image": "https://api.sigma-computer.com/media/fb18e53c-5dc1-4f90-a756-5e9615c6a9df"
       },
       {
         "store": "kimo",
@@ -12060,6 +12060,14 @@
     ],
     "psu-xpg-cr2-850": [
       {
+        "store": "compumarts",
+        "title": "XPG CORE REACTOR II 850W GOLD (WHITE) POWER SUPPLY black",
+        "priceEgp": 5700,
+        "inStock": false,
+        "url": "https://www.compumarts.com/products/xpg-core-reactor-ii-power-supply-unit?variant=44784261529749",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/core-reactor-ii_04.jpg?v=1713871384&width=300"
+      },
+      {
         "store": "alfrensia",
         "title": "Xpg Core Reactor II 850W 80 Plus Gold White ATX3.1 Fully Modular Power Supply",
         "priceEgp": 6444,
@@ -12074,14 +12082,6 @@
         "inStock": false,
         "url": "https://www.sigma-computer.com/en/item?id=xpg-core-reactor-ii-850w-80-plus-gold-white-atx31-fully-modular-power-supply-ntmemuxkxy6q",
         "image": "https://api.sigma-computer.com/media/bc7fe4cc-77e8-403d-bd8a-f8b85231201a"
-      },
-      {
-        "store": "compumarts",
-        "title": "XPG CORE REACTOR II 850W GOLD (WHITE) POWER SUPPLY white",
-        "priceEgp": 6499,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/xpg-core-reactor-ii-power-supply-unit?variant=44784261562517",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/core-reactor-ii_02.jpg?v=1713871383&width=300"
       }
     ],
     "psu-xpg-cr2-1000": [
@@ -12612,11 +12612,11 @@
     "mb-asus-prime-b550m-k": [
       {
         "store": "compumarts",
-        "title": "ASUS Prime B550M-K ARGB Micro-ATX Motherboard – AMD B550, AM4, DDR4 5100 OC, PCIe 4.0, Dual M.2, Front USB-C, Aura Sync",
+        "title": "ASUS PRIME B550M-K (AMD B550) (Ryzen AM4) micro ATX motherboard with dual M.2, PCIe 4.0, 1 Gb Ethernet, HDMI/D-Sub/DVI, SATA 6 Gbps, USB 3.2 Gen 2 Type-A",
         "priceEgp": 4100,
         "inStock": false,
-        "url": "https://www.compumarts.com/products/asus-prime-b550m-k-argb-amd-b550-socket-am4-micro-atx-motherboard",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/PRIME-B550M-K-ARGB_01.jpg?v=1719843268&width=300"
+        "url": "https://www.compumarts.com/products/asus-prime-b550m-k-amd-b550-ryzen-am4-micro-atx-motherboard-with-dual-m-2-pcie-4-0-1-gb-ethernet-hdmi-d-sub-dvi-sata-6-gbps-usb-3-2-gen-2-type-a",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/products/ASUS-PRIME-B550M-K_02.jpg?v=1667480688&width=300"
       },
       {
         "store": "elbadr",
@@ -12811,20 +12811,20 @@
     ],
     "mb-asus-prime-b760m-a": [
       {
-        "store": "sigma",
-        "title": "ASUS PRIME B760M-A-CSM - Intel® B760 (LGA 1700) mATX motherboard",
-        "priceEgp": 5875,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b760m-a-csm-matx-ddr5-motherboard-with-lga1700-socket-pcie-40-dual-m2-25gb-lan-usb-type-c-hdmidp-and-aura-sync-rgb-wteahrmoajue",
-        "image": "https://api.sigma-computer.com/media/3a0cdbc5-3c8e-4f3d-9590-bdcd9202c4dd"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS Prime B760M-A CSM DDR5 Motherboard",
         "priceEgp": 5875,
         "inStock": true,
         "url": "https://www.compumarts.com/products/asus-intel-prime-b760m-a-csm-lga1700-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-INTEL-PRIME-B760M-A-CSM-LGA1700-Motherboard_01.jpg?v=1725277500&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS PRIME B760M-A-CSM - Intel® B760 (LGA 1700) mATX motherboard",
+        "priceEgp": 5875,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-b760m-a-csm-matx-ddr5-motherboard-with-lga1700-socket-pcie-40-dual-m2-25gb-lan-usb-type-c-hdmidp-and-aura-sync-rgb-wteahrmoajue",
+        "image": "https://api.sigma-computer.com/media/3a0cdbc5-3c8e-4f3d-9590-bdcd9202c4dd"
       },
       {
         "store": "elbadr",
@@ -12907,14 +12907,6 @@
     ],
     "mb-asus-prime-b760m-k-d4": [
       {
-        "store": "compumarts",
-        "title": "ASUS Prime B760M-K D4 Motherboard Intel B760 LGA 1700 Micro-ATX",
-        "priceEgp": 4850,
-        "inStock": true,
-        "url": "https://www.compumarts.com/products/asus-prime-b760m-k-intel-13th-12th-series-lga-1700-ddr4-pcie-4-0-2xm-2-matx-gaming-motherboard",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/products/ASUS-PRIME-B760M-K_01.jpg?v=1680788360&width=300"
-      },
-      {
         "store": "elbadr",
         "title": "ASUS Prime B760M-K D4 — Intel B760 LGA 1700 mATX motherboard with PCIe 4.0, two PCIe 4.0 M.2 slots, DDR4, Realtek 2.5Gb Ethernet, VGA, HDMI, SATA 6 Gbps, front USB 3.2 Gen 1, Aura Sync",
         "priceEgp": 4850,
@@ -12929,6 +12921,14 @@
         "inStock": true,
         "url": "https://maximumhardware.store/asus-prime-b760m-k-d4",
         "image": "https://maximumhardware.store/image/cache/catalog/Asus/original-300x300w.png"
+      },
+      {
+        "store": "compumarts",
+        "title": "ASUS Prime B760M-K D4 Motherboard Intel B760 LGA 1700 Micro-ATX",
+        "priceEgp": 5350,
+        "inStock": true,
+        "url": "https://www.compumarts.com/products/asus-prime-b760m-k-intel-13th-12th-series-lga-1700-ddr4-pcie-4-0-2xm-2-matx-gaming-motherboard",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/products/ASUS-PRIME-B760M-K_01.jpg?v=1680788360&width=300"
       },
       {
         "store": "sigma",
@@ -13117,20 +13117,20 @@
         "image": "https://elbadrgroupeg.store/image/cache/catalog/Asus/8qSK1qSYmrGZql0Ffgkb5IqZBF-250x250.png"
       },
       {
-        "store": "sigma",
-        "title": "ASUS INTEL PRIME B860M-A-CSM",
-        "priceEgp": 7650,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-intel-prime-b860m-a-csm-92qwwxa9tphu",
-        "image": "https://api.sigma-computer.com/media/954bfbad-49fb-4092-ac45-a67e5fba18bb"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS PRIME B860M-A-CSM Intel LGA1851 DDR5 Micro-ATX Motherboard PCIe 5.0",
         "priceEgp": 7650,
         "inStock": true,
         "url": "https://www.compumarts.com/products/asus-prime-b860m-a-csm-motherboard-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-PRIME-B860M-A-CSM_01.jpg?v=1765368393&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS INTEL PRIME B860M-A-CSM",
+        "priceEgp": 7650,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-intel-prime-b860m-a-csm-92qwwxa9tphu",
+        "image": "https://api.sigma-computer.com/media/954bfbad-49fb-4092-ac45-a67e5fba18bb"
       }
     ],
     "mb-asus-prime-b860m-k": [
@@ -13341,20 +13341,20 @@
     ],
     "mb-asus-prime-x670-p-wifi": [
       {
-        "store": "sigma",
-        "title": "ASUS PRIME X670P WIFI DDR5 Motherboard 90MB1BV0-M0EAY0",
-        "priceEgp": 12500,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-x670p-wifi-ddr5-motherboard-90mb1bv0-m0eay0-szlsdas60yyh",
-        "image": "https://api.sigma-computer.com/media/f3587f3a-9c2b-4a85-b937-998c97f484a6"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS Prime X670-P WiFi Socket AM5 (LGA 1718) Ryzen 7000 ATX Motherboard(DDR5,Three M.2 Slots, USB 3.2 Gen 2x2 Type-C, USB4 Support, WiFi 6 and 2.5Gb Ethernet)",
         "priceEgp": 12500,
         "inStock": false,
         "url": "https://www.compumarts.com/products/asus-prime-x670-p-wifi-socket-am5-lga-1718-ryzen-7000-atx-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-Prime-X670-P-WiFi-Socket-AM5_03.jpg?v=1688904791&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS PRIME X670P WIFI DDR5 Motherboard 90MB1BV0-M0EAY0",
+        "priceEgp": 12500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-x670p-wifi-ddr5-motherboard-90mb1bv0-m0eay0-szlsdas60yyh",
+        "image": "https://api.sigma-computer.com/media/f3587f3a-9c2b-4a85-b937-998c97f484a6"
       },
       {
         "store": "elbadr",
@@ -13403,20 +13403,20 @@
     ],
     "mb-asus-prime-z790-p": [
       {
-        "store": "sigma",
-        "title": "ASUS PRIME Z790-P Socket LGA 1700 Motherboard",
-        "priceEgp": 9800,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-z790-p-ddr5-motherboard-90mb1ck0-m0eay0-tila4lcvrdno",
-        "image": "https://api.sigma-computer.com/media/d7703464-f92b-48c3-a826-4cdd13f57f88"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS PRIME Z790-P Motherboard",
         "priceEgp": 9800,
         "inStock": true,
         "url": "https://www.compumarts.com/products/asus-prime-z790-p-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/PRIME-Z790-P_02.jpg?v=1685451770&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS PRIME Z790-P Socket LGA 1700 Motherboard",
+        "priceEgp": 9800,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-prime-z790-p-ddr5-motherboard-90mb1ck0-m0eay0-tila4lcvrdno",
+        "image": "https://api.sigma-computer.com/media/d7703464-f92b-48c3-a826-4cdd13f57f88"
       },
       {
         "store": "elbadr",
@@ -13455,7 +13455,7 @@
       {
         "store": "compumarts",
         "title": "ASUS Prime Z790-P WIFI DDR5 Motherboard",
-        "priceEgp": 11000,
+        "priceEgp": 11250,
         "inStock": true,
         "url": "https://www.compumarts.com/products/asus-prime-z790-p-wifi-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/PRIME-Z790-P-WIFI_01.jpg?v=1685450273&width=300"
@@ -13543,7 +13543,7 @@
         "store": "compumarts",
         "title": "ASUS ROG STRIX B850-E WIFI GAMING MOTHERBOARD",
         "priceEgp": 16199,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/asus-rog-strix-b850-e-wifi-gaming-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS_ROG_STRIX_B850-E_WIFI_GAMING_MOTHERBOARD.jpg?v=1739025923&width=300"
       },
@@ -13558,20 +13558,20 @@
     ],
     "mb-asus-rog-strix-b850-f-wifi": [
       {
-        "store": "sigma",
-        "title": "ASUS ROG STRIX B850-F GAMING WIFI Socket AM5 LGA 1718 Motherboard",
-        "priceEgp": 15500,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-b850-f-gaming-wifi-atx-am5-ddr5-8000mts-pcie-50-4x-m2-25gb-lan-wi-fi-7-usb-c-20gbps-supremefx-71-ptpqnaf8vtge",
-        "image": "https://api.sigma-computer.com/media/58f7853b-0ea2-4ea6-a60c-7e3e3a1d293e"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS ROG Strix B850-F Gaming WiFi AMD AM5- ATX Motherboard",
         "priceEgp": 15500,
         "inStock": false,
         "url": "https://www.compumarts.com/products/asus-rog-strix-b850-f-gaming-wifi-amd-am5-atx-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-ROG-Strix-B850-F-Gaming-WiFi-AMD-AM5--ATX-Motherboard_01_397b914a-3876-4e6d-b3fb-ce2cd8687898.jpg?v=1739023525&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS ROG STRIX B850-F GAMING WIFI Socket AM5 LGA 1718 Motherboard",
+        "priceEgp": 15500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-b850-f-gaming-wifi-atx-am5-ddr5-8000mts-pcie-50-4x-m2-25gb-lan-wi-fi-7-usb-c-20gbps-supremefx-71-ptpqnaf8vtge",
+        "image": "https://api.sigma-computer.com/media/58f7853b-0ea2-4ea6-a60c-7e3e3a1d293e"
       }
     ],
     "mb-asus-rog-strix-b850-f-neo-wifi": [
@@ -13656,20 +13656,20 @@
     ],
     "mb-asus-rog-strix-x870-a-wifi": [
       {
-        "store": "sigma",
-        "title": "ASUS ROG STRIX X870-A GAMING WIFI Socket LGA 1718 Motherboard",
-        "priceEgp": 20500,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-x870-a-gaming-wifi-supports-amd-ryzen-900080007000-processors-up-to-256gb-ddr5-ram-pcie-50-wi-fi-7-and-25gb-ethernet-with-advanced-cooling-aura-sync-brgomqbf5baw",
-        "image": "https://api.sigma-computer.com/media/3a40c342-9c38-4612-80f3-c39ed0b117d0"
-      },
-      {
         "store": "compumarts",
         "title": "ASUS ROG Strix X870-A Gaming WiFi AMD AM5 ATX Motherboard",
         "priceEgp": 20500,
         "inStock": false,
         "url": "https://www.compumarts.com/products/asus-rog-strix-x870-a-gaming-wifi-amd-am5-atx-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-ROG-Strix-X870-A-Gaming-WiFi-AMD-AM5-ATX-Motherboard_01.jpg?v=1727865227&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ASUS ROG STRIX X870-A GAMING WIFI Socket LGA 1718 Motherboard",
+        "priceEgp": 20500,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=asus-rog-strix-x870-a-gaming-wifi-supports-amd-ryzen-900080007000-processors-up-to-256gb-ddr5-ram-pcie-50-wi-fi-7-and-25gb-ethernet-with-advanced-cooling-aura-sync-brgomqbf5baw",
+        "image": "https://api.sigma-computer.com/media/3a40c342-9c38-4612-80f3-c39ed0b117d0"
       }
     ],
     "mb-asus-rog-strix-x870-f-wifi": [
@@ -15462,20 +15462,20 @@
         "image": "https://elbadrgroupeg.store/image/cache/catalog/products_2026/qhix4DvzvJsoU3lFmd5ucruytH-250x250.png"
       },
       {
-        "store": "sigma",
-        "title": "GIGABYTE AMD AORUS B850M ELITE WIFI6E 1.1",
-        "priceEgp": 11400,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-amd-aorus-b850m-elite-wifi6e-11-5woer2vu9eii",
-        "image": "https://api.sigma-computer.com/media/af625202-ddae-4ccc-85e1-e3781e3be4c7"
-      },
-      {
         "store": "compumarts",
         "title": "GIGABYTE B850M AORUS ELITE WIFI6E AM5 Micro ATX Motherboard DDR5",
         "priceEgp": 11400,
         "inStock": false,
         "url": "https://www.compumarts.com/products/gigabyte-b850m-aorus-elite-wifi6e-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Gigabyte-B850M-AORUS-ELITE-WIFI6E--Motherboard_01.jpg?v=1754573861&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE AMD AORUS B850M ELITE WIFI6E 1.1",
+        "priceEgp": 11400,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-amd-aorus-b850m-elite-wifi6e-11-5woer2vu9eii",
+        "image": "https://api.sigma-computer.com/media/af625202-ddae-4ccc-85e1-e3781e3be4c7"
       }
     ],
     "mb-gigabyte-b850m-force": [
@@ -15566,20 +15566,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Gigabyte/81U+SuxDL9L._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "GIGABYTE B860 EAGLE WIFI6E",
-        "priceEgp": 10000,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b860-eagle-wifi6e-1rt0nq9qmj0a",
-        "image": "https://api.sigma-computer.com/media/fea4787c-6ea2-4200-bbe0-fbafaea3dd2d"
-      },
-      {
         "store": "compumarts",
         "title": "Motherboard GIGABYTE B860 EAGLE WIFI6E DDR5 LGA1851 ATX",
         "priceEgp": 10000,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gigabyte-b860-eagle-wifi6e-ddr5-lga1851-atx-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/GIGABYTE-B860-EAGLE-WIFI6E-DDR5-LGA1851--ATX-Motherboard_01.jpg?v=1738081228&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE B860 EAGLE WIFI6E",
+        "priceEgp": 10000,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-b860-eagle-wifi6e-1rt0nq9qmj0a",
+        "image": "https://api.sigma-computer.com/media/fea4787c-6ea2-4200-bbe0-fbafaea3dd2d"
       }
     ],
     "mb-gigabyte-b860m-wifi": [
@@ -15748,7 +15748,7 @@
       {
         "store": "compumarts",
         "title": "Gigabyte B860M AORUS ELITE Motherboard – Intel LGA1851, DDR5, PCIe 5.0, 2.5GbE LAN",
-        "priceEgp": 9800,
+        "priceEgp": 9999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/motherboard-b860m-aorus-elite-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/B860M-AORUS-ELITE_01.jpg?v=1754481704&width=300"
@@ -16026,7 +16026,7 @@
         "store": "compumarts",
         "title": "GIGABYTE X870E AORUS Elite WIFI7 AMD AM5 LGA 1718 Motherboard",
         "priceEgp": 16700,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/gigabyte-x870e-aorus-elite-wifi7-amd-am5-lga-1718-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/GIGABYTE-X870E-AORUS-Elite-WIFI7-AMD-AM5-LGA-1718-Motherboard_01.jpg?v=1739208139&width=300"
       },
@@ -16528,20 +16528,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Gigabyte/81m7GvixBQL._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "GIGABYTE Z890M GAMING X Socket LGA 1851 Motherboard",
-        "priceEgp": 10500,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-z890m-gaming-x-lga1851-intel-z890-ddr5-9066mts-256gb-pcie-50-x16-3x-m2-25gbe-lan-hdmi-21-dp-21-usb-c-micro-atx-bpsbcqihim1a",
-        "image": "https://api.sigma-computer.com/media/bad7621c-5a98-44ac-8e68-15b6ac5b7bf8"
-      },
-      {
         "store": "compumarts",
         "title": "GIGABYTE Z890M Gaming X Micro ATX LGA 1851 Motherbaord Intel Z890 Chipset DDR5",
         "priceEgp": 10500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gigabyte-z890m-gaming-x-1-0-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/GIGABYTE-Z890M-Gaming-X-Micro-ATX-LGA-1851-Motherbaord_01.jpg?v=1738072499&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GIGABYTE Z890M GAMING X Socket LGA 1851 Motherboard",
+        "priceEgp": 10500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=gigabyte-z890m-gaming-x-lga1851-intel-z890-ddr5-9066mts-256gb-pcie-50-x16-3x-m2-25gbe-lan-hdmi-21-dp-21-usb-c-micro-atx-bpsbcqihim1a",
+        "image": "https://api.sigma-computer.com/media/bad7621c-5a98-44ac-8e68-15b6ac5b7bf8"
       }
     ],
     "mb-msi-a520m-a": [
@@ -16927,7 +16927,7 @@
         "store": "compumarts",
         "title": "MSI PRO B760M-E Motherboard",
         "priceEgp": 5100,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/msi-pro-b760m-e-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-PRO-B760M-E_02.jpg?v=1713964122&width=300"
       },
@@ -17489,11 +17489,11 @@
       },
       {
         "store": "compumarts",
-        "title": "MSI B850M GAMING PLUS WIFI AM5 DDR5 mATX Gaming Motherboard",
+        "title": "MSI B850M GAMING PLUS WIFI6E DDR5 Motherboard",
         "priceEgp": 9600,
         "inStock": true,
-        "url": "https://www.compumarts.com/products/msi-b850m-gaming-plus-wifi-am5-ddr5-motherboard-egypt",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-B850M-GAMING-PLUS-WIFI-AM5-DDR5-mATX-Gaming-Motherboard_01.jpg?v=1775143512&width=300"
+        "url": "https://www.compumarts.com/products/msi-b850m-gaming-plus-wifi6e-egypt",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/B850M-GAMING-PLUS-WIFI6E_01.jpg?v=1755696090&width=300"
       },
       {
         "store": "sigma",
@@ -17514,20 +17514,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Msi/81UQEqouNjL._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "MSI PRO B860-P WIFI Socket LGA 1851 Motherboard",
-        "priceEgp": 11000,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b860-p-wifi-intel-core-ultra-support-ddr5-8800-mts-pcie-50-gen5-m2-wi-fi-7-5g-lan-thunderbolt-4-atx-0dvbmtowhfzn",
-        "image": "https://api.sigma-computer.com/media/a97e5c66-a4bc-46de-b095-e95dd64d7f63"
-      },
-      {
         "store": "compumarts",
         "title": "MSI Pro B860-P WiFi Motherboard",
         "priceEgp": 11000,
         "inStock": false,
         "url": "https://www.compumarts.com/products/msi-pro-b860-p-wifi-motherboard",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/PRO-B860-P-WIFI-DDR5_01.jpg?v=1745490796&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI PRO B860-P WIFI Socket LGA 1851 Motherboard",
+        "priceEgp": 11000,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-pro-b860-p-wifi-intel-core-ultra-support-ddr5-8800-mts-pcie-50-gen5-m2-wi-fi-7-5g-lan-thunderbolt-4-atx-0dvbmtowhfzn",
+        "image": "https://api.sigma-computer.com/media/a97e5c66-a4bc-46de-b095-e95dd64d7f63"
       }
     ],
     "mb-msi-b860-plus-wifi": [
@@ -17594,7 +17594,7 @@
       {
         "store": "compumarts",
         "title": "MSI MAG B860M MORTAR WIFI DDR5 Motherboard",
-        "priceEgp": 10750,
+        "priceEgp": 10999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/msi-mag-b860m-mortar-wifi-lga1851-ddr5-pcie5-wifi7",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-MAG-B860M-MORTAR-WIFI-_-LGA1851-Micro-ATX-DDR5-Motherboard_-PCIe-5.0-x16_-1x-M.2-Gen5-_-2x-Gen4_-Wi-Fi-7_-5G-LAN_-Thunderbolt-4_02.jpg?v=1755724348&width=300"
@@ -17658,20 +17658,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Msi/81XcK6JtyYL._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "MSI B860M GAMING PLUS WIFI",
-        "priceEgp": 10000,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=msi-b860m-gaming-plus-wifi-wnw4aojdkwan",
-        "image": "https://api.sigma-computer.com/media/3698f34e-2e89-4395-8a57-da74812e7387"
-      },
-      {
         "store": "compumarts",
         "title": "MSI B860M GAMING PLUS WIFI DDR5 Motherboard",
         "priceEgp": 10000,
         "inStock": true,
         "url": "https://www.compumarts.com/products/msi-b860m-gaming-plus-wifi-lga1851-ddr5-pcie5-wifi7",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-B860M-GAMING-PLUS-WIFI-_-LGA1851-Micro-ATX-DDR5_-PCIe-5.0-x16_-M_02.jpg?v=1755768899&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI B860M GAMING PLUS WIFI",
+        "priceEgp": 10000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-b860m-gaming-plus-wifi-wnw4aojdkwan",
+        "image": "https://api.sigma-computer.com/media/3698f34e-2e89-4395-8a57-da74812e7387"
       }
     ],
     "mb-msi-h610m-e-d4": [
@@ -18126,20 +18126,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Msi/81xHT4ZP5pL._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "MSI MAG Z790 Tomahawk MAX WiFi Gaming Motherboard (Supports 12th/13th/14th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, SATA 6G, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 7, Bluetooth 5.4, ATX)",
-        "priceEgp": 16000,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=msi-mag-z790-tomahawk-max-wifi-gaming-motherboard-supports-12th13th14th-gen-intel-processors-lga-1700-ddr5-pcie-50-m2-sata-6g-25gbps-lan-usb-32-gen2-wi-fi-7-bluetooth-54-atx-fgc4fdl9eij7",
-        "image": "https://api.sigma-computer.com/media/deb9247f-6252-4e71-a730-00e996351f92"
-      },
-      {
         "store": "compumarts",
         "title": "MSI MAG Z790 TOMAHAWK MAX WIFI",
         "priceEgp": 16000,
         "inStock": false,
         "url": "https://www.compumarts.com/products/msi-mag-z790-tomahawk-max-wifi",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MSI-MAG-Z790-TOMAHAWK-MAX-WIFI_01.jpg?v=1704031380&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI MAG Z790 Tomahawk MAX WiFi Gaming Motherboard (Supports 12th/13th/14th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, SATA 6G, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 7, Bluetooth 5.4, ATX)",
+        "priceEgp": 16000,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-mag-z790-tomahawk-max-wifi-gaming-motherboard-supports-12th13th14th-gen-intel-processors-lga-1700-ddr5-pcie-50-m2-sata-6g-25gbps-lan-usb-32-gen2-wi-fi-7-bluetooth-54-atx-fgc4fdl9eij7",
+        "image": "https://api.sigma-computer.com/media/deb9247f-6252-4e71-a730-00e996351f92"
       },
       {
         "store": "ahw",
@@ -18254,20 +18254,20 @@
         "image": "https://maximumhardware.store/image/cache/catalog/Msi/81WaMcuTOcL._AC_SL1500_-300x300w.jpg"
       },
       {
-        "store": "sigma",
-        "title": "MSI INTEL MPG Z890 EDGE TI WIFI",
-        "priceEgp": 22500,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=msi-intel-mpg-z890-edge-ti-wifi-9floogacbdq6",
-        "image": "https://api.sigma-computer.com/media/f84aec24-24fa-4fa9-b561-529751b1caf7"
-      },
-      {
         "store": "compumarts",
         "title": "MSI MPG Z890 EDGE TI WIFI Motherboard – Intel Z890, LGA 1851, DDR5, PCIe 5.0, WiFi 7, 5G LAN",
         "priceEgp": 22500,
         "inStock": false,
         "url": "https://www.compumarts.com/products/msi-mpg-z890-edge-ti-wifi-lga1851-motherboard-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MPG-Z890-EDGE-TI-WIFI_01.jpg?v=1775130984&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "MSI INTEL MPG Z890 EDGE TI WIFI",
+        "priceEgp": 22500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=msi-intel-mpg-z890-edge-ti-wifi-9floogacbdq6",
+        "image": "https://api.sigma-computer.com/media/f84aec24-24fa-4fa9-b561-529751b1caf7"
       },
       {
         "store": "elbadr",
@@ -19816,20 +19816,20 @@
         "image": "https://cdn.shopify.com/s/files/1/0554/5594/0776/files/GamdiasBOREASM1-620ARGBCPUAirCooler-Black_6.jpg?v=1788626796&width=300"
       },
       {
-        "store": "sigma",
-        "title": "GAMDIAS BOREAS M1-620 Dual Tower CPU Air Cooler with 6 Copper Heat Pipes and 2 Hydraulic Bearing Fans",
-        "priceEgp": 1999,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=gamdias-boreas-m1-620-dual-tower-cpu-air-cooler-with-6-copper-heat-pipes-and-2-hydraulic-bearing-fans-pzltzovyulht",
-        "image": "https://api.sigma-computer.com/media/fc306a11-fe4c-4225-bc97-485f6a7a5eb6"
-      },
-      {
         "store": "compumarts",
         "title": "GAMDIAS BOREAS M1-620 ARGB",
         "priceEgp": 1999,
         "inStock": true,
         "url": "https://www.compumarts.com/products/gamdias-boreas-m1-620-argb-2600-rpm-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Template-_-watermark-_-Warranty-2-_2_-Recovered_01_ba31b6f9-71fe-48aa-87dd-519d93cd3eec.jpg?v=1787752238&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "GAMDIAS BOREAS M1-620 Dual Tower CPU Air Cooler with 6 Copper Heat Pipes and 2 Hydraulic Bearing Fans",
+        "priceEgp": 1999,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=gamdias-boreas-m1-620-dual-tower-cpu-air-cooler-with-6-copper-heat-pipes-and-2-hydraulic-bearing-fans-pzltzovyulht",
+        "image": "https://api.sigma-computer.com/media/fc306a11-fe4c-4225-bc97-485f6a7a5eb6"
       }
     ],
     "cool-gamdias-m2-51d": [
@@ -20994,20 +20994,20 @@
         "image": "https://alfrensia.com/wp-content/uploads/2026/01/Antec-Skeleton-360mm-Radiator-Skeleton-Frame-Pump-3-120mm-ARGB-PWM-Fans-Liquid-CPU-Cooler-300x300.webp"
       },
       {
-        "store": "sigma",
-        "title": "ANTEC Skeleton 360 ARGB",
-        "priceEgp": 3300,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=antec-skeleton-360-argb-xxki0o5zdbxg",
-        "image": "https://api.sigma-computer.com/media/cd7bf14c-fee5-44a8-9f18-0865ed15095d"
-      },
-      {
         "store": "compumarts",
         "title": "Antec Skeleton 360 ARGB Liquid CPU Cooler",
         "priceEgp": 3300,
         "inStock": true,
         "url": "https://www.compumarts.com/products/antec-skeleton-360-argb-liquid-cpu-cooler-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Antec-Skeleton-360-ARGB-Liquid-CPU-Cooler_01_01.jpg?v=1776614115&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "ANTEC Skeleton 360 ARGB",
+        "priceEgp": 3300,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=antec-skeleton-360-argb-xxki0o5zdbxg",
+        "image": "https://api.sigma-computer.com/media/cd7bf14c-fee5-44a8-9f18-0865ed15095d"
       }
     ],
     "cool-antec-symphony-360": [
@@ -21518,20 +21518,20 @@
     ],
     "cool-asus-prime-lc-360": [
       {
-        "store": "compumarts",
-        "title": "ASUS Prime LC 360 ARGB LCD All-in-one CPU Liquid Cooler Black",
-        "priceEgp": 4999,
-        "inStock": false,
-        "url": "https://www.compumarts.com/products/asus-prime-lc-360-argb-liquid-cpu-cooler-360mm-radiator-prime-lc-36025-integrated-fan-2200-rpm-fan-speed-75-7-cfm-airflow-400mm-sleeved-rubber-tube-black-90rc0101-b0eay0?variant=45969835720853",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-Prime-LC-360-aRGB-Liquid-CPU-Cooler_04.jpg?v=1745271104&width=300"
-      },
-      {
         "store": "uptodate",
         "title": "Asus Asus Prime LC 360 ARGB all-in-one CPU liquid cooler",
         "priceEgp": 5000,
         "inStock": false,
         "url": "https://uptodate.store/product/asus-asus-prime-lc-360-argb-all-in-one-cpu-liquid-cooler/",
         "image": "https://uptodate.store/wp-content/uploads/2025/10/c3-800x800-2-600x600.jpg"
+      },
+      {
+        "store": "compumarts",
+        "title": "ASUS Prime LC 360 ARGB LCD All-in-one CPU Liquid Cooler Black",
+        "priceEgp": 5150,
+        "inStock": false,
+        "url": "https://www.compumarts.com/products/asus-prime-lc-360-argb-liquid-cpu-cooler-360mm-radiator-prime-lc-36025-integrated-fan-2200-rpm-fan-speed-75-7-cfm-airflow-400mm-sleeved-rubber-tube-black-90rc0101-b0eay0?variant=45969835720853",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ASUS-Prime-LC-360-aRGB-Liquid-CPU-Cooler__01.jpg?v=1729669194&width=300"
       },
       {
         "store": "sigma",
@@ -21757,7 +21757,7 @@
         "store": "compumarts",
         "title": "ROG RYUO IV SLC 360 ARGB Black",
         "priceEgp": 24240,
-        "inStock": false,
+        "inStock": true,
         "url": "https://www.compumarts.com/products/nbsp-asus-rog-ryuo-iv-slc-360-argb-moveable-curved-6-7-amoled-lcd-nbsp-liquid-cpu-cooler?variant=46911641256085",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ROG-RYUO-IV-SLC-360-ARGB-MOVEABLE_02.jpg?v=1747923727&width=300"
       }
@@ -21817,7 +21817,7 @@
         "store": "compumarts",
         "title": "ROG STRIX LC III 360 ARGB LCD WHT Black",
         "priceEgp": 11000,
-        "inStock": true,
+        "inStock": false,
         "url": "https://www.compumarts.com/products/asus-rog-strix-lc-iii-360-argb-lcd-liquid-cpu-cooler?variant=45563498070165",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/ROG-STRIX-LC-III-360-ARGB-LCD_01.jpg?v=1732034799&width=300"
       },
@@ -22008,20 +22008,20 @@
     ],
     "cool-cm-ml360-atmos-stealth": [
       {
-        "store": "sigma",
-        "title": "Cooler Master MasterLiquid 360 Atmos Stealth High Performance AIO Liquid Cooler, Dual Chamber Pump, 3x Mobius 120 PWM Fans, AMD AM5/AM4, Intel LGA 1851/1700",
-        "priceEgp": 6500,
-        "inStock": false,
-        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-masterliquid-360-atmos-stealth-high-performance-aio-liquid-cooler-dual-chamber-pump-3x-mobius-120-pwm-fans-amd-am5am4-intel-lga-18511700-nrxm6mdnejf2",
-        "image": "https://api.sigma-computer.com/media/bb2756de-17bc-4607-bf32-943fcffaef36"
-      },
-      {
         "store": "compumarts",
         "title": "MasterLiquid 360 Atmos stealth",
         "priceEgp": 6500,
         "inStock": true,
         "url": "https://www.compumarts.com/products/cooler-master-masterliquid-360-atmos-stealth-egypt",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MasterLiquid-ATMOS-Stealth-Series_01.jpg?v=1768227515&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Cooler Master MasterLiquid 360 Atmos Stealth High Performance AIO Liquid Cooler, Dual Chamber Pump, 3x Mobius 120 PWM Fans, AMD AM5/AM4, Intel LGA 1851/1700",
+        "priceEgp": 6500,
+        "inStock": false,
+        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-masterliquid-360-atmos-stealth-high-performance-aio-liquid-cooler-dual-chamber-pump-3x-mobius-120-pwm-fans-amd-am5am4-intel-lga-18511700-nrxm6mdnejf2",
+        "image": "https://api.sigma-computer.com/media/bb2756de-17bc-4607-bf32-943fcffaef36"
       },
       {
         "store": "elbadr",
@@ -22219,11 +22219,11 @@
       },
       {
         "store": "compumarts",
-        "title": "Cooler Master MasterLiquid Core NEX AIO Liquid Cooler with 360mm Black",
-        "priceEgp": 4900,
+        "title": "Cooler Master MasterLiquid Core NEX AIO Liquid Cooler with 360mm White",
+        "priceEgp": 4950,
         "inStock": true,
-        "url": "https://www.compumarts.com/products/products-cooler-master-masterliquid-core-nex-digital-360-black-360mm-argb-led-digital-display-liquid-cooler?variant=47444874002581",
-        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MASTERLIQUID-CORE-NEX_01.jpg?v=1781441908&width=300"
+        "url": "https://www.compumarts.com/products/products-cooler-master-masterliquid-core-nex-digital-360-black-360mm-argb-led-digital-display-liquid-cooler?variant=47444874035349",
+        "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/MASTERLIQUID-CORE-NEX_02.jpg?v=1781441908&width=300"
       }
     ],
     "cool-cm-core-nex-digital-360": [
@@ -22412,20 +22412,20 @@
         "image": "https://elbadrgroupeg.store/image/cache/catalog/coolermaster/ZOWr7Xk7dLFhxFInKqsVv31BFeEsqfcQLhMnWjsWWSJFCSORFz8q2uvi0QmLoTga-250x250.png"
       },
       {
-        "store": "sigma",
-        "title": "Cooler Master MasterLiquid PL360 FLUX ARGB – 360mm liquid cooler, 3x 120mm ARGB fans, aluminum radiator, Intel & AMD sockets, 2300 RPM, low-noise pump",
-        "priceEgp": 6000,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-masterliquid-pl360-flux-argb-360mm-liquid-cooler-3x-120mm-argb-fans-aluminum-radiator-intel-amd-sockets-2300-rpm-low-noise-pump-dduzoqg1zsns",
-        "image": "https://api.sigma-computer.com/media/a63be4e0-9772-455c-a8c9-14f3aa3a6ea2"
-      },
-      {
         "store": "compumarts",
         "title": "LIQUID COOLER MASTER PL360 FLUX Black",
         "priceEgp": 6000,
         "inStock": true,
         "url": "https://www.compumarts.com/products/cooler-master-masterliquid-pl360-flux-argb-360mm-liquid-cooler?variant=45255691698325",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Cooler-Master-MasterLiquid-PL360-FLUX_nbsp_ARGB_nbsp_360mm-Liquid-Cooler_01.jpg?v=1721293511&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Cooler Master MasterLiquid PL360 FLUX ARGB – 360mm liquid cooler, 3x 120mm ARGB fans, aluminum radiator, Intel & AMD sockets, 2300 RPM, low-noise pump",
+        "priceEgp": 6000,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=cooler-master-masterliquid-pl360-flux-argb-360mm-liquid-cooler-3x-120mm-argb-fans-aluminum-radiator-intel-amd-sockets-2300-rpm-low-noise-pump-dduzoqg1zsns",
+        "image": "https://api.sigma-computer.com/media/a63be4e0-9772-455c-a8c9-14f3aa3a6ea2"
       },
       {
         "store": "alfrensia",
@@ -23582,20 +23582,20 @@
     ],
     "cool-lianli-galahad-ii-lite-360": [
       {
-        "store": "sigma",
-        "title": "Lian Li Galahad II Lite 360MM RGB Black AIO Liquid CPU Cooler",
-        "priceEgp": 4599,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-galahad-ii-lite-360mm-rgb-black-aio-liquid-cpu-cooler-ucevmauxxgjn",
-        "image": "https://api.sigma-computer.com/media/85ac6fff-6794-4a7e-b419-d165cbf30f92"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li Galahad II Lite 360MM Performance Black AIO Liquid Cpu Cooler",
         "priceEgp": 4599,
         "inStock": false,
         "url": "https://www.compumarts.com/products/lian-li-galahad-ii-lite-360mm-performance-black-aio-liquid-cpu-cooler",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Galahad-II-Lite-360MM-Performance-Black-AIO-Liquid-Cpu-Cooler_01.jpg?v=1752918122&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "Lian Li Galahad II Lite 360MM RGB Black AIO Liquid CPU Cooler",
+        "priceEgp": 4599,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-galahad-ii-lite-360mm-rgb-black-aio-liquid-cpu-cooler-ucevmauxxgjn",
+        "image": "https://api.sigma-computer.com/media/85ac6fff-6794-4a7e-b419-d165cbf30f92"
       },
       {
         "store": "alfrensia",
@@ -23708,20 +23708,20 @@
     ],
     "cool-lianli-galahad-ii-trinity-perf-360": [
       {
-        "store": "sigma",
-        "title": "LIAN LI Galahad II Trinity Performance 360MM Daisy chainable Radiator LCP Fans Black AIO-GA2P36B",
-        "priceEgp": 5099,
-        "inStock": true,
-        "url": "https://www.sigma-computer.com/en/item?id=lian-li-galahad-ii-trinity-performance-360mm-high-speed-4200rpm-pump-triple-swappable-caps-3000rpm-lcp-fans-strong-airflow-amdintel-socket-support-doxmqcn9ylb8",
-        "image": "https://api.sigma-computer.com/media/9a3f3ef5-961d-44cf-84d0-9013891610ed"
-      },
-      {
         "store": "compumarts",
         "title": "Lian Li Galahad II Trinity Performance 360MM Daisy chainable Radiator LCP Fans Black AIO Liquid Cpu Cooler WHITE",
         "priceEgp": 5099,
         "inStock": true,
         "url": "https://www.compumarts.com/products/lian-li-galahad-ii-trinity-performance-360mm-daisy-chainable-radiator-lcp-fans-aio-liquid-cpu-cooler?variant=46001070047381",
         "image": "https://cdn.shopify.com/s/files/1/0622/7050/5109/files/Lian-Li-Galahad-II-Trinity-Performance-360MM_02.jpg?v=1746533167&width=300"
+      },
+      {
+        "store": "sigma",
+        "title": "LIAN LI Galahad II Trinity Performance 360MM Daisy chainable Radiator LCP Fans Black AIO-GA2P36B",
+        "priceEgp": 5099,
+        "inStock": true,
+        "url": "https://www.sigma-computer.com/en/item?id=lian-li-galahad-ii-trinity-performance-360mm-high-speed-4200rpm-pump-triple-swappable-caps-3000rpm-lcp-fans-strong-airflow-amdintel-socket-support-doxmqcn9ylb8",
+        "image": "https://api.sigma-computer.com/media/9a3f3ef5-961d-44cf-84d0-9013891610ed"
       },
       {
         "store": "alfrensia",

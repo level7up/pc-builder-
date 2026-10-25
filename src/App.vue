@@ -7,7 +7,7 @@ import { STORES } from './domain/store'
 import { useBuild } from './useBuild'
 import { useLocale } from './i18n/useLocale'
 import { useTheme } from './useTheme'
-import { BUILDS_HASH, goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, useRoute, WISHLIST_HASH } from './useRoute'
+import { BUILDS_HASH, goTo, HOME_HASH, PARTS_HASH, PRICES_HASH, STORES_HASH, useRoute, WISHLIST_HASH } from './useRoute'
 import { useSavedBuilds } from './useSavedBuilds'
 import type { SavedBuild } from './domain/savedBuilds'
 import { useWishlist } from './useWishlist'
@@ -34,6 +34,8 @@ import BuildsPage from './components/BuildsPage.vue'
 import SaveBuildPanel from './components/SaveBuildPanel.vue'
 import SavedBuildPage from './components/SavedBuildPage.vue'
 import TabBar from './components/TabBar.vue'
+import StoresPage from './components/StoresPage.vue'
+import StoreProfile from './components/StoreProfile.vue'
 import InstallmentPanel from './components/InstallmentPanel.vue'
 import { buildText } from './export'
 import { fitsWith, needsSuggestion, suggestBoards, suggestCpus } from './domain/suggest'
@@ -112,6 +114,7 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
         <a class="pill builds-link" :href="BUILDS_HASH" :aria-current="route.name === 'builds' || route.name === 'build' ? 'page' : undefined">
           {{ t.builds.nav }}<span v-if="savedBuilds.builds.value.length" class="count muted-count">{{ savedBuilds.builds.value.length }}</span>
         </a>
+        <a class="pill stores-link" :href="STORES_HASH" :aria-current="route.name === 'stores' || route.name === 'store' ? 'page' : undefined">{{ t.shops.nav }}</a>
         <a class="pill changes-link" :href="PRICES_HASH" :aria-current="route.name === 'prices' ? 'page' : undefined">{{ t.changes.link }}</a>
         <button class="pill lang" type="button" @click="toggle">{{ t.switchTo }}</button>
         <button v-if="installPrompt.canInstall.value" class="pill install" type="button" :aria-label="t.installApp" :title="t.installApp" @click="installPrompt.install">
@@ -123,6 +126,10 @@ const suggestTitle: Partial<Record<Category, 'forBoard' | 'forCpu'>> = { cpu: 'f
     <PriceChanges v-if="route.name === 'prices'" :t="t" :locale="locale" />
 
     <PartsPage v-else-if="route.name === 'parts'" :t="t" :locale="locale" />
+
+    <StoresPage v-else-if="route.name === 'stores'" :t="t" :locale="locale" />
+
+    <StoreProfile v-else-if="route.name === 'store'" :key="route.id" :store-id="route.id" :t="t" :locale="locale" />
 
     <WishlistPage v-else-if="route.name === 'wishlist'" :t="t" :locale="locale" />
 
@@ -243,6 +250,6 @@ h1 { margin: 12px 0 0; font-size: 22px; font-weight: 800; letter-spacing: -.01em
   .toggles { justify-content: flex-start; inline-size: 100%; }
   .toggles { flex-wrap: nowrap; }
   .toggles :deep(.nav-search) { flex: 1 1 auto; min-width: 0; order: -1; }
-  .home-link, .parts-link, .wishlist-link, .builds-link, .changes-link { display: none; }
+  .home-link, .parts-link, .wishlist-link, .builds-link, .stores-link, .changes-link { display: none; }
 }
 </style>

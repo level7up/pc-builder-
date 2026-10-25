@@ -224,6 +224,17 @@ export interface Messages {
     empty: string
     loading: string
   }
+  shops: {
+    nav: string
+    title: string
+    hint: string
+    products: (count: string) => string
+    inStock: (count: string) => string
+    cheapest: (count: string) => string
+    open: string
+    visit: string
+    back: string
+  }
   store: {
     title: string
     all: string

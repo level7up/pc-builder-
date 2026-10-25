@@ -4,7 +4,7 @@ import { storePrices, type FoundPart } from '../domain/lookup'
 import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
 import { formatEgp } from '../format'
-import { HOME_HASH } from '../useRoute'
+import { HOME_HASH, storeHash } from '../useRoute'
 import FavoriteButton from './FavoriteButton.vue'
 import CompareButton from './CompareButton.vue'
 import { wishKey } from '../domain/wishlist'
@@ -60,7 +60,7 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
       <tbody>
         <tr v-for="(row, i) in rows" :key="row.store.id" :class="{ missing: !row.offer, gone: row.offer && !row.offer.inStock, mine: row.store.name === storeName }">
           <td class="store">
-            <b>{{ row.store.name }}</b>
+            <a class="store-link" :href="storeHash(row.store.id)"><b>{{ row.store.name }}</b></a>
             <small v-if="row.store.name === storeName" class="tag">{{ t.profile.yourStore }}</small>
             <small v-if="row.offer" class="title">{{ row.offer.title }}</small>
           </td>
@@ -111,6 +111,8 @@ td { padding: 8px; border-block-end: 1px solid var(--line); vertical-align: top;
 .num { text-align: end; white-space: nowrap; font-weight: 700; font-variant-numeric: tabular-nums; }
 .store { min-width: 0; }
 .store b { margin-inline-end: 6px; }
+.store-link { color: inherit; text-decoration: none; }
+.store-link:hover { color: var(--accent); }
 .title { display: block; color: var(--muted); font-size: 12px; direction: ltr; unicode-bidi: plaintext; text-align: start; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-inline-size: 420px; }
 .tag { font-size: 11px; font-weight: 700; color: var(--accent); }
 .status { white-space: nowrap; color: var(--ok); }
