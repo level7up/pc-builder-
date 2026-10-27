@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import type { StoreListing } from '../domain/browse'
 import type { Locale, Messages } from '../i18n/messages'
-import { formatEgp } from '../format'
+import { formatCount, formatEgp } from '../format'
 import { partHash, storeHash } from '../useRoute'
 import { wishKey } from '../domain/wishlist'
 import FavoriteButton from './FavoriteButton.vue'
@@ -36,6 +36,7 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
     <div class="foot">
       <strong class="price">{{ formatEgp(offer.priceEgp, locale) }}</strong>
       <span v-if="!offer.inStock" class="sold">{{ t.offers.outOfStock }}</span>
+      <span v-else-if="offer.quantity !== undefined" class="qty">{{ t.offers.quantity(formatCount(offer.quantity, locale)) }}</span>
     </div>
     <a class="buy" :href="offer.url" target="_blank" rel="noopener">{{ t.browse.openAtStore }} ↗</a>
   </article>
@@ -64,6 +65,7 @@ const image = computed(() => (brokenImage.value ? undefined : offer.value.image 
 .sold { font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; color: var(--bad); border: 1px solid color-mix(in srgb, var(--bad) 45%, var(--line)); }
 .buy { text-align: center; padding: 9px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); color: var(--accent); font-size: 14px; font-weight: 700; text-decoration: none; }
 .buy:hover { background: var(--accent); color: var(--accent-ink); }
+.qty { font-size: 12px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
 .gone .price { color: var(--muted); text-decoration: line-through; }
 .gone .image { opacity: 0.6; }
 </style>

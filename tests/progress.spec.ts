@@ -37,6 +37,12 @@ describe('scrape progress', () => {
     expect(line).toContain('~30s left')
   })
 
+  it('names the stage a store is in after matching', () => {
+    const counting = storeLine(state({ stage: 'stock counts', done: 50, total: 200 }), 50_000)
+    expect(counting).toContain('50/200  25%')
+    expect(counting).toContain('stock counts, ~2m 30s left')
+  })
+
   it('marks a finished store with its duration, or as failed', () => {
     expect(storeLine(state({ done: 100, matched: 60, finishedAt: 65_000 }), 70_000)).toContain('done in 1m 05s')
     expect(storeLine(state({ done: 100, errors: 100, finishedAt: 5_000, failed: true }), 6_000)).toContain('failed, keeping old prices')

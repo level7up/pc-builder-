@@ -2,6 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { pickOffer } from './lib/match.mjs'
 import { STORES } from './lib/stores.mjs'
 import { createProgress } from './lib/progress.mjs'
+import { addQuantities } from './lib/quantity.mjs'
 import { argList, mergeOffers, pickStores } from './lib/select.mjs'
 
 const DATA_DIR = new URL('../src/data/', import.meta.url)
@@ -30,8 +31,14 @@ async function scrapeStore(store, terms, references, progress) {
     if (!store.usesCatalog) await sleep(REQUEST_GAP_MS)
   }
   const failed = errors.length === ids.length
+  const counted = failed || !store.quantityOf ? { offers, errors: [] } : await countStock(store, offers, progress)
   progress.update(store.id, { finishedAt: Date.now(), failed })
-  return { store, offers, errors, failed }
+  return { store, offers: counted.offers, errors: [...errors, ...counted.errors], failed }
+}
+
+function countStock(store, offers, progress) {
+  progress.update(store.id, { stage: 'stock counts', done: 0, total: Object.values(offers).filter(o => o.inStock).length, startedAt: Date.now() })
+  return addQuantities(offers, store.quantityOf, { onCount: done => progress.update(store.id, { done }) })
 }
 
 function printErrors(results) {

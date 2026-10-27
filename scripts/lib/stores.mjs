@@ -1,3 +1,5 @@
+import { mainSectionId, readInventoryQuantity, retryWhenBusy, withSection } from './quantity.mjs'
+
 const USER_AGENT = 'Mozilla/5.0'
 const REQUEST_TIMEOUT_MS = 30_000
 const SHOPIFY_PAGE_SIZE = 250
@@ -115,7 +117,22 @@ export function fromSigmaHtml(html, siteUrl) {
   }, httpsOnly(product.thumbnail?.url)))
 }
 
-function shopifyStore(id, name, url) {
+function shopifyQuantity() {
+  let sectionId
+  const page = retryWhenBusy(get)
+  const fromPage = async productUrl => {
+    const html = await page(productUrl, 'html')
+    sectionId ??= mainSectionId(html)
+    return readInventoryQuantity(html)
+  }
+  return async productUrl => {
+    if (!sectionId) return fromPage(productUrl)
+    const quantity = await page(withSection(productUrl, sectionId), 'html').then(readInventoryQuantity, () => undefined)
+    return quantity ?? fromPage(productUrl)
+  }
+}
+
+function shopifyStore(id, name, url, { countsStock = false } = {}) {
   let catalog
   const loadCatalog = async () => {
     const pages = []
@@ -126,7 +143,8 @@ function shopifyStore(id, name, url) {
     }
     return pages.flat()
   }
-  return { id, name, url, usesCatalog: true, products: () => (catalog ??= loadCatalog()) }
+  const store = { id, name, url, usesCatalog: true, products: () => (catalog ??= loadCatalog()) }
+  return countsStock ? { ...store, quantityOf: shopifyQuantity() } : store
 }
 
 const wooStore = (id, name, url, apiBase = url) => ({
@@ -151,7 +169,7 @@ const sigmaStore = (id, name, url) => ({
 })
 
 export const STORES = [
-  shopifyStore('compumarts', 'Compumarts', 'https://www.compumarts.com'),
+  shopifyStore('compumarts', 'Compumarts', 'https://www.compumarts.com', { countsStock: true }),
   shopifyStore('kimo', 'Kimo Store', 'https://kimostore.net'),
   shopifyStore('ahw', 'AHW Store', 'https://ahw.store'),
   sigmaStore('sigma', 'Sigma Computer', 'https://www.sigma-computer.com'),

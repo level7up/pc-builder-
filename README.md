@@ -30,7 +30,7 @@ and FPS at each resolution.
 |---|---|
 | `src/data/listings.json` | Reference price per part, plus `checkedOn`: a Compumarts handle and variant, or a store id and URL for parts Compumarts does not sell |
 | `src/data/search-terms.json` | Per part: the store search query and the title terms a listing must (`all`) and must not (`none`) contain, and any globally excluded words it may still contain (`allow`, e.g. "inch" for an AIO with a screen) |
-| `src/data/offers.json` | Scraped price, stock, link and product image (https only) per part and store |
+| `src/data/offers.json` | Scraped price, stock, link and product image (https only) per part and store, plus how many are left (`quantity`) for Compumarts |
 | `src/data/offers-previous.json` | The offers from the scrape before, kept by `--write` (once per day) for the price changes page |
 | `src/data/catalog/*.ts` | Specs per part, one file per category (socket, memory type, power, length, score…) |
 | `src/data/parts.ts` | Joins the specs with their reference price and scraped offers |
@@ -47,6 +47,11 @@ is outside 0.6–1.8× the reference price. CPUs, boards, memory,
 storage, PSUs, cases and coolers match the exact model; GPUs match the chip and
 VRAM, so other stores may list a different card of the same GPU. A store that
 fails completely, or is left out with `--stores`/`--skip`, keeps its previous prices on `--write`.
+For Compumarts the scrape also reads how many units are left from each
+in-stock product's page (two at a time, retrying with a back-off when the store
+answers HTTP 429), shown as "N left" on product cards and part pages. Listings
+the store keeps selling past zero, and products with several variants, have no
+count.
 Store ids: compumarts, kimo, ahw, sigma, elbadr, maximum, alfrensia, uptodate. The catalogue covers every
 CPU, GPU, ATX/micro-ATX motherboard, desktop memory kit, case, PSU and CPU cooler (air and AIO, except Intel-only and server coolers) that was in stock at one of the eight
 stores on the last full survey (October 2026): Ryzen 2000 to 9000, Intel

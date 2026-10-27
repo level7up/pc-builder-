@@ -11,6 +11,7 @@ export interface Offer {
   inStock: boolean
   title: string
   image?: string
+  quantity?: number
 }
 
 export interface Listing {

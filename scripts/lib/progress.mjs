@@ -31,7 +31,8 @@ function storeStatus(state, now) {
   if (state.failed) return 'failed, keeping old prices'
   if (state.finishedAt !== undefined) return `done in ${formatDuration(state.finishedAt - state.startedAt)}`
   const left = remainingMs(state, now)
-  return left === undefined ? 'starting…' : `~${formatDuration(left)} left`
+  const time = left === undefined ? 'starting…' : `~${formatDuration(left)} left`
+  return state.stage ? `${state.stage}, ${time}` : time
 }
 
 export function storeLine(state, now) {

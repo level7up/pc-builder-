@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { storePrices, type FoundPart } from '../domain/lookup'
 import type { Locale, Messages } from '../i18n/messages'
 import { describePart } from '../specs'
-import { formatEgp } from '../format'
+import { formatCount, formatEgp } from '../format'
 import { HOME_HASH, storeHash } from '../useRoute'
 import FavoriteButton from './FavoriteButton.vue'
 import CompareButton from './CompareButton.vue'
@@ -73,6 +73,7 @@ const image = computed(() => (part.value.listing.image && part.value.listing.ima
             <span v-else-if="row.offer?.inStock">{{ t.profile.inStock }}</span>
             <span v-else-if="row.offer">{{ t.offers.outOfStock }}</span>
             <span v-else>{{ t.profile.notListed }}</span>
+            <small v-if="row.offer?.inStock && row.offer.quantity !== undefined" class="qty">{{ t.offers.quantity(formatCount(row.offer.quantity, locale)) }}</small>
           </td>
           <td class="link">
             <FavoriteButton v-if="row.offer" :wish-key="wishKey(part.id, row.store.id)" :t="t" />
@@ -117,6 +118,7 @@ td { padding: 8px; border-block-end: 1px solid var(--line); vertical-align: top;
 .tag { font-size: 11px; font-weight: 700; color: var(--accent); }
 .status { white-space: nowrap; color: var(--ok); }
 .best { font-weight: 800; padding: 1px 8px; border-radius: 999px; background: color-mix(in srgb, var(--ok) 14%, var(--panel)); }
+.qty { display: block; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
 tr.gone .status, tr.missing .status, tr.missing .num { color: var(--muted); font-weight: 400; }
 tr.gone .num { color: var(--muted); text-decoration: line-through; font-weight: 400; }
 tr.mine { background: color-mix(in srgb, var(--accent) 7%, var(--panel)); }

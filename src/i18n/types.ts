@@ -69,7 +69,7 @@ export interface Messages {
   }
   pricesNote: (stores: number, date: string) => string
   viewAtStore: string
-  offers: { cheapestAt: (store: string) => string; compare: (count: number) => string; outOfStock: string }
+  offers: { cheapestAt: (store: string) => string; compare: (count: number) => string; outOfStock: string; quantity: (count: string) => string }
   issues: Record<string, IssueText>
   specs: {
     cores: (c: number, t: number) => string

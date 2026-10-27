@@ -68,7 +68,8 @@ export const en: Messages = {
   offers: {
     cheapestAt: store => `Cheapest at ${store}`,
     compare: count => `Compare prices at ${count} stores`,
-    outOfStock: 'Out of stock'
+    outOfStock: 'Out of stock',
+    quantity: count => `${count} left`
   },
   issues: {
     missing: (p, cat) => `No ${cat(p.category as Category).toLowerCase()} picked yet.`,

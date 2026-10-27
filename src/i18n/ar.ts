@@ -68,7 +68,8 @@ export const ar: Messages = {
   offers: {
     cheapestAt: store => `أرخص سعر عند ${store}`,
     compare: count => `قارن الأسعار في ${count} محلات`,
-    outOfStock: 'مش متوفر'
+    outOfStock: 'مش متوفر',
+    quantity: count => `باقي ${count}`
   },
   issues: {
     missing: (p, cat) => `لسه مااخترتش ${cat(p.category as Category)}.`,
